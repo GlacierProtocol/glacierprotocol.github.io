@@ -1,9 +1,9 @@
-title: Glacier Protocol
+
 description: Glacier Protocol is a secure cold storage protocol for bitcoin
 show_downloads: true
 google_analytics:
 
-name: squarebox
+name: Glacier Protocol
 rouge: true
 excerpt_separator: <!--more-->
 paginate: 3
