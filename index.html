@@ -9,33 +9,27 @@ features:
       icon: layout
       desc:
         Glacier does not depend on online wallets or any other third parties.  Your bitcoins are entirely within your control.
-      color:
     - title: Cold storage
       icon: layout
       desc:
         The electronic keys that secure your bitcoins are created and stored entirely offline, making them virtually invulnerable to electronic theft.
-      color:
     - title: Multisignature security
       icon: layout
       desc:
         Multiple keys are required to access your bitcoins, greatly reducing the risk of loss due to physical theft or destruction of keys.
-      color:
   -
     - title: Trustworthy
       icon: layout
       desc:
         Glacier makes heavy use of well-secured software such as Bitcoin Core, and the Glacier’s own software is limited in scope and open source for public review.  The project also has reputable security advisors guiding its development.
-      color: yellow
     - title: Free of charge
       icon: layout
       desc:
         Glacier is an open source project provided at no cost to the Bitcoin community.
-      color: yellow
     - title: Costly
       icon: layout
       desc:
         Glacier is intended for security-critical scenarios, not everyday use.  The protocol requires several hours and several hundred dollars of equipment to execute.
-      color: yellow
 
 bars:
   - title: Web design
@@ -111,22 +105,25 @@ members:
 
 ---
 
-<ul data-orbit='' id="glacier-banner">
-    <li>
-      <img src="{{site.url}}/images/slide-5.jpg" />
-      <div class='orbit-caption caption-center'>
-        <div class='row'>
-          <div class='large-12 columns right'>
-            <h2>Glacier is a step-by-step protocol for 
-              high-security storage of bitcoins.
-            </h2>
-            <h3>No technical expertise required.</h3>
-            <a class='button boxed' href="releases/Glacier\ Design\ Document\ v0.1\ Alpha.pdf">Read the Glacier Protocol</a>
+
+<div class="orbit-container">
+  <ul id="glacier-banner" class="orbit-slides-container slide" style="height: 437px;">
+      <li class="active">
+        <!-- <img src="{{site.url}}/images/slide-5.jpg" /> -->
+        <div class='orbit-caption caption-center'>
+          <div class='row'>
+            <div class='large-12 columns right'>
+              <h2>Glacier is a step-by-step protocol for <br />
+                high-security storage of bitcoins.
+              </h2>
+              <h3>No technical expertise required.</h3>
+              <a class='button boxed' href="releases/Glacier\ Design\ Document\ v0.1\ Alpha.pdf">Read the Glacier Protocol</a>
+            </div>
           </div>
         </div>
-      </div>
-    </li>
-</ul>
+      </li>
+  </ul>
+</div>
 
 <div class='full white'>
   <div class='row'>
@@ -142,8 +139,8 @@ members:
     <div class="row">
       {% for feature in row %}
         <div class='medium-4 large-4 columns icon-text'>
-          <i class='icon-{{feature.icon}} {{feature.color}}'></i>
-          <h3>{{feature.title}}</h3>
+          <i class='icon-{{feature.icon}}'></i>
+          <h3 class="feature-heading">{{feature.title}}</h3>
           <p>{{feature.desc}}</p>
         </div>
       {% endfor %}

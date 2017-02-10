@@ -5621,6 +5621,10 @@ p aside {
   font-style: italic;
 }
 
+#glacier-banner h3 {
+  color: #FFF;
+}
+
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT sans";
