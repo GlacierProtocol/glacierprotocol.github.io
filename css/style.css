@@ -409,7 +409,7 @@ textarea {
 
 /*footer */
 .footer {
-  background: #232323;
+  /* background: #232323; */
   padding: 40px 0 20px;
 }
 .footer h1 {
