@@ -1,0 +1,38 @@
+---
+layout: blog
+title: Blog
+section_id: blog
+---
+
+<!-- <div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div> -->
+
+{% for post in paginator.posts %}
+  <div class='post'>
+    <div class='timestamp left text-center'>
+      <span class='month'>{{ post.date | date: "%h" }}</span>
+      <span class='date'>{{ post.date | date: "%d" }}</span>
+    </div>
+    <div class='info'>
+      <h3>
+        <a href='{{post.url}}'>{{ post.title }}</a>
+      </h3>
+      <p>
+        By
+        <span class='author'>{{post.author}}</span>
+        |
+        <a href='single.html#comments'>Comments 6</a>
+      </p>
+    </div>
+    <div class='content'>
+      {{post.excerpt}}
+      <a class='button' href='{{post.url}}'>Read more</a>
+    </div>
+  </div>
+{% endfor %}

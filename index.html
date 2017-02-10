@@ -1,9 +1,330 @@
 ---
 layout: default
+title: Squarebox &gt; home
+section_id: home
+works:
+  - image: work-1.jpg
+    title: Beautiful Girl
+    category: Design &amp; Development
+  - image: work-2.jpg
+    title: Look at me
+    category: Design &amp; Development
+  - image: work-3.jpg
+    title: Am I cute
+    category: Design &amp; Development
+  - image: work-4.jpg
+    title: Umbrella
+    category: Design &amp; Development
+  - image: work-5.jpg
+    title: Canned Bros
+    category: Design &amp; Development
+  - image: work-6.jpg
+    title: Hale
+    category: Design &amp; Development
+  - image: work-7.jpg
+    title: A beautiful day
+    category: Design &amp; Development
+  - image: work-8.jpg
+    title: Flower book
+    category: Design &amp; Development
+
+services:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+
+milestones:
+  - from: 0
+    to: 69
+    title: Projects completed
+  - from: 0
+    to: 726
+    title: Cups of coffee offered
+  - from: 0
+    to: 59
+    title: Happy clients
+  - from: 0
+    to: 121
+    title: Articles published
+
+bars:
+  - title: Web design
+    percent: 84
+  - title: Web development
+    percent: 95
+  - title: Site management
+    percent: 70
+  - title: Branding
+    percent: 61
+
+members:
+  - image: member-1.png
+    name: Shirley Adkins
+    position: Founder &amp; Designer
+    desc:
+      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+    socials:
+      - name: twitter
+        link: #
+        color: yellow
+      - name: facebook
+        link: #
+        color: yellow
+      - name: vimeo
+        link: #
+        color: yellow
+      - name: mail
+        link: #
+        color: yellow
+  - image: member-2.png
+    name: Uriel Garrett
+    position: Director &amp; Project Manager
+    desc:
+      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+    socials:
+      - name: twitter
+        link: #
+        color: yellow
+      - name: facebook
+        link: #
+        color: yellow
+  - image: member-3.png
+    name: Dulce Welch
+    position: Designer &amp; Art Director
+    desc:
+      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+    socials:
+      - name: twitter
+        link: #
+        color: yellow
+      - name: facebook
+        link: #
+        color: yellow
+      - name: mail
+        link: #
+        color: yellow
+  - image: member-4.png
+    name: Stephanie Morse
+    position: Developer
+    desc:
+      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
+    socials:
+      - name: twitter
+        link: #
+        color: yellow
+      - name: vimeo
+        link: #
+        color: yellow
+      - name: mail
+        link: #
+        color: yellow
+
 ---
 
-<p>Glacier is currently in a limited alpha release.  A full beta publication (and website) will be coming soon.</p>
+{% include slider.html %}
 
-<p>The alpha release is available on our <a href="releases/index.html">releases</a> page.</p>
+{% include whys.html %}
 
-<p>This website will be migrated to HTTPS before the public beta release.</p>
+<div class='full'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-star'></i>
+      <h2>Portfolio</h2>
+      <p>Our best and featured works so far</p>
+      <p class='shortline'></p>
+    </div>
+  </div>
+</div>
+
+<ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
+  {% for work in page.works %}
+    <li>
+      <a>
+        <img src='{{site.url}}/images/{{ work.image }}'>
+        <div class='overlay'>
+          <div class='thumb-info'>
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.category }}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class='full dark-blue no-padding'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='call-to-action light'>
+      <div class='medium-9 large-9 columns'>
+        <p class='left'>A Creative, Modern, Clean &amp; Responsive Template, what are you waiting for?</p>
+      </div>
+      <div class='medium-3 large-3 columns'>
+        <a class='button' href='#'>Purchase Now</a>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+
+
+<div class='full white'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-map'></i>
+      <h2>Our services</h2>
+      <p>We are passionate about web design &amp; development</p>
+      <p class='shortline'></p>
+    </div>
+    <div class='two spacing'></div>
+  </div>
+
+  {% for row in page.services %}
+    <div class="row">
+      {% for service in row %}
+        <div class='medium-4 large-4 columns icon-text'>
+          <i class='icon-{{service.icon}} {{service.color}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<div class='full bg-1'>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns'>
+        <div class='milestone boxed light'>
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'></strong>
+          <span>{{milestone.title}}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<div class='full light-yellow'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-users'></i>
+      <h2>Who we are</h2>
+      <p>We are happy to know you are happy</p>
+      <p class='shortline'></p>
+    </div>
+    <div class='spacing'></div>
+    <div class='spacing'></div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 large-6 columns'>
+      <p>
+        <span class='drop-letters'>We</span>
+        are est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae.
+      </p>
+      <p>Est unde inventore sed amet est in voluptas cum ipsa ut sunt minus. Nihil quia et omnis blanditiis eius suscipit quos repudiandae. Nihil quia et omnis blanditiis eius suscipit quos. Nihil quia et omnis blanditiis eius suscipit quos.</p>
+    </div>
+    <div class='medium-6 large-6 columns'>
+      <ul class='bars'>
+        {% for bar in page.bars %}
+          <li>
+            <h4>
+              {{bar.title}}
+              <strong>{{bar.percent}}%</strong>
+            </h4>
+            <p class='highlighted' data-percent='{{bar.percent}}'></p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class='members'>
+  <div class='full light-yellow no-padding'>
+    <div class='row'>
+      {% for member in page.members %}
+        {% if forloop.first %}
+          {% assign active_class = "active" %}
+        {% else %}
+          {% assign active_class = "" %}
+        {% endif %}
+        <div class='medium-3 large-3 columns'>
+          <div class='member centered-text {{active_class}}' data-target='#member-{{forloop.index}}'>
+            <img src='{{site.url}}/images/{{member.image}}'>
+            <h3>{{member.name}}</h3>
+            <p class='position'>{{member.position}}</p>
+            <p class='active-line'></p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='full white'>
+    <div class='row'>
+      {% for member in page.members %}
+        {% if forloop.first %}
+          {% assign active_class = "active" %}
+        {% else %}
+          {% assign active_class = "" %}
+        {% endif %}
+        <div class='member-intro {{active_class}}' id='member-{{forloop.index}}'>
+          <div class='medium-8 large-8 columns'>
+            <p>{{member.desc}}</p>
+          </div>
+          <div class='medium-4 large-4 columns'>
+            <div class='socials'>
+              {% for social in member.socials %}
+                <a href='{{social.link}}'>
+                  <i class='icon-{{social.name}} {{social.color}}'></i>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+{% include testimonials.html bg="bg-2" %}
+
+{% include clients.html %}
+
+
+{% include get-in-touch.html %}

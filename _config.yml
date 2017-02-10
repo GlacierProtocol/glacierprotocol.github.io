@@ -1,12 +1,15 @@
-theme: jekyll-theme-cayman
-
 title: Glacier Protocol
 description: Glacier Protocol is a secure cold storage protocol for bitcoin
 show_downloads: true
 google_analytics:
 
-title: Glacier Protocol
-
+name: squarebox
+markdown: redcarpet
+pygments: true
+excerpt_separator: <!--more-->
+paginate: 3
+paginate_path: "blog/page:num"
+    
 exclude:
   - Gemfile
   - Gemfile.lock

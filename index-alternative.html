@@ -1,0 +1,192 @@
+---
+layout: default
+title: Squarebox &gt; home alternative
+section_id: home
+services:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+
+milestones:
+  - from: 0
+    to: 69
+    title: Projects completed
+  - from: 0
+    to: 726
+    title: Cups of coffee offered
+  - from: 0
+    to: 59
+    title: Happy clients
+  - from: 0
+    to: 121
+    title: Articles published
+
+works:
+  - image: work-1.jpg
+    title: Beautiful Girl
+    category: Design &amp; Development
+  - image: work-2.jpg
+    title: Look at me
+    category: Design &amp; Development
+  - image: work-3.jpg
+    title: Am I cute
+    category: Design &amp; Development
+  - image: work-4.jpg
+    title: Umbrella
+    category: Design &amp; Development
+---
+
+{% include slider.html %}
+
+{% include whys.html shape="circle" %}
+
+<div class='full bg-3 light'>
+  <div class='row'>
+    <div class='large-6 columns'>
+      <img class='fadeinleft' src='{{site.url}}/images/ipad-air.png'>
+    </div>
+    <div class='large-6 columns'>
+      <h2 class='light'>Who we are</h2>
+      <p>
+        Quibusdam ea excepturi repudiandae. voluptates voluptatem quam quod quaerat sed in praesentium sint. ipsum accusamus provident debitis cupiditate labore at voluptate qui ab dolore corporis itaque et ea. accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos adipisci dolorem aut id ipsam quis sit et ut odio dolores.
+      </p>
+      <a class='button boxed'>Know more</a>
+    </div>
+  </div>
+</div>
+
+<div class='full white'>
+  {% for row in page.services %}
+    <div class="row">
+      {% for service in row %}
+        <div class='medium-4 large-4 columns icon-text'>
+          <i class='icon-{{service.icon}} {{service.color}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+</div>
+
+<div class='full bg-4 no-padding'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns'>
+        <div class='milestone light'>
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'></strong>
+          <span>{{milestone.title}}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div>
+
+<div class='full white centered-text no-padding'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='three spacing'></div>
+      <h2>Lovely Design</h2>
+      <img class='centered' src='{{site.url}}/images/design-show.png'>
+    </div>
+  </div>
+</div>
+
+<div class='full yellow no-padding'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='call-to-action light'>
+      <div class='medium-9 large-9 columns'>
+        <p class='left'>A Creative, Modern, Clean &amp; Responsive Template, what are you waiting for?</p>
+      </div>
+      <div class='medium-3 large-3 columns'>
+        <a class='button white' href='#'>Purchase Now</a>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<div class='full bg-5'>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='large-6 columns'>
+      <h2 class='light'>Very easy to use</h2>
+      <p class='light'>
+        Quibusdam ea excepturi repudiandae. voluptates voluptatem quam quod quaerat sed in praesentium sint. ipsum accusamus provident debitis cupiditate labore at voluptate qui ab dolore corporis itaque et ea.
+      </p>
+      <a class='button boxed' href='#'>Know more</a>
+    </div>
+    <div class='large-6 columns'>
+      <img class='fadeinright' src='{{site.url}}/images/settings.jpg'>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<div class='full no-padding'>
+  <div class='three spacing'></div>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <h2>Recent Work</h2>
+      <p>Our best and featured works so far</p>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
+  {% for work in page.works %}
+    <li>
+      <a>
+        <img src='{{site.url}}/images/{{ work.image }}'>
+        <div class='overlay'>
+          <div class='thumb-info'>
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.category }}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include clients.html %}
+
+{% include testimonials.html bg="bg-1" %}
+
+{% include get-in-touch.html %}

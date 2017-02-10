@@ -1,0 +1,123 @@
+---
+layout: default
+title: Portfolio
+section_id: portfolio
+categories:
+  - name: Graphic Design
+  - name: Web Design
+  - name: Brand
+  - name: Development
+  - name: Print
+
+works:
+  - image: work-1.jpg
+    title: Beautiful Girl
+    categories:
+      - name: Graphic Design
+  - image: work-2.jpg
+    title: Look at me
+    categories:
+      - name: Web Design
+      - name: Print
+  - image: work-3.jpg
+    title: Am I cute
+    categories:
+      - name: Brand
+  - image: work-4.jpg
+    title: Umbrella
+    categories:
+      - name: Development
+  - image: work-5.jpg
+    title: Canned Bros
+    categories:
+      - name: Print
+      - name: Brand
+  - image: work-6.jpg
+    title: Hale
+    categories:
+      - name: Web Design
+  - image: work-7.jpg
+    title: A beautiful day
+    categories:
+      - name: Web Design
+  - image: work-8.jpg
+    title: Flower book
+    categories:
+      - name: Graphic Design
+  - image: work-1.jpg
+    title: Beautiful Girl
+    categories:
+      - name: Development
+      - name: Print
+  - image: work-2.jpg
+    title: Look at me
+    categories:
+      - name: Brand
+  - image: work-3.jpg
+    title: Am I cute
+    categories:
+      - name: Web Design
+  - image: work-4.jpg
+    title: Umbrella
+    categories:
+      - name: Print
+  - image: work-5.jpg
+    title: Canned Bros
+    categories:
+      - name: Graphic Design
+  - image: work-6.jpg
+    title: Hale
+    categories:
+      - name: Development
+  - image: work-7.jpg
+    title: A beautiful day
+    categories:
+      - name: Print
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-star'></i>
+      <h2>Portfolio</h2>
+      <p>Our best and featured works so far</p>
+      <p class='shortline'></p>
+    </div>
+  </div>
+</div>
+
+
+<div class='row'>
+  <div class='gallery-wrapper large-12 columns'>
+    <ul class='sub-nav' id='filter'>
+      <li class='current'>
+        <a data-cat='all' href='#'>All</a>
+      </li>
+      {% for category in page.categories %}
+        <li>
+          <a data-cat='{{ category.name | downcase | replace: ' ', '-' }}' href='#'>{{category.name}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class='spacing'></div>
+    <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-3'>
+      {% for work in page.works %}
+        <li class='{{ work.categories | map:"name" | join:"##" | downcase | replace:' ', '-' | replace:'##', ' '}}'>
+          <a>
+            <img src='{{site.url}}/images/{{work.image}}'>
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{work.title}}</h3>
+                <p>{{ work.categories | map:"name" | join:" &amp; " }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+<div class="three spacing"></div>
+<div class="three spacing"></div>

@@ -1,0 +1,29 @@
+{% if include.bg %}
+  {% assign bg = include.bg %}
+{% else %}
+  {% assign bg = "bg-2" %}
+{% endif %}
+
+<div class='testimonials full light centered-text {{bg}}'>
+  <div class='row'>
+    <div class='special-title'>
+      <i class='icon-quote'></i>
+      <h2 class='light'>What our clients say</h2>
+    </div>
+    <div class='two spacing'></div>
+  </div>
+  <div class='row'>
+    <div class='small-9 small-centered columns'>
+      <ul data-orbit=''>
+        {% for t in site.data.testimonials %}
+          <li>
+            <p class='quote'>"{{t.quote}}"</p>
+            <p class='author'>{{t.author}}</p>
+            <div class='two spacing'></div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='spacing'></div>
+  </div>
+</div>
