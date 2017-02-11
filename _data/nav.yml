@@ -4,9 +4,9 @@
 - name: Releases
   path: releases.html
   section_id: releases
-- name: Discussion
-  path: discussion.html
-  section_id: discussion
+- name: Discuss
+  path: discuss.html
+  section_id: discuss
 - name: Contribute
   path: contribute.html
   section_id: contribute

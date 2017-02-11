@@ -16,7 +16,7 @@ h1, h2, h3, h4 {
 }
 
 #glacier-banner {
-  background: #4caaf2;
+  background: rgb(45,147,232);
 }
 
 .feature-heading {
@@ -42,6 +42,10 @@ h1, h2, h3, h4 {
 
 .dark-blue {
   background: #3d5766;
+}
+
+.glacier-blue {
+	background: rgb(45,147,232);
 }
 
 .light-yellow {
@@ -73,8 +77,8 @@ h1, h2, h3, h4 {
 }
 
 .button {
-  letter-spacing: 3px;
-  font-size: 14px;
+  letter-spacing: 1px;
+  font-size: 16px;
   padding: 13px 30px 10px;
   background-color: #fcae41;
 }
@@ -92,6 +96,7 @@ h1, h2, h3, h4 {
 
 .button.boxed {
   border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
   color: white;
 }
 .button.boxed:hover {
@@ -178,7 +183,7 @@ h1, h2, h3, h4 {
 /*icon-text */
 .icon-text i {
   color: white;
-  background: #4caaf2;
+  background: rgb(45,147,232);
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
@@ -414,7 +419,7 @@ textarea {
 
 /*footer */
 .footer {
-  background: #232323;
+  /* background: #232323; */
   padding: 40px 0 20px;
 }
 .footer h1 {
