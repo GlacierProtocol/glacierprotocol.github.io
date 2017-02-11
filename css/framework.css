@@ -180,6 +180,12 @@ select {
   clear: both;
 }
 
+.team-row{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .column,
 .columns {
   padding-left: 0.9375rem;
@@ -390,7 +396,7 @@ select {
   }
 
   [class*="column"] + [class*="column"]:last-child {
-    float: right;
+    /*float: right;*/
   }
 
   [class*="column"] + [class*="column"].end {
@@ -675,7 +681,7 @@ select {
   }
 
   [class*="column"] + [class*="column"]:last-child {
-    float: right;
+    /*float: right;*/
   }
 
   [class*="column"] + [class*="column"].end {
@@ -1104,7 +1110,7 @@ select {
   }
 
   [class*="column"] + [class*="column"]:last-child {
-    float: right;
+    /*float: right;*/
   }
 
   [class*="column"] + [class*="column"].end {
@@ -5591,7 +5597,7 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #fcbf31;
+  color:  #1080d5;
   text-decoration: none;
   line-height: inherit;
 }

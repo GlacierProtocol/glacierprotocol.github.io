@@ -23,23 +23,6 @@ $(document).foundation();
       });
     });
 
-    $(".members").each(function() {
-
-      var members = $(this);
-
-      $(this).find('.member').each(function() {
-        $(this).click(function() {
-          $(members).find('.member').removeClass('active');
-          $(this).addClass('active');
-          var target = $(this).attr('data-target');
-          // console.log($(members).find('.member-intro'));
-          $(members).find('.member-intro').removeClass('active');
-          $(target).addClass('active');
-        });
-      });
-
-    });
-
     $('.fadeinleft, .fadeinright').appear(function() {
       $(this).addClass('appear');
     });
