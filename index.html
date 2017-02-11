@@ -34,91 +34,34 @@ features:
 developers:
   - image: james-hogan.jpg
     name: James Hogan
-    position: Founder &amp; Designer
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
-      - name: vimeo
-        link: #
-        color: yellow
-      - name: mail
-        link: #
-        color: yellow
+    contact: mailto:james@glacierprotocol.org
+    linkedin: https://www.linkedin.com/in/jameshogan42
+
   - image: jacob-lyles.jpg
     name: Jacob Lyles
-    position: Director &amp; Project Manager
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
+    contact: mailto:jacob@glacierprotocol.org
+    linkedin: https://www.linkedin.com/in/jacob-lyles-17b9b611
 
 advisors:
   - image: advisors/philip-martin.jpg
     name: Philip Martin
     position: Director of Security, <a href="https://www.coinbase.com/">Coinbase</a>
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
+    linkedin: https://www.linkedin.com/in/philipmmartin/
+
   - image: advisors/glenn-willen.jpeg
     name: Glenn Willen
     position: Infrastructure Tech Engineer, <a href="http://www.blockstream.com/">Blockstream</a>
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
+    linkedin: https://www.linkedin.com/in/gwillen/
+
   - image: advisors/arthur-breitman.png
     name: Arthur Breitman
     position: Founder, <a href="https://www.tezos.com/">Tezos</a>
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
-      - name: vimeo
-        link: #
-        color: yellow
-      - name: mail
-        link: #
-        color: yellow
+    linkedin: https://www.linkedin.com/in/arthurbreitman/
+
   - image: advisors/paul-bohm.jpg
     name: Paul Bohm
     position: Network Economist
-    desc:
-      Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum Unde labore corporis nam dignissimos tenetur vero enim. Eligendi est quam et in recusandae ratione facilis vel iste est rerum.
-    socials:
-      - name: twitter
-        link: #
-        color: yellow
-      - name: facebook
-        link: #
-        color: yellow
-
+    linkedin: https://www.linkedin.com/in/paulbohm/
 
 ---
 
@@ -181,7 +124,7 @@ advisors:
 <div class='members'>
   <div class='full light-yellow no-padding'>
     <div class='row' style="text-align: center;">
-      <h2>Developers and maintainers</h2>
+      <h2>Developers and Maintainers</h2>
       <div style="text-align: center">
         <div class="team-row">
         {% for developer in page.developers %}
@@ -189,8 +132,7 @@ advisors:
             <div class='member centered-text' data-target='#member-{{forloop.index}}'>
               <img src='{{site.url}}/images/{{developer.image}}' style="height: 150px; width: 150px;">
               <h3>{{developer.name}}</h3>
-              <p class='position'>{{developer.position}}</p>
-              <p class='active-line'></p>
+              <p><a href="{{developer.contact}}">contact</a>, <a href="{{developer.linkedin}}">Linkedin</a></p>
             </div>
           </div>
         {% endfor %}
@@ -198,20 +140,17 @@ advisors:
       </div>
     </div>
     <div class='row' style="text-align: center;">
-      <h2>Security Advisors</h2>
+      <h2 style="margin: 20px; ">Security Advisors</h2>
         {% for advisor in page.advisors %}
           <div class='medium-3 large-3 column'>
             <div class='member centered-text' data-target='#member-{{forloop.index}}'>
               <img src='{{site.url}}/images/{{advisor.image}}' style="height: 150px; width: 150px;">
               <h3>{{advisor.name}}</h3>
               <p class='position'>{{advisor.position}}</p>
-              <p class='active-line'></p>
+              <p><a href="{{advisor.linkedin}}">Linkedin</a></p>
             </div>
           </div>
         {% endfor %}
     </div>
   </div>
 </div>
-
-
-{% include get-in-touch.html %}
