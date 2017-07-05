@@ -23,9 +23,10 @@ section_id: errata
 	  <h3>v0.9 Beta errata</h3>
 	  <ul>
 	  	<li>Ubuntu 16.04.2 has been released, and the link to 16.04.1 in the protocol document has broken.  Use <a href="http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04.1-desktop-amd64.iso">http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04.1-desktop-amd64.iso</a> instead of <a href="http://releases.ubuntu.com/xenial/ubuntu-16.04.1-desktop-amd64.iso">http://releases.ubuntu.com/xenial/ubuntu-16.04.1-desktop-amd64.iso</a>.</li>
-		<li>Windows: Setup Protocol step IV.5.b.i is missing a space in the terminal command after "sha256".
-		<li>Windows: Setup Protocol Section IV requires Windows Powershell, not a regular terminal/command line window
-		<li>Windows: Instructions for opening Windows Powershell were incorrect.  (Correct: Win-R, type "powershell", press Enter)
+		  <li>Windows: Setup Protocol step IV.5.b.i is missing a space in the terminal command after "sha256".
+  		<li>Windows: Setup Protocol Section IV requires Windows Powershell, not a regular terminal/command line window
+  		<li>Windows: Instructions for opening Windows Powershell were incorrect.  (Correct: Win-R, type "powershell", press Enter)
+      <li>Some information (e.g. raw unspent transactions) are too long to be converted into a single QR code -- or the QR code may be such high resolution that some QR code readers may struggle to read it.  In these cases, you will need to split the data into multiple QR codes, and splice them back together after decoding the QR codes.  Be careful not to encode trailing spaces or newlines when splitting the data.
 	  </ul>
 
     </div>
