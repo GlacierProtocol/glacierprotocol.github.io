@@ -42,16 +42,17 @@ section_id: releases
     <p><strong>Version 0.91: July 27, 2017</strong></p>
 
     <strong>Upgrade Guidance</strong>
-    <p>You should upgrade to v0.91 before executing the Withdrawal Protocol.</p>
+    <p>v0.91 includes workarounds for some withdrawal errors encountered in v0.90.  If you encounter errors withdrawing in v0.90, you should upgrade to v0.91.  You'll need to recreate your Quarantined App USBs with v0.91.</p>
 
-    <p>v0.91 has no security improvements, but withdrawals will fail in some cases.  Funds stored with earlier Deposit Protocols are perfectly secure.</p>
+    <p>v0.91 has no security improvements.  Funds stored with earlier Deposit Protocols are perfectly secure.</p>
 
-    <strong>Changes</strong> 
+    <strong>Detailed Changes</strong> 
     <ul>
-      <li>The protocol was incapable of properly handling raw unspent transactions past a certain length:</li>
-      <li>QR codes failed with transactions of a certain length</li>
-      <li>With extremely large transactions, GlacierScript was incapable of processing them</li>
-      <li>Workarounds have been implemented for both issues.</li>
+      <li>The protocol was incapable of properly handling raw unspent transactions past a certain length (workarounds are now in place for both issues):</li>
+      <ul>
+        <li>QR codes cannot handle large raw unspent transactions; such transactions must be manually split into multiple QR codes and re-spliced.</li>
+        <li>With extremely large raw unspent transactions (over 4000 bytes), GlacierScript was incapable of processing them in v0.90.</li>
+      </ul>
       <li>Fixed minor errors in Setup Protocol for Windows machines</li>
       <li>Updated Ubuntu release link (old link broke when it became not-the-latest Ubuntu release)</li>
       <li>Added Errata section to website (for issues / fixes which haven't yet made it into an official release), and included protocol steps to check the Errata section.</li>
