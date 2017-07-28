@@ -17,12 +17,14 @@ section_id: releases
     <div class='medium-12 large-12 columns'>
       <h3>Full Glacier releases<br /> 
 	  <span style="font-size: .75em;">(Protocol document & GlacierScript with checksums)</span></h3>
-	  <a href="https://github.com/GlacierProtocol/GlacierProtocol/archive/v0.9-beta.zip">v0.9 Beta (latest version)</a><br/>
+	  <a href="https://github.com/GlacierProtocol/GlacierProtocol/archive/v0.91-beta.zip">v0.91 Beta (latest version)</a><br/>
+    <a href="https://github.com/GlacierProtocol/GlacierProtocol/archive/v0.9-beta.zip">v0.9 Beta</a><br/>
 	  <a href="https://github.com/GlacierProtocol/GlacierProtocol/archive/v0.1-alpha.zip">v0.1 Alpha</a><br/>
 	  <br/><br/>
 
 	  <h3>Protocol document releases</h3>
-	  <a href="{{site.url}}/releases/Glacier%20Protocol%20Document%20v0.9%20Beta.pdf">v0.9 Beta (latest version)</a><br/>
+    <a href="{{site.url}}/releases/Glacier%20Protocol%20Document%20v0.91%20Beta.pdf">v0.91 Beta (latest version)</a><br/>
+	  <a href="{{site.url}}/releases/Glacier%20Protocol%20Document%20v0.9%20Beta.pdf">v0.9 Beta</a><br/>
 	  <a href="{{site.url}}/releases/Glacier%20Protocol%20Document%20v0.1%20Alpha.pdf">v0.1 Alpha</a><br/>
 	  <br/><br/>
 
@@ -36,6 +38,25 @@ section_id: releases
 	  <p style="font-size: 0.8em;"><em>Note: The release notes below (and the release notes in the <strong>document-only</strong> releases) are provided for convenient, non-security-critical reference only.  They are </em>not<em> secured with signed checksums, and therefore are </em>not<em> canonical.  The </em>canonical<em> release notes are in the document appendices within the <strong>full</strong> Glacier releases, linked above.</p>
 
 	  <p style="font-size: 0.8em;">If you are referencing release notes as directed by Glacier protocol itself, you should refer to the canonical notes in the protocol document itself rather than the notes here. The appropriate steps are listed in the protocol.</em></p>
+
+    <p><strong>Version 0.91: July 27, 2017</strong></p>
+
+    <strong>Upgrade Guidance</strong>
+    <p>You should upgrade to v0.91 before executing the Withdrawal Protocol.</p>
+
+    <p>v0.91 has no security improvements, but withdrawals will fail in some cases.  Funds stored with earlier Deposit Protocols are perfectly secure.</p>
+
+    <strong>Changes</strong> 
+    <ul>
+      <li>The protocol was incapable of properly handling raw unspent transactions past a certain length:</li>
+      <li>QR codes failed with transactions of a certain length</li>
+      <li>With extremely large transactions, GlacierScript was incapable of processing them</li>
+      <li>Workarounds have been implemented for both issues.</li>
+      <li>Fixed minor errors in Setup Protocol for Windows machines</li>
+      <li>Updated Ubuntu release link (old link broke when it became not-the-latest Ubuntu release)</li>
+      <li>Added Errata section to website (for issues / fixes which haven't yet made it into an official release), and included protocol steps to check the Errata section.</li>
+      <li>Fixed various typos (thanks /u/dooglus)</li>
+    </ul>
 
 	  <strong>Version 0.9 Beta: February 10, 2017</strong><br />
 	  <ul>
