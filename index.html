@@ -32,6 +32,17 @@ features:
         Glacier is intended for security-critical scenarios, not everyday use.  The protocol requires several hours and several hundred dollars of equipment to execute.
 
 developers:
+  - image: diogo-monica.jpg
+    name: Diogo M&#243;nica
+    contact: mailto:contact@glacierprotocol.org
+    linkedin: https://www.linkedin.com/in/diogomonica/
+
+  - image: nathan-mccauley.jpg
+    name: Nathan McCauley
+    contact: mailto:contact@glacierprotocol.org
+    linkedin: https://www.linkedin.com/in/nathanmccauley/
+
+authors:
   - image: james-hogan.jpg
     name: James Hogan
     contact: mailto:james@glacierprotocol.org
@@ -123,8 +134,9 @@ advisors:
 
 <div class='members'>
   <div class='full light-yellow no-padding'>
+
     <div class='row' style="text-align: center;">
-      <h2>Developers and Maintainers</h2>
+      <h2>Project Leads</h2>
       <div style="text-align: center">
         <div class="team-row">
         {% for developer in page.developers %}
@@ -139,6 +151,7 @@ advisors:
         </div>
       </div>
     </div>
+
     <div class='row' style="text-align: center;">
       <h2 style="margin: 20px; ">Security Advisors</h2>
         {% for advisor in page.advisors %}
@@ -151,8 +164,25 @@ advisors:
             </div>
           </div>
         {% endfor %}
-
     </div>
+
+    <div class='row' style="text-align: center;">
+      <h2>Original Authors</h2>
+      <div style="text-align: center">
+        <div class="team-row">
+        {% for author in page.authors %}
+          <div class='medium-4 large-4 column' style="float: none; display: inline-block; vertical-align: top; margin: 0px 40px;">
+            <div class='member centered-text' data-target='#member-{{forloop.index}}'>
+              <img src='{{site.url}}/images/{{author.image}}' style="height: 150px; width: 150px;">
+              <h3>{{author.name}}</h3>
+              <p><a href="{{author.linkedin}}">LinkedIn</a>, <a href="{{author.contact}}">email</a></p>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+
     <div style="font-size: 0.8em; padding: 20px; text-align: center; color: #666666;">Advisors have not reviewed or endorsed every recommendation of the full Glacier protocol or the GlacierScript software.</div>
   </div>
 </div>
