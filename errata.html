@@ -24,6 +24,12 @@ section_id: errata
 
     <ul>
       <li>Deposit Protocol, Section III, step 2.a: The recommended size of the test deposit ($6) is far too small for today's transaction fees. We recommend a deposit sufficient to fund 1000 bytes of transactions; as of January 17, 2018, with a fee rate of 510 sat/B and $11185 USD/BTC this is a deposit of approximately $57.</li>
+      <li>Funding your Glacier cold-storage address from a segwit-enabled wallet (e.g. Electrum 3) may result in unspendable funds. (Your funds are safe, and a future Glacier release will enable spending!) To avoid this problem:
+	<ul>
+	  <li>Fund your Glacier address using a wallet that is not Segwit compatible; or</li>
+	  <li>Send 100% of your wallet's funds to your Glacier address in a single transaction (so that no change output is created)</li>
+	</ul>
+      </li>
     </ul>
     
 		  
