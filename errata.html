@@ -20,12 +20,19 @@ section_id: errata
 		<br />
 		<span style="font-size: 0.8em;"><em>Technical note:  Unlike the actual protocol document, these errata are not secured with signed checksums.</span></em>
 
+    <h3>v0.92 Beta errata</h3>
+
+    <ul>
+      <li>Deposit Protocol, Section III, step 2.a: The recommended size of the test deposit ($6) might be too small for today's transaction fees. We recommend a deposit sufficient to fund 1000 bytes of transactions; as of January 17, 2018, with a fee rate of 510 sat/B and $11185 USD/BTC this is a deposit of approximately $57. Fees have since declined, but the user is advised to check the current fee rate before making the test deposit.</li>
+    </ul>
+
     <h3>v0.91 Beta errata</h3>
 
     <ul>
       <li>Deposit Protocol, Section III, step 2.a: The recommended size of the test deposit ($6) might be too small for today's transaction fees. We recommend a deposit sufficient to fund 1000 bytes of transactions; as of January 17, 2018, with a fee rate of 510 sat/B and $11185 USD/BTC this is a deposit of approximately $57. Fees have since declined, but the user is advised to check the current fee rate before making the test deposit.</li>
-      <li>Funding your Glacier cold-storage address from a segwit-enabled wallet (e.g. Electrum 3) may result in unspendable funds. (Your funds are safe, and a future Glacier release will enable spending!) To avoid this problem:
+      <li>Funding your Glacier cold-storage address from a segwit-enabled wallet (e.g. Electrum 3) may result in unspendable funds. (Your funds are safe; Glacier v0.92 Beta fixes this and enables your funds to be spent.) To avoid this problem:
 	<ul>
+	  <li>Create or recreate your App USBs using Glacier v0.92 Beta; or</li>
 	  <li>Fund your Glacier address using a wallet that is not Segwit compatible; or</li>
 	  <li>Send 100% of your wallet's funds to your Glacier address in a single transaction (so that no change output is created)</li>
 	</ul>
