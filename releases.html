@@ -41,7 +41,23 @@ section_id: releases
 	  <p style="font-size: 0.8em;">If you are referencing release notes as directed by Glacier protocol itself, you should refer to the canonical notes in the protocol document itself rather than the notes here. The appropriate steps are listed in the protocol.</em></p>
 
     <p><strong>Version 0.92: Mar 5, 2018</strong></p>
-    <p>v0.92 supports Bitcoin Core 0.16, fixes crash when unspent xact has native segwit outputs, and forces re-entry of fee rate when user declines fee confirmation prompt.</p>
+    <strong>Upgrade Guidance</strong>
+    <p>v0.92 includes a fix for some withdrawal errors encountered in v0.91.  If you encounter errors withdrawing in v0.91, you should upgrade to v0.92.  You'll need to recreate your Quarantined App USBs with v0.92.</p>
+
+    <p>v0.92 includes a fix for compatibility with Bitcoin Core v0.16.0.  If you are creating new App USBs, you should use v0.92.</p>
+
+    <p>v0.92 has no security improvements.  Funds stored with earlier Deposit Protocols are perfectly secure.</p>
+
+    <p>Note that the PDF document did not change from v0.91, and is still titled v0.91 on the cover page.</p>
+
+    <strong>Detailed Changes</strong>
+    <ul>
+      <li>v0.92 adds support for Bitcoin Core 0.16.  Any new App USBs created on or after March 5, 2018 (when the <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu Bitcoin PPA</a> was updated with v0.16.0) using an older version of Glacier will fail with GlacierScript errors during the Withdrawal Protocol and Deposit Protocol.  Any App USBs created before that date will still work and are safe to continue using (excepting other errata).</li>
+
+      <li>Fixes crash when unspent xact has native segwit outputs. If your Glacier wallet was funded using a transaction containing native Segwit outputs (such as the change output from an Electrum 3 Segwit wallet), previous versions of GlacierScript would crash when trying to withdraw.</li>
+
+      <li>Forces re-entry of fee rate when user declines fee confirmation prompt. Previous versions of GlacierScript erroneously recalculated using the same fee rate instead of prompting the user for a corrected rate.</li>
+    </ul>
 
     <p><strong>Version 0.91: July 27, 2017</strong></p>
 
