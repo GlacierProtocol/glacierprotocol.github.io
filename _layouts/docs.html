@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% capture gh_issue_url %}{{site.git_address}}/issues/new?body=Consider updating [{{page.path}}]({{site.url}}{{page.url}}), because ... {% endcapture %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          {% include docs_nav.html %}
+        </div>
+
+        <div class="col-md-8">
+            <h1>{{ page.title }}</h1>
+            <div id="markdown-content-container">{{ content }}</div>
+            <p class="text-center">
+              <br />
+              <a target="_blank" href="{{site.baseurl}}/assets/glacier.pdf" class="btn btn-default" role="button">
+                <i class="fas fa-download fa-lg"></i> Download
+              </a>
+              <a target="_blank" href="{{gh_issue_url}}" class="btn btn-default" role="button">
+                <i class="fa fa-bug fa-lg"></i> Make a suggestion
+              </a>
+              <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default" role="button">
+                <i class="fas fa-pencil-alt fa-lg"></i> Improve this page
+              </a>
+            </p>
+        </div>
+    </div>
+</div>

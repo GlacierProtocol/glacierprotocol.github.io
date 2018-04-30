@@ -1,0 +1,58 @@
+title: Glacier
+description: The step-by-step protocol for storing bitcoins in a highly secure way
+incremental: true
+show_dir_listing: false
+permalink: pretty
+url: "https://GlacierProtocol.github.io"
+timezone: America/Los_Angeles
+
+# Set this if the repo is for a project, e.g
+# "/glacier" -> https://gh-user.github.io/glacier
+baseurl:
+
+# Exclude from site build
+exclude: [".git", ".gitignore", "_build", "dockerfiles", "Makefile", "README.md", "todo.md"]
+
+# Urls to social networks
+git_address: https://github.com/GlacierProtocol/glacierprotocol.github.io
+git_edit_address: https://github.com/GlacierProtocol/glacierprotocol.github.io/edit/master
+twitter_address: https://twitter.com/glacierprotocol
+gitter_address: https://gitter.im/glacierprotocol/lobby
+
+# Google Analytics
+google_analytics_id:
+
+# Bootstrap theme
+bootswatch: paper
+
+# Jekyll plugins. If you want this site to run on Github pages,
+# make sure you only use plugins Github pages supports
+# https://pages.github.com/versions/
+plugins:
+  # TODO: don't use relative links. Makes pdf generation easier
+  - jekyll-relative-links
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# jekyll-relative-links specific configs
+relative_links:
+  enabled: true
+  collections: true
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: docs
+      sectionid: docs
