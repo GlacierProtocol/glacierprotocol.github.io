@@ -1,10 +1,17 @@
 #!/bin/bash
 set -e
 
-CONTAINER_NAME_SITE=glacier-website
+CONTAINER_NAME_SITE=com.glacier.pdf
 FILENAME=assets/glacier.pdf
-# Set this if you want to keep the pdf source for debugging
+# Set this if you want to keep intermediate artifacts for debugging
 KEEP_ARTIFACTS=
+WEBSITE_PORT=40000
+
+check_clean_state() {
+  if [ -n "$(docker ps --filter name=$CONTAINER_NAME_SITE --quiet)" ]; then
+    stop_site
+  fi
+}
 
 generate_pdf_source() {
   echo "Concatenating all markdown pages into a single one"
@@ -14,7 +21,7 @@ generate_pdf_source() {
     --out /src/pdf.md
 }
 
-rm_pdf_source() {
+rm_artifacts() {
   echo "Removing single markdown file"
   rm -f pdf.md
 }
@@ -23,30 +30,39 @@ run_site() {
   echo "Deploying Glacier website"
   docker run -dit --rm --name $CONTAINER_NAME_SITE \
     -v $(pwd):/usr/src/app \
-    -p 4000:4000 \
-    starefossen/github-pages:172
+    -p $WEBSITE_PORT:$WEBSITE_PORT \
+    starefossen/github-pages:172 jekyll serve -d /_site -H 0.0.0.0 -P $WEBSITE_PORT
+}
+
+poll_site() {
+  echo 'Waiting for website to be running'
+  until $(curl --output /dev/null --silent --head --fail http://127.0.0.1:$WEBSITE_PORT); do
+    printf '.'
+    sleep 1
+  done
 }
 
 stop_site() {
   echo "Stopping Glacier website"
-  docker rm -f $CONTAINER_NAME_SITE
+  docker stop $CONTAINER_NAME_SITE
 }
 
 generate_pdf() {
   docker run --rm -v $(pwd):/src \
-    weasyprint --base-url http://172.17.0.1:4000 \
-    http://172.17.0.1:4000/pdf.html $FILENAME
+    weasyprint --base-url http://172.17.0.1:$WEBSITE_PORT \
+    http://172.17.0.1:$WEBSITE_PORT/pdf.html $FILENAME
   echo "PDF successfully created at $FILENAME"
 }
 
 main() {
+  check_clean_state
   generate_pdf_source
   run_site
-  sleep 5
+  poll_site
   generate_pdf
   stop_site
   if [ -z "$KEEP_ARTIFACTS" ]; then
-    rm_pdf_source
+    rm_artifacts
   fi
 }
 

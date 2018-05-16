@@ -4,6 +4,7 @@ WORKDIR /tmp
 
 # WeasyPrint dependencies
 RUN apt-get update && apt-get install -y \
+  curl \
   build-essential\
   python3-dev \
   python3-pip \

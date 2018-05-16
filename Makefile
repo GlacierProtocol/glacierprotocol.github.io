@@ -1,5 +1,5 @@
 SHA = $(shell git rev-parse --short HEAD)
-CONTAINER_NAME_SITE=glacier-website
+CONTAINER_SITE_NAME=com.glacier.website
 TOC_FILE=_data/docs_toc.yml
 SOURCE_DIR=_docs
 SOURCE_MD=$(shell find $(SOURCE_DIR) -type f -iname '*.md')
@@ -33,7 +33,7 @@ spell: run-spell-check
 .PHONY: run-site
 run-site:
 	@echo "Deploying website"
-	@docker run -dit --rm --name $(CONTAINER_NAME_SITE) \
+	@docker run -dit --rm --name $(CONTAINER_SITE_NAME) \
 		-v "$(shell pwd)":/usr/src/app \
 		-p 4000:4000 \
 		starefossen/github-pages:172
@@ -41,7 +41,7 @@ run-site:
 
 .PHONY: run-stop-site
 run-stop-site:
-	@docker rm -f $(CONTAINER_NAME_SITE)
+	@docker rm -f $(CONTAINER_SITE_NAME)
 	@echo "Site stopped"
 
 # Utility to generate a pdf version of the protocol
