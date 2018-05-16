@@ -154,7 +154,7 @@ ol {
   }
   pre > code {
     overflow: visible;
-    white-space: normal;
+    white-space: pre-wrap;
   }
   footer {
     display: none;
@@ -192,7 +192,7 @@ ol {
 .pdf-content > .row > .col-md-12 > ul:first-child {
   list-style-type: none;
   counter-reset: toc-h1 toc-h2;
-  
+
   > li {
     counter-increment: toc-h1;
   }
@@ -239,7 +239,7 @@ ol {
   font-size: 13px;
   line-height: 1.846;
   color: #666;
-  
+
   @bottom-right {
     content: counter(page) "/" counter(pages);
   }
