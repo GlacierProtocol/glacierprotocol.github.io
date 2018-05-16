@@ -195,6 +195,7 @@ ol {
 
   > li {
     counter-increment: toc-h1;
+    counter-reset: toc-h2;
   }
   > li > a {
     font-size: 16px;
@@ -215,10 +216,10 @@ ol {
 }
 
 .pdf-content {
-  counter-reset: h1;
-  counter-reset: h2;
+  counter-reset: h1 h2;
   h1 {
     counter-increment: h1;
+    counter-reset: h2;
   }
   h2 {
     counter-increment: h2;
