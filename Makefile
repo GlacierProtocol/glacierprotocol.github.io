@@ -2,6 +2,13 @@ SHA = $(shell git rev-parse --short HEAD)
 CONTAINER_NAME_SITE=glacier-website
 TOC_FILE=_data/docs_toc.yml
 SOURCE_DIR=_docs
+SOURCE_MD=$(shell find $(SOURCE_DIR) -type f -iname '*.md')
+SOURCE_HTML=$(shell find _includes _layouts -type f -iname '*.html')
+SOURCE_CSS=$(shell find _sass css -type f -iname '*.scss' -o -iname '*.css')
+
+################################################################################
+#	Main targets
+################################################################################
 
 # Builds the site locally so that you can preview it without pushing to Github
 .PHONY: site
@@ -18,6 +25,7 @@ pdf: assets/glacier.pdf
 ## Runs a spell checker on the sources
 .PHONY: spell
 spell: run-spell-check
+
 ################################################################################
 #	Utilities
 ################################################################################
@@ -37,7 +45,7 @@ run-stop-site:
 	@echo "Site stopped"
 
 # Utility to generate a pdf version of the protocol
-assets/glacier.pdf: dockerfiles/bin/.weasyprint
+assets/glacier.pdf: dockerfiles/bin/.weasyprint $(SOURCE_MD) $(SOURCE_HTML) $(SOURCE_CSS)
 	./_build/generate_pdf.sh
 
 
