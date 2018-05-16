@@ -42,7 +42,6 @@
   docs:
   - contribute/license
   - contribute/acknowledgments
-  - contribute/release-notes
 - title: Design documents
   docs:
   - design-doc/overview
