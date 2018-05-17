@@ -128,11 +128,7 @@ prepare your quarantined workspace.
 
             Redemption script:
 
-            51410421167f7dac2a159bc3957e3498bb6a7c2f16874bf1fbbe5b523b3632d2c0c
-            43f1b491f6f2f449ae45c9b0716329c0c2dbe09f3e5d4e9fb6843af083e222a70a4
-            41043704eafafd73f1c32fafe10837a69731b93c0179fa268fc325bdc08f3bb3056
-            b002eac4fa58c520cc3f0041a097232afbe002037edd5ebdab2e493f18ef19e9052
-            ae
+            51410421167f7dac2a159bc3957e3498bb6a7c2f16874bf1fbbe5b523b3632d2c0c43f1b491f6f2f449ae45c9b0716329c0c2dbe09f3e5d4e9fb6843af083e222a70a441043704eafafd73f1c32fafe10837a69731b93c0179fa268fc325bdc08f3bb3056b002eac4fa58c520cc3f0041a097232afbe002037edd5ebdab2e493f18ef19e9052ae
 
             QR code for cold storage address in address.png
             QR code for redemption script in redemption.png
