@@ -66,20 +66,16 @@ already. (See the instructions in Section III for details.)
         3. Use the public key to verify that the Glacier "fingerprint file" is
         legitimate:
             ```
-            $ gpg --verify
-            SHA256SUMS.sig SHA256SUMS
+            $ gpg --verify SHA256SUMS.sig SHA256SUMS
+            ```
             Expected output (timestamp will vary, but
             e-mail and fingerprint should match):
-                gpg: Signature made Thu
-            Jan 19 13:45:48 2017 PST using RSA key ID
-                4B43EAB0
-
+            ```
+            gpg: Signature made Thu Jan 19 13:45:48 2017 PST using RSA key ID 4B43EAB0
             gpg: Good signature from "Glacier Team <contact@glacierprotocol.org>"
-
             [unknown]
-            gpg: WARNING: This key is not certified with
-            a trusted signature!
-            gpg:     There is no indication that the signature belongs to the owner.
+            gpg: WARNING: This key is not certified with a trusted signature!
+            gpg: There is no indication that the signature belongs to the owner.
             Primary key fingerprint: E1AA EBB7 AC90 C1FE 80F0 1034 9D1B 7F53 4B43
             ```
 
@@ -146,8 +142,7 @@ already. (See the instructions in Section III for details.)
         * **zbar-tools**: Used for reading QR codes to import data into quarantined
         computers
             ```
-            $ sudo apt-get
-            install qrencode=3.4.4-1 zbar-tools=0.10+doc-10ubuntu1 bitcoind
+            $ sudo apt-get install qrencode=3.4.4-1 zbar-tools=0.10+doc-10ubuntu1 bitcoind
             ```
     3. Copy that software to the Q1 APP USB.
         1. Create a folder for the application files that will be moved to the

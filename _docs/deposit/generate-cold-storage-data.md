@@ -75,8 +75,7 @@ prepare your quarantined workspace.
         the number of keys required for your multisignature withdrawal policy
         (4 by default).
             ```
-            $ ./glacierscript.py entropy --num-keys
-            number-of-keys-here
+            $ ./glacierscript.py entropy --num-keys number-of-keys-here
             ```
 
             Example:
@@ -127,7 +126,6 @@ prepare your quarantined workspace.
             3Hy6A3rSXKRumyVqURBoiv4QpQLt6vMCzt
 
             Redemption script:
-
             51410421167f7dac2a159bc3957e3498bb6a7c2f16874bf1fbbe5b523b3632d2c0c43f1b491f6f2f449ae45c9b0716329c0c2dbe09f3e5d4e9fb6843af083e222a70a441043704eafafd73f1c32fafe10837a69731b93c0179fa268fc325bdc08f3bb3056b002eac4fa58c520cc3f0041a097232afbe002037edd5ebdab2e493f18ef19e9052ae
 
             QR code for cold storage address in address.png

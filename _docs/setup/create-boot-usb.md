@@ -160,14 +160,15 @@ copy there.
                 ```
             6.  
                 ```
-                $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg` ubuntu-16.04.1-desktop-amd64.img.dmg USB-device-identifier-here
+                $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg USB-device-identifier-here
                 ```
             7. Wait a few minutes for the verification process to complete.
             8. If all goes well, the command will output no data, returning to
             your usual terminal prompt.
             9. If there is a discrepancy, you’ll see a message like:
                 ```
-                ubuntu-16.04.1-desktop-amd64.img.dmg /dev/disk2 differ: byte 1, line 1
+                ubuntu-16.04.1-desktop-amd64.img.dmg /dev/disk2
+                differ: byte 1, line 1
                 ```
                 If you see a message like this, STOP -- this may be a security
                 risk. Restart this section from the beginning. If the
@@ -227,7 +228,8 @@ copy there.
             your usual terminal prompt.
             9. If there is an issue, you'll see a message like:
                 ```
-                ubuntu-16.04.1-desktop-amd64.iso /dev/sda differ: byte 1, line 1
+                ubuntu-16.04.1-desktop-amd64.iso /dev/sda differ:
+                byte 1, line 1
                 ```
                 If you see a message like this, STOP -- this may be a security
                 risk. Restart this section from the beginning. If the issue

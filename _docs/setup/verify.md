@@ -128,7 +128,7 @@ https://en.wikipedia.org/wiki/Digital_signature.
       gpg: Signature made Thu Jan 19 13:45:48 2017 PST using RSA key ID 4B43EAB0
       gpg: Good signature from "Glacier Team <contact@glacierprotocol.org>" [unknown]
       gpg: WARNING: This key is not certified with a trusted signature!
-      gpg:     There is no indication that the signature belongs to the owner.
+      gpg: There is no indication that the signature belongs to the owner.
       Primary key fingerprint: E1AA EBB7 AC90 C1FE 80F0 1034 9D1B 7F53 4B43 EAB0
       ```
       The warning message is expected, and is not cause
@@ -156,7 +156,9 @@ https://en.wikipedia.org/wiki/Digital_signature.
         1. On Linux or Mac:
 
             Linux: `$ sha256sum -c SHA256SUMS 2>&1`
+
             Mac: `$ shasum -a 256 -c SHA256SUMS 2>&1`
+
             Expected output:
             ```
             Glacier.pdf: OK glacierscript.py: OK
