@@ -38,7 +38,7 @@ already possess bitcoins and wish to store them more securely.
 If you are already familiar with Bitcoin security concepts and are certain that
 you want high security cold storage, you may prefer to read
 [Trusting This Protocol](#trusting-this-protocol) and then skip to the section
-[Choosing a Multisignature Withdrawal Policy](overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
+[Choosing a Multisignature Withdrawal Policy](overview/multi-signature-security.md#choosing-a-multisignature-withdrawal-policy).
 
 ## Trusting this protocol
 
@@ -51,7 +51,7 @@ source. The code is straightforward and well-commented to facilitate easy review
 for flaws or vulnerabilities. [View it on Github](https://github.com/GlacierProtocol/GlacierProtocol).
 * **Community review**: The protocol has evolved in conjunction with the wider
 Bitcoin community. Early versions were circulated during development, and
-community feedback integrated. [See our list of contributors](contribute/acknowledgments/).
+community feedback integrated. [See our list of contributors](contribute/acknowledgments.md).
 * **Natural selection**: All documentation and code related to this protocol is
 under open licenses (Creative Commons for the document, MIT license for the
 code), enabling others to publish their own revisions. Inferior alternatives
@@ -154,7 +154,7 @@ it's possible that an undiscovered vulnerability could be exploited by
 malware to steal private keys from the device.
 
 For details on this and other security considerations, see the
-"No Hardware Wallets" section of the [design document](../design-doc/overview.md)
+"No Hardware Wallets" section of the [design document](design-doc/overview.md)
 As with online multisig
 vaults, many people do use hardware wallets to store sizeable amounts of
 money. We personally recommend Glacier for large investments, but ultimately

@@ -33,7 +33,7 @@ Protocol unless explicitly instructed otherwise.
     there are any new versions of Glacier recommended.
     4. Whether or not you decide to upgrade, review the errata for the version
     of Glacier you are using at https://github.com/GlacierProtocol/GlacierProtocol/releases.
-2. Execute [Section VI of the Setup Protocol](/setup/quarantined-workspace/) to
+2. Execute [Section VI of the Setup Protocol](../setup/quarantined-workspace.md) to
 prepare your quarantined workspace.
 3. Create entropy for private keys
 

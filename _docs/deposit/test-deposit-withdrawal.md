@@ -32,7 +32,7 @@ details).
     on the software or service you are using to send funds, but it should be
     displayed prominently.
 3. Perform a test withdrawal.
-    1. Execute the [Withdrawal Protocol](/withdrawal/execution/) to withdraw
+    1. Execute the [Withdrawal Protocol](../withdrawal/execution.md) to withdraw
     the remaining balance ($6 USD - deposit fees) from cold storage to a regular
     Bitcoin address of your choice.
     2. Wait for the Bitcoin network to confirm the transaction at least once.
