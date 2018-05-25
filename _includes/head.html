@@ -1,0 +1,10 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_newlines | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}">
+  {% include favicon.html %}
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/fontawesome-all.min.css" | prepend: site.baseurl }}">
+</head>

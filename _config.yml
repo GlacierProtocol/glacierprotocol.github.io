@@ -1,28 +1,58 @@
+title: Glacier
+description: The step-by-step protocol for storing bitcoins in a highly secure way
+incremental: true
+show_dir_listing: false
+permalink: pretty
+url: "https://GlacierProtocol.github.io"
+timezone: America/Los_Angeles
 
-description: Glacier is a protocol for secure cold storage of bitcoins.
-show_downloads: true
-google_analytics:
+# Set this if the repo is for a project, e.g
+# "/glacier" -> https://gh-user.github.io/glacier
+baseurl:
 
-name: Glacier Protocol
-rouge: true
-excerpt_separator: <!--more-->
-paginate: 3
-paginate_path: "blog/page:num"
-    
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+# Exclude from site build
+exclude: [".git", ".gitignore", "_build", "dockerfiles", "Makefile", "README.md", "todo.md"]
 
+# Urls to social networks
+git_address: https://github.com/GlacierProtocol/glacierprotocol.github.io
+git_edit_address: https://github.com/GlacierProtocol/glacierprotocol.github.io/edit/master
+twitter_address: https://twitter.com/glacierprotocol
+gitter_address: https://gitter.im/glacierprotocol/lobby
 
-# GitHub Pages is sometimes substituting in http://glacierprotocol.org for {{site.url}}, which results
-# in a garbled page due to browsers' security rules about mixed content (https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content)
-#
-# so we hardcode in this URL here.
-# 
-# jekyll automatically swaps this out for localhost:4000 in development environments (i.e. when
-# JEKYLL_ENV is set to its default of "development").
+# Google Analytics
+google_analytics_id:
 
-url: https://glacierprotocol.org
+# Bootstrap theme
+bootswatch: paper
+
+# Jekyll plugins. If you want this site to run on Github pages,
+# make sure you only use plugins Github pages supports
+# https://pages.github.com/versions/
+plugins:
+  # TODO: don't use relative links. Makes pdf generation easier
+  - jekyll-relative-links
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# jekyll-relative-links specific configs
+relative_links:
+  enabled: true
+  collections: true
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: docs
+      sectionid: docs

@@ -1,0 +1,49 @@
+# These words are added to the spell checker dictionary
+# so that they are not reported as typos.
+
+GlacierScript
+Blockchain
+Coinbase
+Kraken
+Bitfinex
+SanDisk
+Cruzer
+macOS
+TerraSlate
+Inspiron
+Bitclip
+Gitter
+Monero
+1Password
+KeepKey
+Github
+
+# These words existed in Glacier protocol 0.91, so they are here so that
+# the spellchecker doesn't report them. This list of words needs to be
+# fixed over time.
+
+Blockr
+multisignature
+signrawtransaction
+Multisig
+multisig
+keyholders
+USBs
+checksum
+checksums
+Exfiltration
+shrinkwrapped
+keylogger
+blockchain
+i.e.
+e.g.
+gpg
+bitcoind
+qrencode
+zbar-tools
+hardcopy
+hardcopies
+Syslinux
+zbarcam
+powershell
+Gpg4win

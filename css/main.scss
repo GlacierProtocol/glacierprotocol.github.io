@@ -1,0 +1,251 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+
+
+
+@import
+  {% if site.bootswatch %}
+    "bootswatch/{{site.bootswatch | downcase}}/variables",
+  {% endif %}
+
+  "bootstrap",
+
+  {% if site.bootswatch %}
+    "bootswatch/{{site.bootswatch | downcase}}/bootswatch"
+  {% endif %}
+;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: $navbar-height + $navbar-margin-bottom;
+  margin-bottom: 46px;
+}
+
+.navbar-brand{
+  img{
+    margin: -$navbar-padding-vertical 0;
+    height: $navbar-height;
+    padding: 10px 0;
+  }
+}
+
+
+.header-container {
+  margin-top: -37px;
+}
+.navbar-container {
+  font-size: 16px;
+}
+.page-content {
+  padding-bottom: 20px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 18px;
+  background-color: $gray-lighter;
+  color: $gray-dark;
+}
+
+.post-list-container {
+  li a.active {
+    font-weight: bold;
+  }
+}
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+.navbar-form .has-feedback .form-control-feedback{
+  top:10px
+}
+
+/********************************************************************
+* Styles used in contributors page
+*********************************************************************/
+
+img.profile {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50%
+}
+
+.profile a > i {
+  margin-right: 10px;
+}
+
+/********************************************************************
+* Styles used in /docs
+*********************************************************************/
+
+/* Code snippets shouldn't break, they should scroll */
+pre > code {
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* Highlight text as the original Glacier paper */
+span.danger, span.warning {
+  color: #eeeeee;
+  padding: 2px;
+  border-radius: 2px;
+}
+span.danger {
+  background-color: $brand-danger;
+}
+span.warning {
+  background-color: $brand-warning;
+}
+
+/* Make ordered lists similar to the pdf version of Glacer */
+ol > li > ol > li > ol > li > ol > li > ol {
+  list-style-type: lower-roman;
+}
+ol > li > ol > li > ol > li > ol {
+  list-style-type: decimal;
+}
+ol > li > ol > li > ol {
+  list-style-type: lower-roman;
+}
+ol > li > ol {
+  list-style-type: lower-alpha;
+}
+ol {
+  list-style-type: decimal;
+}
+
+/********************************************************************
+* Styles used in /downloads
+*********************************************************************/
+
+.download-block {
+  margin: 50px 0;
+  span {
+    display: block;
+  }
+}
+
+
+/********************************************************************
+* Overrides to bootstrap _print.css, used to generate Glacier pdf
+*********************************************************************/
+@media print {
+  body {
+    padding: 0;
+  }
+  a {
+    color: $brand-primary;
+  }
+  a, a:visited {
+    text-decoration: none;
+  }
+  pre > code {
+    overflow: visible;
+    white-space: pre-wrap;
+  }
+  footer {
+    display: none;
+  }
+  h1 {
+    page-break-before: always;
+    page-break-after: always;
+    margin-top: 250px;
+    font-size: 70px;
+  }
+  h4 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+}
+
+.pdf-cover {
+  min-height: 500px;
+  margin-top: 250px;
+  page-break-after: always;
+  img {
+    display: block;
+    margin: auto;
+  }
+  h1, h2, h3 {
+    page-break-before: avoid;
+    page-break-after: avoid;
+  }
+}
+
+// Table of contents for the pdf
+// TODO: refactor, no need to use so specific selectors
+.pdf-content > .row > .col-md-12 > ul:first-child {
+  list-style-type: none;
+  counter-reset: toc-h1 toc-h2;
+
+  > li {
+    counter-increment: toc-h1;
+    counter-reset: toc-h2;
+  }
+  > li > a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  > li > a::before {
+    content: counter(toc-h1) ". ";
+  }
+  > li > ul {
+    list-style-type: none;
+  }
+  > li > ul > li {
+    counter-increment: toc-h2;
+  }
+  > li > ul > li > a::before {
+    content: counter(toc-h1)"."counter(toc-h2)". ";
+  }
+}
+
+.pdf-content {
+  counter-reset: h1 h2;
+  h1 {
+    counter-increment: h1;
+    counter-reset: h2;
+  }
+  h2 {
+    counter-increment: h2;
+  }
+  h1::before, h2::before {
+    visibility: visible;
+    display: inline;
+  }
+  h1::before {
+    content: counter(h1) ". ";
+  }
+  h2::before {
+    content: counter(h1)"."counter(h2)". " ;
+  }
+}
+@page {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.846;
+  color: #666;
+
+  @bottom-right {
+    content: counter(page) "/" counter(pages);
+  }
+}
+@page :first, :blank {
+  @bottom-right {
+    content: none;
+  }
+}

@@ -1,186 +1,40 @@
 ---
 layout: default
-title: Glacier Protocol &gt; home
-section_id: home
-
-features:
-  -
-    - title: Self-managed storage
-      icon: layout
-      desc:
-        Glacier does not depend on online wallets or any other third parties.  Your bitcoins are entirely within your control.
-    - title: Cold generation and storage
-      icon: layout
-      desc:
-        The electronic keys that secure your bitcoins are created and stored entirely offline, making them virtually invulnerable to electronic theft.
-    - title: Multisignature security
-      icon: layout
-      desc:
-        Multiple keys are required to access your bitcoins, greatly reducing the risk of loss due to physical theft or destruction of keys.
-  -
-    - title: Trustworthy
-      icon: layout
-      desc:
-        Glacier makes heavy use of well-secured software such as Bitcoin Core, and the Glacier’s own software is limited in scope and open source for public review.
-    - title: Free of charge
-      icon: layout
-      desc:
-        Glacier is an open source project provided at no cost to the Bitcoin community.
-    - title: Costly
-      icon: layout
-      desc:
-        Glacier is intended for security-critical scenarios, not everyday use.  The protocol requires several hours and several hundred dollars of equipment to execute.
-
-developers:
-  - image: diogo-monica.jpg
-    name: Diogo M&#243;nica
-    contact: mailto:diogo@glacierprotocol.org
-    linkedin: https://www.linkedin.com/in/diogomonica/
-
-  - image: nathan-mccauley.jpg
-    name: Nathan McCauley
-    contact: mailto:nathan@glacierprotocol.org
-    linkedin: https://www.linkedin.com/in/nathanmccauley/
-
-authors:
-  - image: james-hogan.jpg
-    name: James Hogan
-    linkedin: https://www.linkedin.com/in/jameshogan42
-
-  - image: jacob-lyles.png
-    name: Jacob Lyles
-    linkedin: https://www.linkedin.com/in/jacob-lyles-17b9b611
-
-advisors:
-  - image: advisors/philip-martin.jpg
-    name: Philip Martin
-    position: Director of Security, <a href="https://www.coinbase.com/">Coinbase</a>
-    linkedin: https://www.linkedin.com/in/philipmmartin/
-
-  - image: advisors/glenn-willen.jpeg
-    name: Glenn Willen
-    position: Infrastructure Tech Engineer, <a href="http://www.blockstream.com/">Blockstream</a>
-    linkedin: https://www.linkedin.com/in/gwillen/
-
-  - image: advisors/arthur-breitman.png
-    name: Arthur Breitman
-    position: Founder, <a href="https://www.tezos.com/">Tezos</a>
-    linkedin: https://www.linkedin.com/in/arthurbreitman/
-
-  - image: advisors/paul-bohm.jpg
-    name: Paul Bohm
-    position: Network Economist
-    linkedin: https://www.linkedin.com/in/paulbohm/
-
 ---
 
-
-<div class="full glacier-blue">
-	<ul id="glacier-banner" class="orbit-slides-container slide">
-        <div class='orbit-caption caption-center'>
-          <div class='row'>
-            <div class='large-12 columns right'>
-              <h2>Glacier is a step-by-step protocol for high-security bitcoin storage.
-              </h2>
-              <!-- <h3 style="font-size: 1.5em;">No technical expertise required.</h3> -->
-              <div class='spacing'></div>
-			        <a class='button boxed' href="{{site.url}}/releases/Glacier Protocol Document v0.91 Beta.pdf"><strong>Read the Glacier Protocol</strong></a>
-            </div>
-          </div>
-        </div>
-  </ul>
-</div>
-
-<div class='full white'>
-  <div class='row'>
-    <div class='special-title centered-text'>
-      <i class='icon-map'></i>
-      <h2>Key Features</h2>
-      <p class='shortline'></p>
+<div class="header-container jumbotron">
+    <div class="container">
+        <h1>Glacier</h1>
+        <p>Glacier is the step-by-step protocol for storing Bitcoins in a highly secure way, offline.</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ "/docs/overview/" | prepend: site.baseurl }}" role="button">Learn more</a></p>
     </div>
-    <div class='two spacing'></div>
-  </div>
-
-  {% for row in page.features %}
-    <div class="row">
-      {% for feature in row %}
-        <div class='medium-4 large-4 columns icon-text'>
-          <i class='icon-{{feature.icon}}'></i>
-          <h3 class="feature-heading">{{feature.title}}</h3>
-          <p>{{feature.desc}}</p>
-        </div>
-      {% endfor %}
-    </div>
-    {% unless forloop.last %}
-      <div class="spacing"></div>
-    {% endunless %}
-  {% endfor %}
-</div>
-
-<div class='full light-yellow'>
-  <div class='row'>
-    <div class='special-title centered-text'>
-      <i class='icon-users'></i>
-      <h2>The team</h2>
-      <p>Glacier is a community-driven open-source project. <a href="{{site.url}}/contribute.html">New contributors are welcome.</a></p>
-      <p class='shortline'></p>
-    </div>
-    <div class='spacing'></div>
-  </div>
 </div>
 
 
-<div class='members'>
-  <div class='full light-yellow no-padding'>
-
-    <div class='row' style="text-align: center;">
-      <h2>Project Leads</h2>
-      <div style="text-align: center">
-        <div class="team-row">
-        {% for developer in page.developers %}
-          <div class='medium-4 large-4 column' style="float: none; display: inline-block; vertical-align: top; margin: 0px 40px;">
-            <div class='member centered-text' data-target='#member-{{forloop.index}}'>
-              <img src='{{site.url}}/images/{{developer.image}}' style="height: 150px; width: 150px;">
-              <h3>{{developer.name}}</h3>
-              <p><a href="{{developer.linkedin}}">LinkedIn</a>, <a href="{{developer.contact}}">email</a></p>
-            </div>
-          </div>
-        {% endfor %}
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+        <h1 class="text-center"><i class="fa fa-lock" aria-hidden="true"></i></h1>
+        <h3 class="text-center">Highly secure</h3>
+        <p>Glacier secures your Bitcoins using multiple keys which are stored offline.
+          This makes your keys virtually invulnerable to electronic theft while
+          making sure that you can access your Bitcoins even if you lose one of the
+          keys.</p>
     </div>
-
-    <div class='row' style="text-align: center;">
-      <h2 style="margin: 20px; ">Security Advisors</h2>
-        {% for advisor in page.advisors %}
-          <div class='medium-3 large-3 column'>
-            <div class='member centered-text' data-target='#member-{{forloop.index}}'>
-              <img src='{{site.url}}/images/{{advisor.image}}' style="height: 150px; width: 150px;">
-              <h3>{{advisor.name}}</h3>
-              <p class='position' style="margin-bottom: 0px;">{{advisor.position}}</p>
-              <p><a href="{{advisor.linkedin}}">LinkedIn</a></p>
-            </div>
-          </div>
-        {% endfor %}
+    <div class="col-sm-4">
+        <h1 class="text-center"><i class="fa fa-check-circle" aria-hidden="true"></i></h1>
+        <h3 class="text-center">Self-managed</h3>
+        <p>Glacier doesn't depend on any service or third-party to store your Bitcoin
+          keys. You can protect your keys without having to trust others or pay them
+          any service fees. Glacier also provides different ways to store your keys
+          offline, making it flexible.</p>
     </div>
-
-    <div class='row' style="text-align: center;">
-      <h2>Original Authors</h2>
-      <div style="text-align: center">
-        <div class="team-row">
-        {% for author in page.authors %}
-          <div class='medium-4 large-4 column' style="float: none; display: inline-block; vertical-align: top; margin: 0px 40px;">
-            <div class='member centered-text' data-target='#member-{{forloop.index}}'>
-              <img src='{{site.url}}/images/{{author.image}}' style="height: 150px; width: 150px;">
-              <h3>{{author.name}}</h3>
-              <p><a href="{{author.linkedin}}">LinkedIn</a></p>
-            </div>
-          </div>
-        {% endfor %}
-        </div>
-      </div>
+    <div class="col-sm-4">
+        <h1 class="text-center"><i class="fab fa-github" aria-hidden="true"></i></h1>
+        <h3 class="text-center">Open-source</h3>
+        <p>Glacier is open-source so that anyone can use it, reviewed it, and help
+          make it safer. If you spot any weaknesses or vulnerabilities, you're
+          welcome to contribute by opening pull requests or opening issues.</p>
     </div>
-
-    <div style="font-size: 0.8em; padding: 20px; text-align: center; color: #666666;">Advisors have not reviewed or endorsed every recommendation of the full Glacier protocol or the GlacierScript software.</div>
   </div>
 </div>

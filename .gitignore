@@ -1,2 +1,12 @@
-_site
+# Mac files
 .DS_Store
+
+# Build artifacts
+bin
+dockerfiles/bin
+pdf.md
+
+# Jekyll artifacts
+.jekyll-metadata
+.sass-cache
+_site
