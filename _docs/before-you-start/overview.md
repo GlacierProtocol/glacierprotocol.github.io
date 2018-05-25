@@ -184,4 +184,4 @@ well-resourced criminal organization) are beyond its scope.
 
 For some
 additional security precautions beyond those provided in the standard
-protocol, see the [possible improvements to Glacier](/extend/improvements/).
+protocol, see the [possible improvements to Glacier](/docs/extend/improvements/).

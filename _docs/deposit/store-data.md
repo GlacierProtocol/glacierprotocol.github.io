@@ -24,7 +24,7 @@ description: Learn how to store cold storage data with Glacier, the
     3. Store the hardware somewhere where it is unlikely to be used by accident.
 4. Maintenance planning
   1. Create a reminder for yourself in six months to execute the
-  [Maintenance Protocol](../check-balance/maintenance/) .
+  [Maintenance Protocol](/docs/check-balance/maintenance/) .
   (If you don't have a reminder system you trust, find one on the web.)
 5. Long-term storage of
 <span class="danger">Cold Storage Information Packets</span>
