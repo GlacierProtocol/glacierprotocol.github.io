@@ -61,9 +61,10 @@ prepare your quarantined workspace.
         <span class="danger">one line of 62 numbers</span>. (It's fine to add
         spaces for readability.)
 
-    2. Repeat this process a total of N times, so that you have a total of
-    <span class="danger">N lines of numbers</span> in each Quarantined Scratchpad.
-    Generate computer entropy    
+       Repeat this process a total of N times, so that you have a total of <span
+       class="danger">N lines of numbers</span> in each Quarantined Scratchpad.
+
+    2. Generate computer entropy    
         1. Type "COMPUTER ENTROPY" into both computers' Quarantined Scratchpads.
         (This is a descriptive heading to keep your notes organized and minimize
         risk of error.)
