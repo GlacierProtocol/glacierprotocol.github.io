@@ -14,13 +14,13 @@ USB drives. ("Bootable" means that the Ubuntu operating system will be booted
 directly from the USB drive, without using the computer's hard drive in any
 way.)
 
-The first two USB drives ("Setup Boot USBs") are the USB drives you labeled
+The *first two* USB drives ("Setup Boot USBs") are the USB drives you labeled
 "SETUP 1 BOOT" and "SETUP 2 BOOT" in Section II. They will be prepared using
 your Setup Computers, which may be running Windows, macOS, or something else.
 
-The last two USB drives ("Quarantined Boot USBs") are the USB drives you
+The *last two* USB drives ("Quarantined Boot USBs") are the USB drives you
 labeled "Q1 BOOT" and "Q2 BOOT" in Section II. They will be prepared using your
-Setup Computers while booted off a Setup Boot USB.
+Setup Computers *while booted off* a *Setup Boot USB*.
 
 Technical details: The Non-Quarantined OS USBs serve two purposes:
 
@@ -71,8 +71,8 @@ copy there.
         ```
 
         It's not important to check every single character when visually
-        verifying a fingerprint. It's sufficient to check the first 8
-        characters, last 8 characters, and a few somewhere in the middle.
+        verifying a fingerprint. It's sufficient to check the **first 8
+        characters, last 8 characters, and a few somewhere in the middle.**
 
         Technical details: Because you verified the checksum & checksum
         signature for this document in Section I, we are omitting the GPG
@@ -125,19 +125,20 @@ copy there.
 
         3. Put Ubuntu on the SETUP 1 BOOT USB.
             1. First, unmount the usb
-                ```
-                $ diskutil unmountDisk USB-device-identifier-here
-                ```
-            2. Enter the following command, making sure to use the correct
-            device identifier; using the wrong one could overwrite your hard
-            drive!
-                ```
-                $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of= USB-device-identifier-here bs=1m
-                ```
-                Example:
-                ```
-                $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
-                ```
+               <pre>
+               $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
+               </pre>
+            2. Enter the following command, **making sure to use the correct
+            device identifier; <span style="color: red;">using the wrong one could overwrite your hard
+            drive!</span>**
+               <pre>
+               $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg \
+               of=<span class="primary">USB-device-identifier-here</span> bs=1m
+               </pre>
+               Example:
+               ```
+               $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
+               ```
             3. Enter your administrator password when requested.
             4. Wait several minutes for the copying process to complete. When
             it does, you may see an error box pop up. This is expected; it's
@@ -152,7 +153,7 @@ copy there.
             3. You may see the same error box pop up again. Select Ignore.
             4. The USB's device identifier may have changed. Find it again:
                 ```
-                $  diskutil list
+                $ diskutil list
                 ```
             5.  
                 ```
@@ -178,9 +179,9 @@ copy there.
     3. **Ubuntu**
         1. If this is your first time using Ubuntu, note:
             1. You can copy-paste text in most applications (e.g. Firefox) by
-            pressing Ctrl-C or Ctrl-V.
-            2. You can copy-paste text in a terminal window by pressing
-            Ctrl-Shift-C or Ctrl-Shift-V.
+            pressing **Ctrl-C** or **Ctrl-V**.
+            2. You can copy-paste text in a *terminal window* by pressing
+            **Ctrl-Shift-C** or **Ctrl-Shift-V**.
         2. Put Ubuntu on the SETUP BOOT 1 USB.
             1. Open the Ubuntu search console by clicking the purple
             circle/swirl icon in the upper-left corner of the screen.
@@ -192,10 +193,9 @@ copy there.
             5. In the "Disk to use" panel, you should see two lines. They may
             vary from system to system, but each line will have a device
             identifier in it, highlighted in the example below.
-                ```
+                <pre>
                 Generic Flash Disk (/dev/sda)
-                Kanguru Flash Trust ( /dev/sdb)
-                ```
+                Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</pre>
             6. Select the line containing SETUP 1 BOOT USB.49 Make note of the
             disk identifier (e.g. /dev/sdb).
             7. Click "Make Startup Disk" and then click "Yes".
@@ -219,9 +219,8 @@ copy there.
                 $ cd $HOME/Downloads
                 ```
             5.  
-                ```
-                $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso USB-device-identifier-here
-                ```
+                <pre>
+                $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso <span class="primary">USB-device-identifier-here</span></pre>
             6. If prompted for a password, enter the computer's root password.
             7. Wait a few minutes for the verification process to complete.
             8. If all goes well, the command will output no data, returning to
@@ -242,14 +241,14 @@ copy there.
         2. Press your laptop's key sequence to bring up the boot device
         selection menu. (Some PCs may offer a boot device selection menu;
         see below.)
-            1. **PC**: Varies by manufacturer, but is often F12 or Del. The
+            1. **PC**: Varies by manufacturer, but is often **F12** or **Del**. The
             timing may vary as well; try pressing it when the boot logo appears.
                 1. On the recommended Dell laptop, press F12. You should see a
                 horizontal blue bar appear underneath the Dell logo.
                 2. The recommended Acer laptop does not have a boot menu. See
                 below for instructions.
-            2. **Mac**: When you hear the startup chime, press and hold
-            Option (⌥) .
+            2. **Mac**: When you hear the startup chime, **press and hold
+            Option (⌥)**.
 
         3. Select the proper device to boot from.
             1. **PC**: Varies by manufacturer; option will often say "USB"
@@ -278,7 +277,7 @@ copy there.
               screen may turn black sooner than that; keep holding it down.)
             2. Turn the laptop back on and try again. Spam the appropriate
             button(s) repeatedly as it boots.
-            3. If the computer boots immediately to where it left off, you
+            3. If the computer boots *immediately* to where it left off, you
             probably didn't hold down the power button long enough.
         6. You'll see a menu that says "GNU GRUB" at the top of the screen.
         Select the option "Try Ubuntu without installing" and press Enter.
@@ -303,10 +302,12 @@ copy there.
         3. Select your WiFi network from the list and enter the password.
     3. Repeat steps 1-6 using the SETUP 1 computer to create the Q1 BOOT USB
     rather than the SETUP 1 BOOT USB.
-        1. The instruction to plug a Quarantined Boot USB into your Setup
-        computer should raise a red flag for you, because you should never
+        1. **The instruction to plug a Quarantined Boot USB into your Setup
+        computer should raise a red flag for you, because <span style="color: red;">you should never
         plug a quarantined USB into anything other than the quarantined
-        computer it is designated for! This setup process is the ONE exception.
+        computer it is designated for!</span>**
+
+           This setup process is the ONE exception.
         2. Because you have booted the SETUP 1 computer off the SETUP 1 BOOT
         USB, you will follow the instructions for Ubuntu, even if your computer
         normally runs Windows or macOS.

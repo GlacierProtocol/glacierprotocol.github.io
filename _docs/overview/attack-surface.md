@@ -11,7 +11,7 @@ discovered cryptographic flaws, critical Bitcoin protocol security or
 scalability failures, etc.) are not included as most are equally likely to
 impact the value of all Bitcoins whether or not they are secured with Glacier.
 
-This list assumes no security measures from Appendix A are implemented.
+This list assumes no security measures from [Extend Glacier security](../extend/security.md) are implemented.
 
 Most attacks require the presence of malware, either in or near the quarantined environment. We'll therefore inventory two layers of Glacier's attack surface:
 

@@ -41,13 +41,13 @@ description: Learn how to store cold storage data with Glacier, the
         message". If they are distant, using a courier service is probably
         fine, as long as you get tracking and send
         <span class="danger">packets</span> on different days and/or from
-        different locations prevents an opportunistic thief from happening
+        different locations. (Prevents an opportunistic thief from happening
         across two of your private keys. Also avoids a case where you send all
         your keys out in the same batch, and that entire batch is lost -- along
-        with your access to your money.
+        with your access to your money.)
         2. Tell them verbally who the other signatories are, to facilitate
         access to funds if you are dead or incapacitated.
-        3. Instruct them not to keep any related notes on or with the
+        3. Instruct them not to keep any related notes *on* or *with* the
         <span class="danger">packets</span>.
         In the event the key is seen by someone untrustworthy or stolen by a
         random thief, such clues help them understand the significance of the

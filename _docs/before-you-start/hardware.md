@@ -32,9 +32,11 @@ manufacturer than the drives for Set 1:
 ### Used/existing computing equipment
 
 * Two computers with Internet connectivity, administrator access, and about
-2GB of free disk space.  Each computer must be running Windows 10, macOS, or Linux
-One of these two computers should be a computer that you do not own (unless
-purchased brand new), or that has spent much time on your home or office network.
+2GB of free disk space.  **Each computer must be running Windows 10, macOS, or
+Linux.**
+
+  One of these two computers should be a computer that you do not own (unless
+  purchased brand new), or that has spent much time on your home or office network.
 * Printer
 * Smartphone with a working camera
 

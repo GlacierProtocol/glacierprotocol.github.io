@@ -6,7 +6,7 @@ description: Learn how to prepare your quarantined hardware for Glacier, the
 
 This section is meant to be done immediately before executing the Deposit or
 Withdrawal protocols. If you are executing the Setup Protocol for the
-first time and do not plan on executing the Deposit or Withdrawal protocol now, you can stop here.
+first time and do **not** plan on executing the Deposit or Withdrawal protocol now, you can stop here.
 
 1. Block side channels
 
@@ -27,7 +27,7 @@ first time and do not plan on executing the Deposit or Withdrawal protocol now, 
         3. Plug in and turn on a table fan to generate white noise.
     3. [Power side channel](http://sharps.org/wp-content/uploads/CLARK-ESORICS13.pdf)
         1. Unplug both Quarantined Computers from the wall.
-        2. Run them only on battery power throughout this protocol.
+        2. Run them **only on battery power** throughout this protocol.
         3. Make sure they are fully charged first! If you run out of battery,
         you'll need to start over.
     4. [Radio](https://cyber.bgu.ac.il/how-leak-sensitive-data-isolated-computer-air-gap-near-mobile-phone-airhopper/)
