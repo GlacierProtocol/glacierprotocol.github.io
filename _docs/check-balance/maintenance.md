@@ -21,13 +21,13 @@ with that software. If your funds are in storage for a long time, the
 withdrawal tools may become obsolete and no longer function.
 
 We recommend the Maintenance Protocol be executed **six months** after the
-initial deposit into cold storage, and annually thereafter.
+initial deposit into cold storage, and **annually** thereafter.
 
 1. Execute the Viewing Protocol to view the balance of the
 <span class="warning">cold storage address</span> and ensure that it is as
 expected.
 2. Check for Glacier security upgrades
-    1. Access the latest full release of Glacier (not just the protocol
+    1. Access the latest full release of Glacier (*not* just the protocol
     document) at
     [https://github.com/GlacierProtocol/GlacierProtocol/releases](https://github.com/GlacierProtocol/GlacierProtocol/releases).
     2. Open the protocol document (Glacier.pdf) within the ZIP file.

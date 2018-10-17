@@ -17,15 +17,14 @@ secure.
 
 ## Sensitive Data
 
-Critically-sensitive data (e.g. private keys) will be highlighted in red,
+*Critically-sensitive data* (e.g. private keys) will be highlighted in red,
 like this: <span class="danger">critically-sensitive-data-here</span>.
 
-Critically sensitive data can be used by thieves to to steal your bitcoins. If
+*Critically* sensitive data can be used by thieves to to steal your bitcoins. If
 you follow the protocol precisely, your critically sensitive data will remain
 secure.
 
-Do
-not do anything with critically sensitive data that the protocol does not
+Do *not* do anything with critically sensitive data that the protocol does not
 specifically instruct you to. In particular:
 
 * Never send it over email or instant messenger
@@ -36,13 +35,13 @@ device
 * Never take a picture of it
 * Never let any untrusted person see it
 
-Moderately-sensitive data (e.g. a cold storage address or redemption
+*Moderately-sensitive data* (e.g. a cold storage address or redemption
 script) will be highlighted in yellow, like this:
 <span class="warning">moderately-sensitive-data-here</span>.
 
-Moderately sensitive data impacts
+*Moderately* sensitive data impacts
 privacy, but does not directly impact security. It cannot be used to
-steal your bitcoins, but it can be used to see how many bitcoins you own
+steal your bitcoins, but it *can* be used to see how many bitcoins you own
 (if someone knows that the moderately sensitive data in question belongs
 to you).
 
@@ -54,7 +53,7 @@ The protocol recommends storing copies of moderately-sensitive
 data electronically, in a "conventionally secure" manner (for example, in
 a password manager such as
 [1Password](https://1password.com/)). If you're particularly
-concerned about privacy, you can forego electronic storage, because the protocol
+concerned about privacy, you *can* forego electronic storage, because the protocol
 also stores copies of moderately-sensitive data in cold storage with each private
 key. However, this is not recommended.
 
@@ -69,7 +68,7 @@ cold storage.
 ### Terminal Usage
 
 Many protocol steps involve
-typing commands into a terminal window. Working in a terminal window is
+typing commands into a *terminal window*. Working in a terminal window is
 analogous to working under the hood of a car. It allows you to give the
 computer more precise commands than you can through the regular
 interface.
@@ -82,7 +81,7 @@ $ echo "everything after the $ could be copy-pasted into a terminal window"
 ```
 
 The `$` at the beginning
-of the line represents a terminal prompt, indicating readiness for user
+of the line represents a *terminal prompt*, indicating readiness for user
 input. The actual prompt varies depending on your operating system and its
 configuration; it may be `$` , `>` , or something else. Usually the terminal
 will show additional information (such as a computer name, user ID and/or
@@ -90,7 +89,7 @@ folder name) preceding every prompt.
 
 In the above example, the text
 splits across two lines because of the margins of this document. Each line
-is not a separate command; it is all one command, meant to be entered
+is *not* a separate command; it is all one command, meant to be entered
 all at once. This is clear because there is no terminal prompt at the
 beginning of the second line.
 Proceed Carefully

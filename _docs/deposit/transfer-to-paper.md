@@ -10,20 +10,20 @@ done using a combination hand transcription and
 [QR codes](https://en.wikipedia.org/wiki/QR_code).
 
 1. Transfer the <span class="danger">private keys</span> to paper.
-    1. Write each <span class="danger">private key</span> on a separate piece
-    of TerraSlate paper ( one key per page).
-        1. Do not write anything else on the paper unless specifically
+    1. Write each <span class="danger">private key</span> on a **separate** piece
+    of TerraSlate paper (**one** key per page).
+        1. Do **not** write anything else on the paper unless specifically
         instructed (such as "Bitcoin", "Glacier", "private key", etc.) In the
         event the key is seen by someone untrustworthy or stolen by a random
         thief, such clues help them understand the significance of the key and
         give them an incentive to plot further thefts or attacks.
-        2. Transcribe by hand. Do not use QR codes or any other method to transfer.
-        3. Private keys are case-sensitive.
-        4. Write clearly.
+        2. Transcribe **by hand**. Do not use QR codes or any other method to transfer.
+        3. Private keys **are** case-sensitive.
+        4. **Write clearly**.
             1. Use care when transcribing "o" (lower-case "o"). Note that
-            private keys do not contain "O" (upper-case "o") or "0" (number zero).
+            private keys do **not** contain "O" (upper-case "o") or "0" (number zero).
             2. Use care when transcribing "1" (number one). Note that private
-            keys do not contain "I" (uper case "i") or "l" (lower-case "L")
+            keys do **not** contain "I" (uper case "i") or "l" (lower-case "L")
             3. Use care to distinguish between "t" and "+" (private keys do
             not contain plus signs)
             4. Use care to distinguish between "2" and "Z"
@@ -34,8 +34,8 @@ done using a combination hand transcription and
             9. Use care to distinguish between "5" and "S"
             10. Use care to distinguish between "u" and "v"
             11. Use care to distinguish between "U" and "v"
-    2. Double-check that you transcribed all
-    <span class="danger">private keys</span> correctly. If you make a mistake,
+    2. **Double-check that you transcribed all
+    <span class="danger">private keys</span> correctly.** If you make a mistake,
     you'll have to redo a lot of work.
     3. Label each page with:
         1. Today's date
@@ -46,15 +46,15 @@ done using a combination hand transcription and
     codes from the quarantined computer screens. Any malware (or a malicious
     QR reader app) could steal sensitive data if it is not visually hidden.
 
-    This step is important. Failing to execute it properly creates a substantial
-    security risk.
+    **<span style="color: red;">This step is important. Failing to execute it properly creates a substantial
+    security risk.</span>**
 
     1. Put your <span class="danger">handwritten private keys</span> out of
     sight (don't just turn them face down; paper is not completely opaque).
     This prevents a smartphone camera from accidentally seeing them.
-    2. Delete all text from the Quarantined Scratchpad on the Q1 and Q2
+    2. Delete all text from the Quarantined Scratchpad on the **Q1 and Q2**
     computers.
-    3. On the Q1 computer:
+    3. **On the Q1 computer:**
         1. Type "COLD STORAGE ADDRESS" into the Quarantined Scratchpad.
         2. Copy-paste the <span class="warning">cold storage address</span>
         from the terminal window to the Quarantined Scratchpad.
@@ -69,7 +69,10 @@ done using a combination hand transcription and
             3. Select Preferences.
             4. Select the View tab.
             5. Uncheck "Do not split words over two lines".
-    4. Clear the terminal windows on the Q1 and Q2 computers. `$ clear`
+    4. Clear the terminal windows on the **Q1 and Q2** computers.
+       ```
+       $ clear
+       ```
 3. QR reader setup
     1. Remove a smartphone from the Faraday bag and turn it on.
     2. If the smartphone doesn't already have a QR code reader on it, install one.
@@ -81,16 +84,17 @@ done using a combination hand transcription and
 
 4. Transfer the <span class="warning">cold storage address</span> to a
 non-quarantined computer.
-    1. On the Q1 computer, display the
+    1. **On the Q1 computer**, display the
     <span class="warning">cold storage address</span> as a
     <span class="warning">QR code</span> on the screen:
         1. In File Manager, navigate to the "Home" folder, then the "glacier"
         folder, and double-click "address.png".
-    2. Use the smartphone's QR code reader to read the. When the is
+    2. Use the smartphone's QR code reader to read the <span class="warning">QR
+    code</span>. When the <span class="warning">QR code</span> is
     successfully read, the smartphone should display the text
-    <span class="warning">cold storage address</span>
+    <span class="warning">cold storage address</span>.
     3. Verify the <span class="warning">cold storage</span> address on the
-    smartphone matches the cold storage address in the Quarantined Scratchpad.
+    smartphone matches the <span class="warning">cold storage address</span> in the Quarantined Scratchpad.
 
         **If it does not match, do not proceed**. Try using a different QR reader application or restarting the Deposit Protocol. Seek
         assistance if discrepancies persist.
@@ -103,8 +107,8 @@ non-quarantined computer.
 5. Repeat the previous step for the
 <span class="warning">redemption script</span>, stored in "redemption.png."
 
-    When comparing the redemption script shown on the smartphone to the
-    redemption script in the Quarantined Scratchpad, it's sufficient to check
+    When comparing the <span class="warning">redemption script</span> shown on the smartphone to the
+    <span class="warning">redemption script</span> in the Quarantined Scratchpad, it's sufficient to check
     the first 8 characters, the last 8 characters, and a handful of characters
     somewhere in the middle.
 
@@ -117,8 +121,9 @@ when they absolutely need to be.
     ```
     The recommended Acer laptop may require you to hold down the power button for
     several seconds to complete the shutdown.
-8. Create <span class="warning">Cold Storage Information Pages</span>
-Using any Internet-connected computer:
+8. Create <span class="warning">Cold Storage Information Pages</span>.
+
+   **Using any Internet-connected computer:**
     1. Access the copies of the <span class="warning">cold storage address</span>
     and <span class="warning">redemption script</span> you sent yourself from
     your smartphone previously.
@@ -129,17 +134,17 @@ Using any Internet-connected computer:
         2. Copy-paste the <span class="warning">redemption script</span>
         3. Type today's date
         4. Type the version of Glacier used (listed on the first page of this document)
-        5. Do **not** put anything else in the document (such as "Bitcoin",
+    4. Do **not** put anything else in the document (such as "Bitcoin",
         "Glacier", "private key", etc.)
-        6. Save an electronic copy of the <span class="warning">Cold Storage
+    5. Save an electronic copy of the <span class="warning">Cold Storage
         Information Page</span> in a "conventionally secure" location of your choosing,
-        such as a "Secure Note" in 1Password or a comparable password
+        such as a "Secure Note" in [1Password](https://1password.com/) or a comparable password
         manager. Because the Cold Storage Information Page contains
         moderately-sensitive data, there are some privacy considerations with keeping and
         electronic copy of it. See the Sensitive Data subsection for details.
-        7. Print N copies of the
+    6. Print *N* copies of the
         <span class="warning">Cold Storage Information Page</span>.
-        8. Shut down the computer. (It has a camera, and you will be working with
+    7. Shut down the computer. (It has a camera, and you will be working with
         critically sensitive data in a moment.)
 9. Prepare <span class="danger">Cold Storage Information Packets</span>
     1. Put each <span class="danger">handwritten private key page</span> along

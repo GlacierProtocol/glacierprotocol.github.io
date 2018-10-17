@@ -13,39 +13,43 @@ III.
 already. (See the instructions in Section III for details.)
 2. Insert the Q1 APP USB into the the SETUP 1 computer.
 
-    1. The instruction to plug a Quarantined App USB into your Setup computer
-    should raise a red flag for you, because you should never plug a quarantined
-    USB into anything other than the quarantined computer it is designated for!
-    This setup process is the ONE exception.
+    1. **The instruction to plug a Quarantined App USB into your Setup computer
+    *should* raise a red flag for you, because <span style="color: red;">you should never plug a quarantined
+    USB into anything other than the quarantined computer it is designated for!</span>**
+
+       This setup process is the ONE exception.
 
 3. Press Ctrl-Alt-T to open a terminal window.
 4. Install the Glacier document and GlacierScript on the Q1 APP USB.
 
-    1. Download the latest full release of Glacier ( not just the protocol
+    1. Download the latest full release of Glacier (*not* just the protocol
     document) at
     [https://github.com/GlacierProtocol/GlacierProtocol/releases](https://github.com/GlacierProtocol/GlacierProtocol/releases).
     2. Unpack the Glacier ZIP file into a staging area.
 
         1. When the download starts, Firefox will ask you if you want to open the
-        ZIP file with Archive Manager. Click OK. When the ZIP file download
-        completes, it will be opened with Archive Manager.
+        ZIP file with Archive Manager. Click OK.
+
+           When the ZIP file download completes, it will be opened with Archive Manager.
+
         2. There will be a single entry in a list named
-        "GlacierProtocol- version-here" , where version-here is replaced with
+        "GlacierProtocol-<span class="primary">version-here</span>", where
+        <span class="primary">version-here</span> is replaced with
         the current version number (like "v1.0"). Click on that and then click
         the "Extract" button.
         3. The Archive Manager will ask you where you want to extract the ZIP
         file to. Select "Home" on the left panel and then press the extract button.
         4. When the Archive Manager is finished extracting the ZIP archive it
         will ask you what to do next. Click "Show the Files".
-        5. Rename the unzipped folder from "GlacierProtocol- version-here" to
+        5. Rename the unzipped folder from "GlacierProtocol-<span class="primary">version-here</span>" to
         "glacier".
 
     3. Obtain the Glacier "public key," used to cryptographically verify the
     Glacier document and GlacierScript.
 
-        If you are ever using Glacier in the future and notice that this step
+        **If you are ever using Glacier in the future and notice that this step
         has changed (or that this warning has been removed), there is a
-        security risk. Stop and seek assistance.
+        security risk.** Stop and seek assistance.
 
         1. Access Glacier's Keybase profile at https://keybase.io/glacierprotocol.
         2. Click the string of letters and numbers next to the key icon.
@@ -56,43 +60,42 @@ already. (See the instructions in Section III for details.)
     4. Verify the integrity of the Glacier download.
 
         1. Import the Glacier public key into your local GPG installation:
-            ```
-            $ gpg --import ~/Downloads/glacier.asc
-            ```
+           ```
+           $ gpg --import ~/Downloads/glacier.asc
+           ```
         2. Switch to the glacier folder:
-            ```
-            $ cd ~/glacier
-            ```
+           ```
+           $ cd ~/glacier
+           ```
         3. Use the public key to verify that the Glacier "fingerprint file" is
         legitimate:
-            ```
-            $ gpg --verify SHA256SUMS.sig SHA256SUMS
-            ```
-            Expected output (timestamp will vary, but
-            e-mail and fingerprint should match):
-            ```
-            gpg: Signature made Thu Jan 19 13:45:48 2017 PST using RSA key ID 4B43EAB0
-            gpg: Good signature from "Glacier Team <contact@glacierprotocol.org>"
-            [unknown]
-            gpg: WARNING: This key is not certified with a trusted signature!
-            gpg: There is no indication that the signature belongs to the owner.
-            Primary key fingerprint: E1AA EBB7 AC90 C1FE 80F0 1034 9D1B 7F53 4B43
-            ```
+           ```
+           $ gpg --verify SHA256SUMS.sig SHA256SUMS
+           ```
+           Expected output (timestamp will vary, but
+           e-mail and fingerprint should match):
+           <pre>
+           <span style="font-size: 10px;">gpg: Signature made Thu Jan 19 13:45:48 2017 PST using RSA key ID 4B43EAB0
+           gpg: Good signature from "Glacier Team <contact@glacierprotocol.org>"
+           gpg: WARNING: This key is not certified with a trusted signature!
+           gpg: There is no indication that the signature belongs to the owner.
+           Primary key fingerprint: E1AA EBB7 AC90 C1FE 80F0 1034 9D1B 7F53 4B43</span>
+           </pre>
 
-            The warning message is expected, and is not cause for alarm.
+           The warning message is expected, and is not cause for alarm.
 
         4. Verify the fingerprints in the fingerprint file match the fingerprints
         of the downloaded Glacier files:
-            ```
-            $ sha256sum -c SHA256SUMS 2>&1
-            ```
-            Expected output:
-            ```
-            Glacier.pdf: OK
-            glacierscript.py: OK
-            base58.py: OK
-            README.md: OK
-            ```
+           ```
+           $ sha256sum -c SHA256SUMS 2>&1
+           ```
+           Expected output:
+           ```
+           Glacier.pdf: OK
+           glacierscript.py: OK
+           base58.py: OK
+           README.md: OK
+           ```
 
     5. Copy the glacier folder to the Q1 APP USB.
         1. Click on the File Manager icon in the launching dock along the left

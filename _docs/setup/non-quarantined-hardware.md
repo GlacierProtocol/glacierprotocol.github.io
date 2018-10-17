@@ -9,7 +9,7 @@ drives.
 
     1. Both Setup Computers must have Internet access.
     2. You should have administrator access to both Setup Computers.
-    3. Importantly, at least one computer should be a computer that you do not
+    3. Importantly, at least one computer should be a computer that you *do not*
     own, or that doesn't spend much time on your home or office network.
 
         It's not technically ownership that's important. But computers you own are
@@ -22,7 +22,7 @@ drives.
 2 BOOT".
 
     1. Remember that, per the equipment list, you should have 4 remaining USB
-    drives -- two from one manufacturer, and two from a different manufacturer.
+    drives -- two from one manufacturer, and two from a *different* manufacturer.
 
 4. Run a virus scan on the Setup Computers. If you don't have virus scanning
 software installed, here are some options:
