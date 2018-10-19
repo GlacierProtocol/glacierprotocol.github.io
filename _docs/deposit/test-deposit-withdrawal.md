@@ -17,10 +17,11 @@ Internet-connected computer for this section.
 details).
 2. Perform a test deposit.
     1. Use the wallet software or service of your choice to send the approximate
-    equivalent of $6 USD of bitcoins to your
-    <span class="warning">cold storage address</span>. $6 USD is a trivial
-    amount of funds for testing, yet is still large enough to pay any fees necessary
-    for timely transaction processing for the foreseeable future.
+    equivalent to fund 1000 bytes of transactions to your
+    <span class="warning">cold storage address</span>.
+    As of January 17, 2018, with a fee rate of 510 sat/B and $11185 USD/BTC this
+    is a deposit of approximately $57. Fees have since declined, but the user is
+    advised to check the current fee rate before making the test deposit.
     The Bitcoin network requires a very small, flat fee to process transactions. We
     recommend you use a wallet service that recommends (or pays) a fee for you
     automatically, which most do.
