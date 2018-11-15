@@ -6,8 +6,9 @@ redirect_from:
   - /docs/
 ---
 
-Glacier is a step-by-step protocol for storing bitcoins in a highly secure
-manner. It is intended for:
+Glacier is a step-by-step, highly secure protocol for storing bitcoin. 
+
+It is intended for:
 
 * **Personal storage**: Glacier does not address institutional security
 needs such as internal controls, transparent auditing, and preventing access
