@@ -34,11 +34,6 @@ interaction.
 * **Procurement**: This document covers bitcoin storage, not procurement. It assumes you
 already possess bitcoin and wish to store it more securely.
 
-If you are already familiar with Bitcoin security concepts and are certain that
-you want high security cold storage, you may prefer to read
-[Trusting This Protocol](#trusting-this-protocol) and then skip to the section
-[Choosing a Multisignature Withdrawal Policy](/docs/overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
-
 ## Trusting this protocol
 
 Funds secured using Glacier can only be as secure as its design.
@@ -58,6 +53,10 @@ will tend to lose popularity over time.
 
 If you like, you may review the [design document](/docs/design-doc/overview)
 for details on the technical design.
+
+If you are already familiar with Bitcoin security concepts and are certain that
+you want high security cold storage, you may prefer to skip to the section
+[Choosing a Multisignature Withdrawal Policy](/docs/overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
 
 ## Background
 
