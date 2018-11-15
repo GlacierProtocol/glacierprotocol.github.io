@@ -34,12 +34,10 @@ interaction.
 * **Procurement**: This document covers bitcoin storage, not procurement. It assumes
 bitcoin has been procured and is ready to store.
 
-## Trusting this protocol
+Protocol credentials:
 
-Funds secured using Glacier can only be as secure as its design.
-Here's what you can trust about this protocol:
-* **Expert advisors**: The development of Glacier was guided with input from
-Bitcoin technology and security experts. See our advisor list.
+* **Expert advisors**: Development is guided with input from Bitcoin technology and 
+security experts. See our advisor list.
 * **Open source**: GlacierScript, the Glacier companion software, is open
 source. The code is straightforward and well-commented to facilitate easy review
 for flaws or vulnerabilities. [View it on Github](https://github.com/GlacierProtocol/GlacierProtocol).
