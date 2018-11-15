@@ -46,10 +46,6 @@ Github.
 [View code on Github](https://github.com/GlacierProtocol/GlacierProtocol)
 [View protocol on Github](https://github.com/GlacierProtocol/glacierprotocol.github.io)
 [View list of contributors](/docs/contribute/acknowledgments/)
-* **Natural selection**: All documentation and code related to this protocol is
-under open licenses (Creative Commons for the document, MIT license for the
-code), enabling others to publish their own revisions. Inferior alternatives
-will tend to lose popularity over time.
 
 If you like, you may review the [design document](/docs/design-doc/overview)
 for details on the technical design.
