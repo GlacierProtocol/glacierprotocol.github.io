@@ -31,8 +31,8 @@ document.
 * **Frequently-accessed funds**: Accessing highly secured bitcoin is cumbersome, 
 introducing security risk through the possibility of human error with each 
 interaction.
-* **Procurement**: This document covers bitcoin storage, not procurement. It assumes you
-already possess bitcoin and wish to store it more securely.
+* **Procurement**: This document covers bitcoin storage, not procurement. It assumes
+bitcoin has been procured and is ready to store.
 
 ## Trusting this protocol
 
