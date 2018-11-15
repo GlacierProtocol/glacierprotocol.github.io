@@ -6,10 +6,12 @@ redirect_from:
   - /docs/
 ---
 
-Glacier is a step-by-step, highly secure protocol for storing bitcoin. It 
-thoroughly considers corner cases such as obscure vectors for malware 
-infection, personal estate planning, human error resulting in loss of funds, 
-etc.
+Glacier is a step-by-step, highly secure protocol for storing bitcoin.
+
+It thoroughly considers corner cases such as obscure vectors for malware 
+infection, personal estate planning and human error resulting in loss of funds, as 
+well as the future Bitcoin landscape where bitcoin is much more valuable and 
+attracting many more security threats.
 
 It is intended for:
 
@@ -17,9 +19,7 @@ It is intended for:
 * **Investment-level value**: Bitcoin holdings around the level of a small
 property in the local economy. Consideration should also be given to potential
 future value appreciation.
-* **Long-term storage**: Glacier not only considers the Bitcoin security
-landscape today, but also a future world where Bitcoin is much more valuable
-and attracts many more security threats.
+* **Long-term storage**: Several months to years.
 * **Technically unskilled users**: Although the Glacier protocol is long, it is
 clear and straightforward to follow. No technical expertise is required.
 
