@@ -20,8 +20,8 @@ It is intended for:
 property in the local economy. Consideration should also be given to potential
 future value appreciation.
 * **Long-term storage**: Several months to years.
-* **Technically unskilled users**: Although the Glacier protocol is long, it is
-clear and straightforward to follow. No technical expertise is required.
+* **Technically unskilled users**: No technical expertise is required. Although
+the Glacier protocol is long, it is clear and straightforward to follow.
 
 It is not intended for:
 
