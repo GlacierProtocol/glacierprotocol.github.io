@@ -10,9 +10,7 @@ Glacier is a step-by-step, highly secure protocol for storing bitcoin.
 
 It is intended for:
 
-* **Personal storage**: Glacier does not address institutional security
-needs such as internal controls, transparent auditing, and preventing access
-to funds by a single individual.
+* **Personal storage**: Bitcoin owned solely by a single individual.
 * **Large amounts of money ($100,000+)**: Glacier thoroughly considers corner
 cases such as obscure vectors for malware infection, personal estate
 planning, human error resulting in loss of funds, and so on.
@@ -27,14 +25,19 @@ amounts of funds.
 * **Long-term storage**: Glacier not only considers the Bitcoin security
 landscape today, but also a future world where Bitcoin is much more valuable
 and attracts many more security threats.
-* **Infrequently-accessed funds**: Accessing highly secure bitcoins is
-cumbersome and introduces security risk through the possibility of human
-error, so it is best done infrequently.
 * **Technically unskilled users**: Although the Glacier protocol is long, it is
 clear and straightforward to follow. No technical expertise is required.
 
-The Glacier protocol covers bitcoin storage, not procurement. It assumes you
-already possess bitcoins and wish to store them more securely.
+It is not intended for:
+
+* **Institutional storage**: Internal controls, transparent auditing, and 
+preventing access to funds by a single individual are outside the scope of this 
+document.
+* **Frequently-accessed funds**: Accessing highly secured bitcoin is cumbersome, 
+introducing security risk through the possibility of human error with each 
+interaction.
+* **Procurement**: This document covers bitcoin storage, not procurement. It assumes you
+already possess bitcoin and wish to store it more securely.
 
 If you are already familiar with Bitcoin security concepts and are certain that
 you want high security cold storage, you may prefer to read
