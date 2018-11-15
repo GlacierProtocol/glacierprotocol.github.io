@@ -38,13 +38,14 @@ Protocol credentials:
 
 * **Expert advisors**: Development is guided with input from Bitcoin technology and 
 security experts. See our advisor list.
-* **Open source**: GlacierScript, the Glacier companion software, is open source.
-This means the code is freely available for anyone to review for flaws and
-vulnerabilities. The code is straightforward, well-commented and available on
-Github. [View it on Github](https://github.com/GlacierProtocol/GlacierProtocol).
-* **Community review**: The protocol has evolved in conjunction with the wider
-Bitcoin community. Early versions were circulated during development, and
-community feedback integrated. [See our list of contributors](/docs/contribute/acknowledgments/).
+* **Open source**: Both GlacierScript, the Glacier companion software, and the
+protocol document are open source. This means they are freely available for anyone
+to review for flaws or vulnerabilities. The protocol has evolved in conjunction with the wider
+Bitcoin community, and the code is straightforward and well-commented. Both are available on
+Github.
+[View code on Github](https://github.com/GlacierProtocol/GlacierProtocol)
+[View protocol on Github](https://github.com/GlacierProtocol/glacierprotocol.github.io)
+[View list of contributors](/docs/contribute/acknowledgments/)
 * **Natural selection**: All documentation and code related to this protocol is
 under open licenses (Creative Commons for the document, MIT license for the
 code), enabling others to publish their own revisions. Inferior alternatives
