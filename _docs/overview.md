@@ -15,10 +15,9 @@ It is intended for:
 
 * **Personal storage**: Bitcoin owned solely by a single individual.
 * **Large amounts of money ($100,000+)**: Even if your Bitcoin holdings are 
-more modest, it's worth considering using Glacier. If Bitcoin proves successful
-as a global currency, it will appreciate 10x (or much more) in the coming years. 
-Security will become increasingly important if your holdings appreciate and 
-Bitcoin becomes a more attractive target for thieves.
+more modest, it's worth considering using Glacier. Security will become 
+increasingly important if your holdings appreciate and bitcoin becomes a more 
+attractive target for thieves.
 The "Protocol Overview" section also describes some lower-security, lower-cost
 approaches to self-managed storage that may be more appropriate for smaller
 amounts of funds.
