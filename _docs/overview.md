@@ -17,9 +17,6 @@ It is intended for:
 * **Investment-level value**: Bitcoin holdings around the level of a small
 property in the local economy. Consideration should also be given to potential
 future value appreciation.
-The "Protocol Overview" section also describes some lower-security, lower-cost
-approaches to self-managed storage that may be more appropriate for smaller
-amounts of funds.
 * **Long-term storage**: Glacier not only considers the Bitcoin security
 landscape today, but also a future world where Bitcoin is much more valuable
 and attracts many more security threats.

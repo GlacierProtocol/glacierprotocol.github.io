@@ -145,36 +145,6 @@ funds.
 gives additional detail about how to increase Bitcoin anonymity using Monero &
 Tor.
 
-## Lower-security Protocol Variants
-
-If you are willing to accept lower security for lower cost, you can do so with only slight modifications:
-
-1. **Perform this protocol using only one quarantined computer**. Glacier protocol
-repeats all operations on two computers to detect defects or tampering in
-the key generation process. However, this is costly and adds significantly
-to the labor required to execute the protocol. The risks it mitigates are
-small: that malware conducting flawed key-generation attacks found its way
-onto the eternally quarantined systems, or that the computer firmware was
-tampered with at the manufacturer to include such malware. If you are
-willing to accept this risk, you could skip buying the parallel hardware
-stack (and needing the second setup computer) and skip the process of
-re-generating and verifying keys & transactions on the parallel hardware
-stack.
-
-2. **Use existing hardware**. An even lower-security variant is to use nothing
-but existing laptops you already possess, disabling all network
-connections during protocol execution, instead of purchasing new
-quarantined hardware. This fails to protect against some malware
-attacks, but provides additional savings in cost and effort.
-
-Such as an
-[existing infection of a laptop's firmware](https://www.youtube.com/watch?v=sNYsfUNegEA),
-malware which overrides
-OS settings to disable wireless connectivity, or certain undiscovered
-vulnerabilities in the software used by the protocol.
-
-These modifications are left as an exercise to the reader.
-
 ## Out of scope
 
 There's always more one could do to increase security. While
