@@ -37,19 +37,13 @@ bitcoin has been procured and is ready to store.
 ### Protocol credentials
 
 * **Expert advisors**: Development is guided with input from Bitcoin technology and 
-security experts. See our advisor list.
-* **Open source**: Both GlacierScript, the Glacier companion software, and the
-protocol document are open source. This means they are freely available for anyone
-to review for flaws or vulnerabilities. The protocol has evolved in conjunction with the wider
-Bitcoin community, and the code is straightforward and well-commented. Both are available on
-Github.
-[View code on Github](https://github.com/GlacierProtocol/GlacierProtocol)
-[View protocol on Github](https://github.com/GlacierProtocol/glacierprotocol.github.io)
-[View list of contributors](/docs/contribute/acknowledgments/)
-
-If you like, you may review the [design document](/docs/design-doc/overview)
-for details on the technical design.
-
+security experts. See the [advisor list](https://glacierprotocol.org/contributors/) and [contributor list](/docs/contribute/acknowledgments/).
+* **Open source**: The [design document](/docs/design-doc/overview), the [protocol document](https://github.com/GlacierProtocol/glacierprotocol.github.io) 
+and the [GlacierScript](https://github.com/GlacierProtocol/GlacierProtocol) companion
+software are all open source. This allows for continuous peer review and
+examination to eliminate flaws and vulnerabilities. The protocol has evolved in 
+conjunction with the wider Bitcoin community, and the code is straightforward and 
+well commented. Both are available on Github.
 If you are already familiar with Bitcoin security concepts and are certain that
 you want high security cold storage, you may prefer to skip to the section
 [Choosing a Multisignature Withdrawal Policy](/docs/overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
