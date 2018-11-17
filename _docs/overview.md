@@ -51,8 +51,6 @@ A reader familiar with Bitcoin security concepts may prefer to skip to the secti
 
 ### Self-Managed Storage vs. Online
 
-Let's start by assessing whether Glacier is right for you.
-
 There is no such thing as perfect security. There are only degrees of security,
 and those degrees come at a cost (in time, money, convenience, etc.) So the
 first question is: How much security are you willing to invest in?
