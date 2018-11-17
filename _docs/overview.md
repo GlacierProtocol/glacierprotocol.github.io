@@ -57,11 +57,7 @@ first question is: How much security are you willing to invest in?
 For most people, most of the time, the authors recommend storing Bitcoin using a
 high-quality online storage service. The pros and cons of the various online
 services are beyond the scope of this document, but most popular ones are fairly
-secure and easy to use. Some popular options are
-[Blockchain](https://blockchain.info/),
-[Coinbase](https://www.coinbase.com/),
-[Gemini](https://gemini.com/),
-and [Kraken](https://www.kraken.com/).
+secure and easy to use.
 
 However, all online storage services still come with some notable risks
 which self-managed storage does not have:
