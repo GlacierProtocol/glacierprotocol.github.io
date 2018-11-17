@@ -44,11 +44,10 @@ software are all open source. This allows for continuous peer review and
 examination to eliminate flaws and vulnerabilities. The protocol has evolved in 
 conjunction with the wider Bitcoin community, and the code is straightforward and 
 well commented. Both are available on Github.
-If you are already familiar with Bitcoin security concepts and are certain that
-you want high security cold storage, you may prefer to skip to the section
-[Choosing a Multisignature Withdrawal Policy](/docs/overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
 
 ## Background
+A reader familiar with Bitcoin security concepts may prefer to skip to the section
+[Choosing a Multisignature Withdrawal Policy](/docs/overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
 
 ### Self-Managed Storage vs. Online
 
