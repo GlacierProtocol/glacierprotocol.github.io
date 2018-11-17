@@ -45,11 +45,14 @@ examination to eliminate flaws and vulnerabilities. The protocol has evolved in
 conjunction with the wider Bitcoin community, and the code is straightforward and 
 well commented. Both are available on Github.
 
-## Background
+## Alternatives
+The Glacier Protocol focuses exclusively on self-managed storage, but there are lower
+security, more convenient options.
+
 A reader familiar with Bitcoin security concepts may prefer to skip to the section
 [Choosing a Multisignature Withdrawal Policy](/docs/overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
 
-### Self-Managed vs. Online Storage
+### Online Storage
 
 There is no such thing as perfect security, only degrees of security with corresponding
 trade-offs in time, money, convenience, etc.
@@ -112,9 +115,7 @@ money. We recommend self-managed storage for large investments, but ultimately
 it's a personal decision based on your risk tolerance and costs you're willing
 to pay (in money and time) for security.
 
-Glacier focuses exclusively on self-managed storage.
-
-### Glacier vs. Hardware Wallets
+### Hardware Wallets
 
 Many people who choose
 self-managed storage (as opposed to an online storage service) use "hardware
