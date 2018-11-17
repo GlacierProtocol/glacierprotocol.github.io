@@ -54,10 +54,9 @@ A reader familiar with Bitcoin security concepts may prefer to skip to the secti
 There is no such thing as perfect security, only degrees of security with corresponding
 trade-offs in time, money, convenience, etc.
 
-For most people, most of the time, the authors recommend storing Bitcoin using a
-high-quality online storage service. The pros and cons of the various online
-services are beyond the scope of this document, but most popular ones are fairly
-secure and easy to use.
+For most people, most of the time, storing Bitcoin using a high-quality online storage 
+service is sufficient. The pros and cons of the various online services are beyond the 
+scope of this document, but most popular ones are fairly secure and easy to use.
 
 However, all online storage services still come with some notable risks
 which self-managed storage does not have:
