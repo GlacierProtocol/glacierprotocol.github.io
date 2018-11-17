@@ -6,14 +6,14 @@ redirect_from:
   - /docs/
 ---
 
-Glacier is a step-by-step, highly secure protocol for storing bitcoin.
+## A step-by-step, highly secure protocol for storing bitcoin
 
 It thoroughly considers corner cases such as obscure vectors for malware 
 infection, personal estate planning and human error resulting in loss of funds, as 
 well as the future Bitcoin landscape where bitcoin is much more valuable and 
 attracting many more security threats.
 
-It is intended for:
+### Intended for
 
 * **Personal storage**: Bitcoin owned solely by a single individual.
 * **Investment-level value**: Bitcoin holdings around the level of a small
@@ -23,7 +23,7 @@ future value appreciation.
 * **Technically unskilled users**: No technical expertise is required. Although
 the Glacier protocol is long, it is clear and straightforward to follow.
 
-It is not intended for:
+### Not intended for
 
 * **Institutional storage**: Internal controls, transparent auditing, and 
 preventing access to funds by a single individual are outside the scope of this 
@@ -34,7 +34,7 @@ interaction.
 * **Procurement**: This document covers bitcoin storage, not procurement. It assumes
 bitcoin has been procured and is ready to store.
 
-Protocol credentials:
+### Protocol credentials
 
 * **Expert advisors**: Development is guided with input from Bitcoin technology and 
 security experts. See our advisor list.
