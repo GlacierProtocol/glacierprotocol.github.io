@@ -72,28 +72,21 @@ the world at any time of the day, week or year.
 them much more attractive targets for hackers.
 5. **Internal theft**: A large group of employees & contractors are trusted with internal
 access to service funds.
-5. **Intentional seizure**: They have the ability (whether of their own volition,
-or under pressure from governments) to seize your funds.
-There is historical precedent for this, even if funds are not suspected of
-criminal involvement. In 2010,
-[Cyprus unilaterally seized many bank depositors' funds ](https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank)
-to cope with an economic crisis. In 1933, the US abruptly
-[demanded citizens surrender almost all gold they owned to the government](https://en.wikipedia.org/wiki/Executive_Order_6102).
-Regardless of how one views the political desirability of these particular
-decisions, there is precedent for governments taking such an action, and one
-cannot necessarily predict the reasons they might do so in the future.
-Furthermore,Bitcoin still operates in a political and legal grey zone, which
-increases these political risks.
+6. **Seizure by service**: The service has the ability to seize customer funds. There are
+examples where a hacked system has chosen to socialise its losses across all users. In 2016, 
+[all users shared the total loss after Bitfinex was hacked](http://www.bbc.com/news/technology-37009319).
+There are also examples of withdrawals being closed before the company files for bankruptcy protection.
+In 2014, [Mt. Gox filed for bankruptcy after being hacked](https://www.bbc.co.uk/news/technology-25233230).
+Both scenarios lead to huge losses for customers.
+7. **Seizure by government decree**: Currently, in many countries, Bitcoin operates in a political
+and legal grey zone. There is historical precedence of citizen funds being seized without any
+suspicion of criminal activity. In 2010, [Cyprus unilaterally seized many bank depositors' funds](https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank)
+to cope with an economic crisis and, in 1933, [the US government demanded citizens surrender almost all gold](https://en.wikipedia.org/wiki/Executive_Order_6102). Similar action during a future financial
+crisis cannot be discounted.
 
 Some online wallet services have insurance to cover losses, although that
 insurance doesn't protect against all of these scenarios, and often has limits
 on the amount insured.
-
-These risks are not theoretical. Many online services have lost customers' funds
-(and not reimbursed them), including
-[Mt. Gox](https://www.bloomberg.com/news/articles/2014-02-28/mt-gox-exchange-files-for-bankruptcy),
-[Bitfinex](http://www.bbc.com/news/technology-37009319),
-and many more.
 
 Recently, some providers are rolling out services which are a hybrid
 of an online service and self-managed storage. Examples include
