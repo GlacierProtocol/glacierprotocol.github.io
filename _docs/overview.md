@@ -88,15 +88,10 @@ Some online wallet services have insurance to cover losses, although that
 insurance doesn't protect against all of these scenarios, and often has limits
 on the amount insured.
 
-Recently, some providers are rolling out services which are a hybrid
-of an online service and self-managed storage. Examples include
-[Coinbase's multisig vault](https://www.coinbase.com/vault)
-and [Green Address](https://greenaddress.it/en/).
-The design of these services
-significantly reduces (though does not eliminate) the risks described above.
-
-However, they also require some care and technical competence to securely
-manage the electronic "keys" which provide access to funds.
+Hybrid services, combining features of online and self-managed storage, are available. The design
+of these services reduce, without eliminating entirely, some of the risks described above. However,
+they still require care and technical competence to securely manage the electronic "keys" which
+provide access to funds.
 
 Many people do use online or hybrid solutions to store sizeable amounts of
 money. We recommend self-managed storage for large investments, but ultimately
