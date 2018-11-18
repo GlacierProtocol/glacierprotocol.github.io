@@ -95,15 +95,9 @@ provide access to funds.
 
 ### Hardware Wallets
 
-Many people who choose
-self-managed storage (as opposed to an online storage service) use "hardware
-wallets" such as the
-[Trezor](https://trezor.io/),
-[Ledger](https://www.ledgerwallet.com/),
-and [KeepKey](https://www.keepkey.com/)
-to store their bitcoins. While these are great products that provide strong security,
-Glacier is intended to offer an even higher level of protection than today's
-hardware wallets can provide.
+Hardware wallets can provide a form of self-managed storage with good security. Again, the pros
+and cons of the various hardware wallets are beyond the scope of this document. However, all
+hardware wallets entail risks which are not present in a system adhering to The Glacier Protocol:
 
 The primary security consideration is that
 all hardware wallets today operate via a physical USB link to a regular
