@@ -57,7 +57,7 @@ A reader familiar with Bitcoin security concepts may prefer to skip to the secti
 
 For most people, most of the time, storing Bitcoin using a high-quality online storage 
 service is sufficient. The pros and cons of the various online services are beyond the 
-scope of this document, but most popular ones are fairly secure and easy to use.
+scope of this document. 
 
 However, all online storage services still come with some notable risks
 which self-managed storage does not have:
