@@ -57,24 +57,21 @@ A reader familiar with Bitcoin security concepts may prefer to skip to the secti
 
 For most people, most of the time, storing Bitcoin using a high-quality online storage 
 service is sufficient. The pros and cons of the various online services are beyond the 
-scope of this document. 
+scope of this document. However, all online storage services entail risks which are
+not present in a self-managed storage system:
 
-However, all online storage services still come with some notable risks
-which self-managed storage does not have:
-
-1. **Identity spoofing**: Your account on the service could be hacked (including
-through methods such as identity theft, where someone convinces the service they
-are you).
-2. **Network exposure**: Online services still need to transmit security-critical
+1. **Identity spoofing**: Online accounts can be compromised, allowing a hacker to
+assume the identity of a legitimate user.
+2. **Network exposure**: Online services need to transmit security-critical
 information over the Internet, which creates an opportunity for that information
 to be stolen. In contrast, self-managed storage can be done with no network
 exposure.
-3. **Under constant attack**: Online services can be hacked by attackers from
-anywhere in the world. People know these services store lots of funds, which
-makes them much larger targets. If there's a flaw in their security, it's more
-likely to be found and exploited.
-4. **Internal theft**: They have to protect against internal theft from a large
-group of employees & contractors.
+3. **Under constant attack**: Online services can be hacked by attackers from anywhere in
+the world at any time of the day, week or year.
+4. **Vastly larger target**: Customer funds are a part of a considerably larger asset pool, making
+them much more attractive targets for hackers.
+5. **Internal theft**: A large group of employees & contractors are trusted with internal
+access to service funds.
 5. **Intentional seizure**: They have the ability (whether of their own volition,
 or under pressure from governments) to seize your funds.
 There is historical precedent for this, even if funds are not suspected of
