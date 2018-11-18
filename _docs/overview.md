@@ -99,17 +99,13 @@ Hardware wallets can provide a form of self-managed storage with good security. 
 and cons of the various hardware wallets are beyond the scope of this document. However, all
 hardware wallets entail risks which are not present in a system adhering to The Glacier Protocol:
 
-The primary security consideration is that
-all hardware wallets today operate via a physical USB link to a regular
-computer. While they employ extensive safeguards to prevent any sensitive
-data (such as private keys) from being transmitted over this connection,
-it's possible that an undiscovered vulnerability could be exploited by
-malware to steal private keys from the device.
+1. **USB link**: All hardware wallets operate via a physical USB link to a regular computer. While
+they employ extensive safeguards to prevent any sensitive data (such as private keys) from being
+transmitted over this connection, it is possible that an undiscovered vulnerability could be
+exploited by malware to steal private keys from the device.
+2. **Potential tampering**: Verification that the hardware or software has not been tampered with is
+nearly impossible. An attacker could compromise the manufacturing processes, or ship a malicious
+device that looks like the hardware wallet you ordered.
 
-For details on this and other security considerations, see the
-"No Hardware Wallets" section of the [design document](/docs/design-doc/overview)
-As with online multisig
-vaults, many people do use hardware wallets to store sizeable amounts of
-money. We personally recommend Glacier for large investments, but ultimately
-it's a personal decision based on your risk tolerance and costs you're
-willing to pay (in money and time) for security.
+For details on this and other security considerations, see the "No Hardware Wallets" section of the
+[design document](/docs/design-doc/overview).
