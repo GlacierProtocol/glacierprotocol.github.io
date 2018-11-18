@@ -93,11 +93,6 @@ of these services reduce, without eliminating entirely, some of the risks descri
 they still require care and technical competence to securely manage the electronic "keys" which
 provide access to funds.
 
-Many people do use online or hybrid solutions to store sizeable amounts of
-money. We recommend self-managed storage for large investments, but ultimately
-it's a personal decision based on your risk tolerance and costs you're willing
-to pay (in money and time) for security.
-
 ### Hardware Wallets
 
 Many people who choose
