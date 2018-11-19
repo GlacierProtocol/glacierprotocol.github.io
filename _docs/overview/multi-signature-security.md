@@ -65,8 +65,7 @@ stolen.
 The keys will be distributed as follows:
 
 * One in a safe at home
-* The remaining three in safe deposit boxes or [private vaults](https://www.google.com/search?q=private+safe+deposit+box) at
-different locations
+* Three in safe deposit boxes, or private vaults, at different locations
 
 It's important to think about estate planning -- making
 arrangements for your designated agents to be able to access your funds when
