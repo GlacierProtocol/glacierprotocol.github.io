@@ -16,7 +16,7 @@ padlocked box, of which there can be multiple padlocks - see the
 Unlike a password, a private key is not meant to be memorized. It is a
 256-bit number, usually expressed as a 64-character hexadecimal string.
 It is important to understand that the holder of the private key is the
-owner of the bitcoin and, unlike traditional financial instruments, 
+holder of the bitcoin and, unlike traditional financial instruments, 
 there is no legal recourse in the event of the key falling into the
 hands of someone else. Bitcoin is decentralized, meaning there is no
 company, person or entity that is liable.
