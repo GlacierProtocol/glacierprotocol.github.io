@@ -1,17 +1,17 @@
 ---
 title: Key concepts
-description: Overview of some of the key concepts leveraged by Glacier to make
-  sure your Bitcoin keys are kept safe.
+description: Overview of key concepts leveraged by Glacier to provide
+Bitcoin key security
 ---
 
 ## Private Key
 
-Your currency balance is effectively stored in the Bitcoin
-blockchain -- the global decentralized ledger. You can imagine a locked box
-with all of your bitcoins sitting inside of it. This box is unlocked with
-a piece of information known as "private key". (Some boxes require multiple
-private keys to unlock; see the section "Multisignature Security"
-below.)
+Bitcoin balances are stored in the Bitcoin blockchain, a global
+decentralized ledger, which can be unlocked with a piece of information
+known as a "private key". This is analogous to storing coins in a
+padlocked box, of which there can be multiple padlocks - see the 
+[Multi-signature Security](/docs/overview/multi-signature-security)
+ section.
 
 Unlike a password, a private key is not meant for you to remember.
 It's a long string of gibberish.
