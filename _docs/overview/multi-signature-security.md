@@ -61,12 +61,6 @@ Multisignature security protects against the following scenarios:
 enough to steal the money.
 * **Loss**: If a key is destroyed or simply misplaced, you can recover your money
 using the remaining keys.
-* **Betrayal**:
-You may want to entrust one or more signatories with keys to facilitate
-access to your funds when you are dead or incapacitated. With multisignature
-security, entrusting them with a key will not enable them to steal your
-funds (unless they steal additional key(s), or collude with another
-signatory).
 
 ## Choosing a multisignature withdrawal policy
 
