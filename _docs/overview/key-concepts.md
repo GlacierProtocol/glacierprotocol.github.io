@@ -4,7 +4,7 @@ description: Overview of key concepts leveraged by Glacier to provide
 Bitcoin key security
 ---
 
-## Private Keys
+## Private keys
 
 Bitcoin balances are stored in the Bitcoin blockchain, a global
 decentralized ledger, which can be unlocked with a piece of information
@@ -21,7 +21,7 @@ there is no legal recourse in the event of the key falling into the
 hands of someone else. Bitcoin is decentralized, meaning there is no
 company, person or entity that is liable.
 
-## Offline Key Storage ("Cold Storage")
+## Offline key storage ("cold storage")
 
 You don't want to store your
 private key on any computer that's connected to the Internet ("hot
@@ -39,7 +39,7 @@ Online keys are
 inherently exposed to hackers. You therefore need to make sure your private
 key stays offline ("cold storage") at all times.
 
-## Paper Key Storage
+## Paper key storage
 
 Because
 the private key is a relatively small piece of information, it can be stored

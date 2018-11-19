@@ -15,7 +15,7 @@ bitcoin address.
 * **Maintenance**: For ensuring funds in cold storage remain accessible and
 secure.
 
-## Sensitive Data
+## Sensitive data
 
 *Critically-sensitive data* (e.g. private keys) will be highlighted in red,
 like this: <span class="danger">critically-sensitive-data-here</span>.
@@ -65,7 +65,7 @@ If you use only hardcopies, you'll need to manually type in a large amount of
 gibberish data, by hand, with no errors, every time you withdraw funds from
 cold storage.
 
-### Terminal Usage
+### Terminal usage
 
 Many protocol steps involve
 typing commands into a *terminal window*. Working in a terminal window is

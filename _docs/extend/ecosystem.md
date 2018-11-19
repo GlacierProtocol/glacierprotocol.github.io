@@ -8,7 +8,7 @@ The Glacier protocol is lengthy and complex because the tools for high-security 
 
 Ideally, the Bitcoin community (and other cryptocurrency communities) will create these tools as soon as possible and render Glacier obsolete. We invite inquiry and consultation by others interested in developing these tools.
 
-## Cold Storage Hardware Wallets
+## Cold storage hardware wallets
 
 * Function like conventional hardware wallets, but
 eternally quarantined (no wireless or wired connections)

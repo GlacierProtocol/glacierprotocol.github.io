@@ -9,7 +9,7 @@ Central to our security protocols is
 a technique called "multisignature security." You'll need a quick primer on
 this topic to understand the Glacier protocol.
 
-## Regular Private Keys are Risky
+## Regular private keys are risky
 
 Remember that anybody with access to your private key can access your
 funds. And if you lose your private key, you cannot access your money; it is
@@ -31,7 +31,7 @@ slip of paper sitting in a safe) might break into the safe and steal the wallet.
 Or a major natural disaster might prevent you from returning home for an
 extended period, during which time your safe is looted.
 
-## What is Multisignature Security?
+## What is multisignature security?
 
 To address these
 issues, Bitcoin provides a way to secure funds with a set of private keys,
@@ -53,7 +53,7 @@ security is analogous to a bank requiring signatures from multiple people
 (for example, any 2 of a company's 3 designated officers) to access funds in
 an account.
 
-## How Does Multisignature Security Help?
+## How does multisignature security help?
 
 Multisignature security protects against the following scenarios:
 
@@ -68,7 +68,7 @@ security, entrusting them with a key will not enable them to steal your
 funds (unless they steal additional key(s), or collude with another
 signatory).
 
-## Choosing a Multisignature Withdrawal Policy
+## Choosing a multisignature withdrawal policy
 
 Below are common options for withdrawal policies. You will need to select one
 before beginning the protocol.

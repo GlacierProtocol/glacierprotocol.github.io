@@ -14,7 +14,7 @@ As described previously, the Glacier
 protocol involves putting bitcoins in cold storage, using multisignature
 security, with the keys stored only on paper.
 
-## Eternally Quarantined Hardware
+## Eternally quarantined hardware
 
 This bulk of the Glacier protocol consists of ways to safeguard
 against theft of private keys due to malware infection. To accomplish this,
@@ -36,7 +36,7 @@ an available interface (e.g. the Internet, if a quarantined laptop is later
 used to access the web). Eternal quarantining renders the hardware
 essentially useless for anything else but executing this protocol.
 
-## Parallel Hardware Stacks
+## Parallel hardware stacks
 
 There is a class of attacks which rely not on stealing
 your sensitive data (e.g. private keys), but in subverting the process of
@@ -76,7 +76,7 @@ automates much of the manual work involved in executing the protocol.
 GlacierScript's [open source code](https://github.com/GlacierProtocol/GlacierProtocol) is straightforward and extensively
 commented to facilitate easy review for flaws or vulnerabilities.
 
-## Protocol Output
+## Protocol output
 
 The end result of the Glacier protocol is a set of paper information
 packets, one for each private key needed for the multisignature withdrawal
@@ -90,7 +90,7 @@ by all private keys.
 Technical details: The Glacier protocol reuses Bitcoin addresses. See the
 [design document](../design-doc/overview.md) for a detailed analysis.
 
-## Protocol Cost
+## Protocol cost
 
 The Glacier protocol requires over $600 in equipment, and approximately 8 hours of work to perform an initial cold storage deposit. This excludes time for:
 
@@ -102,14 +102,14 @@ The Glacier protocol requires over $600 in equipment, and approximately 8 hours 
 Subsequent deposits and withdrawals re-use the same equipment and take a
 fraction of the time.
 
-## No Formal Support
+## No formal support
 
 As a free, volunteer-developed community project, there is no formal support
 channel for Glacier should you encounter any issues. However, you may be able to
 ask advice of community members on our [Gitter chat room](https://gitter.im/glacierprotocol/Lobby)
 or other Bitcoin community forums.
 
-## Privacy Considerations
+## Privacy considerations
 
 Because the Bitcoin blockchain is public, the way you route and store funds has
 privacy implications. For example, any person to whom you give your cold storage

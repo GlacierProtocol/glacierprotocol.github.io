@@ -1,5 +1,5 @@
 ---
-title: Create App USBs
+title: Create app USBs
 description: Learn how to prepare your USB drives for Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---

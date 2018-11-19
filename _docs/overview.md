@@ -53,7 +53,7 @@ on self-managed storage, but there are cheaper, lower security and more convenie
 A reader familiar with Bitcoin security concepts may prefer to skip to the section
 [Choosing a Multisignature Withdrawal Policy](/docs/overview/multi-signature-security#choosing-a-multisignature-withdrawal-policy).
 
-### Online Storage
+### Online storage
 
 For most people, most of the time, storing Bitcoin using a high-quality online storage 
 service is sufficient. The pros and cons of the various online services are beyond the 
@@ -93,7 +93,7 @@ of these services reduce, without eliminating entirely, some of the risks descri
 they still require care and technical competence to securely manage the electronic "keys" which
 provide access to funds.
 
-### Hardware Wallets
+### Hardware wallets
 
 Hardware wallets can provide a form of self-managed storage with good security. Again, the pros
 and cons of the various hardware wallets are beyond the scope of this document. However, all

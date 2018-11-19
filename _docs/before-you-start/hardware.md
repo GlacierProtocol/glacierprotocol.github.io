@@ -41,7 +41,7 @@ Linux.**
 * Smartphone with a working camera
 
 
-### Other Equipment
+### Other equipment
 
 * Two factory-sealed USB drives (2GB+):
 [Verbatim 2GB](http://a.co/jieluaE)
