@@ -1,7 +1,7 @@
 ---
 title: Key concepts
 description: Overview of key concepts leveraged by Glacier to provide
-Bitcoin key security
+ Bitcoin key security
 ---
 
 ## Private keys
@@ -21,31 +21,24 @@ there is no legal recourse in the event of the key falling into the
 hands of someone else. Bitcoin is decentralized, meaning there is no
 company, person or entity that is liable.
 
-## Offline key storage ("cold storage")
+## Offline key storage
 
-You don't want to store your
-private key on any computer that's connected to the Internet ("hot
-storage"), because that exposes it to more hacking attempts. There are
-viruses out there that search computers for private keys and steal them
-(thereby stealing your money).
+Private keys should only ever be offline, or "in cold storage". They should
+never be stored on any internet-connected computer, or "in hot storage",
+because it provides an opportunity for hacking attempts or virus infection
+via the internet. Viruses can attack in many ways, including searching the
+local system for private keys or keylogging data entry.
 
-One way to protect against this is by
-encrypting your private key, so even if a thief steals it, they can't read
-it. This helps, but is not foolproof. For example, a thief might install
-[keylogger malware](https://en.wikipedia.org/wiki/Keystroke_logging)
-so that they steal your password too.
-
-Online keys are
-inherently exposed to hackers. You therefore need to make sure your private
-key stays offline ("cold storage") at all times.
+A private key can be encrypted, meaning a private key in a hacker's
+possession is unreadable, but this would not protect against [keylogging malware](https://en.wikipedia.org/wiki/Keystroke_logging) where the encryption
+password was also stolen.
 
 ## Paper key storage
 
-Because
-the private key is a relatively small piece of information, it can be stored
-on paper as easily as it can be stored on a computer. And when it comes to
-key storage, paper has various advantages compared to computers: It's always
-offline (no chance of accidentally connecting it to the Internet!), it's
-easy & cheap to make multiple copies for backups (and different keys for
-multisignature security -- see below), and it's not susceptible to
-mechanical failure.
+Private keys, being relatively small pieces of information, can be stored
+on paper as easily as they can in digital format. Paper has the following
+advantages:
+
+* **Always offline**: No chance of accidental network connection
+* **Easy & cheap**: Multiple copies of multiple keys can be made for backups
+* **Durable**: Robust against mechanical failure
