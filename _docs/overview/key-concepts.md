@@ -4,7 +4,7 @@ description: Overview of key concepts leveraged by Glacier to provide
 Bitcoin key security
 ---
 
-## Private Key
+## Private Keys
 
 Bitcoin balances are stored in the Bitcoin blockchain, a global
 decentralized ledger, which can be unlocked with a piece of information
@@ -13,14 +13,13 @@ padlocked box, of which there can be multiple padlocks - see the
 [Multi-signature Security](/docs/overview/multi-signature-security)
  section.
 
-Unlike a password, a private key is not meant for you to remember.
-It's a long string of gibberish.
-The private key is what you need to keep
-secure. If anyone gets it, they can take your money. Unlike traditional
-financial instruments, there is no recourse. There is no company that is
-liable, because Bitcoin is a decentralized system not run by any person or
-entity. And no law enforcement agency is likely to investigate your
-case.
+Unlike a password, a private key is not meant to be memorized. It is a
+256-bit number, usually expressed as a 64-character hexadecimal string.
+It is important to understand that the holder of the private key is the
+owner of the bitcoin and, unlike traditional financial instruments, 
+there is no legal recourse in the event of the key falling into the
+hands of someone else. Bitcoin is decentralized, meaning there is no
+company, person or entity that is liable.
 
 ## Offline Key Storage ("Cold Storage")
 
