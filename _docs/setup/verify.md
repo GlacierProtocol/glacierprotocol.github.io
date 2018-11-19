@@ -87,14 +87,14 @@ that's fine; proceed as normal.)
     1. **Windows**: Download and install the latest available version of
     [Gpg4win](https://www.gpg4win.org/). Use the default
     options.
-    2. **macOS**: Download and install the latest available version of
+    2. **MacOS**: Download and install the latest available version of
     [GPG Suite](https://gpgtools.org/).
     3. **Linux**: GnuPG comes pre-installed with Linux distributions.
 
 9. Open a terminal window:
 
     1. **Windows**: Press Windows-R, type "powershell" and click OK.
-    2. **macOS**: Click the Searchlight (magnifying glass) icon in the menu bar, and
+    2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar, and
     type a terminal window. "terminal". Select the Terminal application from the
     search results.
     3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
@@ -104,7 +104,7 @@ commands below are based on common default settings; if you put your downloads
 is in a different place, you will need to customize this command.
 
     1. **Windows**:  `> cd $HOME/Downloads/glacier`
-    2. **macOS**:  `$ cd $HOME/Downloads/glacier`
+    2. **MacOS**:  `$ cd $HOME/Downloads/glacier`
     3. **Linux**: `$ cd $HOME/Downloads/glacier`
 
 11. Verify the integrity of the

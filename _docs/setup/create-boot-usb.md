@@ -16,7 +16,7 @@ way.)
 
 The *first two* USB drives ("Setup Boot USBs") are the USB drives you labeled
 "SETUP 1 BOOT" and "SETUP 2 BOOT" in Section II. They will be prepared using
-your Setup Computers, which may be running Windows, macOS, or something else.
+your Setup Computers, which may be running Windows, MacOS, or something else.
 
 The *last two* USB drives ("Quarantined Boot USBs") are the USB drives you
 labeled "Q1 BOOT" and "Q2 BOOT" in Section II. They will be prepared using your
@@ -44,7 +44,7 @@ copy there.
 4. Open a terminal window.
 
     1. **Windows**: Press Windows-R, type "powershell" and click OK.
-    2. **macOS**: Click the Searchlight (magnifying glass) icon in the menu bar,
+    2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar,
     and type "terminal". Select the Terminal application from the search results.
     3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T. (On Ubuntu, press
     Ctrl-Alt-T.)
@@ -55,13 +55,13 @@ copy there.
     downloaded Ubuntu, customizing the folder name if necessary:
 
         1. **Windows**: `> cd $HOME/Downloads`
-        2. **macOs**: `$ cd $HOME/Downloads`
+        2. **MacOS**: `$ cd $HOME/Downloads`
         3. **Linux**: `$ cd $HOME/Downloads`
 
     2. View the fingerprint of the file:
 
         1. **Windows**: `> Get-FileHash -a sha256 ubuntu-16.04.1-desktop-amd64.iso`
-        2. **macOs**: `$ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso`
+        2. **MacOS**: `$ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso`
         3. **Linux**: `$ sha256sum ubuntu-16.04.1-desktop-amd64.iso`
 
     3. The following fingerprint should be displayed:
@@ -103,13 +103,13 @@ copy there.
         "DD Image Mode", select "ISO Image Mode" and press OK.
         10. The program will take a few minutes to write the USB.
 
-    2. **macOS**
+    2. **MacOS**
         1. Prepare the Ubuntu download for copying to the USB.
             ```
             $ cd $HOME/Downloads
             $ hdiutil convert ubuntu-16.04.1-desktop-amd64.iso -format UDRW -o ubuntu-16.04.1-desktop-amd64.img
             ```
-        2. Determine the macOS "device identifier" for the Boot USB.
+        2. Determine the MacOS "device identifier" for the Boot USB.
             1. `$ diskutil list`
             2. Insert the SETUP 1 BOOT USB in an empty USB slot.
             3. Wait 10 seconds for the operating system to recognize the USB.
@@ -143,7 +143,7 @@ copy there.
             4. Wait several minutes for the copying process to complete. When
             it does, you may see an error box pop up. This is expected; it's
             because the USB is written in a format readable by Ubuntu, but not
-            readable by macOS.
+            readable by MacOS.
             5. Click Ignore.
 
         4. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or
@@ -310,7 +310,7 @@ copy there.
            This setup process is the ONE exception.
         2. Because you have booted the SETUP 1 computer off the SETUP 1 BOOT
         USB, you will follow the instructions for Ubuntu, even if your computer
-        normally runs Windows or macOS.
+        normally runs Windows or MacOS.
         3. Immediately after you are finished executing steps 1-6 with the Q1
         BOOT USB, remove the Q1 BOOT USB from the SETUP 1 computer.
             1. On your desktop, right-click the corresponding USB drive icon

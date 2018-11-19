@@ -29,7 +29,7 @@ software installed, here are some options:
 
     * Windows: [Kaspersky](https://usa.kaspersky.com/) ($39.99/yr),
     [Avira](https://www.avira.com) (Free)
-    * macOS: [BitDefender](https://www.bitdefender.com/) ($59.95/yr),
+    * MacOS: [BitDefender](https://www.bitdefender.com/) ($59.95/yr),
     [Sophos](https://home.sophos.com/) (Free)
     * Linux: Unnecessary
 
