@@ -1,66 +1,52 @@
 ---
 title: Multi-signature security
-description: Glacier uses multiple keys to protect your Bitcoins. This makes it
-  harder for someone to steal your Bitcoins, and allows you to still access them
-  even if you lose one keys.
+description: Glacier uses multiple private keys. This provides greater security,
+ and protects against total loss in the event of the loss of a single key.
 ---
 
-Central to our security protocols is
-a technique called "multisignature security." You'll need a quick primer on
-this topic to understand the Glacier protocol.
+Central to The Glacier Protocol is a technique called "multisignature security",
+or "multisig", which utilises multiple private keys to provide greater security, 
+while also protecting against total loss in the event of the loss of a single key.
+
+The "signature" part of "multisignature" comes from the process of using a private
+key to access bitcoins, referred to as "signing a transaction". 
 
 ## Single private keys are risky
 
-Remember that anybody with access to your private key can access your
-funds. And if you lose your private key, you cannot access your money; it is
-lost forever. There is no mechanism for reversal, and nobody to appeal
-to.
+The bearer asset nature of bitcoin makes it very difficult to secure. For example,
+a private key, on paper, in a safe deposit box at a bank may seem secure, but 
+there are various eventualities that could lead to total loss. The box could be
+destroyed in a disaster, [seized](http://abcnews.go.com/GMA/story?id=4832471),
+accessed after identity theft, or the entire bank could be robbed.
 
-This makes it difficult to keep funds highly secure. For example, you
-might store a private key on paper in a safe deposit box at a bank, and feel
-fairly safe. But even this is not the most robust solution. The box could be
-destroyed in a disaster, or be robbed (perhaps via identity theft), or
-[intentionally seized](http://abcnews.go.com/GMA/story?id=4832471).
-
-You can try to mitigate these risks by storing the key yourself, perhaps in a
-fireproof home safe (as opposed to a bank). But this introduces new risks. A
-determined thief (perhaps a professional who brings safe-drilling tools on their
-burglary jobs, or who somehow got wind of the fact that you have a $100,000
-slip of paper sitting in a safe) might break into the safe and steal the wallet.
-
-Or a major natural disaster might prevent you from returning home for an
-extended period, during which time your safe is looted.
+Self storage, perhaps in a fireproof safe at home, can mitigate some of these issues,
+but it also introduces new risks. A home safe is considerably easier to access and
+enter than a bank, as well as potentially introducing personal harm to home
+occupants.
 
 ## What is multisignature security?
 
-To address these
-issues, Bitcoin provides a way to secure funds with a set of private keys,
-such that some of the keys (but not necessarily all) are required to
-withdraw funds. For example, you might secure your bitcoins with 3 keys but
-only need any 2 of those keys to withdraw funds. (This example is known as
-a "2-of-3" withdrawal policy.)
+Multisignature security is analogous to a bank requiring signatures from multiple
+people (for example, any two of a company's three designated officers) to access
+funds in a company account.
 
-The keys are then stored in different
-locations, so someone who gets access to one key will not automatically
-have access to the others. Sometimes, a key is entrusted to the custody of
-another person, known as a "signatory."
+Bitcoin provides a way to secure funds with a set of private keys, such that some
+of the keys, but not necessarily all, are required to sign a transaction. For
+example, a "2-of-3" withdrawal policy means that, of the three existing keys, two
+are required. In general, a multisignature policy is described as being "m-of-n",
+where n>=m.
 
-This approach of using multiple
-keys is known as "multisignature security." The "signature" part of
-"multisignature" comes from the process of using a private key to access
-bitcoins, which is referred to as "signing a transaction." Multisignature
-security is analogous to a bank requiring signatures from multiple people
-(for example, any 2 of a company's 3 designated officers) to access funds in
-an account.
+The keys can then be stored in different locations to reduce the chance of any single
+third party gaining access to the minimum required number of keys. Keys can also be
+entrusted to the custody of another person, known as a "signatory."
 
 ## How does multisignature security help?
 
-Multisignature security protects against the following scenarios:
+Multisignature security mitigates risk in the following scenarios:
 
-* **Theft**: Even if somebody physically breaks into a safe, any one key is not
-enough to steal the money.
-* **Loss**: If a key is destroyed or simply misplaced, you can recover your money
-using the remaining keys.
+* **Theft**: Control of a single key does not give access to the bitcoin
+* **Loss**: Bitcoin can be recovered after the loss of a single key, if
+misplaced or if the owner is incapacitated, by using the remaining keys
 
 ## Choosing a multisignature withdrawal policy
 
