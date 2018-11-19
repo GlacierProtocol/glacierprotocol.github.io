@@ -9,7 +9,7 @@ Central to our security protocols is
 a technique called "multisignature security." You'll need a quick primer on
 this topic to understand the Glacier protocol.
 
-## Regular private keys are risky
+## Single private keys are risky
 
 Remember that anybody with access to your private key can access your
 funds. And if you lose your private key, you cannot access your money; it is
