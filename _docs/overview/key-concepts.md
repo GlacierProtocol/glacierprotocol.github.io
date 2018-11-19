@@ -10,7 +10,7 @@ Bitcoin balances are stored in the Bitcoin blockchain, a global
 decentralized ledger, which can be unlocked with a piece of information
 known as a "private key". This is analogous to storing coins in a
 padlocked box, of which there can be multiple padlocks - see the 
-[Multi-signature Security](/docs/overview/multi-signature-security)
+[Multisignature Security](/docs/overview/multi-signature-security)
  section.
 
 Unlike a password, a private key is not meant to be memorized. It is a
