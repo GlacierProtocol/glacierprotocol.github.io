@@ -50,37 +50,31 @@ misplaced or if the owner is incapacitated, by using the remaining keys
 
 ## Choosing a multisignature withdrawal policy
 
-Below are common options for withdrawal policies. You will need to select one
-before beginning the protocol.
+Below are common options for withdrawal policies, with option 1 being The Glacier
+Protocol recommendation.
 
 ### Option 1: Self-custody of keys
 
-Our default
-recommendation is a 2-of-4 withdrawal policy where you manage all of your
-own keys (i.e. you do not entrust any to the custody of friends or family).
-2-of-4 means there are four keys, and any two of those keys can be combined
-to access your money, ensuring access even if two keys are lost or
-stolen.
+A 2-of-4 withdrawal policy, with all private keys in the custody of the bitcoin owner,
+where any two private keys can be combined to sign a transaction. This provides access
+even in a scenario where two keys are lost or stolen.
 
-The keys will be distributed as follows:
+The keys should be distributed as follows:
 
 * One in a safe at home
 * Three in safe deposit boxes, or private vaults, at different locations
 
-It's important to think about estate planning -- making
-arrangements for your designated agents to be able to access your funds when
-you are dead (e.g. for distribution to your heirs) or incapacitated (e.g. to
-pay medical bills). This usually requires significant legal arrangements to
-be made in advance.
+In a self-custody system, estate planning becomes critical. Arrangements must be made
+to provide third party access to funds in the event of death (e.g. for inheritance) or
+incapacitation (e.g. for medical bills). This usually requires significant legal
+arrangement to be made in advance.
 
-The most failsafe way to ensure your agents will have access to your safe
-deposit box is to check with the bank. Standard estate planning legal documents
-should allow your agent to access the box upon your incapacity, and to get into
-it upon your death. But banks can be fussy and sometimes prefer their own forms.
+The most failsafe way to ensure third party access to a safe deposit box is directly
+via the bank. Standard estate planning legal documents should allow access to each box
+upon personal incapacity or death, although banks may offer their own forms.
 
-If you have a living trust, one option may be to have your trust as the co-owner
-of your safe deposit box. That generally allows a successor trustee to access
-the box.
+Another option may be to arrange a living trust, or local equivalent, where the trust
+is the co-owner of the safe deposit box. A successor trustee could then access the box.
 
 ### Option 2: Distributed custody of keys
 
