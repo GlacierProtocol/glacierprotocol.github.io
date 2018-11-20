@@ -34,6 +34,12 @@ This is analogous to storing coins in a padlocked box, with multiple keys and
 padlocks which open in different combinations. See the [Multisignature Security](/docs/overview/multi-signature-security)
 section for more detail.
 
+## Redeem script
+
+Multisignature requires each of the multiple private keys to be accompanied by a
+redeem script. This script, each of which is identical, defines how the keys
+combine to release funds. Losing all redeem scripts leads to the total loss of funds.
+
 ## Offline key storage
 
 Private keys should only ever be offline, or "in cold storage". They should
