@@ -9,22 +9,30 @@ description: Overview of key concepts leveraged by Glacier to provide
 The process of using a private key to access bitcoins, referred to as "signing
 a transaction". 
 
-## Private keys
+## Private key
 
-Bitcoin balances are stored in the Bitcoin blockchain, a global
-decentralized ledger, which can be unlocked with a piece of information
-known as a "private key". This is analogous to storing coins in a
-padlocked box, of which there can be multiple padlocks - see the 
-[Multisignature Security](/docs/overview/multi-signature-security)
- section.
+A 256-bit number, usually expressed in 64-character hexadecimal, which can unlock
+bitcoin balances stored in the Bitcoin blockchain, a global decentralized ledger.
 
-Unlike a password, a private key is not meant to be memorized. It is a
-256-bit number, usually expressed as a 64-character hexadecimal string.
+Unlike a password, a private key is not meant to be memorized.
 It is important to understand that the holder of the private key is the
 holder of the bitcoin and, unlike traditional financial instruments, 
 there is no legal recourse in the event of the key falling into the
 hands of someone else. Bitcoin is decentralized, meaning there is no
 company, person or entity that is liable.
+
+## Single signature security
+
+This is analogous to storing coins in a padlocked box, with a single key and padlock.
+
+## Multisignature, or multisig, security
+
+Utilises multiple private keys to provide greater security, while also protecting
+against total loss in the event of the loss of some keys.
+
+This is analogous to storing coins in a padlocked box, with multiple keys and
+padlocks which open in different combinations. See the [Multisignature Security](/docs/overview/multi-signature-security)
+section for more detail.
 
 ## Offline key storage
 
