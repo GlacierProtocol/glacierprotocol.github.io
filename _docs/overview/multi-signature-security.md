@@ -89,13 +89,9 @@ Key distribution also has the following disadvantages:
 An alternate version of this protocol could be created using a different multisig
 approach besides P2SH transactions, which would eliminate the ability of signatories to
 view balances. See [Possible improvements to Glacier](/docs/extend/improvements#consider-shamirs-secret-sharing-or-vanilla-multisig-vs-p2sh-transactions) for details.
-* **Signatory collusion**: Although possessing one key won't allow a signatory
-to access your funds, two signatories might collude with each other to steal
-your money.
-* **Signatory reliability**: A signatory may fail to store the key securely, or
-they may lose it.
-* **Signatory safety**: Giving your signatories custody of a valuable key may
-expose them to the risk of targeted physical theft.
+* **Signatory collusion**: Two signatories may collude to gain access to funds.
+* **Signatory reliability**: A signatory may fail to store the key securely.
+* **Signatory safety**: Signatories may be exposed to the risk of targeted physical theft.
 * **Kidnapping risk**: If you anticipate traveling in
 [high-crime areas with kidnapping risk](http://www.nytimes.com/2012/05/03/business/kidnapping-becomes-a-growing-travel-risk.html),
 your funds will be at greater risk because you'll
