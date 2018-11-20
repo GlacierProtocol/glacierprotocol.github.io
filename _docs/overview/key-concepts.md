@@ -4,6 +4,11 @@ description: Overview of key concepts leveraged by Glacier to provide
  Bitcoin key security
 ---
 
+## Signing
+
+The process of using a private key to access bitcoins, referred to as "signing
+a transaction". 
+
 ## Private keys
 
 Bitcoin balances are stored in the Bitcoin blockchain, a global

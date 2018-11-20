@@ -8,8 +8,6 @@ Central to The Glacier Protocol is a technique called "multisignature security",
 or "multisig", which utilises multiple private keys to provide greater security, 
 while also protecting against total loss in the event of the loss of a single key.
 
-The "signature" part of "multisignature" comes from the process of using a private
-key to access bitcoins, referred to as "signing a transaction". 
 
 ## Single private keys are risky
 
