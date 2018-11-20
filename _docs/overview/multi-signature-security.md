@@ -92,16 +92,6 @@ view balances. See [Possible improvements to Glacier](/docs/extend/improvements#
 * **Signatory collusion**: Two signatories may collude to gain access to funds.
 * **Signatory reliability**: A signatory may fail to store the key securely.
 * **Signatory safety**: Signatories may be exposed to the risk of targeted physical theft.
-* **Kidnapping risk**: If you anticipate traveling in
-[high-crime areas with kidnapping risk](http://www.nytimes.com/2012/05/03/business/kidnapping-becomes-a-growing-travel-risk.html),
-your funds will be at greater risk because you'll
-have the ability to access them remotely (by contacting your signatories and
-asking for their keys).
-Financially-motivated kidnapping hinges on your ability to access funds to give
-to the kidnappers. If you are literally unable to access additional funds
-(because the keys are stored in remote vaults which you must be physically
-present to access, as opposed to held by friends or family who you can call),
-kidnappers will have no incentive to hold you.
 
 For distributed custody, we recommend a 2-of-5 withdrawal policy. The extra key
 (5 keys, rather than the recommended
