@@ -74,8 +74,10 @@ is the co-owner of the safe deposit box. A successor trustee could then access t
 
 ### Option 2: Distributed custody of keys
 
-Another option is to distribute a number of keys to trusted individuals, or signatories,
-which has the following advantages:
+A 2-of-5 withdrawal policy is recommended, with private keys distributed to a number
+of trusted individuals, or signatories. The extra key, five rather than the recommended
+four in Option 1, mitigates the extra risk of signatories not sufficiently protecting
+the key against loss. This has the following advantages:
 
 * **Availability**: Vaults or safe deposit boxes may not be available in the local area.
 * **Ease of setup**: It may be simpler to distribute keys to signatories than to travel
@@ -93,13 +95,9 @@ view balances. See [Possible improvements to Glacier](/docs/extend/improvements#
 * **Signatory reliability**: A signatory may fail to store the key securely.
 * **Signatory safety**: Signatories may be exposed to the risk of targeted physical theft.
 
-For distributed custody, we recommend a 2-of-5 withdrawal policy. The extra key
-(5 keys, rather than the recommended
-4 keys in Option 1) is recommended since you have less control over whether
-a signatory effectively protects their key against theft or loss
+Thorough estate planning arrangements, which allow executors to access the keys if
+necessary, will allow the policy to be reduced from 2-of-5 to 2-of-4. Two keys should
+be issued to trusted signatories rather than three.
 
-If you have estate planning arrangements which you are confident will allow your
-agents to access the keys in your custody when needed, you should be fine with
-4 keys instead of 5 (two keys going to trusted signatories rather than three).
-Make sure your executors and signatories know to get in touch with each other
+Whether 2-of-5 or 2-of-4, each signatory should be able to communicate with each other
 when needed.
