@@ -74,19 +74,16 @@ is the co-owner of the safe deposit box. A successor trustee could then access t
 
 ### Option 2: Distributed custody of keys
 
-Another option is to distribute some of your
-keys to individuals who you trust ("signatories"). This can offer some
-advantages:
+Another option is to distribute a number of keys to trusted individuals, or signatories,
+which has the following advantages:
 
-* **Availability**: If you live in a rural area, there may not be many vaults
-or safe deposit boxes that are practical to get to.
-* **Ease of setup**: It may be simpler to distribute keys to signatories than
-to find available vaults, travel to them, and set up accounts.
-* **Ease of estate planning**: You don't need to make complicated legal
-arrangements for your signatories to access your funds. They'll have the keys
-they need to do so.
+* **Availability**: Vaults or safe deposit boxes may not be available in the local area.
+* **Ease of setup**: It may be simpler to distribute keys to signatories than to travel
+to multiple available vaults and set up accounts.
+* **Ease of estate planning**: No complicated legal arrangements for signatories to
+access funds.
 
-However, there are significant drawbacks:
+Key distribution also has the following disadvantages:
 
 * **Privacy**: Other signatories will have the ability to see your balance.
 Technical details: Every private key needs to be packaged with the multisig
