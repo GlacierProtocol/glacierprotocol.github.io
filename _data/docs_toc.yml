@@ -1,6 +1,6 @@
 - title: Glacier overview
   docs:
-  - overview
+  - overview/about
   - overview/key-concepts
   - overview/multi-signature-security
 - title: Before you start
