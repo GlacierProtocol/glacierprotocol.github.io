@@ -77,7 +77,7 @@ copy there.
         Technical details: Because you verified the checksum & checksum
         signature for this document in Section I, we are omitting the GPG
         verification of some other fingerprints in the protocol. For a detailed
-        security analysis, see the design document.
+        security analysis, see the [design document](/docs/design-doc/overview).
 
         You can verify this is the official Ubuntu fingerprint
         [here](http://releases.ubuntu.com/16.04/SHA256SUMS),

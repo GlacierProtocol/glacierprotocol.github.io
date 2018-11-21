@@ -8,7 +8,7 @@ redirect_from: /docs/before-you-start/
 This section
 establishes a basic understanding of the Glacier protocol in order to
 facilitate its execution. For more background on the protocol's design, see
-the Glacier [design document](/docs/design-doc/overview).
+the [design document](/docs/design-doc/overview).
 
 As described previously, the Glacier
 protocol involves putting bitcoins in cold storage, using multisignature
