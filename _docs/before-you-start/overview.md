@@ -102,12 +102,11 @@ or other Bitcoin community forums.
 
 ## Privacy considerations
 
-Because the Bitcoin blockchain is public, the way you route and store funds has
-privacy implications. For example, any person to whom you give your cold storage
-address (because, for example, they're sending you funds which you want to keep
-in cold storage) can see your total cold storage balance. This is easy to do
-with many free services (e.g.
-[Blockr](https://www.coinbase.com/) ).
+Because the Bitcoin blockchain is public, the routing and storage of funds has
+privacy implications. For example, any person receiving a cold storage
+address for the purpose of sending funds, will be able to see the total cold
+storage balance. This is easy to do with many free services, for example,
+[BlockCypher](https://live.blockcypher.com).
 
 This is true not just of individuals, but entities. That is, any online wallet
 service which you use to send funds to cold storage can see your cold storage
