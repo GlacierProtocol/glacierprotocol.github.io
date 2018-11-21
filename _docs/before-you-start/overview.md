@@ -120,15 +120,12 @@ intermediate address. This does not provide perfect privacy, but each
 intermediate address provides increasing levels of obfuscation and
 uncertainty.
 
-If privacy is very important to you, you might consider using
-a service like
-[Shapeshift](https://shapeshift.io/#/coins)
-to exchange your Bitcoins for an more anonymous cryptocurrency, such as
-[Monero](http://monero.org/),
-and then exchange them back to Bitcoins.
-However, this will cost you fees, and importantly, it requires you trust the
-operator of the exchange service not to steal or lose your
-funds.
+If privacy is a *major* concern, consider using a service like
+[Shapeshift](https://shapeshift.io/#/coins) to exchange bitcoin for a more
+anonymous cryptocurrency such as [Monero](http://monero.org/). This can then be
+exchanged back to bitcoin. Each exchange will incur a fee and, more importantly,
+will require trust that the exchange service will not steal/lose the funds, or
+reveal personal details.
 
 [This guide](https://bitcoinnewsmagazine.com/how-to-use-monero-to-anonymize-bitcoin/)
 gives additional detail about how to increase Bitcoin anonymity using Monero &
