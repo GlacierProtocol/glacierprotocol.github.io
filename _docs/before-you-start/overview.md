@@ -11,30 +11,24 @@ facilitate its execution. For more background on the protocol's design, see
 the [design document](/docs/design-doc/overview).
 
 As described previously, the Glacier
-protocol involves putting bitcoins in cold storage, using multisignature
+protocol involves securing bitcoins in cold storage, using multisignature
 security, with the keys stored only on paper.
 
 ## Eternally quarantined hardware
 
-This bulk of the Glacier protocol consists of ways to safeguard
-against theft of private keys due to malware infection. To accomplish this,
-Glacier uses eternally quarantined hardware.
+Eternally quarantined hardware is hardware with drastically limited
+interfaces with the outside world. This prevents the transmission of
+sensitive or harmful data, for example, private keys or malware. All
+interfaces are considered, including network, USB and printer, because
+all may be used to transmit data.
 
-Quarantined hardware means
-we drastically limit the ways in which a piece of hardware interfaces with
-the outside world in order to prevent the transmission of sensitive data
-(e.g. private keys) or harmful data (e.g. malware). We consider all
-interfaces -- network, USB, printer, and so on -- because any of them
-might be used to transmit malware or private keys.
-
-Eternally quarantined
-hardware means we use factory-new hardware for this purpose (to minimize
-risk of prior malware infection), and never lift the quarantine. The
-quarantine is permanent because any malware infection which does somehow
-get through the quarantine might wait indefinitely for an opportunity to use
-an available interface (e.g. the Internet, if a quarantined laptop is later
-used to access the web). Eternal quarantining renders the hardware
-essentially useless for anything else but executing this protocol.
+To ensure hardware is eternally quarantined, factory-new hardware is used to
+minimize the risk of prior malware infection. This hardware must be
+permanantly quarantined, effectively rendering it useless for anything other
+than executing the protocol. The quarantine is *strictly* permanent because
+any malware infection which gets through the quarantine may wait
+indefinitely for an opportunity to use an available interface, for example,
+if a quarantined laptop is later used to access the web. 
 
 ## Parallel hardware stacks
 
