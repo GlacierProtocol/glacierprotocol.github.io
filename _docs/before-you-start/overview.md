@@ -109,14 +109,13 @@ storage balance. This is easy to do with many free services, for example,
 [BlockCypher](https://live.blockcypher.com).
 
 This is true not just of individuals, but entities. That is, any online wallet
-service which you use to send funds to cold storage can see your cold storage
-balance, and may deduce that it belongs to you. They may, of course, also choose
+service used to send funds to cold storage can see the cold storage
+balance, and may deduce the owner. The online wallet may, of course, also choose
 to share this information with others.
 
-If this is a concern for you, the easiest way to keep your
-cold storage balance private from a particular entity is to route the
-payment through one (or more) intermediary addresses before sending it to
-your cold storage address, with a few transactions going to each
+If privacy is a concern, the easiest way to keep a cold storage balance private is
+to route the payment through one (or more) intermediary addresses before sending
+it to the cold storage address, with a few transactions going to each
 intermediate address. This does not provide perfect privacy, but each
 intermediate address provides increasing levels of obfuscation and
 uncertainty.
