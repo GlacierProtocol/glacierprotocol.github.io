@@ -127,10 +127,6 @@ exchanged back to bitcoin. Each exchange will incur a fee and, more importantly,
 will require trust that the exchange service will not steal/lose the funds, or
 reveal personal details.
 
-[This guide](https://bitcoinnewsmagazine.com/how-to-use-monero-to-anonymize-bitcoin/)
-gives additional detail about how to increase Bitcoin anonymity using Monero &
-Tor.
-
 ## Out of scope
 
 There's always more one could do to increase security. While
