@@ -88,7 +88,7 @@ excludes time for:
 * Obtaining equipment
 * Printing documents
 * Downloading files
-* Physically storing the resulting Bitcoin keys
+* Physically storing the private keys
 
 Subsequent deposits and withdrawals re-use the same equipment and take a
 fraction of the time.
@@ -96,8 +96,8 @@ fraction of the time.
 ## No formal support
 
 As a free, volunteer-developed community project, there is no formal support
-channel for Glacier should you encounter any issues. However, you may be able to
-ask advice of community members on our [Gitter chat room](https://gitter.im/glacierprotocol/Lobby)
+channel for Glacier. However, advice may be available from community
+members on the Glacier [Gitter chat room](https://gitter.im/glacierprotocol/Lobby)
 or other Bitcoin community forums.
 
 ## Privacy considerations
