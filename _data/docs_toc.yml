@@ -34,7 +34,7 @@
   - check-balance/maintenance
 - title: Protocol vulnerabilities
   docs:
-  - overview/attack-surface
+  - protocol-vulnerabilities/attack-surface
 - title: Extend Glacier
   docs:
   - extend/security
