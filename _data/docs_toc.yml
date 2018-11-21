@@ -3,7 +3,6 @@
   - overview
   - overview/key-concepts
   - overview/multi-signature-security
-  - overview/attack-surface
 - title: Before you start
   docs:
   - before-you-start/overview
@@ -33,6 +32,9 @@
   docs:
   - check-balance/overview
   - check-balance/maintenance
+- title: Protocol vulnerabilities
+  docs:
+  - overview/attack-surface
 - title: Extend Glacier
   docs:
   - extend/security
