@@ -54,16 +54,14 @@ different manufacturers.
 
 ## Bitcoin Core and GlacierScript
 
-Glacier uses the [Bitcoin Core](https://bitcoincore.org/)
-software for all cryptographic and financial operations, as its open source code
-is the most trustworthy. This is due to its track record of securing large amounts
-of money for many years, and the high degree of code review scrutiny it has
-received.
+Glacier uses [Bitcoin Core](https://bitcoincore.org/) for all cryptographic and
+financial operations. Its open source code has proven to be the most trustworthy,
+most secure, and has had the highest degree of code review scrutiny over many years.
 
-Glacier also utilizes GlacierScript, a software program that
-automates much of the manual work involved in executing the protocol.
-GlacierScript's [open source code](https://github.com/GlacierProtocol/GlacierProtocol) is straightforward and extensively
-commented to facilitate easy review for flaws or vulnerabilities.
+Glacier also utilizes GlacierScript to automate much of the manual work involved
+in executing the protocol. GlacierScript's [open source code](https://github.com/GlacierProtocol/GlacierProtocol)
+is straightforward, and extensively commented, to facilitate easy review for flaws
+or vulnerabilities.
 
 ## Protocol output
 
