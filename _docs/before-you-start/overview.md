@@ -32,20 +32,17 @@ if a quarantined laptop is later used to access the web.
 
 ## Parallel hardware stacks
 
-There is a class of attacks which rely not on stealing
+"Flawed data" is a class of attack which relies not on stealing
 your sensitive data (e.g. private keys), but in subverting the process of
-generating your sensitive data so it can be more easily guessed by a third
-party. We call this "flawed data."
+generating the sensitive data, with the intention of making it more easily
+guessed by a third party. For example, a variant of the Trojan.Bitclip
+attack replaces keys displayed on your screen, or stored in your clipboard,
+with insecure keys.
 
-For example, a variant of the Trojan.Bitclip attack which replaces keys
-displayed on your screen (or keys stored in your clipboard) with insecure keys.
-
-Because we are generating our data in
-eternally quarantined environments, any malware infection attempting this is
-unlikely to have come from your other computers -- it would likely have
-already been present when the quarantined system arrived from the
-manufacturer. For example, the Lenovo rootkit or this Dell firmware malware
-infection.
+By using eternally quarantined hardware, any malware attempting to take advantage
+of flawed data would likely have already been present when the system arrived
+from the manufacturer. For example, [the Lenovo Service Engine rootkit](https://thehackernews.com/2015/08/lenovo-rootkit-malware.html)
+or [the Dell W32.Spybot worm](https://www.theregister.co.uk/2010/07/23/dell_malware_update/).
 
 The way to defeat these attacks is to detect them before
 we actually use the flawed data. We can detect such an attack by
