@@ -48,7 +48,7 @@ prepare your quarantined workspace.
         1. Type "DICE ENTROPY" into both Quarantined Scratchpads.
         2. Roll 62 six-sided dice, shaking the dice thoroughly each roll.
         62 dice rolls corresponds to 160 bits of entropy. See the
-        [design document](../design-doc/overview.md) for details.
+        [design document](/docs/design-doc/overview) for details.
         3. If you are rolling multiple dice at the same time, read the
         dice left-to-right. **This is important.** Humans are
         [horrible at generating random data](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041531)

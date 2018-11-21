@@ -12,7 +12,7 @@ flaw, or a critical Bitcoin protocol security or scalability failure, would
 impact all bitcoins, regardless of whether they are secured with Glacier or
 some other method.
 
-It is assumed that no security measures from the [Extend Glacier security](../extend/security.md)
+It is assumed that no security measures from the [Extend Glacier security](/docs/extend/security)
 section are implemented.
 
 There are two layers to Glacier's attack surface, malware and critical failure.
