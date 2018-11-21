@@ -80,7 +80,10 @@ Technical detail: The Glacier protocol reuses Bitcoin addresses. See the
 
 ## Protocol cost
 
-The Glacier protocol requires over $600 in equipment, and approximately 8 hours of work to perform an initial cold storage deposit. This excludes time for:
+The Glacier protocol requires a not-insignificant investment in hardware, see the
+[Hardware required](/docs/before-you-start/hardware) section, along with
+approximately 8 hours of work to perform an initial cold storage deposit. This
+excludes time for:
 
 * Obtaining equipment
 * Printing documents
