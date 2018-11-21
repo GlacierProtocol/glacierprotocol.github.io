@@ -44,15 +44,13 @@ of flawed data would likely have already been present when the system arrived
 from the manufacturer. For example, [the Lenovo Service Engine rootkit](https://thehackernews.com/2015/08/lenovo-rootkit-malware.html)
 or [the Dell W32.Spybot worm](https://www.theregister.co.uk/2010/07/23/dell_malware_update/).
 
-The way to defeat these attacks is to detect them before
-we actually use the flawed data. We can detect such an attack by
-replicating the entire data generation process on two sets of eternally
-quarantined hardware, from different manufacturers. If the process
-generates identical data on both sets of hardware, we can be highly
-confident the data is not flawed because it would have to be an identical
-attack present on both sets of hardware, factory-new from different
-manufacturers. This is exceptionally unlikely.
-
+These attacks are defeated by detecting them before the flawed data is used.
+This is done by replicating the entire data generation process on two
+sets of eternally quarantined hardware from different manufacturers. If the
+process generates identical data on both sets of hardware, it is exceptionally
+unlikely that the data is flawed. Identical attacks would have to be present on
+both sets of hardware, both of which are factory-new and both of which are from
+different manufacturers.
 
 ## Bitcoin Core and GlacierScript
 
