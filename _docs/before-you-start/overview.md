@@ -127,13 +127,12 @@ exchanged back to bitcoin. Each exchange will incur a fee and, more importantly,
 will require trust that the exchange service will not steal/lose the funds, or
 reveal personal details.
 
-## Out of scope
+## Scope limits
 
-There's always more one could do to increase security. While
-Glacier is designed to provide strong protection for almost everyone, some
-situations (e.g. being the focus of a targeted attack by a sophisticated,
-well-resourced criminal organization) are beyond its scope.
+Security can always be improved. While Glacier is designed to provide strong
+protection for most, some situations, for example, being the focus of a targeted
+attack by a sophisticated, well-resourced criminal organization, are beyond its scope.
 
-For some
-additional security precautions beyond those provided in the standard
-protocol, see the [possible improvements to Glacier](/docs/extend/improvements/).
+For some additional security precautions beyond those provided in the standard
+protocol, see the [possible improvements to Glacier](/docs/extend/improvements/)
+section.
