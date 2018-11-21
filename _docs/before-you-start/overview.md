@@ -69,12 +69,13 @@ The end result of the Glacier protocol is a set of paper information
 packets, one for each private key needed for the multisignature withdrawal
 policy. Each packet includes the following information:
 
-* One **private key** -- an alphanumeric string used to secure the funds
-* The **cold storage address** -- an alphanumeric string designating the virtual "location" of the funds
-* The **"redemption script"** -- an additional code needed to access funds, shared
+* **One private key**: an alphanumeric string used to secure the funds
+* **One cold storage address**: an alphanumeric string designating the virtual
+"location" of the funds
+* **One redeem script**: an additional code needed to access funds, shared
 by all private keys.
 
-Technical details: The Glacier protocol reuses Bitcoin addresses. See the
+Technical detail: The Glacier protocol reuses Bitcoin addresses. See the
 [design document](/docs/design-doc/overview) for a detailed analysis.
 
 ## Protocol cost
