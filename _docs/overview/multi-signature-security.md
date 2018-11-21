@@ -4,7 +4,7 @@ description: Glacier uses multiple private keys. This provides greater security,
  and protects against total loss in the event of the loss of a single key.
 ---
 
-Multisignature security, or multisig, is central to The Glacier Protocol.
+Multisignature security, or multisig, is central to Glacier.
 
 
 ## Single private keys are risky

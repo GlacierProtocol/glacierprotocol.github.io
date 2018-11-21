@@ -47,7 +47,7 @@ well commented. Both are available on Github.
 
 ## Alternatives
 There is no such thing as perfect security, only degrees of security with corresponding
-trade-offs in time, money, convenience, etc. The Glacier Protocol focuses exclusively
+trade-offs in time, money, convenience, etc. Glacier focuses exclusively
 on self-managed storage, but there are cheaper, lower security and more convenient options.
 
 A reader familiar with Bitcoin security concepts may prefer to skip to the section
@@ -97,7 +97,7 @@ provide access to funds.
 
 Hardware wallets can provide a form of self-managed storage with good security. Again, the pros
 and cons of the various hardware wallets are beyond the scope of this document. However, all
-hardware wallets entail risks which are not present in a system adhering to The Glacier Protocol:
+hardware wallets entail risks which are not present in a system adhering to Glacier:
 
 1. **USB link**: All hardware wallets operate via a physical USB link to a regular computer. While
 they employ extensive safeguards to prevent any sensitive data (such as private keys) from being
