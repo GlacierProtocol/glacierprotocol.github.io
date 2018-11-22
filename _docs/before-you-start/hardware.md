@@ -13,10 +13,6 @@ Glacier has been written and tested around these specific equipment recommendati
 * Two factory-sealed USB drives (2GB+) from the same manufacturer:
 [SanDisk Cruzer 8GB](http://a.co/1Us66ze).
 
-We'll be using two USB drives at the same time. If the computer has only one USB
-port, you'd need to use a USB hub, which is a separate piece of USB hardware subject
-to malware infection of its firmware.
-
 We'll use the camera for reading QR codes.
 
 ### Eternally quarantined hardware: Set 2
