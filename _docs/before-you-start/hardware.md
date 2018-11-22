@@ -61,15 +61,9 @@ Waterproof, heat resistant, and tear-resistant.
 
 ### Notes
 
-Standard software algorithms that generate random numbers, such as those used
-to generate Bitcoin private keys, are
-[vulnerable to exploitation](https://bitcoin.org/en/alert/2013-08-11-android),
-either due to malware or algorithmic weakness (i.e. they often provide numbers that
-are not truly random). Dice offer something closer to true randomness.
-
-Casino dice are created specifically to remove any potential dice bias
-(square corners, filled in pips, low manufacturing tolerance, etc.) That's why
-casinos use them!
+Casino dice offer number generation which is closer to true randomness than a computer can provide.
+The square corners, filled in pips and low manufacturing tolerances mean casino dice remove
+any potential dice bias present in regular dice.
 
 TerraSlate paper is extremely rugged, but you might also consider laminating the
 paper for additional protection. You'll need a

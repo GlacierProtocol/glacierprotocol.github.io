@@ -93,7 +93,10 @@ networked or attacker-controlled device in range then steals the data. Possibili
   payload of valid data. For example, the nonce used for a transaction signature could contains
   bits of the private key.
   * **Flawed data generation**: Undetected generation of flawed sensitive data IF compatible
-  malware is present on BOTH quarantined environments.
+  malware is present on BOTH quarantined environments. For example, standard software algorithms that
+  generate random numbers, such as those used to generate Bitcoin private keys, are
+  [vulnerable to exploitation](https://bitcoin.org/en/alert/2013-08-11-android), either due to malware
+  or algorithmic weakness. This can often provide numbers that are not truly random.
   * **Guessable private keys**: Private key creation could be compromised to make keys easily guessable.
   * **Compromised addresses**: Transaction creation is compromised to use output addresses belonging to an attacker,
   AND cooperating malware on a networked computer sends the malicious transaction before the
