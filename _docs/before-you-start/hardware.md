@@ -65,7 +65,3 @@ Casino dice offer number generation which is closer to true randomness than a co
 The square corners, filled in pips and low manufacturing tolerances mean casino dice remove
 any potential dice bias present in regular dice.
 
-TerraSlate paper is extremely rugged, but you might also consider laminating the
-paper for additional protection. You'll need a
-[thermal laminator](http://a.co/cZBN1YU) and
-[laminating pouches](http://a.co/ifISzje).
