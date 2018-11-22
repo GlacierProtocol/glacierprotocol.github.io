@@ -32,7 +32,7 @@ manufacturer than the drives for Set 1:
 Linux.**
 
   One of these two computers should be a computer that you do not own (unless
-  purchased brand new), or that has spent much time on your home or office network.
+  purchased brand new), or that has not spent much time on your home or office network.
 * Printer
 * Smartphone with a working camera
 
