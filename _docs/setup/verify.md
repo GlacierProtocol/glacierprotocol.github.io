@@ -27,7 +27,7 @@ https://github.com/GlacierProtocol/GlacierProtocol/releases.
 at https://github.com/GlacierProtocol/GlacierProtocol/releases.
 4. If your browser does not automatically extract the ZIP file contents into a
 folder within your downloads directory, do so.
-5. Rename the folder to "glacier."
+5. Rename the folder containing the extracted files as "glacier".
 6. If you have used Glacier before, *and* you know you have the Glacier public key
 imported into a local GPG keyring, skip the next step. (If you don't know,
 that's fine; proceed as normal.)
