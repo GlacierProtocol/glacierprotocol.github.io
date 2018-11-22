@@ -77,7 +77,8 @@ Commands to be entered into a terminal window will be
 displayed in a fixed-width font like this:
 
 ```
-$ echo "everything after the $ could be copy-pasted into a terminal window"
+$ echo "all text after the $, on both lines, should either be copy-pasted from
+this document or manually typed into a terminal window"
 ```
 
 The `$` at the beginning
