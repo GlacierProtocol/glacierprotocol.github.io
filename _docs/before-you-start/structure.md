@@ -12,7 +12,7 @@ documentation.
 * **Withdrawal**: Transferring some or all stored bitcoin to another
 bitcoin address.
 * **Viewing**: Viewing the balance held in secure storage.
-* **Maintenance**: Ensuring the bitcoin in cold storage remains accessible and
+* **Balance and maintenance**: Ensuring the bitcoin in cold storage remains accessible and
 secure.
 
 ## Sensitive data
