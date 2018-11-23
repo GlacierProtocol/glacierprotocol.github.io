@@ -11,8 +11,7 @@
 - title: Setup
   docs:
   - setup/verify
-  - setup/non-quarantined-hardware
-  - setup/quarantined-hardware
+  - setup/prepare-hardware
   - setup/create-boot-usb
   - setup/create-app-usb
   - setup/quarantined-workspace
