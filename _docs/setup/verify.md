@@ -80,8 +80,7 @@ protocol.
 
     1. **Windows**: Press Windows-R, type "powershell" and click OK.
     2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar, and
-    type a terminal window. "terminal". Select the Terminal application from the
-    search results.
+    type "terminal". Select the Terminal application from the search results.
     3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
 
 10. Change the terminal window's active folder to your downloads folder. The
