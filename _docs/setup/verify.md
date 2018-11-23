@@ -55,25 +55,19 @@ that's fine; proceed as normal.)
     As..."
     5. Name the file "glacier.asc".
 
-8. Download and install [GnuPG](https://gnupg.org/), the
-  software we'll use for doing the
-  <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-  data-content="
-  GnuPG is the same software recommended by the
-  Electronic Frontier Foundation's Surveillance Self Defense protocol.
-  ">cryptographic verification</a>.
-  <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-  data-content="
-  Technical details: Note that we are foregoing verification of the integrity of
-  GnuPG itself. Verification requires having access to a pre-existing, trusted
-  installation of GnuPG, and for many Glacier users, this will not be easy to
-  come by. If you do have access to a trusted installation of GnuPG, and
-  understand how to do the verification process, we encourage you to do so.
-  The risk of an unverified PGP installation is relatively small, since an
-  attacker would have to compromise not just the hosting of GPG distributions,
-  but also the hosting of other software distributions used by Glacier, and such
-  a breach would be quickly detected by the global community.
-  ">See tech details</a>.
+6. Download and install [GnuPG](https://gnupg.org/), the software used for cryptographic
+verification. GnuPG is the same software recommended by the Electronic Frontier
+Foundation's [Surveillance Self-Defense](https://ssd.eff.org/en/about-surveillance-self-defense)
+protocol.
+
+    Technical details: Verification of the integrity of GnuPG itself is omitted.
+    Although a trusted installation is encouraged where possible, this
+    would require having access to a pre-existing, trusted installation of GnuPG.
+    For many Glacier users, this will not be easy to come by. The risk of an 
+    unverified PGP installation is relatively small, since an attacker would have
+    to compromise not just the hosting of GPG distributions, but also the hosting
+    of other software distributions used by Glacier. Such a breach would
+    quickly be detected by the global community.
 
     1. **Windows**: Download and install the latest available version of
     [Gpg4win](https://www.gpg4win.org/). Use the default
