@@ -12,7 +12,7 @@ Multisignature security, or multisig, is central to Glacier.
 The bearer asset nature of bitcoin makes it very difficult to secure. For example,
 a private key, on paper, in a safe deposit box at a bank may seem secure, but 
 there are various eventualities that could lead to total loss. The box could be
-destroyed in a disaster, [seized](http://abcnews.go.com/GMA/story?id=4832471),
+destroyed in a disaster, [seized](https://abcnews.go.com/GMA/story?id=4832471),
 accessed after identity theft, or the entire bank could be robbed.
 
 Self storage, perhaps in a fireproof safe at home, can mitigate some of these issues,

@@ -54,7 +54,7 @@ the hardware.
     2. Place a tamper-resistant seal over the Ethernet port, if present
     3. Physically remove the wireless card:
 
-        1. If using the recommended Dell laptop, follow [Dell's official instructions](http://topics-cdn.dell.com/pdf/inspiron-11-3162-laptop_Service%20Manual_en-us.pdf),
+        1. If using the recommended Dell laptop, follow [Dell's official instructions](https://topics-cdn.dell.com/pdf/inspiron-11-3162-laptop_Service%20Manual_en-us.pdf),
         or [Parts-People.Com, Inc](https://www.youtube.com/watch?v=nFYXQQPoh90)'s YouTube tutorial
         2. If using the recommended Acer laptop, the process is similar to the Dell, but note
         that there are two cover screws hidden underneath the rubber feet on the underside of the laptop

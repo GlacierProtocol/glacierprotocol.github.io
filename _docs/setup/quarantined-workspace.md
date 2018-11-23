@@ -25,7 +25,7 @@ first time and do **not** plan on executing the Deposit or Withdrawal protocol n
         2. Shut down nearby devices with microphones (e.g. smartphones and
         other laptops).
         3. Plug in and turn on a table fan to generate white noise.
-    3. [Power side channel](http://sharps.org/wp-content/uploads/CLARK-ESORICS13.pdf)
+    3. [Power side channel](https://sharps.org/wp-content/uploads/CLARK-ESORICS13.pdf)
         1. Unplug both Quarantined Computers from the wall.
         2. Run them **only on battery power** throughout this protocol.
         3. Make sure they are fully charged first! If you run out of battery,
@@ -34,7 +34,7 @@ first time and do **not** plan on executing the Deposit or Withdrawal protocol n
     and other side channels. Including
     [seismic](https://www.cc.gatech.edu/fac/traynor/papers/traynor-ccs11.pdf),
     [thermal](https://cyber.bgu.ac.il/bitwhisper-heat-air-gap/),
-    and [magnetic](http://fc15.ifca.ai/preproceedings/paper_14.pdf).
+    and [magnetic](https://fc15.ifca.ai/preproceedings/paper_14.pdf).
         1. Turn off all other computers and smartphones in the room.
         2. Put portable computing devices in the Faraday bag and seal the bag.
         3. Unplug desktop computers.

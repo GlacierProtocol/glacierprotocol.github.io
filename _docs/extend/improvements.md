@@ -68,11 +68,11 @@ Many of the steps for creating the Quarantined USBs could be
 automated in a simple script.
 
 ## Security with biased dice
-Assess integration of this paper and/or [this algorithm](http://pit-claudel.fr/clement/blog/generating-uniformly-random-data-from-skewed-input-biased-coins-loaded-dice-skew-correction-and-the-von-neumann-extractor/) so that the quality of
+Assess integration of this paper and/or [this algorithm](https://pit-claudel.fr/clement/blog/generating-uniformly-random-data-from-skewed-input-biased-coins-loaded-dice-skew-correction-and-the-von-neumann-extractor/) so that the quality of
 our randomness is not vulnerable to dice bias.
 
 ## Entropy quality testing
-Use an entropy test suite such as [ent](http://www.fourmilab.ch/random/) to verify the quality of
+Use an entropy test suite such as [ent](https://www.fourmilab.ch/random/) to verify the quality of
 generated entropy before it's used.
 
 ## Bitcoin Core version

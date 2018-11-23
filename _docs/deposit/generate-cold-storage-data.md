@@ -51,7 +51,7 @@ prepare your quarantined workspace.
         [design document](/docs/design-doc/overview) for details.
         3. If you are rolling multiple dice at the same time, read the
         dice left-to-right. **This is important.** Humans are
-        [horrible at generating random data](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041531)
+        [horrible at generating random data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041531)
         and great at noticing patterns. Without a consistent heuristic like
         "read the dice left to right", you may subconsciously read them in a
         non-random order (like tending to record lower numbers first).

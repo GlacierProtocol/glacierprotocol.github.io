@@ -54,7 +54,7 @@ A laptop or USB hardware could have been infected at any point between manufactu
 delivery, before being shrinkwrapped. "Malware" usually refers to software, but we're
 using it here more broadly to mean "computing technology which undermines the integrity
 of the computing environment in which it resides.", as in a 
-[USB JTAG exploit](http://www.itnews.com.au/news/intel-debugger-interface-open-to-hacking-via-usb-446889)
+[USB JTAG exploit](https://www.itnews.com.au/news/intel-debugger-interface-open-to-hacking-via-usb-446889)
 or [chip-level backdoor](https://www.wired.com/2016/06/demonically-clever-backdoor-hides-inside-computer-chip/). 
 
 ## Failure scenarios
@@ -76,12 +76,12 @@ networked or attacker-controlled device in range then steals the data. Possibili
   inadequately blocked by sound insulation or masking noise. [Data theft by fan noise](https://www.wired.com/2016/06/clever-attack-uses-sound-computers-fan-steal-data), for example.
   * **Radio side channel**: [Exploit of electromagnetic emanations from wired and wireless
   keyboards](https://www.usenix.org/legacy/event/sec09/tech/full_papers/vuagnoux.pdf),
-  [transmission of radio signals from monitor to FM radio receiver](http://cyber.bgu.ac.il/content/how-leak-sensitive-data-isolated-computer-air-gap-near-mobile-phone-airhopper)
+  [transmission of radio signals from monitor to FM radio receiver](https://cyber.bgu.ac.il/content/how-leak-sensitive-data-isolated-computer-air-gap-near-mobile-phone-airhopper)
   or [radio waves leaked by a processor's power use](https://www.wired.com/2015/06/radio-bug-can-steal-laptop-crypto-keys-fits-inside-pita/),
   for example.
   * **Seismic side channel**: Decoding vibrations from nearby keyboard using mobile phone accelerometer, for example.
-  * **Thermal side channel**: [Exploit using thermal sensors to detect heat emission](http://cyber.bgu.ac.il/blog/bitwhisper-heat-air-gap), for example.
-  * **Magnetic side channel**: [Exploit using smartphone magnetic field sensors to extract hard drive data](http://fc15.ifca.ai/preproceedings/paper_14.pdf), for example.
+  * **Thermal side channel**: [Exploit using thermal sensors to detect heat emission](https://cyber.bgu.ac.il/blog/bitwhisper-heat-air-gap), for example.
+  * **Magnetic side channel**: [Exploit using smartphone magnetic field sensors to extract hard drive data](https://fc15.ifca.ai/preproceedings/paper_14.pdf), for example.
   * **Rogue QR code**: Malware on a Quarantined Computer could exfiltrate critically
   sensitive data via QR codes IF cooperating malware on the QR reading device is prepared
   to steal the data. The risk of this scenario is negligible; unless the attacker

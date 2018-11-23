@@ -74,7 +74,7 @@ them much more attractive targets for hackers.
 access to service funds.
 6. **Seizure by service**: The service has the ability to seize customer funds. There are
 examples where a hacked system has chosen to socialise its losses across all users. In 2016, 
-[all users shared the total loss after Bitfinex was hacked](http://www.bbc.com/news/technology-37009319).
+[all users shared the total loss after Bitfinex was hacked](https://www.bbc.com/news/technology-37009319).
 There are also examples of withdrawals being closed before the company files for bankruptcy protection.
 In 2014, [Mt. Gox filed for bankruptcy after being hacked](https://www.bbc.co.uk/news/technology-25233230).
 Both scenarios lead to huge losses for customers.
