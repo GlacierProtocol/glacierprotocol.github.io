@@ -91,12 +91,9 @@ is in a different place, you will need to customize this command.
     2. **MacOS**:  `$ cd $HOME/Downloads/glacier`
     3. **Linux**: `$ cd $HOME/Downloads/glacier`
 
-11. Verify the integrity of the
-<a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-data-content="
-For technical background about this process, see
-https://en.wikipedia.org/wiki/Digital_signature.
-">downloaded document</a>.
+9. Verify the integrity of the downloaded document. For technical background about
+this process, see Wikipedia's [Digital signature](https://en.wikipedia.org/wiki/Digital_signature)
+entry.
 
 
     1. Import the Glacier public key into your local GPG installation:
