@@ -11,9 +11,11 @@ during protocol execution, due to reboots and other changes to the computing
 environment. Working from a hardcopy ensures there is always a verified copy of
 the document available.
 
-### On the "SETUP 1" computer
+## On the "SETUP 1" computer
 
 The "SETUP 1" computer must have printer access.
+
+### Software preparation
 
 1. Review the errata for the version of Glacier used at
 [https://github.com/GlacierProtocol/GlacierProtocol/releases.](https://github.com/GlacierProtocol/GlacierProtocol/releases)
@@ -23,7 +25,7 @@ at [https://github.com/GlacierProtocol/GlacierProtocol/releases.](https://github
 4. Rename the folder containing the extracted files as "glacier".
 
     If the user has used Glacier before, *and* has the Glacier public key imported into a local GPG keyring, skip the next step.
-that's fine; proceed as normal.)
+
 5. Obtain the Glacier PGP public key, used to cryptographically verify the protocol document.
 
     Technical detail: Glacier's GPG keys are handled with good security practices.
@@ -74,6 +76,8 @@ protocol.
     2. **MacOS**: Download and install the latest available version of
     [GPG Suite](https://gpgtools.org/).
     3. **Linux**: GnuPG is pre-installed in Linux distributions.
+
+### Document verification
 
 7. Open a terminal window:
 
@@ -155,6 +159,8 @@ entry.
 
     **If you do not see the expected output, your copy of the document has not been verified**.
     Stop and seek assistance.
+
+### Hardcopy
 
 10. Switch to use the new document.
 
