@@ -113,25 +113,24 @@ entry.
        gpg:          There is no indication that the signature belongs to the owner.
        Primary key fingerprint: E1AA EBB7 AC90 C1FE 80F0  1034 9D1B 7F53 4B43 EAB0</span>
        </pre>
-       The warning message is expected, and is not cause
-       <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-       data-content="
+       The warning message is expected, and is not cause for alarm.
+
        Technical details:
        GPG was designed on the premise that public keys would be
-       verified as actually belonging to their owners  -- either directly, by receiving
-       a key face-to-face from someone known to you, or indirectly, via cryptographic
-       signature by someone whose public key you've already verified. The warning
-       message merely indicates that you have done neither of these verifications for
+       verified as actually belonging to their owners, either directly, by receiving
+       a key face-to-face from a trusted person, or indirectly, via the cryptographic
+       signature of someone whose public key is already verified. The warning
+       message merely indicates that neither of these verifications have been done for
        Glacier's public key.
        This is standard practice with software distribution,
        even for major software packages like Ubuntu.
-       Although you do not have the opportunity to personally
-       verify Glacier's public key came from the Glacier team, you can nonetheless have
-       some degree of trust in the validity of the key, to the extent you trust it was
-       generated and is hosted in a secure manner, and that someone in the community
-       may have noticed and raised an alarm if it were surreptitiously changed by an
+       Although there is no opportunity to personally
+       verify Glacier's public key came from the Glacier team, there can be
+       some degree of trust in the validity of the key, to the extent that it was
+       generated and is hosted in a secure manner, and that the community
+       is likely to have raised an alarm if it were surreptitiously changed by an
        attacker.
-      ">for alarm</a>.
+
     3. Verify the fingerprints in the fingerprint file match the fingerprints of the
     downloaded Glacier files.
 
