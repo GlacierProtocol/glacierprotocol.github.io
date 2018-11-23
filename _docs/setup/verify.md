@@ -5,31 +5,24 @@ description: Learn how to set up for Glacier, the step-by-step protocol for
 redirect_from: /docs/setup/
 ---
 
-The Setup Protocol is used to prepare hardware, and download and verify needed
-software & documentation.
+This section outlines the download, verification and printing of the
+protocol document. A verified electronic copy will not be accessible at all times
+during protocol execution, due to reboots and other changes to the computing
+environment. Working from a hardcopy ensures there is always a verified copy of
+the document available.
 
-The first thing we need to do is verify the integrity of
-the Glacier protocol document (the one you are reading) to ensure that it
-has not been tampered with. After verifying the document, we'll print
-a hardcopy.
+### On the "SETUP 1" computer
 
-Printing is important, because a verified electronic copy will not be
-accessible at all times during protocol execution due to reboots and other
-changes to the computing environment. Printing a hardcopy ensures there is
-always a verified copy of the document available.
+The "SETUP 1" computer must have printer access.
 
-1. Find a computer which has Internet access, printer access, and which you have
-permission to install new software on. We'll refer to this computer as the
-"SETUP 1" computer.
-2. Review the errata for the version of Glacier you are using at
-https://github.com/GlacierProtocol/GlacierProtocol/releases.
-3. Download the latest full release of Glacier (*not* just the protocol document)
-at https://github.com/GlacierProtocol/GlacierProtocol/releases.
-4. If your browser does not automatically extract the ZIP file contents into a
-folder within your downloads directory, do so.
-5. Rename the folder containing the extracted files as "glacier".
-6. If you have used Glacier before, *and* you know you have the Glacier public key
-imported into a local GPG keyring, skip the next step. (If you don't know,
+1. Review the errata for the version of Glacier used at
+[https://github.com/GlacierProtocol/GlacierProtocol/releases.](https://github.com/GlacierProtocol/GlacierProtocol/releases)
+2. Download the latest full release of Glacier (*not* just the protocol document)
+at [https://github.com/GlacierProtocol/GlacierProtocol/releases.](https://github.com/GlacierProtocol/GlacierProtocol/releases)
+3. Extract the downloaded ZIP file within the downloads folder, if the browser has not done so automatically.
+4. Rename the folder containing the extracted files as "glacier".
+
+    If the user has used Glacier before, *and* has the Glacier public key imported into a local GPG keyring, skip the next step.
 that's fine; proceed as normal.)
 5. Obtain the Glacier PGP public key, used to cryptographically verify the protocol document.
 
@@ -39,9 +32,9 @@ that's fine; proceed as normal.)
     key is not stored in the cloud. The public key is hosted separately from the
     software distributions, on [Keybase](https://keybase.io/), and secured with separate credentials stored
     in password managers.
-   **If you are ever using Glacier in the future and notice that this step has
-   changed (or that this warning has been removed), there is a security risk.**
-   Stop and
+
+   **If this step changes in future uses of Glacier, or this warning is removed, there is a security risk.**
+   Stop and seek assistance.
     Technical detail: There is a chicken-and-egg problem here, in that this document
     is giving instructions for how to verify itself. Any attacker that compromised
     this document could also compromise these instructions so that the verification
