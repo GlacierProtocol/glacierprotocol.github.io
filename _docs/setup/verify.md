@@ -31,31 +31,29 @@ folder within your downloads directory, do so.
 6. If you have used Glacier before, *and* you know you have the Glacier public key
 imported into a local GPG keyring, skip the next step. (If you don't know,
 that's fine; proceed as normal.)
-7. Obtain the Glacier "public key," used to cryptographically verify the
-  <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-  data-content="
-  Technical details: Glacier's GPG keys are handled with good security practices. They were generated while booting off an Ubuntu Live USB on a factory-new laptop with the wireless card removed, and transferred via USB to a MacBook. The private key is not stored in the cloud. The public key is hosted separately from our software distributions, on Keybase, secured with separate credentials (all of which are in password managers).
-  ">protocol document</a>.
+5. Obtain the Glacier PGP public key, used to cryptographically verify the protocol document.
 
+    Technical detail: Glacier's GPG keys are handled with good security practices.
+    They were generated while booting from an Ubuntu Live USB on a factory-new laptop
+    with the wireless card removed, and transferred via USB to a MacBook. The private
+    key is not stored in the cloud. The public key is hosted separately from the
+    software distributions, on [Keybase](https://keybase.io/), and secured with separate credentials stored
+    in password managers.
    **If you are ever using Glacier in the future and notice that this step has
    changed (or that this warning has been removed), there is a security risk.**
    Stop and
-   <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-   data-content="
-  Technical details: There's a chicken-and-egg problem here, in that this document
-  is giving instructions for how to verify itself. Any attacker that compromised
-  this document could also compromise these instructions so that the verification
-  (erroneously) passes. There's no way to prevent this, unless a reader is familiar
-  with the document before the compromise and recognizes that the verification
-  instructions have changed. (This is why we don't just include a direct download
-  link to the public key -- if an attacker changed the link, it would be easy
-  for people not to notice.)
-  In the unfortunate event we legitimately need to change the verification
-  instructions (i.e. to publish a new public key, or change the means of obtaining
-  the existing key), we'll first disseminate a public announcement, signed at a
-  minimum with our personal keys, and hopefully with the keys of well-known
-  individuals from the Bitcoin community.
-  ">seek assistance</a>.
+    Technical detail: There is a chicken-and-egg problem here, in that this document
+    is giving instructions for how to verify itself. Any attacker that compromised
+    this document could also compromise these instructions so that the verification
+    (erroneously) passes. There's no way to prevent this, unless the reader is familiar
+    with the document before the compromise and recognizes that the verification
+    instructions have changed. This is why a direct download link to the public key 
+    is not provided. If an attacker changed the link, it could very easily go unnoticed.
+    In the unfortunate event of a legitimate need to change the verification
+    instructions (i.e. to publish a new public key, or change the means of obtaining
+    the existing key), the announcement will first be disseminated publicly, signed (at a
+    minimum) with contributer personal keys, and hopefully with the keys of well-known
+    individuals from the Bitcoin community.
 
     1. Access Glacier's Keybase profile at <https://keybase.io/glacierprotocol>.
     2. Click the string of letters and numbers next to the key icon.
