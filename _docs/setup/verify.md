@@ -50,10 +50,9 @@ that's fine; proceed as normal.)
 
     1. Navigate to Glacier's Keybase profile at [keybase.io/glacierprotocol](https://keybase.io/glacierprotocol).
     2. Click the string of 16 letters and numbers, formatted "XXXX XXXX XXXX XXXX" next to the key icon.
-    3. In the pop-up that appears, locate the link reading "this key".
-    3. Right-click the link and select "Save Link As..." or "Download Linked File
-    As..."
-    5. Name the file "glacier.asc".
+    3. In the pop-up that appears, right-click the link reading "this key" and select
+    "Save Link As..." or "Download Linked File As...".
+    4. Name the file "glacier.asc".
 
 6. Download and install [GnuPG](https://gnupg.org/), the software used for cryptographic
 verification. GnuPG is the same software recommended by the Electronic Frontier
@@ -74,18 +73,18 @@ protocol.
     options.
     2. **MacOS**: Download and install the latest available version of
     [GPG Suite](https://gpgtools.org/).
-    3. **Linux**: GnuPG comes pre-installed with Linux distributions.
+    3. **Linux**: GnuPG is pre-installed in Linux distributions.
 
-9. Open a terminal window:
+7. Open a terminal window:
 
     1. **Windows**: Press Windows-R, type "powershell" and click OK.
     2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar, and
     type "terminal". Select the Terminal application from the search results.
     3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
 
-10. Change the terminal window's active folder to your downloads folder. The
-commands below are based on common default settings; if you put your downloads
-is in a different place, you will need to customize this command.
+8. Change the terminal's current working folder to the download folder. The
+commands below are based on default settings; if the defaults have been altered, 
+these commands will need customized to match.
 
     1. **Windows**:  `> cd $HOME/Downloads/glacier`
     2. **MacOS**:  `$ cd $HOME/Downloads/glacier`
@@ -95,8 +94,7 @@ is in a different place, you will need to customize this command.
 this process, see Wikipedia's [Digital signature](https://en.wikipedia.org/wiki/Digital_signature)
 entry.
 
-
-    1. Import the Glacier public key into your local GPG installation:
+    1. Import the Glacier public key into the local GPG installation:
        ```
        $ gpg --import $HOME/Downloads/glacier.asc
        ```
@@ -134,11 +132,11 @@ entry.
     3. Verify the fingerprints in the fingerprint file match the fingerprints of the
     downloaded Glacier files.
 
-        1. On Linux or Mac:
+        1. On Linux or MacOS:
 
-            Linux: `$ sha256sum -c SHA256SUMS 2>&1`
+            **Linux**: `$ sha256sum -c SHA256SUMS 2>&1`
 
-            Mac: `$ shasum -a 256 -c SHA256SUMS 2>&1`
+            **MacOS**: `$ shasum -a 256 -c SHA256SUMS 2>&1`
 
             Expected output:
             ```
@@ -146,26 +144,25 @@ entry.
             base58.py: OK README.md: OK
             ```
 
-        2. On Windows 10:
+        2. **Windows**:
 
             ```
             > Get-FileHash -a sha256 Glacier.pdf
             > cat SHA256SUMS | select-string -pattern "Glacier.pdf"
             ```
-            Ensure that the hash output from the first command matches the output by the
-            second command. Upper/lower case doesn't matter.
+            Ensure that the hash output from the first command matches the hash output of the
+            second command, irrespective of case.
 
-    4. If you do not see the expected output, your copy of the document has not been verified. Stop and seek assistance.
+    **If you do not see the expected output, your copy of the document has not been verified**.
+    Stop and seek assistance.
 
-12. Switch to use the new document.
+10. Switch to use the new document.
 
-    1. Open the version of the document that you just verified.
-    2. Close this window (of the unverified version of the document you had been
-    using).
+    1. Open the newly verified version of the document.
+    2. Close the unverified version of the document used until this point.
     3. Delete the old, unverified copy of the document.
 
-13. Print the verified document.
+11. Print the verified document.
 
-You are strongly encouraged to use the printed copy as a checklist, physically
-marking off each step as you complete it. This reduces the risk of execution
-error by ensuring you don't lose your place.
+    Use of the printed copy as a checklist is strongly encouraged. Steps can be physically
+    marked off once completed. This reduces the risk of execution error by repeating or skipping steps.
