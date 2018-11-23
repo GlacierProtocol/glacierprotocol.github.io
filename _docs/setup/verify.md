@@ -48,8 +48,8 @@ that's fine; proceed as normal.)
     minimum) with contributer personal keys, and hopefully with the keys of well-known
     individuals from the Bitcoin community.
 
-    1. Access Glacier's Keybase profile at <https://keybase.io/glacierprotocol>.
-    2. Click the string of letters and numbers next to the key icon.
+    1. Navigate to Glacier's Keybase profile at [keybase.io/glacierprotocol](https://keybase.io/glacierprotocol).
+    2. Click the string of 16 letters and numbers, formatted "XXXX XXXX XXXX XXXX" next to the key icon.
     3. In the pop-up that appears, locate the link reading "this key".
     3. Right-click the link and select "Save Link As..." or "Download Linked File
     As..."
