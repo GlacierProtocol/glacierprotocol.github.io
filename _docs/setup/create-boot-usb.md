@@ -165,27 +165,27 @@ malware infection.
     2. Wait 10 seconds for the operating system to recognize the USB.
     3. The USB drive will, again, not be readable by MacOS, which may result in an
     error box pop up. This is expected; click "Ignore".
-    4. The USB's device identifier may have changed. Find it again:
+    4. The USB's device identifier may have changed. List all disks and partitions again:
         ```
         $ diskutil list
         ```
-    5.  
+    5. Change the terminal’s current working folder to the download folder,
+    customizing the folder name if necessary:
         ```
         $ cd $HOME/Downloads
         ```
-    6.  
+    6. Compare the "SETUP 1 BOOT" USB drive to the verified image:
         ```
         $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` USB-device-identifier-here
         ```
     7. Wait a few minutes for the verification process to complete.
-    8. If all goes well, the command will output no data, returning to
-    your usual terminal prompt.
-    9. If there is a discrepancy, you’ll see a message like:
+    8. Successful verification will return to the terminal prompt, outputting no data.
+    Failure will return a message showing how the USB differs from the downloaded image, for example:
         ```
         ubuntu-16.04.1-desktop-amd64.img.dmg /dev/disk2
         differ: byte 1, line 1
         ```
-        If you see a message like this, STOP -- this may be a security
+        If a message is returned, **STOP**, this may be a security
         risk. Restart this section from the beginning. If the
         issue persists, try using a different USB drive or a different
         Setup Computer.
@@ -228,7 +228,8 @@ malware infection.
     defend against this.
     ">re-insert it</a>.
     3. Wait 10 seconds for the operating system to recognize the USB.
-    4.  
+    4. Change the terminal’s current working folder to the download folder,
+    customizing the folder name if necessary:
         ```
         $ cd $HOME/Downloads
         ```
@@ -245,9 +246,9 @@ malware infection.
         byte 1, line 1
         ```
         If you see a message like this, STOP -- this may be a security
-        risk. Restart this section from the beginning. If the issue
-        persists, try using a different USB drive or a different Setup
-        Computer.
+        risk. Restart the [Create the "SETUP 1 BOOT" USB](create-the-setup-1-boot-usb)
+        section from the beginning. If the issue persists, try using a
+        different USB drive or a different Setup Computer.
 
 ### Create the "Q1 BOOT" USB
 
