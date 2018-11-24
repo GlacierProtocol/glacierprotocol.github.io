@@ -70,29 +70,29 @@ protocol.
     of other software distributions used by Glacier. Such a breach would
     quickly be detected by the global community.
 
-    1. **Windows**: Download and install the latest available version of
+    * **Windows**: Download and install the latest available version of
     [Gpg4win](https://www.gpg4win.org/). Use the default
     options.
-    2. **MacOS**: Download and install the latest available version of
+    * **MacOS**: Download and install the latest available version of
     [GPG Suite](https://gpgtools.org/).
-    3. **Linux**: GnuPG is pre-installed in Linux distributions.
+    * **Linux**: GnuPG is pre-installed in Linux distributions.
 
 ### Document verification
 
 7. Open a terminal window:
 
-    1. **Windows**: Press Windows-R, type "powershell" and click OK.
-    2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar, and
+    * **Windows**: Press Windows-R, type "powershell" and click OK.
+    * **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar, and
     type "terminal". Select the Terminal application from the search results.
-    3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
+    * **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
 
 8. Change the terminal's current working folder to the download folder. The
 commands below are based on default settings; if the defaults have been altered, 
 these commands will need customized to match.
 
-    1. **Windows**:  `> cd $HOME/Downloads/glacier`
-    2. **MacOS**:  `$ cd $HOME/Downloads/glacier`
-    3. **Linux**: `$ cd $HOME/Downloads/glacier`
+    * **Windows**:  `> cd $HOME/Downloads/glacier`
+    * **MacOS**:  `$ cd $HOME/Downloads/glacier`
+    * **Linux**: `$ cd $HOME/Downloads/glacier`
 
 9. Verify the integrity of the downloaded document. For technical background about
 this process, see Wikipedia's [Digital signature](https://en.wikipedia.org/wiki/Digital_signature)
@@ -136,7 +136,7 @@ entry.
     3. Verify the fingerprints in the fingerprint file match the fingerprints of the
     downloaded Glacier files.
 
-        1. On Linux or MacOS:
+        * **Linux or MacOS**:
 
             **Linux**: `$ sha256sum -c SHA256SUMS 2>&1`
 
@@ -148,7 +148,7 @@ entry.
             base58.py: OK README.md: OK
             ```
 
-        2. **Windows**:
+        * **Windows**:
 
             ```
             > Get-FileHash -a sha256 Glacier.pdf

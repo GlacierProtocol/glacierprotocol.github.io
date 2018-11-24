@@ -35,25 +35,25 @@ itself to the Non-Quarantined OS USB.
 
 3. Once the download is complete, open a terminal window:
 
-    1. **Windows**: Press Windows-R, type "powershell" and click OK.
-    2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar,
+    * **Windows**: Press Windows-R, type "powershell" and click OK.
+    * **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar,
     and type "terminal". Select the Terminal application from the search results.
-    3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
+    * **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
 
 4. Verify the Ubuntu download integrity:
 
     1. Change the terminal’s current working folder to the download folder,
     customizing the folder name if necessary:
 
-        1. **Windows**: `> cd $HOME/Downloads`
-        2. **MacOS**: `$ cd $HOME/Downloads`
-        3. **Linux**: `$ cd $HOME/Downloads`
+        * **Windows**: `> cd $HOME/Downloads`
+        * **MacOS**: `$ cd $HOME/Downloads`
+        * **Linux**: `$ cd $HOME/Downloads`
 
     2. View the fingerprint of the file:
 
-        1. **Windows**: `> Get-FileHash -a sha256 ubuntu-16.04.1-desktop-amd64.iso`
-        2. **MacOS**: `$ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso`
-        3. **Linux**: `$ sha256sum ubuntu-16.04.1-desktop-amd64.iso`
+        * **Windows**: `> Get-FileHash -a sha256 ubuntu-16.04.1-desktop-amd64.iso`
+        * **MacOS**: `$ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso`
+        * **Linux**: `$ sha256sum ubuntu-16.04.1-desktop-amd64.iso`
 
     3. The following fingerprint, further verified in 
     [the official Ubuntu fingerprint list](http://releases.ubuntu.com/16.04.1/SHA256SUMS)
@@ -77,155 +77,155 @@ itself to the Non-Quarantined OS USB.
 
 6. Create the SETUP 1 BOOT USB.
 
-    1. **Windows**
-        1. Download the
-        [Rufus disk utility](https://rufus.akeo.ie/)
-        and run it.
-        2. Insert the SETUP 1 BOOT USB in an empty USB slot.
-        3. In the "Device" dropdown at the top of the Rufus window, ensure the
-        empty USB drive is selected.
-        4. Next to the text "Create a bootable disk using", select "ISO Image"
-        in the dropdown.
-        5. Click the CD icon next to the "ISO Image" dropdown.
-        6. A file explorer will pop up. Select `ubuntu-16.04.1-desktop-amd64.iso`
-        from your downloads folder and click Open.
-        7. Click Start.
-        8. If prompted to download Syslinux software, click "Yes".
-        9. When asked to write in "ISO Image Mode (Recommended)" or
-        "DD Image Mode", select "ISO Image Mode" and press OK.
-        10. The program will take a few minutes to write the USB.
+    **Windows**:
+    1. Download the
+    [Rufus disk utility](https://rufus.akeo.ie/)
+    and run it.
+    2. Insert the SETUP 1 BOOT USB in an empty USB slot.
+    3. In the "Device" dropdown at the top of the Rufus window, ensure the
+    empty USB drive is selected.
+    4. Next to the text "Create a bootable disk using", select "ISO Image"
+    in the dropdown.
+    5. Click the CD icon next to the "ISO Image" dropdown.
+    6. A file explorer will pop up. Select `ubuntu-16.04.1-desktop-amd64.iso`
+    from your downloads folder and click Open.
+    7. Click Start.
+    8. If prompted to download Syslinux software, click "Yes".
+    9. When asked to write in "ISO Image Mode (Recommended)" or
+    "DD Image Mode", select "ISO Image Mode" and press OK.
+    10. The program will take a few minutes to write the USB.
 
-    2. **MacOS**
-        1. Prepare the Ubuntu download for copying to the USB.
+    **MacOS**:
+    1. Prepare the Ubuntu download for copying to the USB.
+        ```
+        $ cd $HOME/Downloads
+        $ hdiutil convert ubuntu-16.04.1-desktop-amd64.iso -format UDRW -o ubuntu-16.04.1-desktop-amd64.img
+        ```
+    2. Determine the MacOS "device identifier" for the Boot USB.
+        1. `$ diskutil list`
+        2. Insert the SETUP 1 BOOT USB in an empty USB slot.
+        3. Wait 10 seconds for the operating system to recognize the USB.
+        4. Once more: `$ diskutil list`
+        5. The output of the second command should include an additional
+        section that was not present in the first command's output.
+            1. This section will have (external, physical) in the header.
+            2. The first line of the section's SIZE column should reflect
+            the capacity of the USB drive.
+        6. Make a note of the device identifier.
+            1. The device identifier is the part of the new section header
+            that comes before (external, physical) (for example /dev/disk2).
+
+    3. Put Ubuntu on the SETUP 1 BOOT USB.
+        1. First, unmount the usb
+            <pre>
+            $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
+            </pre>
+        2. Enter the following command, **making sure to use the correct
+        device identifier; <span style="color: red;">using the wrong one could overwrite your hard
+        drive!</span>**
+            <pre>
+            $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg \
+            of=<span class="primary">USB-device-identifier-here</span> bs=1m
+            </pre>
+            Example:
+            ```
+            $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
+            ```
+        3. Enter your administrator password when requested.
+        4. Wait several minutes for the copying process to complete. When
+        it does, you may see an error box pop up. This is expected; it's
+        because the USB is written in a format readable by Ubuntu, but not
+        readable by MacOS.
+        5. Click Ignore.
+
+    4. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or
+    malware infection).
+        1. Remove the USB drive from the USB slot and immediately reinsert it.
+        2. Wait 10 seconds for the operating system to recognize the USB.
+        3. You may see the same error box pop up again. Select Ignore.
+        4. The USB's device identifier may have changed. Find it again:
+            ```
+            $ diskutil list
+            ```
+        5.  
             ```
             $ cd $HOME/Downloads
-            $ hdiutil convert ubuntu-16.04.1-desktop-amd64.iso -format UDRW -o ubuntu-16.04.1-desktop-amd64.img
             ```
-        2. Determine the MacOS "device identifier" for the Boot USB.
-            1. `$ diskutil list`
-            2. Insert the SETUP 1 BOOT USB in an empty USB slot.
-            3. Wait 10 seconds for the operating system to recognize the USB.
-            4. Once more: `$ diskutil list`
-            5. The output of the second command should include an additional
-            section that was not present in the first command's output.
-                1. This section will have (external, physical) in the header.
-                2. The first line of the section's SIZE column should reflect
-                the capacity of the USB drive.
-            6. Make a note of the device identifier.
-                1. The device identifier is the part of the new section header
-                that comes before (external, physical) (for example /dev/disk2).
+        6.  
+            ```
+            $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` USB-device-identifier-here
+            ```
+        7. Wait a few minutes for the verification process to complete.
+        8. If all goes well, the command will output no data, returning to
+        your usual terminal prompt.
+        9. If there is a discrepancy, you’ll see a message like:
+            ```
+            ubuntu-16.04.1-desktop-amd64.img.dmg /dev/disk2
+            differ: byte 1, line 1
+            ```
+            If you see a message like this, STOP -- this may be a security
+            risk. Restart this section from the beginning. If the
+            issue persists, try using a different USB drive or a different
+            Setup Computer.
 
-        3. Put Ubuntu on the SETUP 1 BOOT USB.
-            1. First, unmount the usb
-               <pre>
-               $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
-               </pre>
-            2. Enter the following command, **making sure to use the correct
-            device identifier; <span style="color: red;">using the wrong one could overwrite your hard
-            drive!</span>**
-               <pre>
-               $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg \
-               of=<span class="primary">USB-device-identifier-here</span> bs=1m
-               </pre>
-               Example:
-               ```
-               $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
-               ```
-            3. Enter your administrator password when requested.
-            4. Wait several minutes for the copying process to complete. When
-            it does, you may see an error box pop up. This is expected; it's
-            because the USB is written in a format readable by Ubuntu, but not
-            readable by MacOS.
-            5. Click Ignore.
+    **Ubuntu**:
+    1. If this is your first time using Ubuntu, note:
+        1. You can copy-paste text in most applications (e.g. Firefox) by
+        pressing **Ctrl-C** or **Ctrl-V**.
+        2. You can copy-paste text in a *terminal window* by pressing
+        **Ctrl-Shift-C** or **Ctrl-Shift-V**.
+    2. Put Ubuntu on the SETUP BOOT 1 USB.
+        1. Open the Ubuntu search console by clicking the purple
+        circle/swirl icon in the upper-left corner of the screen.
+        2. Type "startup disk creator" in the text box that appears
+        3. Click on the "Startup Disk Creator" icon that appears.
+        4. The "Source disc image" panel should show the.iso file you
+        downloaded. If it does not, click the "Other" button and find it
+        in the folder you downloaded it to.
+        5. In the "Disk to use" panel, you should see two lines. They may
+        vary from system to system, but each line will have a device
+        identifier in it, highlighted in the example below.
+            <pre>
+            Generic Flash Disk (/dev/sda)
+            Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</pre>
+        6. Select the line containing SETUP 1 BOOT USB.49 Make note of the
+        disk identifier (e.g. /dev/sdb).
+        7. Click "Make Startup Disk" and then click "Yes".
+        8. Wait a few minutes for the copying process to complete.
 
-        4. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or
-        malware infection).
-            1. Remove the USB drive from the USB slot and immediately reinsert it.
-            2. Wait 10 seconds for the operating system to recognize the USB.
-            3. You may see the same error box pop up again. Select Ignore.
-            4. The USB's device identifier may have changed. Find it again:
-                ```
-                $ diskutil list
-                ```
-            5.  
-                ```
-                $ cd $HOME/Downloads
-                ```
-            6.  
-                ```
-                $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` USB-device-identifier-here
-                ```
-            7. Wait a few minutes for the verification process to complete.
-            8. If all goes well, the command will output no data, returning to
-            your usual terminal prompt.
-            9. If there is a discrepancy, you’ll see a message like:
-                ```
-                ubuntu-16.04.1-desktop-amd64.img.dmg /dev/disk2
-                differ: byte 1, line 1
-                ```
-                If you see a message like this, STOP -- this may be a security
-                risk. Restart this section from the beginning. If the
-                issue persists, try using a different USB drive or a different
-                Setup Computer.
-
-    3. **Ubuntu**
-        1. If this is your first time using Ubuntu, note:
-            1. You can copy-paste text in most applications (e.g. Firefox) by
-            pressing **Ctrl-C** or **Ctrl-V**.
-            2. You can copy-paste text in a *terminal window* by pressing
-            **Ctrl-Shift-C** or **Ctrl-Shift-V**.
-        2. Put Ubuntu on the SETUP BOOT 1 USB.
-            1. Open the Ubuntu search console by clicking the purple
-            circle/swirl icon in the upper-left corner of the screen.
-            2. Type "startup disk creator" in the text box that appears
-            3. Click on the "Startup Disk Creator" icon that appears.
-            4. The "Source disc image" panel should show the.iso file you
-            downloaded. If it does not, click the "Other" button and find it
-            in the folder you downloaded it to.
-            5. In the "Disk to use" panel, you should see two lines. They may
-            vary from system to system, but each line will have a device
-            identifier in it, highlighted in the example below.
-                <pre>
-                Generic Flash Disk (/dev/sda)
-                Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</pre>
-            6. Select the line containing SETUP 1 BOOT USB.49 Make note of the
-            disk identifier (e.g. /dev/sdb).
-            7. Click "Make Startup Disk" and then click "Yes".
-            8. Wait a few minutes for the copying process to complete.
-
-        3. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or malware
-            1. On your desktop, right-click the corresponding USB drive icon in
-            your dock and select Eject from the pop-up menu.
-            2. Remove the USB drive from the USB slot and immediately
-            <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-            data-content="
-            Technical details: In order to avoid detection, it's conceivable that malware
-            might wait until a USB drive is in the process of being ejected (and all
-            integrity checks presumably completed) before infecting the USB. Ejecting and
-            re-inserting the USB before integrity checking is a simple workaround to
-            defend against this.
-            ">re-insert it</a>.
-            3. Wait 10 seconds for the operating system to recognize the USB.
-            4.  
-                ```
-                $ cd $HOME/Downloads
-                ```
-            5.  
-                <pre>
-                $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso <span class="primary">USB-device-identifier-here</span></pre>
-            6. If prompted for a password, enter the computer's root password.
-            7. Wait a few minutes for the verification process to complete.
-            8. If all goes well, the command will output no data, returning to
-            your usual terminal prompt.
-            9. If there is an issue, you'll see a message like:
-                ```
-                ubuntu-16.04.1-desktop-amd64.iso /dev/sda differ:
-                byte 1, line 1
-                ```
-                If you see a message like this, STOP -- this may be a security
-                risk. Restart this section from the beginning. If the issue
-                persists, try using a different USB drive or a different Setup
-                Computer.
+    3. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or malware
+        1. On your desktop, right-click the corresponding USB drive icon in
+        your dock and select Eject from the pop-up menu.
+        2. Remove the USB drive from the USB slot and immediately
+        <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+        data-content="
+        Technical details: In order to avoid detection, it's conceivable that malware
+        might wait until a USB drive is in the process of being ejected (and all
+        integrity checks presumably completed) before infecting the USB. Ejecting and
+        re-inserting the USB before integrity checking is a simple workaround to
+        defend against this.
+        ">re-insert it</a>.
+        3. Wait 10 seconds for the operating system to recognize the USB.
+        4.  
+            ```
+            $ cd $HOME/Downloads
+            ```
+        5.  
+            <pre>
+            $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso <span class="primary">USB-device-identifier-here</span></pre>
+        6. If prompted for a password, enter the computer's root password.
+        7. Wait a few minutes for the verification process to complete.
+        8. If all goes well, the command will output no data, returning to
+        your usual terminal prompt.
+        9. If there is an issue, you'll see a message like:
+            ```
+            ubuntu-16.04.1-desktop-amd64.iso /dev/sda differ:
+            byte 1, line 1
+            ```
+            If you see a message like this, STOP -- this may be a security
+            risk. Restart this section from the beginning. If the issue
+            persists, try using a different USB drive or a different Setup
+            Computer.
 
 7. Create the Q1 BOOT USB
     1. Boot the SETUP 1 computer from the SETUP 1 BOOT USB.
