@@ -17,16 +17,15 @@ the Setup Computers "SETUP 1" and "SETUP 2".
 the Setup Computers "SETUP 1" and "SETUP 2" *while booted from* a *Setup Boot USB*,
 “SETUP 1 BOOT” or “SETUP 2 BOOT”.
 
-Technical details: The Non-Quarantined OS USBs serve two purposes:
+Technical details: The non-quarantined Setup Boot USB drives serve two purposes:
 
-* First, they are used for creating the Quarantined App USBs in the next
-section, which greatly simplifies the process of doing so because we know
-it'll always be done from an Ubuntu environment. (We can't use the
-Quarantined OS USBs for this -- they're eternally quarantined, so they need to
-be permanently unplugged from their Setup Computer the moment they are created.)
-* Second, it will be harder for any malware infections on a Setup Computer's
-default OS to undermine a Quarantined USB setup process (the malware would
-first have to propagate itself to the Non-Quarantined OS USB).
+* They greatly simplify the steps for creation of the Quarantined App USBs in the next
+section, because only an Ubuntu environment needs outlined. The Quarantined OS USBs
+cannot be used for this since they are eternally quarantined and should be permanently
+unplugged from the Setup Computers the moment they are created.
+* Malware infection of a Setup Computer's default OS becomes more difficult. To
+undermine a Quarantined USB setup process, the malware would first have to propagate
+itself to the Non-Quarantined OS USB.
 
 1. Perform the following steps on your SETUP 1 computer.
 2. If you are not already reading this document on the SETUP 1 computer, open a
