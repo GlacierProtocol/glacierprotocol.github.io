@@ -48,15 +48,33 @@ Open a copy of this document.
     1. Change the terminal’s current working folder to the download folder,
     customizing the folder name if necessary:
 
-        * **Windows**: `> cd $HOME/Downloads`
-        * **MacOS**: `$ cd $HOME/Downloads`
-        * **Linux**: `$ cd $HOME/Downloads`
+        * **Windows**: 
+        ```
+        > cd $HOME/Downloads
+        ```
+        * **MacOS**: 
+        ```
+        $ cd $HOME/Downloads
+        ```
+        * **Linux**: 
+        ```
+        $ cd $HOME/Downloads
+        ```
 
     2. View the fingerprint of the file:
 
-        * **Windows**: `> Get-FileHash -a sha256 ubuntu-16.04.1-desktop-amd64.iso`
-        * **MacOS**: `$ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso`
-        * **Linux**: `$ sha256sum ubuntu-16.04.1-desktop-amd64.iso`
+        * **Windows**: 
+        ```
+        > Get-FileHash -a sha256 ubuntu-16.04.1-desktop-amd64.iso
+        ```
+        * **MacOS**: 
+        ```
+        $ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso
+        ```
+        * **Linux**: 
+        ```
+        $ sha256sum ubuntu-16.04.1-desktop-amd64.iso
+        ```
 
     3. The following fingerprint, further verified in 
     [the official Ubuntu fingerprint list](http://releases.ubuntu.com/16.04.1/SHA256SUMS)
@@ -104,10 +122,16 @@ The program will take a few minutes to write the USB.
     $ hdiutil convert ubuntu-16.04.1-desktop-amd64.iso -format UDRW -o ubuntu-16.04.1-desktop-amd64.img
     ```
 2. Determine the MacOS "device identifier" for the Boot USB.
-    1. `$ diskutil list`
+    1. List all disks and partitions:
+    ```
+    $ diskutil list
+    ```
     2. Insert the "SETUP 1 BOOT" USB in an empty USB slot.
     3. Wait 10 seconds for the operating system to recognize the USB.
-    4. Once more: `$ diskutil list`
+    4. List all disks and partitions again:
+    ```
+    $ diskutil list
+    ```
     5. The output from the command in step 4 should include an additional
     section that was not present in the output from the command in step 1. It will
     contain "(external, physical)" in the header. The first line of the section's
