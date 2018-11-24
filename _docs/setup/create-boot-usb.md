@@ -55,26 +55,25 @@ itself to the Non-Quarantined OS USB.
         2. **MacOS**: `$ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso`
         3. **Linux**: `$ sha256sum ubuntu-16.04.1-desktop-amd64.iso`
 
-    3. The following fingerprint should be displayed:
+    3. The following fingerprint, further verified in 
+    [the official Ubuntu fingerprint list](http://releases.ubuntu.com/16.04.1/SHA256SUMS)
+    against "*ubuntu-16.04.1-desktop-amd64.iso",
+    should be displayed:
 
         ```
         dc7dee086faabc9553d5ff8ff1b490a7f85c379f49de20c076f11fb6ac7c0f34
         ```
 
+        Alternatively, follow [Ubuntu's official full verification process](https://tutorials.ubuntu.com/tutorial/tutorial-how-to-verify-ubuntu#0).
+
         It's not important to check every single character when visually
         verifying a fingerprint. It's sufficient to check the **first 8
         characters, last 8 characters, and a few somewhere in the middle.**
 
-        Technical details: Because you verified the checksum & checksum
-        signature for this document in the
-        [Verify and print protocol document](/docs/setup/verify/#document-verification)
-        section, we are omitting the GPG
-        verification of some other fingerprints in the protocol. For a detailed
+        Technical details: The GPG verification of some fingerprints in the 
+        protocol are omitted because the checksum & checksum
+        signatures for this document were verified in the [Verify and print protocol document](/docs/setup/verify/#document-verification) section. For a detailed
         security analysis, see the [design document](/docs/design-doc/overview).
-
-        You can verify this is the official Ubuntu fingerprint
-        [here](http://releases.ubuntu.com/16.04.1/SHA256SUMS),
-        or follow Ubuntu's full verification process using this guide.
 
 6. Create the SETUP 1 BOOT USB.
 
