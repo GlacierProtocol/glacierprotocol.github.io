@@ -10,11 +10,11 @@ used to directly boot to the [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_(oper
 operating system, eliminating the use of the computer's hard drive in any way.
 
 The *first two* USB drives ("Setup Boot USBs") are the USB drives you labeled
-"SETUP 1 BOOT" and "SETUP 2 BOOT" in Section II. They will be prepared using
+"SETUP 1 BOOT" and "SETUP 2 BOOT" in the [Prepare hardware](/docs/setup/prepare-hardware/#non-quarantined-hardware) section. They will be prepared using
 your Setup Computers, which may be running Windows, MacOS, or something else.
 
 The *last two* USB drives ("Quarantined Boot USBs") are the USB drives you
-labeled "Q1 BOOT" and "Q2 BOOT" in Section II. They will be prepared using your
+labeled "Q1 BOOT" and "Q2 BOOT" in the [Prepare hardware](/docs/setup/prepare-hardware/#quarantined-hardware) section. They will be prepared using your
 Setup Computers *while booted off* a *Setup Boot USB*.
 
 Technical details: The Non-Quarantined OS USBs serve two purposes:
