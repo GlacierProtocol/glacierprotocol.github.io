@@ -73,7 +73,7 @@ itself to the Non-Quarantined OS USB.
         security analysis, see the [design document](/docs/design-doc/overview).
 
         You can verify this is the official Ubuntu fingerprint
-        [here](http://releases.ubuntu.com/16.04/SHA256SUMS),
+        [here](http://releases.ubuntu.com/16.04.1/SHA256SUMS),
         or follow Ubuntu's full verification process using this guide.
 
 6. Create the SETUP 1 BOOT USB.
