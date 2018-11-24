@@ -254,38 +254,32 @@ malware infection.
 
 1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB.
     1. Reboot the computer.
-    2. Press your laptop's key sequence to bring up the boot device
-    selection menu. (Some PCs may offer a boot device selection menu;
-    see below.)
-        1. **PC**: Varies by manufacturer, but is often **F12** or **Del**. The
-        timing may vary as well; try pressing it when the boot logo appears.
-            1. On the recommended Dell laptop, press F12. You should see a
-            horizontal blue bar appear underneath the Dell logo.
-            2. The recommended Acer laptop does not have a boot menu. See
-            below for instructions.
-        2. **Mac**: When you hear the startup chime, **press and hold
-        Option (⌥)**.
-
-    3. Select the proper device to boot from.
-        1. **PC**: Varies by manufacturer; option will often say "USB"
-        and/or "UEFI".
-            1. On the recommended Dell laptop, select "USB1" under "UEFI
+    2. Alter the boot device:
+        * **PC with boot device selection menu**:
+            1. Depending on manufacturer, tap **"F12"** or **"Del"**. Timing
+            can also vary, try tapping when the boot logo appears. Pressing
+            "F12" on the recommended Dell laptop should produce a horizontal
+            blue bar below the Dell boot logo to indicate the selection menu
+            will appear.
+            2. Depending on manufacturer, option may say "USB" and/or "UEFI".
+            On the recommended Dell laptop, select "USB1" under "UEFI
             OPTIONS".
-            2. The recommended Acer laptop does not have a boot menu. See below
-            for instructions.
-        2. **Mac**: Click the "EFI Boot" option and then click the up
-        arrow underneath it.
-
-            You do not need to select a network at this time. If more than
-            one identical "EFI boot" option is shown, you may need to guess
-            and reboot if you pick the wrong one.
-
-    4. Some laptops don't have a boot device selection menu, and you need to go into the BIOS configuration and change the boot order so that the USB drive is first.
-        1. On the recommended Acer laptop:
-            1. Press F2 while booting to enter BIOS configuration.
-            2. Navigate to the Boot menu.
-            3. Select USB HDD, and press F6 until it is at the top of the list.
-            4. Press F10 to save and automatically reboot from the USB.
+        * **PC without boot device selection menu**:
+            Boot device selection must be set in the BIOS configuration by
+            putting the USB drive first in the boot order. Since specific
+            menus vary from manufacturer to manufacturer, details are only
+            offered for the recommended Acer laptop.
+            1. Press **"F2"** when the boot logo appears.
+            2. Navigate to the boot menu.
+            3. Select "USB HDD", and press "F6" until it moves to the top of the list.
+            4. Press "F10" to save and automatically reboot from the USB.
+        * **Mac**:
+            1. Press and hold **"Option"** (⌥) when the startup chime is heard.
+            2. Click the "EFI Boot" option and then click the up arrow below.
+            
+            Do not select a network at this time. If more than one identical
+            "EFI boot" option is shown, guess and repeat if boot is not
+            successful.
     5. If the computer boots into its regular OS rather than presenting you
     with a boot device or BIOS configuration screen, you probably pressed
     the wrong button, or waited too long.
