@@ -132,8 +132,8 @@ The program will take a few minutes to write the USB.
     ```
     $ diskutil list
     ```
-    5. The output from the command in step 4 should include an additional
-    section that was not present in the output from the command in step 1. It will
+    5. The output from the second `diskutil list` should include an additional
+    section that was not present in the first `diskutil list` . It will
     contain "(external, physical)" in the header. The first line of the section's
     "SIZE" column should reflect the capacity of the USB drive.
     6. Make a note of the device identifier, which is the part of the section header
