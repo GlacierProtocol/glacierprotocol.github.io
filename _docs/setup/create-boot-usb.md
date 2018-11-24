@@ -66,7 +66,9 @@ itself to the Non-Quarantined OS USB.
         characters, last 8 characters, and a few somewhere in the middle.**
 
         Technical details: Because you verified the checksum & checksum
-        signature for this document in Section I, we are omitting the GPG
+        signature for this document in the
+        [Verify and print protocol document](/docs/setup/verify/#document-verification)
+        section, we are omitting the GPG
         verification of some other fingerprints in the protocol. For a detailed
         security analysis, see the [design document](/docs/design-doc/overview).
 
