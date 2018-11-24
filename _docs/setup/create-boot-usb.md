@@ -160,11 +160,12 @@ The program will take a few minutes to write the USB.
     5. The resulting USB drive will not be readable by MacOS, which may result in an
     error box pop up. This is expected; click "Ignore".
 
-4. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or
-malware infection).
-    1. Remove the USB drive from the USB slot and immediately reinsert it.
+4. Verify the integrity of the "SETUP 1 BOOT" USB drive to prove the absence of errors or
+malware infection.
+    1. Remove the "SETUP 1 BOOT" USB drive from the USB slot and immediately reinsert it.
     2. Wait 10 seconds for the operating system to recognize the USB.
-    3. You may see the same error box pop up again. Select Ignore.
+    3. The USB drive will, again, not be readable by MacOS, which may result in an
+    error box pop up. This is expected; click "Ignore".
     4. The USB's device identifier may have changed. Find it again:
         ```
         $ diskutil list
