@@ -4,15 +4,10 @@ description: Learn how to prepare your USB drives for Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
-Because the eternally quarantined computers cannot connect to a network, they
-cannot download software. We'll be using USB drives to transfer the necessary
-software to them.
-
-We will prepare four bootable
-[Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_(operating_system))
-USB drives. ("Bootable" means that the Ubuntu operating system will be booted
-directly from the USB drive, without using the computer's hard drive in any
-way.)
+To ensure isolation from any network, USB drives will be used to transfer the necessary
+software to the eternally quarantined computers. Four bootable Linux USB drives will be 
+used to directly boot to the [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_(operating_system))
+operating system, eliminating the use of the computer's hard drive in any way.
 
 The *first two* USB drives ("Setup Boot USBs") are the USB drives you labeled
 "SETUP 1 BOOT" and "SETUP 2 BOOT" in Section II. They will be prepared using
