@@ -27,25 +27,23 @@ unplugged from the Setup Computers the moment they are created.
 undermine a Quarantined USB setup process, the malware would first have to propagate
 itself to the Non-Quarantined OS USB.
 
-1. Perform the following steps on your SETUP 1 computer.
-2. If you are not already reading this document on the SETUP 1 computer, open a
-copy there.
-3. Download Ubuntu by going to this link:
+## On Setup Computer “SETUP 1”
+1. Open a copy of this document.
+2. Download Ubuntu from this link:
 
     [http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04.1-desktop-amd64.iso](http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04.1-desktop-amd64.iso)
-    Wait until the download is complete.
 
-4. Open a terminal window.
+3. Once the download is complete, open a terminal window:
 
     1. **Windows**: Press Windows-R, type "powershell" and click OK.
     2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar,
     and type "terminal". Select the Terminal application from the search results.
     3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
 
-5. Verify the integrity of the Ubuntu download.
+4. Verify the Ubuntu download integrity:
 
-    1. Change the terminal window's active folder to the folder where you
-    downloaded Ubuntu, customizing the folder name if necessary:
+    1. Change the terminal’s current working folder to the download folder,
+    customizing the folder name if necessary:
 
         1. **Windows**: `> cd $HOME/Downloads`
         2. **MacOS**: `$ cd $HOME/Downloads`
