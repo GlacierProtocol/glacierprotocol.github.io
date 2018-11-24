@@ -96,7 +96,8 @@ from your downloads folder and click Open.
 8. If prompted to download Syslinux software, click "Yes".
 9. When asked to write in "ISO Image Mode (Recommended)" or
 "DD Image Mode", select "ISO Image Mode" and press OK.
-10. The program will take a few minutes to write the USB.
+
+The program will take a few minutes to write the USB.
 
 **MacOS**:
 1. Prepare the Ubuntu download for copying to the USB.
