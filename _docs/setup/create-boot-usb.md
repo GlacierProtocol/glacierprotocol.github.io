@@ -148,8 +148,7 @@ The program will take a few minutes to write the USB.
     device identifier; <span style="color: red;">using the wrong one could overwrite your hard
     drive!</span>**
         <pre>
-        $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg \
-        of=<span class="primary">USB-device-identifier-here</span> bs=1m
+        $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier-here</span> bs=1m
         </pre>
         Example:
         ```
