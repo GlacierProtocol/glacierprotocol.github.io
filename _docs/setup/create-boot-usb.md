@@ -280,18 +280,17 @@ malware infection.
             Do not select a network at this time. If more than one identical
             "EFI boot" option is shown, guess and repeat if boot is not
             successful.
-    5. If the computer boots into its regular OS rather than presenting you
-    with a boot device or BIOS configuration screen, you probably pressed
-    the wrong button, or waited too long.
-        1. Hold down your laptop's power button for 10 seconds. (The
-            screen may turn black sooner than that; keep holding it down.)
-        2. Turn the laptop back on and try again. Spam the appropriate
-        button(s) repeatedly as it boots.
-        3. If the computer boots *immediately* to where it left off, you
-        probably didn't hold down the power button long enough.
-    6. You'll see a menu that says "GNU GRUB" at the top of the screen.
-    Select the option "Try Ubuntu without installing" and press Enter.
-    7. The computer should boot into the USB's Ubuntu desktop.
+
+        If, while trying to get into either the BIOS or boot device selection menu,
+        the computer boots into its regular operating system, the wrong button may have
+        been pressed, or not pressed soon enough. Hold down the power button for a full
+        ten seconds, even if the screen turns black sooner, and turn the computer back on.
+        Repeat this step, tapping the appropriate button(s) repeatedly as it boots. If
+        the computer boots *immediately* to where it left off, the power button was not
+        held down long enough and should be held down again.
+    3. On successful reboot, the "GNU GRUB" menu will appear. Select the option "Try
+    Ubuntu without installing" and press "Enter". The computer should boot into the USB's
+    Ubuntu desktop.
 
 2. Enable WiFi connectivity.
     1. Click the cone-shaped WiFi icon near the right side of the menu bar.
