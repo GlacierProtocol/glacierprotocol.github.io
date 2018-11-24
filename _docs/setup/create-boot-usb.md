@@ -108,17 +108,15 @@ The program will take a few minutes to write the USB.
     2. Insert the "SETUP 1 BOOT" USB in an empty USB slot.
     3. Wait 10 seconds for the operating system to recognize the USB.
     4. Once more: `$ diskutil list`
-    5. The output of the second command should include an additional
-    section that was not present in the first command's output.
-        1. This section will have (external, physical) in the header.
-        2. The first line of the section's SIZE column should reflect
-        the capacity of the USB drive.
-    6. Make a note of the device identifier.
-        1. The device identifier is the part of the new section header
-        that comes before (external, physical) (for example /dev/disk2).
+    5. The output from the command in step 4 should include an additional
+    section that was not present in the output from the command in step 1. It will
+    contain "(external, physical)" in the header. The first line of the section's
+    "SIZE" column should reflect the capacity of the USB drive.
+    6. Make a note of the device identifier, which is the part of the section header
+    that comes before "(external, physical)", for example "/dev/disk2".
 
-3. Put Ubuntu on the "SETUP 1 BOOT" USB.
-    1. First, unmount the usb
+3. Copy the Ubuntu image onto the "SETUP 1 BOOT" USB.
+    1. Unmount the USB drive
         <pre>
         $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
         </pre>
@@ -133,12 +131,10 @@ The program will take a few minutes to write the USB.
         ```
         $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
         ```
-    3. Enter your administrator password when requested.
-    4. Wait several minutes for the copying process to complete. When
-    it does, you may see an error box pop up. This is expected; it's
-    because the USB is written in a format readable by Ubuntu, but not
-    readable by MacOS.
-    5. Click Ignore.
+    3. Enter the administrator password when requested.
+    4. Wait several minutes for the copying process to complete.
+    5. The resulting USB drive will not be readable by MacOS, which may result in an
+    error box pop up. This is expected; click "Ignore".
 
 4. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or
 malware infection).
