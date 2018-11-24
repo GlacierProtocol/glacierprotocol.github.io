@@ -292,23 +292,20 @@ malware infection.
     Ubuntu without installing" and press "Enter". The computer should boot into the USB's
     Ubuntu desktop.
 
-2. Enable WiFi connectivity.
+2. Enable WiFi connectivity. 
     1. Click the cone-shaped WiFi icon near the right side of the menu bar.
-    2. If the dropdown says "No network devices available" at the top, you need to enable your networking drivers:
-        1. Click on "System Settings". It's the gear-and-wrench icon along
-        the left side of the screen.
-        2. A System Settings window will appear. Click the "Software &
-        Updates" icon.
-        3. A Software & Updates window will appear. Click the "Additional
-        Drivers" tab.
-        4. In the Additional Drivers tab, you'll see a section for a
-        Wireless Network Adapter. In that section, "Do not use the device"
-        will be selected. Select any other option besides "Do not use the
-        device.""
+    2. If the dropdown says "No network devices available" at the top, networking drivers
+    need enabled:
+        1. Click on the gear-and-wrench icon along the left side of the screen to open
+        the system settings window.
+        2. Click the "Software & Updates" icon to open the Software & Updates window
+        3. Click the "Additional Drivers" tab.
+        4. Select any other option besides "Do not use the device" in the "Wireless
+        Network Adapter" section.
         5. Click "Apply Changes".
         6. Click the cone-shaped WiFi icon near the right side of the menu
         bar again. There should be a list of WiFi networks this time.
-    3. Select your WiFi network from the list and enter the password.
+    3. Select the relevant WiFi network from the list and enter the password.
 3. Repeat steps 1-6 using the "SETUP 1" computer to create the "Q1 BOOT" USB
 rather than the "SETUP 1 BOOT" USB.
     1. **The instruction to plug a Quarantined Boot USB into your Setup
