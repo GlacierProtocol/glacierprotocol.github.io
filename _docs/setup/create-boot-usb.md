@@ -40,8 +40,7 @@ copy there.
     1. **Windows**: Press Windows-R, type "powershell" and click OK.
     2. **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar,
     and type "terminal". Select the Terminal application from the search results.
-    3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T. (On Ubuntu, press
-    Ctrl-Alt-T.)
+    3. **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
 
 5. Verify the integrity of the Ubuntu download.
 
