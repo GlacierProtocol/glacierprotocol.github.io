@@ -81,10 +81,21 @@ Each line is *not* a separate command; it is one command to be entered in its
 entirety. This is clear because there is no `$` at the beginning of the second
 line. Proceed carefully.
 
-If the terminal response is in any way different to the expected response stated
-in the protocol, **stop and seek help**. Continue only if all possible causes and
-implications of the discrepancy are understood.
+Commands requiring user-specific information will be highlighted like this:
+
+<pre>
+$ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier-here</span> bs=1m
+</pre>
+
+This is because the USB device identifier will vary from installation to installation. In this example, the user is expected to replace the <span class="primary">USB-device-identifier-here</span> with the USB device identifier particular to the local machine:
+```
+$ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
+```
+
+An explanation of how to provide the required information will always be given.
 
 **In general, follow the protocol carefully, keep track of the current step and
 double-check all work**. Any errors or deviations can undermine the security of the
-process.
+process. If the terminal response is in any way different to the expected response stated
+in the protocol, **stop and seek help**. Continue only if all possible causes and
+implications of the discrepancy are understood.
