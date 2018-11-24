@@ -38,10 +38,10 @@ Open a copy of this document.
 
 2. Once the download is complete, open a terminal window:
 
-    * **Windows**: Press Windows-R, type "powershell" and click OK.
+    * **Windows**: Press "Windows-R", type "powershell" and click "OK".
     * **MacOS**: Click the Searchlight (magnifying glass) icon in the menu bar,
-    and type "terminal". Select the Terminal application from the search results.
-    * **Linux**: Varies; on Ubuntu, press Ctrl-Alt-T.
+    and type "terminal". Select the "Terminal" application from the search results.
+    * **Linux**: Varies; on Ubuntu, press "Ctrl-Alt-T".
 
 3. Verify the Ubuntu download integrity:
 
@@ -81,21 +81,19 @@ Open a copy of this document.
 ### Create the "SETUP 1 BOOT" USB
 
 **Windows**:
-1. Download the
-[Rufus disk utility](https://rufus.akeo.ie/)
-and run it.
-2. Insert the SETUP 1 BOOT USB in an empty USB slot.
+1. Download and run [Rufus disk utility](https://rufus.akeo.ie/).
+2. Insert the "SETUP 1 BOOT" USB into an empty USB slot.
 3. In the "Device" dropdown at the top of the Rufus window, ensure the
 empty USB drive is selected.
 4. Next to the text "Create a bootable disk using", select "ISO Image"
 in the dropdown.
 5. Click the CD icon next to the "ISO Image" dropdown.
-6. A file explorer will pop up. Select `ubuntu-16.04.1-desktop-amd64.iso`
-from your downloads folder and click Open.
-7. Click Start.
+6. In the file explorer that pops up, select `ubuntu-16.04.1-desktop-amd64.iso`
+from the downloads folder and click "Open".
+7. Click "Start".
 8. If prompted to download Syslinux software, click "Yes".
 9. When asked to write in "ISO Image Mode (Recommended)" or
-"DD Image Mode", select "ISO Image Mode" and press OK.
+"DD Image Mode", select "ISO Image Mode" and press "OK".
 
 The program will take a few minutes to write the USB.
 
@@ -107,7 +105,7 @@ The program will take a few minutes to write the USB.
     ```
 2. Determine the MacOS "device identifier" for the Boot USB.
     1. `$ diskutil list`
-    2. Insert the SETUP 1 BOOT USB in an empty USB slot.
+    2. Insert the "SETUP 1 BOOT" USB in an empty USB slot.
     3. Wait 10 seconds for the operating system to recognize the USB.
     4. Once more: `$ diskutil list`
     5. The output of the second command should include an additional
@@ -119,7 +117,7 @@ The program will take a few minutes to write the USB.
         1. The device identifier is the part of the new section header
         that comes before (external, physical) (for example /dev/disk2).
 
-3. Put Ubuntu on the SETUP 1 BOOT USB.
+3. Put Ubuntu on the "SETUP 1 BOOT" USB.
     1. First, unmount the usb
         <pre>
         $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
@@ -142,7 +140,7 @@ The program will take a few minutes to write the USB.
     readable by MacOS.
     5. Click Ignore.
 
-4. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or
+4. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or
 malware infection).
     1. Remove the USB drive from the USB slot and immediately reinsert it.
     2. Wait 10 seconds for the operating system to recognize the USB.
@@ -178,7 +176,7 @@ malware infection).
     pressing **Ctrl-C** or **Ctrl-V**.
     2. You can copy-paste text in a *terminal window* by pressing
     **Ctrl-Shift-C** or **Ctrl-Shift-V**.
-2. Put Ubuntu on the SETUP BOOT 1 USB.
+2. Put Ubuntu on the "SETUP BOOT 1" USB.
     1. Open the Ubuntu search console by clicking the purple
     circle/swirl icon in the upper-left corner of the screen.
     2. Type "startup disk creator" in the text box that appears
@@ -192,12 +190,12 @@ malware infection).
         <pre>
         Generic Flash Disk (/dev/sda)
         Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</pre>
-    6. Select the line containing SETUP 1 BOOT USB.49 Make note of the
+    6. Select the line containing "SETUP 1 BOOT" USB.49 Make note of the
     disk identifier (e.g. /dev/sdb).
     7. Click "Make Startup Disk" and then click "Yes".
     8. Wait a few minutes for the copying process to complete.
 
-3. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or malware
+3. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or malware
     1. On your desktop, right-click the corresponding USB drive icon in
     your dock and select Eject from the pop-up menu.
     2. Remove the USB drive from the USB slot and immediately
@@ -233,7 +231,7 @@ malware infection).
 
 ### Create the "Q1 BOOT" USB
 
-1. Boot the SETUP 1 computer from the SETUP 1 BOOT USB.
+1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB.
     1. Reboot the computer.
     2. Press your laptop's key sequence to bring up the boot device
     selection menu. (Some PCs may offer a boot device selection menu;
@@ -297,24 +295,24 @@ malware infection).
         6. Click the cone-shaped WiFi icon near the right side of the menu
         bar again. There should be a list of WiFi networks this time.
     3. Select your WiFi network from the list and enter the password.
-3. Repeat steps 1-6 using the SETUP 1 computer to create the Q1 BOOT USB
-rather than the SETUP 1 BOOT USB.
+3. Repeat steps 1-6 using the "SETUP 1" computer to create the "Q1 BOOT" USB
+rather than the "SETUP 1 BOOT" USB.
     1. **The instruction to plug a Quarantined Boot USB into your Setup
     computer should raise a red flag for you, because <span style="color: red;">you should never
     plug a quarantined USB into anything other than the quarantined
     computer it is designated for!</span>**
 
         This setup process is the ONE exception.
-    2. Because you have booted the SETUP 1 computer off the SETUP 1 BOOT
+    2. Because you have booted the "SETUP 1" computer off the "SETUP 1 BOOT"
     USB, you will follow the instructions for Ubuntu, even if your computer
     normally runs Windows or MacOS.
-    3. Immediately after you are finished executing steps 1-6 with the Q1
-    BOOT USB, remove the Q1 BOOT USB from the SETUP 1 computer.
+    3. Immediately after you are finished executing steps 1-6 with the "Q1
+    BOOT" USB, remove the "Q1 BOOT" USB from the "SETUP 1" computer.
         1. On your desktop, right-click the corresponding USB drive icon
         in your dock and select Eject from the pop-up menu.
         2. Remove the USB drive from the USB slot.
-    4. **The Q1 BOOT USB is now eternally quarantined. It should never again
-    be plugged into anything besides the Q1 computer.**
+    4. **The "Q1 BOOT" USB is now eternally quarantined. It should never again
+    be plugged into anything besides the "Q1" computer.**
 
 ## On Setup Computer “SETUP 2”
 
