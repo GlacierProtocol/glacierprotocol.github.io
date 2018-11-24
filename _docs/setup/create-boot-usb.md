@@ -9,13 +9,13 @@ software to the eternally quarantined computers. Four bootable Linux USB drives 
 used to directly boot to the [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_(operating_system))
 operating system, eliminating the use of the computer's hard drive in any way.
 
-The *first two* USB drives ("Setup Boot USBs") are the USB drives you labeled
-"SETUP 1 BOOT" and "SETUP 2 BOOT" in the [Prepare hardware](/docs/setup/prepare-hardware/#non-quarantined-hardware) section. They will be prepared using
-your Setup Computers, which may be running Windows, MacOS, or something else.
-
-The *last two* USB drives ("Quarantined Boot USBs") are the USB drives you
-labeled "Q1 BOOT" and "Q2 BOOT" in the [Prepare hardware](/docs/setup/prepare-hardware/#quarantined-hardware) section. They will be prepared using your
-Setup Computers *while booted off* a *Setup Boot USB*.
+In accordance with the [Prepare hardware](/docs/setup/prepare-hardware/#non-quarantined-hardware)
+section:
+* The Setup Boot USB drives, "SETUP 1 BOOT" and "SETUP 2 BOOT", will be prepared using
+the Setup Computers "SETUP 1" and "SETUP 2".
+* The Quarantined Boot USB drives, "Q1 BOOT" and "Q2 BOOT", will be prepared using
+the Setup Computers "SETUP 1" and "SETUP 2" *while booted from* a *Setup Boot USB*,
+“SETUP 1 BOOT” or “SETUP 2 BOOT”.
 
 Technical details: The Non-Quarantined OS USBs serve two purposes:
 
