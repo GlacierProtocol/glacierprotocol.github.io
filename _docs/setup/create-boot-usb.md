@@ -214,18 +214,17 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
     7. Click "Make Startup Disk" and then click "Yes".
     8. Wait a few minutes for the copying process to complete.
 
-2. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or malware)
-    1. On your desktop, right-click the corresponding USB drive icon in
-    your dock and select Eject from the pop-up menu.
-    2. Remove the USB drive from the USB slot and immediately
-    <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
-    data-content="
-    Technical details: In order to avoid detection, it's conceivable that malware
-    might wait until a USB drive is in the process of being ejected (and all
-    integrity checks presumably completed) before infecting the USB. Ejecting and
-    re-inserting the USB before integrity checking is a simple workaround to
-    defend against this.
-    ">re-insert it</a>.
+2. Verify the integrity of the “SETUP 1 BOOT” USB drive to prove the absence
+of errors or malware infection. 
+    1. On the desktop, right-click the USB drive icon corresponding to the
+    "SETUP 1 BOOT" USB drive, and select "Eject" from the pop-up menu.
+    2. Remove the USB drive from the USB slot and immediately re-insert it.
+
+        Technical details: In order to avoid detection, malware
+        may wait until a USB drive is in the process of ejecting (i.e. once all
+        integrity checks are completed) before infecting the USB. Ejecting and
+        re-inserting the USB before checking integrity is a simple defence against this.
+
     3. Wait 10 seconds for the operating system to recognize the USB.
     4. Change the terminal’s current working folder to the download folder,
     customizing the folder name if necessary:
