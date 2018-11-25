@@ -185,8 +185,8 @@ malware infection:
 **Linux**:
 
 Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcuts are
-**Ctrl-C** and **Ctrl-V** respectively, but, in a terminal window, the shortcuts are
-**Ctrl-Shift-C** and **Ctrl-Shift-V**.
+"Ctrl-C" and "Ctrl-V" respectively, but, in a terminal window, the shortcuts are
+"Ctrl-Shift-C" and "Ctrl-Shift-V".
 
 1. Copy the Ubuntu image onto the “SETUP 1 BOOT” USB:
     1. Open the Ubuntu search console by clicking the purple
