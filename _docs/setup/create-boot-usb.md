@@ -182,7 +182,7 @@ malware infection:
         section from the beginning. If the issue persists, try repeating with a
         different USB drive or a different Setup Computer.
 
-**Ubuntu**:
+**Linux**:
 
 Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcuts are
 **Ctrl-C** and **Ctrl-V** respectively, but, in a terminal window, the shortcuts are
