@@ -185,10 +185,10 @@ malware infection.
         ubuntu-16.04.1-desktop-amd64.img.dmg /dev/disk2
         differ: byte 1, line 1
         ```
-        If a message is returned, **STOP**, this may be a security
-        risk. Restart this section from the beginning. If the
-        issue persists, try using a different USB drive or a different
-        Setup Computer.
+        If a message is returned, **STOP**. This may be a security
+        risk. Restart the [Create the "SETUP 1 BOOT" USB](create-the-setup-1-boot-usb)
+        section from the beginning. If the issue persists, try repeating with a
+        different USB drive or a different Setup Computer.
 
 **Ubuntu**:
 
@@ -244,7 +244,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
         ubuntu-16.04.1-desktop-amd64.iso /dev/sda differ:
         byte 1, line 1
         ```
-        If you see a message like this, STOP -- this may be a security
+        If a message is returned, **STOP**. This may be a security
         risk. Restart the [Create the "SETUP 1 BOOT" USB](create-the-setup-1-boot-usb)
         section from the beginning. If the issue persists, try using a
         different USB drive or a different Setup Computer.
