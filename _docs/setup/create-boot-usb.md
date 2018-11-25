@@ -1,6 +1,6 @@
 ---
 title: Create boot USBs
-description: Learn how to prepare your USB drives for Glacier, the
+description: Learn how to prepare the USB drives for Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
@@ -145,7 +145,7 @@ The program will take a few minutes to write the USB.
         $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
         </pre>
     2. Enter the following command, **making sure to use the correct
-    device identifier; <span style="color: red;">using the wrong one could overwrite your hard
+    device identifier; <span style="color: red;">using the wrong one could overwrite the hard
     drive!</span>**
         <pre>
         $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier-here</span> bs=1m
