@@ -234,11 +234,10 @@ of errors or malware infection.
     5. Compare the "SETUP 1 BOOT" USB drive to the verified image:
         <pre>
         $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso <span class="primary">USB-device-identifier-here</span></pre>
-    6. If prompted for a password, enter the computer's root password.
+    6. Enter the root password if requested.
     7. Wait a few minutes for the verification process to complete.
-    8. If all goes well, the command will output no data, returning to
-    your usual terminal prompt.
-    9. If there is an issue, you'll see a message like:
+    8. Successful verification will return to the terminal prompt, outputting no data.
+    Failure will return a message showing how the USB differs from the downloaded image, for example:
         ```
         ubuntu-16.04.1-desktop-amd64.iso /dev/sda differ:
         byte 1, line 1
