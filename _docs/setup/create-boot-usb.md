@@ -172,9 +172,8 @@ malware infection:
         $ cd $HOME/Downloads
         ```
     6. Compare the "SETUP 1 BOOT" USB drive to the verified image:
-        ```
-        $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` USB-device-identifier-here
-        ```
+        <pre>
+        $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` <span class="primary">USB-device-identifier-here</span></pre>
     7. Wait a few minutes for the verification process to complete.
     8. Successful verification will return to the terminal prompt, outputting no data.
     Failure will return a message showing how the USB differs from the downloaded image, for example:
