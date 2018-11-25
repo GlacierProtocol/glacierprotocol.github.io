@@ -114,12 +114,12 @@ from the downloads folder and click "Open".
 The program will take a few minutes to write the USB.
 
 **MacOS**:
-1. Prepare the Ubuntu download for copying to the USB.
+1. Prepare the Ubuntu download for copying to the USB:
     ```
     $ cd $HOME/Downloads
     $ hdiutil convert ubuntu-16.04.1-desktop-amd64.iso -format UDRW -o ubuntu-16.04.1-desktop-amd64.img
     ```
-2. Determine the MacOS "device identifier" for the Boot USB.
+2. Determine the MacOS "device identifier" for the Boot USB:
     1. List all disks and partitions:
     ```
     $ diskutil list
@@ -137,14 +137,14 @@ The program will take a few minutes to write the USB.
     6. Make a note of the device identifier, which is the part of the section header
     that comes before "(external, physical)", for example "/dev/disk2".
 
-3. Copy the Ubuntu image onto the "SETUP 1 BOOT" USB.
-    1. Unmount the USB drive
+3. Copy the Ubuntu image onto the "SETUP 1 BOOT" USB:
+    1. Unmount the USB drive:
         <pre>
         $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
         </pre>
     2. Enter the following command, **making sure to use the correct
     device identifier; <span style="color: red;">using the wrong one could overwrite the hard
-    drive!</span>**
+    drive!</span>**:
         <pre>
         $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier-here</span> bs=1m
         </pre>
@@ -158,7 +158,7 @@ The program will take a few minutes to write the USB.
     error box pop up. This is expected; click "Ignore".
 
 4. Verify the integrity of the "SETUP 1 BOOT" USB drive to prove the absence of errors or
-malware infection.
+malware infection:
     1. Remove the "SETUP 1 BOOT" USB drive from the USB slot and immediately reinsert it.
     2. Wait 10 seconds for the operating system to recognize the USB.
     3. The USB drive will, again, not be readable by MacOS, which may result in an
@@ -194,7 +194,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
 **Ctrl-C** and **Ctrl-V** respectively, but, in a terminal window, the shortcuts are
 **Ctrl-Shift-C** and **Ctrl-Shift-V**.
 
-1. Copy the Ubuntu image onto the “SETUP 1 BOOT” USB. 
+1. Copy the Ubuntu image onto the “SETUP 1 BOOT” USB:
     1. Open the Ubuntu search console by clicking the purple
     circle/swirl icon in the upper-left corner of the screen.
     2. Type "startup disk creator" in the text box.
@@ -213,7 +213,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
     8. Wait a few minutes for the copying process to complete.
 
 2. Verify the integrity of the “SETUP 1 BOOT” USB drive to prove the absence
-of errors or malware infection. 
+of errors or malware infection:
     1. On the desktop, right-click the USB drive icon corresponding to the
     "SETUP 1 BOOT" USB drive, and select "Eject" from the pop-up menu.
     2. Remove the USB drive from the USB slot and immediately re-insert it.
@@ -247,7 +247,7 @@ of errors or malware infection.
 
 ### Create the "Q1 BOOT" USB
 
-1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB.
+1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB:
     1. Reboot the computer.
     2. Alter the boot device:
         * **PC with boot device selection menu**:
@@ -287,7 +287,7 @@ of errors or malware infection.
     Ubuntu without installing" and press "Enter". The computer should boot into the USB's
     Ubuntu desktop.
 
-2. Enable WiFi connectivity. 
+2. Enable WiFi connectivity:
     1. Click the cone-shaped WiFi icon near the right side of the menu bar.
     2. If the dropdown says "No network devices available" at the top, networking drivers
     need enabled:
