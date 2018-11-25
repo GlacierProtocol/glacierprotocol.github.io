@@ -32,9 +32,7 @@ Open a copy of this document.
 
 ### Download and verify Ubuntu
 
-1. Download Ubuntu from this link:
-
-    [http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04.1-desktop-amd64.iso](http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04.1-desktop-amd64.iso)
+1. Download [Ubuntu](http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04.1-desktop-amd64.iso).
 
 2. Once the download is complete, open a terminal window:
 
