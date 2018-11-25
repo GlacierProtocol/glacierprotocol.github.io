@@ -191,12 +191,12 @@ malware infection.
         Setup Computer.
 
 **Ubuntu**:
-1. If this is your first time using Ubuntu, note:
-    1. You can copy-paste text in most applications (e.g. Firefox) by
-    pressing **Ctrl-C** and **Ctrl-V**.
-    2. You can copy-paste text in a *terminal window* by pressing
-    **Ctrl-Shift-C** and **Ctrl-Shift-V**.
-2. Put Ubuntu on the "SETUP BOOT 1" USB.
+
+Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcuts are
+**Ctrl-C** and **Ctrl-V** respectively, but, in a terminal window, the shortcuts are
+**Ctrl-Shift-C** and **Ctrl-Shift-V**.
+
+1. Put Ubuntu on the "SETUP BOOT 1" USB.
     1. Open the Ubuntu search console by clicking the purple
     circle/swirl icon in the upper-left corner of the screen.
     2. Type "startup disk creator" in the text box that appears
@@ -215,7 +215,7 @@ malware infection.
     7. Click "Make Startup Disk" and then click "Yes".
     8. Wait a few minutes for the copying process to complete.
 
-3. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or malware
+2. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or malware
     1. On your desktop, right-click the corresponding USB drive icon in
     your dock and select Eject from the pop-up menu.
     2. Remove the USB drive from the USB slot and immediately
