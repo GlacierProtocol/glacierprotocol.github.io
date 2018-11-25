@@ -232,7 +232,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
         ```
         $ cd $HOME/Downloads
         ```
-    5.  
+    5. Compare the "SETUP 1 BOOT" USB drive to the verified image:
         <pre>
         $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso <span class="primary">USB-device-identifier-here</span></pre>
     6. If prompted for a password, enter the computer's root password.
