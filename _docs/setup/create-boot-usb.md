@@ -250,6 +250,12 @@ of errors or malware infection:
 1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB:
     1. Reboot the computer.
     2. Alter the boot device:
+
+        If a boot device selection menu is not available, the boot device
+        must be set in the BIOS configuration by putting the USB drive
+        first in the boot order. Since specific menus vary from manufacturer
+        to manufacturer, details are only offered for the recommended Acer laptop.
+
         * **PC with boot device selection menu**:
             1. Depending on manufacturer, tap **"F12"** or **"Del"**. Timing
             can also vary, try tapping when the boot logo appears. Pressing
@@ -260,19 +266,14 @@ of errors or malware infection:
             On the recommended Dell laptop, select "USB1" under "UEFI
             OPTIONS".
         * **PC without boot device selection menu**:
-            Boot device selection must be set in the BIOS configuration by
-            putting the USB drive first in the boot order. Since specific
-            menus vary from manufacturer to manufacturer, details are only
-            offered for the recommended Acer laptop.
             1. Press **"F2"** when the boot logo appears.
             2. Navigate to the boot menu.
             3. Select "USB HDD", and press "F6" until it moves to the top of the list.
             4. Press "F10" to save and automatically reboot from the USB.
         * **Mac**:
             1. Press and hold **"Option"** (⌥) when the startup chime is heard.
-            2. Click the "EFI Boot" option and then click the up arrow below.
-            
-            Do not select a network at this time. If more than one identical
+            2. Click the "EFI Boot" option and then click the up arrow below. Do not
+            select a network at this time. If more than one identical
             "EFI boot" option is shown, guess and repeat if boot is not
             successful.
 
