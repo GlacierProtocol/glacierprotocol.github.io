@@ -303,24 +303,21 @@ of errors or malware infection.
         6. Click the cone-shaped WiFi icon near the right side of the menu
         bar again. There should be a list of WiFi networks this time.
     3. Select the relevant WiFi network from the list and enter the password.
-3. Repeat steps 1-6 using the "SETUP 1" computer to create the "Q1 BOOT" USB
-rather than the "SETUP 1 BOOT" USB.
-    1. **The instruction to plug a Quarantined Boot USB into your Setup
-    computer should raise a red flag for you, because <span style="color: red;">you should never
-    plug a quarantined USB into anything other than the quarantined
-    computer it is designated for!</span>**
-
-        This setup process is the ONE exception.
-    2. Because you have booted the "SETUP 1" computer off the "SETUP 1 BOOT"
-    USB, you will follow the instructions for Ubuntu, even if your computer
+3. Repeat sections [Download and verify Ubuntu](/docs/setup/create-boot-usb/#download-and-verify-ubuntu),
+then [Create the “SETUP 1 BOOT” USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb),
+using the "SETUP 1" computer to create the "Q1 BOOT" USB rather than the "SETUP 1 BOOT" USB, taking note of the following:
+    * The instruction to plug a Quarantined Boot USB into the Setup
+    Computer should raise a red flag, because **<span style="color: red;">a quarantined USB drive should never be plugged into anything other than its designated quarantined computer!</span>**
+    This setup process is the **ONE** necessary exception.
+    * The "SETUP 1" computer will now boot from the "SETUP 1 BOOT" USB drive, meaning
+    the Linux instructions should be followed, even if the computer
     normally runs Windows or MacOS.
-    3. Immediately after you are finished executing steps 1-6 with the "Q1
-    BOOT" USB, remove the "Q1 BOOT" USB from the "SETUP 1" computer.
-        1. On your desktop, right-click the corresponding USB drive icon
-        in your dock and select Eject from the pop-up menu.
-        2. Remove the USB drive from the USB slot.
-    4. **The "Q1 BOOT" USB is now eternally quarantined. It should never again
-    be plugged into anything besides the "Q1" computer.**
+4. Immediately remove the "Q1 BOOT" USB drive from the "SETUP 1" computer:
+    1. On the desktop, right-click the USB drive icon corresponding to the
+    "SETUP 1 BOOT" USB drive, and select "Eject" from the pop-up menu.
+    2. Remove the "Q1 BOOT" USB drive from the USB slot.
+
+**The "Q1 BOOT" USB is now eternally quarantined and should only ever be plugged into the "Q1" computer.**
 
 ## On Setup Computer “SETUP 2”
 
