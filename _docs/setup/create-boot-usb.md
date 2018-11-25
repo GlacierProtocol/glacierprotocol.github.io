@@ -215,7 +215,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
     7. Click "Make Startup Disk" and then click "Yes".
     8. Wait a few minutes for the copying process to complete.
 
-2. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or malware
+2. Verify the integrity of the "SETUP 1 BOOT" USB (i.e. no errors or malware)
     1. On your desktop, right-click the corresponding USB drive icon in
     your dock and select Eject from the pop-up menu.
     2. Remove the USB drive from the USB slot and immediately
