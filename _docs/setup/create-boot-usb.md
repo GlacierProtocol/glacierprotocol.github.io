@@ -134,18 +134,19 @@ The program will take a few minutes to write the USB.
     "(external, physical)" heading that was not present in the first `diskutil list`. 
     The first line of the section's "SIZE" column should reflect the capacity of the USB drive.
     6. Make a note of the device identifier, which is the part of the section header
-    that comes before "(external, physical)", for example "/dev/disk2".
+    that comes before "(external, physical)", for example "/dev/disk2". This will be referred
+    to as <span class="primary">USB-device-identifier</span> in the coming steps.
 
 3. Copy the Ubuntu image onto the "SETUP 1 BOOT" USB:
     1. Unmount the USB drive:
         <pre>
-        $ diskutil unmountDisk <span class="primary">USB-device-identifier-here</span>
+        $ diskutil unmountDisk <span class="primary">USB-device-identifier</span>
         </pre>
     2. Enter the following command, **making sure to use the correct
     device identifier; <span style="color: red;">using the wrong one could overwrite the hard
     drive!</span>**:
         <pre>
-        $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier-here</span> bs=1m
+        $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier</span> bs=1m
         </pre>
         Example:
         ```
@@ -173,7 +174,7 @@ malware infection:
         ```
     6. Compare the "SETUP 1 BOOT" USB drive to the verified image:
         <pre>
-        $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` <span class="primary">USB-device-identifier-here</span></pre>
+        $ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` <span class="primary">USB-device-identifier</span></pre>
     7. Wait a few minutes for the verification process to complete.
     8. Successful verification will return to the terminal prompt, outputting no data.
     Failure will return a message showing how the USB differs from the downloaded image, for example:
@@ -206,7 +207,8 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
         Generic Flash Disk (<span class="primary">/dev/sda</span>)
         Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</pre>
     6. Select the "SETUP 1 BOOT" USB and make note of the disk identifier (e.g.
-    "/dev/sdb").
+    "/dev/sdb"). This will be referred to as 
+    <span class="primary">USB-device-identifier</span> in the coming steps.
     7. Click "Make Startup Disk" and then click "Yes".
     8. Wait a few minutes for the copying process to complete.
 
@@ -229,7 +231,7 @@ of errors or malware infection:
         ```
     5. Compare the "SETUP 1 BOOT" USB drive to the verified image:
         <pre>
-        $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso <span class="primary">USB-device-identifier-here</span></pre>
+        $ sudo cmp -n `stat -c '%s' ubuntu-16.04.1-desktop-amd64.iso` ubuntu-16.04.1-desktop-amd64.iso <span class="primary">USB-device-identifier</span></pre>
     6. Enter the root password if requested.
     7. Wait a few minutes for the verification process to complete.
     8. Successful verification will return to the terminal prompt, outputting no data.
