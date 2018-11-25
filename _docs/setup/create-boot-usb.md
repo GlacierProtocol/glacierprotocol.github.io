@@ -196,22 +196,21 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
 **Ctrl-C** and **Ctrl-V** respectively, but, in a terminal window, the shortcuts are
 **Ctrl-Shift-C** and **Ctrl-Shift-V**.
 
-1. Put Ubuntu on the "SETUP BOOT 1" USB.
+1. Copy the Ubuntu image onto the “SETUP 1 BOOT” USB. 
     1. Open the Ubuntu search console by clicking the purple
     circle/swirl icon in the upper-left corner of the screen.
-    2. Type "startup disk creator" in the text box that appears
-    3. Click on the "Startup Disk Creator" icon that appears.
-    4. The "Source disc image" panel should show the.iso file you
-    downloaded. If it does not, click the "Other" button and find it
-    in the folder you downloaded it to.
-    5. In the "Disk to use" panel, you should see two lines. They may
-    vary from system to system, but each line will have a device
-    identifier in it, highlighted in the example below.
+    2. Type "startup disk creator" in the text box.
+    3. Click on the "Startup Disk Creator" icon.
+    4. The "Source disc image" panel should show the downloaded iso image file. If not,
+    click "Other" and manually locate the download folder.
+    5. The "Disk to use" panel should show two devices. The device descriptions may
+    vary from system to system, but each one will have a device
+    identifier, highlighted in the example below:
         <pre>
-        Generic Flash Disk (/dev/sda)
+        Generic Flash Disk (<span class="primary">/dev/sda</span>)
         Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</pre>
-    6. Select the line containing "SETUP 1 BOOT" USB Make note of the
-    disk identifier (e.g. /dev/sdb).
+    6. Select the "SETUP 1 BOOT" USB and make note of the disk identifier (e.g.
+    "/dev/sdb").
     7. Click "Make Startup Disk" and then click "Yes".
     8. Wait a few minutes for the copying process to complete.
 
