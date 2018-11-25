@@ -108,13 +108,12 @@ entry.
        $ gpg --verify SHA256SUMS.sig SHA256SUMS
        ```
        Expected output (timestamp will vary, but e-mail and fingerprint should match):
-       <pre>
-       <span style="font-size: 10px;">gpg: Signature made Fri Feb 10 22:23:45 2017 PST using RSA key ID 4B43EAB0
+       <pre><code><span style="font-size: 10px;">gpg: Signature made Fri Feb 10 22:23:45 2017 PST using RSA key ID 4B43EAB0
        gpg: Good signature from "Glacier Team <contact@glacierprotocol.org>"
        gpg: WARNING: This key is not certified with a trusted signature!
        gpg:          There is no indication that the signature belongs to the owner.
        Primary key fingerprint: E1AA EBB7 AC90 C1FE 80F0  1034 9D1B 7F53 4B43 EAB0</span>
-       </pre>
+       </code></pre>
        The warning message is expected, and is not cause for alarm.
 
        Technical details:

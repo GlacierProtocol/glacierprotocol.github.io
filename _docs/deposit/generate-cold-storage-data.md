@@ -77,9 +77,8 @@ prepare your quarantined workspace.
         3. **On the Q1 computer** enter the following command. You'll need to supply
         the number of keys required for your multisignature withdrawal policy
         (4 by default).
-           <pre>
-           $ ./glacierscript.py entropy --num-keys <span class="primary">number-of-keys-here</span>
-           </pre>
+           <pre><code>$ ./glacierscript.py entropy --num-keys <span class="primary">number-of-keys-here</span>
+           </code></pre>
 
            Example:
            ```
@@ -104,10 +103,9 @@ prepare your quarantined workspace.
 
            In the command below, you'll need to specify the number of keys required
            by your multisignature withdrawal policy.
-           <pre>
-           $ ./glacierscript.py create-deposit-data -m <span class="primary">required-keys</span> \
+           <pre><code>$ ./glacierscript.py create-deposit-data -m <span class="primary">required-keys</span> \
            -n <span class="primary">total-keys</span>
-           </pre>
+           </code></pre>
 
            For example, for a 2-of-4 withdrawal policy:
            ```

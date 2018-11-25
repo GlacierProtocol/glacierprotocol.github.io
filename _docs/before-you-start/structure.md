@@ -83,11 +83,10 @@ line. Proceed carefully.
 
 Commands requiring user-specific information will be highlighted like this:
 
-<pre>
-$ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier-here</span> bs=1m
-</pre>
+<pre><code>$ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier</span> bs=1m
+</code></pre>
 
-This is because the USB device identifier will vary from installation to installation. In this example, the user is expected to replace the <span class="primary">USB-device-identifier-here</span> with the USB device identifier particular to the local machine:
+This is because the USB device identifier will vary from installation to installation. In this example, the user is expected to replace the <span class="primary">USB-device-identifier</span> with the USB device identifier particular to the local machine:
 ```
 $ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
 ```

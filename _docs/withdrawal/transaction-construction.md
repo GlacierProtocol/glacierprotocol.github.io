@@ -27,8 +27,7 @@ to prepare your quarantined workspace.
             feed, it has been successfully read.
             3. Verify the decoded QR code is shown in the terminal window.
                 Example:
-                <pre>
-                QR-Code:<span class="warning" style="white-space: pre-wrap;">51410421167f7dac2a159bc3957e3498bb6a7c2f16874bf1fbbe5b523b3632d2c0c43f1b491f6f2f449ae45c9b0716329c0c2dbe09f3e5d4e9fb6843af083e222a70a441043704eafafd73f1c32fafe10837a69731b93c0179fa268fc325bdc08f3bb3056b002eac4fa58c520cc3f0041a097232afbe002037edd5ebdab2e493f18ef19e9052ae</span></pre>
+                <pre><code>QR-Code:<span class="warning" style="white-space: pre-wrap;">51410421167f7dac2a159bc3957e3498bb6a7c2f16874bf1fbbe5b523b3632d2c0c43f1b491f6f2f449ae45c9b0716329c0c2dbe09f3e5d4e9fb6843af083e222a70a441043704eafafd73f1c32fafe10837a69731b93c0179fa268fc325bdc08f3bb3056b002eac4fa58c520cc3f0041a097232afbe002037edd5ebdab2e493f18ef19e9052ae</span></code></pre>
             4. Copy-paste the decoded data (everything *after*, but not
             including, "QR-code:") into the Quarantined Scratchpad.
             5. Make a note of what the data is, based on your handwritten
@@ -84,8 +83,7 @@ to prepare your quarantined workspace.
     9. The script will output a "raw signed transaction" and a *fingerprint* of the signed transaction for verification purposes.
 
         Example output:
-        <pre>
-        Sufficient private keys to execute transaction?
+        <pre><code>Sufficient private keys to execute transaction?
         True
 
         Raw signed transaction (hex): <span class="warning" style="white-space: pre-wrap;">01000000013cd6b24735801ad3d04c40e6da3404278b0d38dbc896df6ae50bf11c3043a49600000000fda001004730440220199d247cd11c14fa4960a52467e69ca6b77596e94c14f27ba956315f2d1c852302201b6f41ecfc62a1a7c7a423425ab150301cfffc47c1a78a5bf13b8232f767e41301483045022100e7ae7e5a77da47d5e622f974683a43d312e72a1eed329d4fdbd8fba2c22f84b4022050358fb63cf182e81905417d6e38a2981563495dd00c3177ee650ff7cd2d511a014d0b01524104fe0fcd054a31130749467f07e272426f7dd7a3029ab5b076d7285a931bd131d34ed9f28b2cc2fe266aa62c4cada3e82b70a4416966902201c4d73759f7f0425e41044f2ec9f80ef2c4f385f3d27b6167f77236de63548723ba1c90a324f4ec46dfd14a2fba5a9c048a5ec310aedfe875d8a254f336e8f7d5d17338d9451dc6f2188c4104aefb86098442adc6c3dffd9b0e27fe8e918462469a5ec5363e26920f09facea70b63e4f4d2736089286d4dd2352ca65016e7d593f105009f9a35c03a2464aa20410451e7f31ea2f5cb14ba76ca20952c1d453fe3a85959ebbefee8912ad6f74c443a03e52ef8a842f890f1ab2d69c6bb418e6de0f15bef944be2883887be3bb75cc054aeffffffff0194960700000000001976a914c018da1cb43c5d7b9e7757805ee78709f8a61ede88ac00000000</span>
@@ -93,7 +91,7 @@ to prepare your quarantined workspace.
         Transaction fingerprint (md5):
         <span class="warning">c49c366908296ae12478539d29fb4146</span>
 
-        QR code for transaction in transaction.png</pre>
+        QR code for transaction in transaction.png</code></pre>
 
 3. Verify transaction construction
     1. **On the Q2 computer**, repeat step 2 above.
