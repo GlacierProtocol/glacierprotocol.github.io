@@ -193,9 +193,9 @@ malware infection.
 **Ubuntu**:
 1. If this is your first time using Ubuntu, note:
     1. You can copy-paste text in most applications (e.g. Firefox) by
-    pressing **Ctrl-C** or **Ctrl-V**.
+    pressing **Ctrl-C** and **Ctrl-V**.
     2. You can copy-paste text in a *terminal window* by pressing
-    **Ctrl-Shift-C** or **Ctrl-Shift-V**.
+    **Ctrl-Shift-C** and **Ctrl-Shift-V**.
 2. Put Ubuntu on the "SETUP BOOT 1" USB.
     1. Open the Ubuntu search console by clicking the purple
     circle/swirl icon in the upper-left corner of the screen.
