@@ -210,7 +210,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
         <pre>
         Generic Flash Disk (/dev/sda)
         Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</pre>
-    6. Select the line containing "SETUP 1 BOOT" USB.49 Make note of the
+    6. Select the line containing "SETUP 1 BOOT" USB Make note of the
     disk identifier (e.g. /dev/sdb).
     7. Click "Make Startup Disk" and then click "Yes".
     8. Wait a few minutes for the copying process to complete.
