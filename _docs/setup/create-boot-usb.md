@@ -295,14 +295,16 @@ of errors or malware infection:
         6. Click the cone-shaped WiFi icon near the right side of the menu
         bar again. There should be a list of WiFi networks this time.
     3. Select the relevant WiFi network from the list and enter the password.
-3. Repeat sections [Download and verify Ubuntu](/docs/setup/create-boot-usb/#download-and-verify-ubuntu),
-then [Create the “SETUP 1 BOOT” USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb),
-using the "SETUP 1" computer to create the "Q1 BOOT" USB rather than the "SETUP 1 BOOT" USB, taking note of the following:
+3. Create the "Q1 BOOT" USB by repeating the
+[Download and verify Ubuntu](/docs/setup/create-boot-usb/#download-and-verify-ubuntu) and 
+[Create the “SETUP 1 BOOT” USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb)
+sections, replacing each occurance of "SETUP 1 BOOT" USB with "Q1 BOOT" USB. Also
+take note of the following:
     * The instruction to plug a Quarantined Boot USB into the Setup
     Computer should raise a red flag, because **<span style="color: red;">a quarantined USB drive should never be plugged into anything other than its designated quarantined computer!</span>**
     This setup process is the **ONE** necessary exception.
-    * The "SETUP 1" computer will now boot from the "SETUP 1 BOOT" USB drive, meaning
-    the Linux instructions should be followed, even if the computer
+    * The "SETUP 1" computer should boot from the "SETUP 1 BOOT" USB drive this time, meaning
+    the Linux instructions are to be followed, even if the computer
     normally runs Windows or MacOS.
 4. Immediately remove the "Q1 BOOT" USB drive from the "SETUP 1" computer:
     1. On the desktop, right-click the USB drive icon corresponding to the
@@ -315,10 +317,15 @@ using the "SETUP 1" computer to create the "Q1 BOOT" USB rather than the "SETUP 
 
 ### Create the "SETUP 2 BOOT" USB
 
-1. Repeat steps in the [Create the "SETUP 1 BOOT" USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb)
-section above, using the "SETUP 2" computer and the "SETUP 2 BOOT" USB.
+Create the "SETUP 2 BOOT" USB by repeating the 
+[Download and verify Ubuntu](/docs/setup/create-boot-usb/#download-and-verify-ubuntu) and
+[Create the "SETUP 1 BOOT" USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb)
+sections, replacing occurances of "SETUP 1" computer and "SETUP 1 BOOT" USB with
+"SETUP 2" computer and "SETUP 2 BOOT" USB, respectively.
 
 ### Create the "Q2 BOOT" USB
 
-1. Repeat steps in the [Create the "Q1 BOOT" USB](/docs/setup/create-boot-usb/#create-the-q1-boot-usb)
-section above, using the "SETUP 2" computer and the "Q2 BOOT" USB.
+Create the "Q2 BOOT" USB by repeating the 
+[Create the "Q1 BOOT" USB](/docs/setup/create-boot-usb/#create-the-q1-boot-usb)
+section, replacing occurances of "SETUP 1" computer, "SETUP 1 BOOT" USB and "Q1 BOOT" USB with
+"SETUP 2" computer, "SETUP 2 BOOT" USB and "Q2 BOOT" USB, respectively.
