@@ -18,31 +18,21 @@ in the Create boot USB drives section.
     should never be plugged into anything other than its designated quarantined computer!</span>**.
     This setup process is the **ONE** necessary exception.
 
-3. Press Ctrl-Alt-T to open a terminal window.
-4. Install the Glacier document and GlacierScript on the "Q1 APP" USB drive.
-
-    1. Download the latest full release of Glacier (*not* just the protocol
-    document) at
-    [https://github.com/GlacierProtocol/GlacierProtocol/releases](https://github.com/GlacierProtocol/GlacierProtocol/releases).
-    2. Unpack the Glacier ZIP file into a staging area.
-
-        1. When the download starts, Firefox will ask you if you want to open the
-        ZIP file with Archive Manager. Click OK.
-
-           When the ZIP file download completes, it will be opened with Archive Manager.
-
-        2. There will be a single entry in a list named
-        "GlacierProtocol-<span class="primary">version-here</span>", where
-        <span class="primary">version-here</span> is replaced with
-        the current version number (like "v1.0"). Click on that and then click
-        the "Extract" button.
-        3. The Archive Manager will ask you where you want to extract the ZIP
-        file to. Select "Home" on the left panel and then press the extract button.
-        4. When the Archive Manager is finished extracting the ZIP archive it
-        will ask you what to do next. Click "Show the Files".
-        5. Rename the unzipped folder from "GlacierProtocol-<span class="primary">version-here</span>" to
-        "glacier".
-
+3. Press "Ctrl-Alt-T" to open a terminal window.
+4. Install the Glacier document and GlacierScript on the "Q1 APP" USB drive:
+    1. Download the latest full release of Glacier, *not* just the protocol
+    document, from the "Source code (zip)" link at
+    [Glacier's Github repo](https://github.com/GlacierProtocol/GlacierProtocol/releases).
+    2. Unpack the Glacier ZIP file into a staging area:
+        1. When the download starts, Firefox will prompt for the action to take with the file
+        once downloaded. Click "OK" to open with Archive Manager.
+        2. In the Archive Manager window, click on the single entry in the list named
+        "GlacierProtocol-<span class="primary">version</span>", where
+        <span class="primary">version</span> is replaced with
+        the current version number (for example, "v1.0"). Click "Extract".
+        3. Select "Home" on the left panel of the file browser that appears and click "Extract" again.
+        4. Click "Show the Files" once a popup declares the files are extracted.
+        5. In the folder window that appears, rename the unzipped folder from "GlacierProtocol-<span class="primary">version</span>" to "glacier".
     3. Obtain the Glacier "public key," used to cryptographically verify the
     Glacier document and GlacierScript.
 
