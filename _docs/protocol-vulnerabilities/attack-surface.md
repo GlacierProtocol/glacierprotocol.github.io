@@ -129,14 +129,11 @@ itself. Unfortunatley, vulnerabilities remain:
 * An attacker could remove the self-verification procedure from the protocol document.
 * An attacker could compromise the Glacier Protocol keypair and create a fraudulent
 signature. This is exceedingly unlikely, due to Keybase's key verification systems.
-* The protocol document begins with document self-verification on one Setup
-Computer. However, it does not guide the user through self-verification on the second
-Setup Computer. Nor does it have the user re-verify the document when they first boot
-into Ubuntu on the Setup Computers to create the Quarantined Boot USB drives. If the
-portion of the protocol document related to creating the Quarantined Boot USB drives had been
-compromised between the initial self-validation and the later re-validation, when
-creating the Quarantined App USB drives, the user would probably not notice, even without
-a forged signature.
+* The protocol document is verified on the first Setup Computer. It is not
+verified on the second Setup Computer, nor when booting into the Setup Computers
+to create the Quarantined Boot USB drives. If the protocol document had been
+compromised between the initial validation and later re-validation, the user would
+probably not notice, even without a forged signature.
 * The protocol hardcopy could be compromised. For example, malware could alter the
 hardcopy as it is printed)
 * A flaw in GlacierScript could cause sensitive data to be leaked or flawed
