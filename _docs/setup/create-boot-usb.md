@@ -298,7 +298,7 @@ of errors or malware infection:
 3. Create the "Q1 BOOT" USB drive by repeating the
 [Download and verify Ubuntu](/docs/setup/create-boot-usb/#download-and-verify-ubuntu) and 
 [Create the “SETUP 1 BOOT” USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
-sections, replacing each occurance of "SETUP 1 BOOT" with "Q1 BOOT". Also
+sections, replacing each occurance of "SETUP 1 BOOT" with "Q1 BOOT". During the repeat,
 take note of the following:
     * The instruction to plug a Quarantined Boot USB drive into the Setup
     Computer should raise a red flag, because **<span style="color: red;">a quarantined USB drive should never be plugged into anything other than its designated quarantined computer!</span>**
