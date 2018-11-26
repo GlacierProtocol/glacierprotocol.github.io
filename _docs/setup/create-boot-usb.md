@@ -287,7 +287,7 @@ of errors or malware infection:
     need enabled:
         1. Click on the gear-and-wrench icon along the left side of the screen to open
         the system settings window.
-        2. Click the "Software & Updates" icon to open the Software & Updates window
+        2. Click the "Software & Updates" icon to open the "Software & Updates" window
         3. Click the "Additional Drivers" tab.
         4. Select any other option besides "Do not use the device" in the "Wireless
         Network Adapter" section.
