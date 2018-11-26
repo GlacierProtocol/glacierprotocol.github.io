@@ -32,10 +32,10 @@ paying *particular* attention to manfacturer requirements:
     * **Set 1**: "Q1" computer, "Q1 BOOT" USB drive, "Q1 APP" USB drive
     * **Set 2**: "Q2" computer, "Q2 BOOT" USB drive, "Q2 APP" USB drive
 
-    The USBs labeled "Q1 BOOT" and "Q2 BOOT" will have the operating system to
+    The USB drives labeled "Q1 BOOT" and "Q2 BOOT" will have the operating system to
     boot the corresponding computer.
 
-    The USBs labeled "Q1 APP" and "Q2 APP" will have the software applications
+    The USB drives labeled "Q1 APP" and "Q2 APP" will have the software applications
     for use on the corresponding computer.
 
 2. In each set, label all hardware with a permanent marker, writing directly on

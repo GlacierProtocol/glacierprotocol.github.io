@@ -29,8 +29,8 @@ at [https://github.com/GlacierProtocol/GlacierProtocol/releases.](https://github
 5. Obtain the Glacier PGP public key, used to cryptographically verify the protocol document.
 
     Technical detail: Glacier's GPG keys are handled with good security practices.
-    They were generated while booting from an Ubuntu Live USB on a factory-new laptop
-    with the wireless card removed, and transferred via USB to a MacBook. The private
+    They were generated while booting from an Ubuntu Live USB drive on a factory-new laptop
+    with the wireless card removed, and transferred via USB drive to a MacBook. The private
     key is not stored in the cloud. The public key is hosted separately from the
     software distributions, on [Keybase](https://keybase.io/), and secured with separate credentials stored
     in password managers.
@@ -40,7 +40,7 @@ at [https://github.com/GlacierProtocol/GlacierProtocol/releases.](https://github
     Technical detail: There is a chicken-and-egg problem here, in that this document
     is giving instructions for how to verify itself. Any attacker that compromised
     this document could also compromise these instructions so that the verification
-    (erroneously) passes. There's no way to prevent this, unless the reader is familiar
+    (erroneously) passes. There is no way to prevent this, unless the reader is familiar
     with the document before the compromise and recognizes that the verification
     instructions have changed. This is why a direct download link to the public key 
     is not provided. If an attacker changed the link, it could very easily go unnoticed.
@@ -51,7 +51,7 @@ at [https://github.com/GlacierProtocol/GlacierProtocol/releases.](https://github
     individuals from the Bitcoin community.
 
     1. Navigate to Glacier's Keybase profile at [keybase.io/glacierprotocol](https://keybase.io/glacierprotocol).
-    2. Click the string of 16 letters and numbers, formatted "XXXX XXXX XXXX XXXX" next to the key icon.
+    2. Click the string of 16 letters and numbers, formatted "XXXX XXXX XXXX XXXX", next to the key icon.
     3. In the pop-up that appears, right-click the link reading "this key" and select
     "Save Link As..." or "Download Linked File As...".
     4. Name the file "glacier.asc".

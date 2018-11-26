@@ -30,27 +30,27 @@ Glacier relies on the following packages and their dependencies:
 * zbar-tools (via Ubuntu Package Archive)
 * qrencode (via Ubuntu Package Archive)
 
-An infected Setup Computer could infect the Setup USB software, which could infect the
-Quarantined USB software. This could produce false positives during the checksum
+An infected Setup Computer could infect the Setup USB drive software, which could infect the
+Quarantined USB drive software. This could produce false positives during the checksum
 verification process or alter the display of the verification process results. Verifying
 the integrity of GnuPG requires access to a trusted installation of GnuPG, which many
 users won't have. The current recommendation is to trust the downloaded version of GnuPG.
 
-An infected Setup Computer could infect the operating system or application USB software
+An infected Setup Computer could infect the operating system or application USB drive software
 AFTER checksum verification produces a true positive, either before/during copying of
-software to the USB, or during USB ejection.
+software to the USB drive, or during USB ejection.
 
 ### Firmware
 
-An infected Setup Computer could infect the Setup Boot USB firmware, which could infect
-the Quarantined Boot/App USB.
+An infected Setup Computer could infect the Setup Boot USB drive firmware, which could infect
+the Quarantined Boot/App USB drive.
 
-A laptop or USB firmware could have been infected at any point between manufacture and
+A laptop or USB drive firmware could have been infected at any point between manufacture and
 delivery, before being shrinkwrapped.
 
 ### Hardware
 
-A laptop or USB hardware could have been infected at any point between manufacture and
+A laptop or USB drive hardware could have been infected at any point between manufacture and
 delivery, before being shrinkwrapped. "Malware" usually refers to software, but we're
 using it here more broadly to mean "computing technology which undermines the integrity
 of the computing environment in which it resides.", as in a 
@@ -107,7 +107,7 @@ networked or attacker-controlled device in range then steals the data. Possibili
 * Two paper keys are stolen by an attacker
 * All (or all but one) paper keys are lost or destroyed
 * An attacker with physical line-of-sight to the laptop takes a photo of the screen while sensitive data is displayed
-* Malware on the quarantined machines writes sensitive data to persistent media (USB or laptop hard drive) AND the hardware is physically stolen afterward
+* Malware on the quarantined machines writes sensitive data to persistent media (USB drive or laptop hard drive) AND the hardware is physically stolen afterward
 
 ### Glacier protocol failures
 
@@ -132,10 +132,10 @@ signature. This is exceedingly unlikely, due to Keybase's key verification syste
 * The protocol document begins with document self-verification on one Setup
 Computer. However, it does not guide the user through self-verification on the second
 Setup Computer. Nor does it have the user re-verify the document when they first boot
-into Ubuntu on the Setup Computers to create the Quarantined Boot USBs. If the
-portion of the protocol document related to creating the Quarantined Boot USBs had been
+into Ubuntu on the Setup Computers to create the Quarantined Boot USB drives. If the
+portion of the protocol document related to creating the Quarantined Boot USB drives had been
 compromised between the initial self-validation and the later re-validation, when
-creating the Quarantined App USBs, the user would probably not notice, even without
+creating the Quarantined App USB drives, the user would probably not notice, even without
 a forged signature.
 * The protocol hardcopy could be compromised. For example, malware could alter the
 hardcopy as it is printed)

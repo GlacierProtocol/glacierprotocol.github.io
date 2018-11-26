@@ -1,5 +1,5 @@
 ---
-title: Create boot USBs
+title: Create boot USB drives
 description: Learn how to prepare the USB drives for Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---
@@ -19,8 +19,8 @@ the Setup Computers "SETUP 1" and "SETUP 2", *while booted from the Setup Boot U
 
 Technical details: The non-quarantined Setup Boot USB drives serve two purposes:
 
-* To greatly simplify the steps for creation of the Quarantined App USBs in the next
-section, since only operations on an Ubuntu environment need outlined. The Quarantined operating system USBs
+* To greatly simplify the steps for creation of the Quarantined App USB drives in the next
+section, since only operations on an Ubuntu environment need outlined. The Quarantined Boot USB drives
 cannot be used for this since they are eternally quarantined and should be permanently
 unplugged from the Setup Computers the moment they are created.
 * To reduce the risk of malware spreading from the native operating system of a
@@ -85,8 +85,8 @@ Open a copy of this document.
 
         Alternatively, follow [Ubuntu's official full verification process](https://tutorials.ubuntu.com/tutorial/tutorial-how-to-verify-ubuntu#0).
 
-        It's not important to check every single character when visually
-        verifying a fingerprint. It's sufficient to check the **first 8
+        It is not important to check every single character when visually
+        verifying a fingerprint. It is sufficient to check the **first 8
         characters, last 8 characters, and a few somewhere in the middle.**
 
         Technical details: The GPG verification of some fingerprints in the 
@@ -94,7 +94,7 @@ Open a copy of this document.
         signatures for this document were verified in the [Verify and print protocol document](/docs/setup/verify/#document-verification) section. For a detailed
         security analysis, see the [design document](/docs/design-doc/overview).
 
-### Create the "SETUP 1 BOOT" USB
+### Create the "SETUP 1 BOOT" USB drive
 
 **Windows**:
 1. Download and run [Rufus disk utility](https://rufus.akeo.ie/).
@@ -111,21 +111,21 @@ from the downloads folder and click "Open".
 9. When asked to write in "ISO Image Mode (Recommended)" or
 "DD Image Mode", select "ISO Image Mode" and press "OK".
 
-The program will take a few minutes to write the USB.
+The program will take a few minutes to write the USB drive.
 
 **MacOS**:
-1. Prepare the Ubuntu download for copying to the USB:
+1. Prepare the Ubuntu download for copying to the USB drive:
     ```
     $ cd $HOME/Downloads
     $ hdiutil convert ubuntu-16.04.1-desktop-amd64.iso -format UDRW -o ubuntu-16.04.1-desktop-amd64.img
     ```
-2. Determine the MacOS "device identifier" for the Boot USB:
+2. Determine the MacOS "device identifier" for the Boot USB drive:
     1. List all disks and partitions:
     ```
     $ diskutil list
     ```
-    2. Insert the "SETUP 1 BOOT" USB in an empty USB slot.
-    3. Wait 10 seconds for the operating system to recognize the USB.
+    2. Insert the "SETUP 1 BOOT" USB drive in an empty USB slot.
+    3. Wait 10 seconds for the operating system to recognize the USB drive.
     4. List all disks and partitions again:
     ```
     $ diskutil list
@@ -137,7 +137,7 @@ The program will take a few minutes to write the USB.
     that comes before "(external, physical)", for example "/dev/disk2". This will be referred
     to as <span class="primary">USB-device-identifier</span> in the coming steps.
 
-3. Copy the Ubuntu image onto the "SETUP 1 BOOT" USB:
+3. Copy the Ubuntu image onto the "SETUP 1 BOOT" USB drive:
     1. Unmount the USB drive:
         <pre><code>$ diskutil unmountDisk <span class="primary">USB-device-identifier</span></code></pre>
     2. Enter the following command, **making sure to use the correct
@@ -156,10 +156,10 @@ The program will take a few minutes to write the USB.
 4. Verify the integrity of the "SETUP 1 BOOT" USB drive to prove the absence of errors or
 malware infection:
     1. Remove the "SETUP 1 BOOT" USB drive from the USB slot and immediately reinsert it.
-    2. Wait 10 seconds for the operating system to recognize the USB.
+    2. Wait 10 seconds for the operating system to recognize the USB drive.
     3. The USB drive will, again, not be readable by MacOS, which may result in an
     error box pop up. This is expected; click "Ignore".
-    4. The USB's device identifier may have changed. List all disks and partitions again:
+    4. The USB drive's device identifier may have changed. List all disks and partitions again:
         ```
         $ diskutil list
         ```
@@ -172,13 +172,13 @@ malware infection:
         <pre><code>$ sudo cmp -n `stat -f '%z' ubuntu-16.04.1-desktop-amd64.img.dmg ubuntu-16.04.1-desktop-amd64.img.dmg` <span class="primary">USB-device-identifier</span></code></pre>
     7. Wait a few minutes for the verification process to complete.
     8. Successful verification will return to the terminal prompt, outputting no data.
-    Failure will return a message showing how the USB differs from the downloaded image, for example:
+    Failure will return a message showing how the USB drive differs from the downloaded image, for example:
         ```
         ubuntu-16.04.1-desktop-amd64.img.dmg /dev/disk2
         differ: byte 1, line 1
         ```
         If a message is returned, **STOP**. This may be a security
-        risk. Restart the [Create the "SETUP 1 BOOT" USB](create-the-setup-1-boot-usb)
+        risk. Restart the [Create the "SETUP 1 BOOT" USB drive](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
         section from the beginning. If the issue persists, try repeating with a
         different USB drive or a different Setup Computer.
 
@@ -188,7 +188,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
 "Ctrl-C" and "Ctrl-V" respectively, but, in a terminal window, the shortcuts are
 "Ctrl-Shift-C" and "Ctrl-Shift-V".
 
-1. Copy the Ubuntu image onto the “SETUP 1 BOOT” USB:
+1. Copy the Ubuntu image onto the “SETUP 1 BOOT” USB drive:
     1. Open the Ubuntu search console by clicking the purple
     circle/swirl icon in the upper-left corner of the screen.
     2. Type "startup disk creator" in the text box.
@@ -200,7 +200,7 @@ Note that, for most applications (e.g. Firefox), copy and paste keyboard shortcu
     identifier, highlighted in the example below:
         <pre><code> Generic Flash Disk (<span class="primary">/dev/sda</span>)
     Kanguru Flash Trust (<span class="primary">/dev/sdb</span>)</code></pre>
-    6. Select the "SETUP 1 BOOT" USB and make note of the disk identifier (e.g.
+    6. Select the "SETUP 1 BOOT" USB drive and make note of the disk identifier (e.g.
     "/dev/sdb"). This will be referred to as 
     <span class="primary">USB-device-identifier</span> in the coming steps.
     7. Click "Make Startup Disk" and then click "Yes".
@@ -214,10 +214,10 @@ of errors or malware infection:
 
         Technical details: In order to avoid detection, malware
         may wait until a USB drive is in the process of ejecting (i.e. once all
-        integrity checks are completed) before infecting the USB. Ejecting and
-        re-inserting the USB before checking integrity is a simple defence against this.
+        integrity checks are completed) before infecting the USB drive. Ejecting and
+        re-inserting the USB drive before checking integrity is a simple defence against this.
 
-    3. Wait 10 seconds for the operating system to recognize the USB.
+    3. Wait 10 seconds for the operating system to recognize the USB drive.
     4. Change the terminal’s current working folder to the download folder,
     customizing the folder name if necessary:
         ```
@@ -228,19 +228,19 @@ of errors or malware infection:
     6. Enter the root password if requested.
     7. Wait a few minutes for the verification process to complete.
     8. Successful verification will return to the terminal prompt, outputting no data.
-    Failure will return a message showing how the USB differs from the downloaded image, for example:
+    Failure will return a message showing how the USB drive differs from the downloaded image, for example:
         ```
         ubuntu-16.04.1-desktop-amd64.iso /dev/sda differ:
         byte 1, line 1
         ```
         If a message is returned, **STOP**. This may be a security
-        risk. Restart the [Create the "SETUP 1 BOOT" USB](create-the-setup-1-boot-usb)
+        risk. Restart the [Create the "SETUP 1 BOOT" USB drive](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
         section from the beginning. If the issue persists, try using a
         different USB drive or a different Setup Computer.
 
-### Create the "Q1 BOOT" USB
+### Create the "Q1 BOOT" USB drive
 
-1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB:
+1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB drive:
     1. Reboot the computer.
     2. Alter the boot device:
 
@@ -262,7 +262,7 @@ of errors or malware infection:
             1. Press "F2" when the boot logo appears.
             2. Navigate to the boot menu.
             3. Select "USB HDD", and press "F6" until it moves to the top of the list.
-            4. Press "F10" to save and automatically reboot from the USB.
+            4. Press "F10" to save and automatically reboot from the USB drive.
         * **Mac**:
             1. Press and hold "Option" (⌥) when the startup chime is heard.
             2. Click the "EFI Boot" option and then click the up arrow below. Do not
@@ -278,7 +278,7 @@ of errors or malware infection:
         the computer boots *immediately* to where it left off, the power button was not
         held down long enough and should be held down again.
     3. On successful reboot, the "GNU GRUB" menu will appear. Select the option "Try
-    Ubuntu without installing" and press "Enter". The computer should boot into the USB's
+    Ubuntu without installing" and press "Enter". The computer should boot into the USB drive's
     Ubuntu desktop.
 
 2. Enable WiFi connectivity:
@@ -295,12 +295,12 @@ of errors or malware infection:
         6. Click the cone-shaped WiFi icon near the right side of the menu
         bar again. There should be a list of WiFi networks this time.
     3. Select the relevant WiFi network from the list and enter the password.
-3. Create the "Q1 BOOT" USB by repeating the
+3. Create the "Q1 BOOT" USB drive by repeating the
 [Download and verify Ubuntu](/docs/setup/create-boot-usb/#download-and-verify-ubuntu) and 
-[Create the “SETUP 1 BOOT” USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb)
-sections, replacing each occurance of "SETUP 1 BOOT" USB with "Q1 BOOT" USB. Also
+[Create the “SETUP 1 BOOT” USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
+sections, replacing each occurance of "SETUP 1 BOOT" with "Q1 BOOT". Also
 take note of the following:
-    * The instruction to plug a Quarantined Boot USB into the Setup
+    * The instruction to plug a Quarantined Boot USB drive into the Setup
     Computer should raise a red flag, because **<span style="color: red;">a quarantined USB drive should never be plugged into anything other than its designated quarantined computer!</span>**
     This setup process is the **ONE** necessary exception.
     * The "SETUP 1" computer should boot from the "SETUP 1 BOOT" USB drive this time, meaning
@@ -311,21 +311,21 @@ take note of the following:
     "SETUP 1 BOOT" USB drive, and select "Eject" from the pop-up menu.
     2. Remove the "Q1 BOOT" USB drive from the USB slot.
 
-**The "Q1 BOOT" USB is now eternally quarantined and should only ever be plugged into the "Q1" computer.**
+**The "Q1 BOOT" USB drive is now eternally quarantined and should only ever be plugged into the "Q1" computer.**
 
 ## On Setup Computer “SETUP 2”
 
-### Create the "SETUP 2 BOOT" USB
+### Create the "SETUP 2 BOOT" USB drive
 
-Create the "SETUP 2 BOOT" USB by repeating the 
+Create the "SETUP 2 BOOT" USB drive by repeating the 
 [Download and verify Ubuntu](/docs/setup/create-boot-usb/#download-and-verify-ubuntu) and
-[Create the "SETUP 1 BOOT" USB](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb)
-sections, replacing occurances of "SETUP 1" computer and "SETUP 1 BOOT" USB with
-"SETUP 2" computer and "SETUP 2 BOOT" USB, respectively.
+[Create the "SETUP 1 BOOT" USB drive](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
+sections, replacing occurances of "SETUP 1" and "SETUP 1 BOOT" with
+"SETUP 2" and "SETUP 2 BOOT", respectively.
 
-### Create the "Q2 BOOT" USB
+### Create the "Q2 BOOT" USB drive
 
-Create the "Q2 BOOT" USB by repeating the 
-[Create the "Q1 BOOT" USB](/docs/setup/create-boot-usb/#create-the-q1-boot-usb)
-section, replacing occurances of "SETUP 1" computer, "SETUP 1 BOOT" USB and "Q1 BOOT" USB with
-"SETUP 2" computer, "SETUP 2 BOOT" USB and "Q2 BOOT" USB, respectively.
+Create the "Q2 BOOT" USB drive by repeating the 
+[Create the "Q1 BOOT" USB drive](/docs/setup/create-boot-usb/#create-the-q1-boot-usb-drive)
+section, replacing occurances of "SETUP 1", "SETUP 1 BOOT" and "Q1 BOOT" with
+"SETUP 2", "SETUP 2 BOOT" and "Q2 BOOT", respectively.
