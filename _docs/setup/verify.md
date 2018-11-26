@@ -90,9 +90,18 @@ protocol.
 commands below are based on default settings; if the defaults have been altered, 
 these commands will need customized to match.
 
-    * **Windows**:  `> cd $HOME/Downloads/glacier`
-    * **MacOS**:  `$ cd $HOME/Downloads/glacier`
-    * **Linux**: `$ cd $HOME/Downloads/glacier`
+    * **Windows**:  
+    ```
+    > cd $HOME/Downloads/glacier
+    ```
+    * **MacOS**:  
+    ```
+    $ cd $HOME/Downloads/glacier
+    ```
+    * **Linux**: 
+    ```
+    $ cd $HOME/Downloads/glacier
+    ```
 
 9. Verify the integrity of the downloaded document. For technical background about
 this process, see Wikipedia's [Digital signature](https://en.wikipedia.org/wiki/Digital_signature)
