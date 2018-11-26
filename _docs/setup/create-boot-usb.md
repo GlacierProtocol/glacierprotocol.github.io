@@ -98,7 +98,7 @@ Open a copy of this document.
 
 **Windows**:
 1. Download and run [Rufus disk utility](https://rufus.akeo.ie/).
-2. Insert the "SETUP 1 BOOT" USB into an empty USB slot.
+2. Insert the "SETUP 1 BOOT" USB drive into an empty USB slot.
 3. In the "Device" dropdown at the top of the Rufus window, ensure the
 empty USB drive is selected.
 4. Next to the text "Create a bootable disk using", select "ISO Image"
