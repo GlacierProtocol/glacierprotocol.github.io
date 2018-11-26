@@ -90,8 +90,7 @@ in the Create boot USB drives section.
         side of the screen.
         2. Find the "glacier" folder under "Home".
         3. Click and drag the glacier folder to the icon representing the USB
-        drive on the left. The USB drive will look like this, but may have a
-        different name:
+        drive on the left.
         4. If you see an "Error while copying" pop-up, you may be suffering from
         [this Ubuntu bug](https://bugs.launchpad.net/ubuntu/+source/nautilus/+bug/1021375).
         To fix it, do the following and then retry copying the files:
@@ -149,8 +148,7 @@ in the Create boot USB drives section.
             1. Click on the File Manager icon in the launching dock:
             2. Navigate to the "Home" folder.
             3. Click and drag "apps" folder to the icon representing
-            the USB drive on the left panel. The USB drive will look like this,
-            but may have a different name:
+            the USB drive on the left panel.
 7. Click on the USB drive icon to verify that it has the correct files. The
 contents should look like this
     ```
