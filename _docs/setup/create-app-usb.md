@@ -4,13 +4,13 @@ description: Learn how to prepare your USB drives for Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
-We will prepare two (2) "Quarantined App USB"
-drives with the software needed to execute the remainder of the protocol.
-These are the USB drives you labeled "Q1 APP" and "Q2 APP" in Section
-III.
+This section will prepare the two Quarantined App USB drives, "Q1 APP" and "Q2 APP" in the
+[Hardware required](/docs/before-you-start/hardware/#eternally-quarantined) section, with
+the software needed to execute the remainder of the protocol.
 
-1. Boot the SETUP 1 computer off the SETUP 1 BOOT USB if it is not
-already. (See the instructions in Section III for details.)
+1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB drive, following step 1 of
+[Create the “Q1 BOOT” USB drive](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
+in the Create boot USB drives section.
 2. Insert the Q1 APP USB into the the SETUP 1 computer.
 
     1. **The instruction to plug a Quarantined App USB into your Setup computer
