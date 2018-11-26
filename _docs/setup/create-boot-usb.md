@@ -271,7 +271,7 @@ of errors or malware infection:
             successful.
 
         If, while trying to get into either the BIOS or boot device selection menu,
-        the computer boots into its regular operating system, the wrong button may have
+        the computer boots into its factory-installed operating system, the wrong button may have
         been pressed, or not pressed soon enough. Hold down the power button for a full
         ten seconds, even if the screen turns black sooner, and turn the computer back on.
         Repeat this step, tapping the appropriate button(s) repeatedly as it boots. If
