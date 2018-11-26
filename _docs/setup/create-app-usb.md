@@ -1,6 +1,6 @@
 ---
-title: Create app USBs
-description: Learn how to prepare your USB drives for Glacier, the
+title: Create App USB drives
+description: Learn how to prepare the App USB drives for Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
@@ -11,16 +11,16 @@ the software needed to execute the remainder of the protocol.
 1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB drive, following step 1 of
 [Create the “Q1 BOOT” USB drive](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
 in the Create boot USB drives section.
-2. Insert the Q1 APP USB into the the SETUP 1 computer.
+2. Insert the "Q1 APP" USB drive into the the "SETUP 1" computer.
 
-    1. **The instruction to plug a Quarantined App USB into your Setup computer
+    1. **The instruction to plug a Quarantined App USB drive into your Setup computer
     *should* raise a red flag for you, because <span style="color: red;">you should never plug a quarantined
-    USB into anything other than the quarantined computer it is designated for!</span>**
+    USB drive into anything other than the quarantined computer it is designated for!</span>**
 
        This setup process is the ONE exception.
 
 3. Press Ctrl-Alt-T to open a terminal window.
-4. Install the Glacier document and GlacierScript on the Q1 APP USB.
+4. Install the Glacier document and GlacierScript on the "Q1 APP" USB drive.
 
     1. Download the latest full release of Glacier (*not* just the protocol
     document) at
@@ -96,7 +96,7 @@ in the Create boot USB drives section.
            README.md: OK
            ```
 
-    5. Copy the glacier folder to the Q1 APP USB.
+    5. Copy the glacier folder to the "Q1 APP" USB drive.
         1. Click on the File Manager icon in the launching dock along the left
         side of the screen.
         2. Find the "glacier" folder under "Home".
@@ -116,10 +116,10 @@ in the Create boot USB drives section.
             3. Login again with user "ubuntu" and leave the password blank.
 
 5. Open the Glacier protocol document so that it is available for copy-pasting terminal commands.
-6. Install the remaining application software on the Q1 APP USB.
+6. Install the remaining application software on the "Q1 APP" USB drive.
     1. Configure our system to enable access to the software we need in Ubuntu's
     "package repository".On Ubuntu 16.04.01  [there is a bug](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971) in Ubuntu's package manager that affects systems
-    running off a bootable Ubuntu USB. The commands in steps a and b are a
+    running off a bootable Ubuntu USB drive. The commands in steps a and b are a
     workaround.
         1. ```
         $ sudo mv /var/cache/app-info/xapian/default /var/cache/app-info/xapian/default_old
@@ -146,9 +146,9 @@ in the Create boot USB drives section.
             ```
             $ sudo apt-get install qrencode=3.4.4-1 zbar-tools=0.10+doc-10ubuntu1 bitcoind
             ```
-    3. Copy that software to the Q1 APP USB.
+    3. Copy that software to the "Q1 APP" USB drive.
         1. Create a folder for the application files that will be moved to the
-        USB:
+        USB drive:
             ```
             $ mkdir ~/apps
             ```
@@ -156,7 +156,7 @@ in the Create boot USB drives section.
             ```
             $ cp /var/cache/apt/archives/*.deb ~/apps
             ```
-        3. Copy the contents of the apps folder to the Q1 APP USB:
+        3. Copy the contents of the apps folder to the "Q1 APP" USB drive:
             1. Click on the File Manager icon in the launching dock:
             2. Navigate to the "Home" folder.
             3. Click and drag "apps" folder to the icon representing
@@ -196,12 +196,12 @@ contents should look like this
     SHA256SUMS
     SHA256SUMS.sig
     ```
-8. Eject and physically remove the Q1 APP USB from the SETUP 1 computer.
+8. Eject and physically remove the "Q1 APP" USB drive from the "SETUP 1" computer.
 
-    **The Q1 APP USB is now eternally quarantined. It should never again be
-    plugged into anything besides the Q1 computer.**
+    **The "Q1 APP" USB drive is now eternally quarantined. It should never again be
+    plugged into anything besides the "Q1" computer.**
 
-9. Repeat all above steps using the SETUP 2 computer, SETUP 2 BOOT USB, and Q2
-APP USB.
+9. Repeat all above steps using the "SETUP 2" computer, "SETUP 2 BOOT" USB drive, and "Q2
+APP" USB drive.
 10. Find a container in which to store all of your labeled hardware, along
 with the Glacier document hardcopy, when you are finished.
