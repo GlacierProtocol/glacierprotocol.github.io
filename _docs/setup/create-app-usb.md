@@ -13,11 +13,10 @@ the software needed to execute the remainder of the protocol.
 in the Create boot USB drives section.
 2. Insert the "Q1 APP" USB drive into the the "SETUP 1" computer.
 
-    1. **The instruction to plug a Quarantined App USB drive into your Setup computer
-    *should* raise a red flag for you, because <span style="color: red;">you should never plug a quarantined
-    USB drive into anything other than the quarantined computer it is designated for!</span>**
-
-       This setup process is the ONE exception.
+    The instruction to plug a Quarantined App USB drive into the Setup Computer
+    should raise a red flag, because  **<span style="color: red;">a quarantined USB drive
+    should never be plugged into anything other than its designated quarantined computer!</span>**.
+    This setup process is the **ONE** necessary exception.
 
 3. Press Ctrl-Alt-T to open a terminal window.
 4. Install the Glacier document and GlacierScript on the "Q1 APP" USB drive.
