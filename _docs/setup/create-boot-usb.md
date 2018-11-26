@@ -301,7 +301,7 @@ of errors or malware infection:
 sections, replacing each occurance of "SETUP 1 BOOT" with "Q1 BOOT". During the repeat,
 take note of the following:
     * The instruction to plug a Quarantined Boot USB drive into the Setup
-    Computer should raise a red flag, because **<span style="color: red;">a quarantined USB drive should never be plugged into anything other than its designated quarantined computer!</span>**
+    Computer should raise a red flag, because **<span style="color: red;">a quarantined USB drive should never be plugged into anything other than its designated quarantined computer!</span>**.
     This setup process is the **ONE** necessary exception.
     * The "SETUP 1" computer should boot from the "SETUP 1 BOOT" USB drive this time, meaning
     the Linux instructions are to be followed, even if the computer
