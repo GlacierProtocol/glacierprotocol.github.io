@@ -87,16 +87,13 @@ in the Create boot USB drives section.
         2. Find the "glacier" folder under "Home".
         3. Click and drag the "glacier" folder to the icon representing the USB
         drive on the left.
-        4. If you see an "Error while copying" pop-up, you may be suffering from
-        [this Ubuntu bug](https://bugs.launchpad.net/ubuntu/+source/nautilus/+bug/1021375).
-        To fix it, do the following and then retry copying the files:
-
-            1.  
+        4. An "Error while copying" pop-up may appear in the event of
+        [bug #1021375](https://bugs.launchpad.net/ubuntu/+source/nautilus/+bug/1021375). Do the following before trying to copy the "glacier" folder again:
+            1. Reset the Nautilus settings to default:
                 ```
                 $ mv ~/.config/nautilus ~/.config/nautilus-bak
                 ```
-            2. Log out of Ubuntu: Click the power icon in the top right of the
-            screen and select "logout" from the drop-down menu.
+            2. Clicking the power icon in the top right of the screen and click "logout" from the drop-down menu.
             3. Login again with user "ubuntu" and leave the password blank.
 
 5. Open the Glacier protocol document so that it is available for copy-pasting terminal commands.
