@@ -96,7 +96,7 @@ in the Create boot USB drives section.
             2. Clicking the power icon in the top right of the screen and click "logout" from the drop-down menu.
             3. Login again with user "ubuntu" and leave the password blank.
 
-5. Open the Glacier protocol document so that it is available for copy-pasting terminal commands.
+5. Open the Glacier protocol document for copy-pasting terminal commands.
 6. Install the remaining application software on the "Q1 APP" USB drive.
     1. Configure our system to enable access to the software we need in Ubuntu's
     "package repository".On Ubuntu 16.04.01  [there is a bug](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971) in Ubuntu's package manager that affects systems
