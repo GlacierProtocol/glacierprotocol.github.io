@@ -151,8 +151,7 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
         qrencode_3.4.4-1_amd64.deb zbar-tools_0.10+doc-10ubuntu1_amd64.deb
         ```
         Note that the version number of the Bitcoin package may change as new
-        versions are released. Future versions of Glacier may pin to a specific
-        version.
+        versions are released.
 
     3. Click "back" and click the "glacier" folder to display the following contents
         ```
