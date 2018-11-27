@@ -155,7 +155,7 @@ contents should look like this
     libzbar0_0.10+doc-10ubuntu1_amd64.deb libzmq5_4.1.4-7_amd64.deb
     qrencode_3.4.4-1_amd64.deb zbar-tools_0.10+doc-10ubuntu1_amd64.deb
     ```
-    Click the glacier folder. It will have the following content:
+    Click "back" and click the "glacier" folder. It will have the following content:
     ```
     base58.py
     Glacier.pdf
