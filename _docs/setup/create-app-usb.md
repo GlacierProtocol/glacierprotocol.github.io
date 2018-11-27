@@ -67,8 +67,8 @@ in the Create boot USB drives section.
            Primary key fingerprint: E1AA EBB7 AC90 C1FE 80F0 1034 9D1B 7F53 4B43</span>
            </code></pre>
 
-           The warning message is expected, and is not cause for alarm.
-
+           The warning message is expected, and is not cause for alarm. See technical detail
+           in [Verify and print protocol document](/docs/setup/verify/#document-verification), point 3 for explanation.
         4. Verify the fingerprints in the fingerprint file match the fingerprints
         of the downloaded Glacier files:
            ```
