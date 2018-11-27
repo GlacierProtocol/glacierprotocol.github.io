@@ -33,36 +33,33 @@ in the Create boot USB drives section.
         3. Select "Home" on the left panel of the file browser that appears and click "Extract" again.
         4. Click "Show the Files" once a popup declares the files are extracted.
         5. In the folder window that appears, rename the unzipped folder from "GlacierProtocol-<span class="primary">version</span>" to "glacier".
-    3. Obtain the Glacier "public key," used to cryptographically verify the
-    Glacier document and GlacierScript.
+    3. Obtain the Glacier public key used to cryptographically verify the
+    Glacier document and GlacierScript:
 
-        **If you are ever using Glacier in the future and notice that this step
-        has changed (or that this warning has been removed), there is a
-        security risk.** Stop and seek assistance.
+        **If this step changes in future uses of Glacier, or this warning is removed, there is a security risk.**
+        Stop and seek assistance.
 
-        1. Access Glacier's Keybase profile at https://keybase.io/glacierprotocol.
-        2. Click the string of letters and numbers next to the key icon.
-        3. In the pop-up that appears, locate the link reading "this key".
-        4. Right-click the link and select "Save Link As..."
-        5. Name the file "glacier.asc".
+        1. Navigate to Glacier's Keybase profile at [keybase.io/glacierprotocol](https://keybase.io/glacierprotocol).
+        2. Click the string of 16 letters and numbers, formatted "XXXX XXXX XXXX XXXX", next to the key icon.
+        3. In the pop-up that appears, right-click the link reading "this key" and select
+        "Save Link As..." or "Download Linked File As...".
+        4. Name the file "glacier.asc".
 
-    4. Verify the integrity of the Glacier download.
-
-        1. Import the Glacier public key into your local GPG installation:
+    4. Verify the integrity of the Glacier download:
+        1. Import the Glacier public key into the local GPG installation:
            ```
            $ gpg --import ~/Downloads/glacier.asc
            ```
-        2. Switch to the glacier folder:
+        2. Change the terminal’s current working folder to the Glacier folder:
            ```
            $ cd ~/glacier
            ```
-        3. Use the public key to verify that the Glacier "fingerprint file" is
+        3. Use the public key to verify that the Glacier fingerprint file is
         legitimate:
            ```
            $ gpg --verify SHA256SUMS.sig SHA256SUMS
            ```
-           Expected output (timestamp will vary, but
-           e-mail and fingerprint should match):
+           Expected output (timestamp will vary, but e-mail and fingerprint should match):
            <pre><code><span style="font-size: 10px;">gpg: Signature made Thu Jan 19 13:45:48 2017 PST using RSA key ID 4B43EAB0
            gpg: Good signature from "Glacier Team <contact@glacierprotocol.org>"
            gpg: WARNING: This key is not certified with a trusted signature!
