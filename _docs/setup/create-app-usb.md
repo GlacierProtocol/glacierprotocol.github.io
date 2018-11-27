@@ -97,26 +97,18 @@ in the Create boot USB drives section.
             3. Login again with user "ubuntu" and leave the password blank.
 
 5. Open the Glacier protocol document for copy-pasting terminal commands.
-6. Install the remaining application software on the "Q1 APP" USB drive.
-    1. Configure our system to enable access to the software we need in Ubuntu's
-    "package repository".On Ubuntu 16.04.01  [there is a bug](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971) in Ubuntu's package manager that affects systems
-    running off a bootable Ubuntu USB drive. The commands in steps i and ii are a
-    workaround.
-        1. ```
-        $ sudo mv /var/cache/app-info/xapian/default /var/cache/app-info/xapian/default_old
-        ```
-        2. ```
-        $ sudo mv /var/cache/app-info/xapian/default_old /var/cache/app-info/xapian/default
-        ```
-        3. ```
-        $ sudo apt-add-repository universe
-        ```
-        4. ```
-        $ sudo apt-add-repository ppa:bitcoin/bitcoin
-        ```
-        5. ```
-        $ sudo apt-get update
-        ```
+6. Implement workaround for [bug #1601971](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971)
+which affects Ubuntu 16.04.01's package manager when running from a bootable USB drive:
+    ```
+    $ sudo mv /var/cache/app-info/xapian/default /var/cache/app-info/xapian/default_old
+    $ sudo mv /var/cache/app-info/xapian/default_old /var/cache/app-info/xapian/default
+    ```
+7. Configure the system to enable access to the required package repositories:
+    ```
+    $ sudo apt-add-repository universe
+    $ sudo apt-add-repository ppa:bitcoin/bitcoin
+    $ sudo apt-get update
+    ```
 8. Download and perform integrity verification of software:
         * **bitcoind**: [Bitcoin Core](https://bitcoincore.org/):
         , which we'll use for cryptography & financial operations
