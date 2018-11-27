@@ -117,7 +117,7 @@ in the Create boot USB drives section.
         5. ```
         $ sudo apt-get update
         ```
-    2. Download and perform integrity verification59 of software available from Ubuntu's package repository:
+    2. Download and perform integrity verification of software available from Ubuntu's package repository:
         * **bitcoind**: [Bitcoin Core](https://bitcoincore.org/):
         , which we'll use for cryptography & financial operations
         * **qrencode**: Used for creating QR codes to move data off quarantined
