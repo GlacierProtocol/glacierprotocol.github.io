@@ -115,21 +115,21 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
     ```
     $ sudo apt-get install qrencode=3.4.4-1 zbar-tools=0.10+doc-10ubuntu1 bitcoind
     ```
-    3. Copy that software to the "Q1 APP" USB drive.
-        1. Create a folder for the application files that will be moved to the
-        USB drive:
-            ```
-            $ mkdir ~/apps
-            ```
-        2. Copy the software into the apps folder:
-            ```
-            $ cp /var/cache/apt/archives/*.deb ~/apps
-            ```
-        3. Copy the contents of the apps folder to the "Q1 APP" USB drive:
-            1. Click on the File Manager icon in the launching dock:
-            2. Navigate to the "Home" folder.
-            3. Click and drag "apps" folder to the icon representing
-            the USB drive on the left panel.
+9. Copy the downloaded software to the "Q1 APP" USB drive:
+    1. Create a folder for the application files to be moved to the
+    USB drive:
+        ```
+        $ mkdir ~/apps
+        ```
+    2. Copy the application files into the newly created "apps" folder:
+        ```
+        $ cp /var/cache/apt/archives/*.deb ~/apps
+        ```
+    3. Copy the "apps" folder contents to the "Q1 APP" USB drive:
+        1. Click on the "File Manager" icon in the launching dock.
+        2. Navigate to the "Home" folder.
+        3. Click and drag the "apps" folder to the icon representing
+        the USB drive on the left panel.
 7. Click on the USB drive icon to verify that it has the correct files. The
 contents should look like this
     ```
