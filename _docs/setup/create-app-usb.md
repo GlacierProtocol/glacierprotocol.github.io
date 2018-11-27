@@ -109,7 +109,7 @@ which affects Ubuntu 16.04.01's package manager when running from a bootable USB
     $ sudo apt-add-repository ppa:bitcoin/bitcoin
     $ sudo apt-get update
     ```
-8. Download and perform integrity verification of [bitcoind](https://bitcoincore.org/)
+8. Download [bitcoind](https://bitcoincore.org/)
 (cryptography & financial operations), qrencode (QR code creation for quarantined data
 export) and zbar-tools (QR code reading for quarantined data import) software:
     ```
