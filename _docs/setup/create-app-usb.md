@@ -109,16 +109,12 @@ which affects Ubuntu 16.04.01's package manager when running from a bootable USB
     $ sudo apt-add-repository ppa:bitcoin/bitcoin
     $ sudo apt-get update
     ```
-8. Download and perform integrity verification of software:
-        * **bitcoind**: [Bitcoin Core](https://bitcoincore.org/):
-        , which we'll use for cryptography & financial operations
-        * **qrencode**: Used for creating QR codes to move data off quarantined
-        computers
-        * **zbar-tools**: Used for reading QR codes to import data into quarantined
-        computers
-            ```
-            $ sudo apt-get install qrencode=3.4.4-1 zbar-tools=0.10+doc-10ubuntu1 bitcoind
-            ```
+8. Download and perform integrity verification of [bitcoind](https://bitcoincore.org/)
+(cryptography & financial operations), qrencode (QR code creation for quarantined data
+export) and zbar-tools (QR code reading for quarantined data import) software:
+    ```
+    $ sudo apt-get install qrencode=3.4.4-1 zbar-tools=0.10+doc-10ubuntu1 bitcoind
+    ```
     3. Copy that software to the "Q1 APP" USB drive.
         1. Create a folder for the application files that will be moved to the
         USB drive:
