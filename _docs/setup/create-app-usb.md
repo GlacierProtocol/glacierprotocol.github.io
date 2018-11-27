@@ -107,7 +107,7 @@ in the Create boot USB drives section.
 6. Install the remaining application software on the "Q1 APP" USB drive.
     1. Configure our system to enable access to the software we need in Ubuntu's
     "package repository".On Ubuntu 16.04.01  [there is a bug](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971) in Ubuntu's package manager that affects systems
-    running off a bootable Ubuntu USB drive. The commands in steps a and b are a
+    running off a bootable Ubuntu USB drive. The commands in steps i and ii are a
     workaround.
         1. ```
         $ sudo mv /var/cache/app-info/xapian/default /var/cache/app-info/xapian/default_old
