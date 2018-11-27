@@ -69,7 +69,7 @@ in the Create boot USB drives section.
 
            The warning message is expected, and is not cause for alarm. See technical detail
            in [Verify and print protocol document](/docs/setup/verify/#document-verification), point 3 for explanation.
-        4. Verify the fingerprints in the fingerprint file match the fingerprints
+        4. Verify that the fingerprints in the fingerprint file match the fingerprints
         of the downloaded Glacier files:
            ```
            $ sha256sum -c SHA256SUMS 2>&1
@@ -81,12 +81,11 @@ in the Create boot USB drives section.
            base58.py: OK
            README.md: OK
            ```
-
-    5. Copy the glacier folder to the "Q1 APP" USB drive.
-        1. Click on the File Manager icon in the launching dock along the left
+    5. Copy the glacier folder to the "Q1 APP" USB drive:
+        1. Click on the "File Manager" icon in the launching dock along the left
         side of the screen.
         2. Find the "glacier" folder under "Home".
-        3. Click and drag the glacier folder to the icon representing the USB
+        3. Click and drag the "glacier" folder to the icon representing the USB
         drive on the left.
         4. If you see an "Error while copying" pop-up, you may be suffering from
         [this Ubuntu bug](https://bugs.launchpad.net/ubuntu/+source/nautilus/+bug/1021375).
