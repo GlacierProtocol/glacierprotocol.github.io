@@ -130,40 +130,39 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
         2. Navigate to the "Home" folder.
         3. Click and drag the "apps" folder to the icon representing
         the USB drive on the left panel.
-7. Click on the USB drive icon to verify that it has the correct files. The
-contents should look like this
-    ```
-    apps
-    glacier
-    ```
+7. Verify the correct files have been copied:
+    1. Click on the USB drive icon to display the following contents:
+        ```
+        apps
+        glacier
+        ```
+    2. Click the "apps" folder to display the following contents:
+        ```
+        bitcoind_0.13.2-xenial1_amd64.deb
+        libboost-chrono1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb
+        libboost-program-options1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb
+        libboost-thread1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb
+        libdb4.8++_4.8.30-xenial2_amd64.deb
+        libevent-core-2.0-5_2.0.21-stable-2_amd64.deb
+        libevent-pthreads-2.0-5_2.0.21-stable-2_amd64.deb
+        libqrencode3_3.4.4-1_amd64.deb
+        libsodium18_1.0.8-5_amd64.deb
+        libzbar0_0.10+doc-10ubuntu1_amd64.deb libzmq5_4.1.4-7_amd64.deb
+        qrencode_3.4.4-1_amd64.deb zbar-tools_0.10+doc-10ubuntu1_amd64.deb
+        ```
+        Note that the version number of the Bitcoin package may change as new
+        versions are released. Future versions of Glacier may pin to a specific
+        version.
 
-    Click the apps folder. It will have the following content.
-    Note that the version number of the Bitcoin package may change as new
-    versions are released. Future versions of Glacier may pin to a specific
-    version.
-
-    ```
-    bitcoind_0.13.2-xenial1_amd64.deb
-    libboost-chrono1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb
-    libboost-program-options1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb
-    libboost-thread1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb
-    libdb4.8++_4.8.30-xenial2_amd64.deb
-    libevent-core-2.0-5_2.0.21-stable-2_amd64.deb
-    libevent-pthreads-2.0-5_2.0.21-stable-2_amd64.deb
-    libqrencode3_3.4.4-1_amd64.deb
-    libsodium18_1.0.8-5_amd64.deb
-    libzbar0_0.10+doc-10ubuntu1_amd64.deb libzmq5_4.1.4-7_amd64.deb
-    qrencode_3.4.4-1_amd64.deb zbar-tools_0.10+doc-10ubuntu1_amd64.deb
-    ```
-    Click "back" and click the "glacier" folder. It will have the following content:
-    ```
-    base58.py
-    Glacier.pdf
-    glacierscript.py
-    LICENSE README.md
-    SHA256SUMS
-    SHA256SUMS.sig
-    ```
+    3. Click "back" and click the "glacier" folder to display the following contents
+        ```
+        base58.py
+        Glacier.pdf
+        glacierscript.py
+        LICENSE README.md
+        SHA256SUMS
+        SHA256SUMS.sig
+        ```
 8. Eject and physically remove the "Q1 APP" USB drive from the "SETUP 1" computer.
 
     **The "Q1 APP" USB drive is now eternally quarantined. It should never again be
