@@ -75,11 +75,9 @@ include:
   If the protocol is followed, the attack surface here should be narrow, as users are
   instructed to block all visual side channels. However, at a minimum, a smartphone with a
   camera is used for reading QR codes.
-  * **[Acoustic side channel](https://en.wikipedia.org/wiki/Acoustic_cryptanalysis)**:
-  Exploit of sounds emitted by computer or other device, if
+  * **Acoustic side channel**: [Exploit of sounds emitted by computer or other device](https://en.wikipedia.org/wiki/Acoustic_cryptanalysis), if
   inadequately blocked by sound insulation or masking noise. [Data theft by fan noise](https://www.wired.com/2016/06/clever-attack-uses-sound-computers-fan-steal-data), for example.
-  * **[Power side channel](https://sharps.org/wp-content/uploads/CLARK-ESORICS13.pdf)**:
-  Exploit using electrical outlets to identify webpages.
+  * **Power side channel**: [Exploit using electrical outlets to identify webpages](https://sharps.org/wp-content/uploads/CLARK-ESORICS13.pdf), for example.
   * **Radio side channel**: [Exploit of electromagnetic emanations from wired and wireless
   keyboards](https://www.usenix.org/legacy/event/sec09/tech/full_papers/vuagnoux.pdf),
   [transmission of radio signals from monitor to FM radio receiver](https://cyber.bgu.ac.il/content/how-leak-sensitive-data-isolated-computer-air-gap-near-mobile-phone-airhopper)
