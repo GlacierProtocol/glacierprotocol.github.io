@@ -23,11 +23,7 @@ are being executed.
         2. Run them **only on battery power** throughout this protocol.
         3. Make sure they are fully charged first! If you run out of battery,
         you'll need to start over.
-    4. [Radio](https://cyber.bgu.ac.il/how-leak-sensitive-data-isolated-computer-air-gap-near-mobile-phone-airhopper/)
-    and other side channels. Including
-    seismic,
-    [thermal](https://cyber.bgu.ac.il/bitwhisper-heat-air-gap/),
-    and [magnetic](https://fc15.ifca.ai/preproceedings/paper_14.pdf).
+    4. Radio and other side channels, including seismic, thermal, and magnetic:
         1. Turn off all other computers and smartphones in the room.
         2. Put portable computing devices in the Faraday bag and seal the bag.
         3. Unplug desktop computers.
