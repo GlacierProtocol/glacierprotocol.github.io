@@ -27,17 +27,18 @@ are being executed.
         1. Turn off all other computers and smartphones in the room.
         2. Put portable computing devices in the Faraday bag and seal the bag.
         3. Unplug desktop computers.
-2. Put your Q1 BOOT USB into an open slot in your Q1 computer.
-3. Boot off the USB drive. If you've forgotten how, refer to the procedure in Section IV.
-4. Plug the Q1 APP USB into the Q1 computer
-5. Copy the software from the Q1 computer's RAM disk.
+2. Boot the “Q1” computer from the “Q1 BOOT” USB drive, referring to steps 1 and 2
+from [Create the “Q1 BOOT” USB drive](/docs/setup/create-boot-usb/#create-the-q1-boot-usb-drive)
+in the Create boot USB drives section if necessary.
+3. Plug the Q1 APP USB into the Q1 computer
+4. Copy the software from the Q1 computer's RAM disk.
     1. Click the File Manager icon from the launchpad on the left side of the
     screen.
     2. Click on the App USB on the left of the file manager. It will look like
     the image on the right, but may have a different name.
     3. Drag the contents of the USB to the "Home" directory on the left side of
     file manager.
-6. Open a copy of this document on the Q1 computer.
+5. Open a copy of this document on the Q1 computer.
     1. In the File Manager find the glacier folder. The PDF file for this
     document should be visible with the name "Glacier.pdf." Open it.
 
@@ -46,26 +47,26 @@ are being executed.
         internet, do so in a distant room. Do not remove devices from the Faraday
         bag before doing going to the other room.
 
-7. Open a Terminal window by pressing Ctrl-Alt-T.
-8. Install the application software on the Q1 computer's RAM disk.
+6. Open a Terminal window by pressing Ctrl-Alt-T.
+7. Install the application software on the Q1 computer's RAM disk.
     ```
     $ cd ~/apps
     $ sudo dpkg -i *.deb
     ```
-9. Change into the glacier directory. You'll be using this directory to execute
+8. Change into the glacier directory. You'll be using this directory to execute
 software for the protocol.
     ```
     $ cd ~/glacier
     ```
-10. Prepare GlacierScript for execution.
+9. Prepare GlacierScript for execution.
     ```
     $ chmod +x glacierscript.py
     ```
-11. Prepare the "Quarantined Scratchpad" -- an empty file you'll use as a place
+10. Prepare the "Quarantined Scratchpad" -- an empty file you'll use as a place
 to jot notes.
     1. Click the "Search your computer" icon at the top of the launcher along
     the left side of the screen.
     2. Type "text editor".
     3. Click the Text Editor icon.
     4. A blank window should appear.
-12. Repeat the above steps using the Q2 computer, Q2 SETUP USB and Q2 APP USB.
+11. Repeat the above steps using the Q2 computer, Q2 SETUP USB and Q2 APP USB.
