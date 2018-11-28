@@ -81,7 +81,7 @@ is the co-owner of the safe deposit box. A successor trustee could then access t
 A 2-of-5 withdrawal policy is recommended, with private keys distributed to a number
 of trusted individuals, or signatories. The extra key, five rather than the recommended
 four in Option 1, mitigates the extra risk of signatories not sufficiently protecting
-the key against loss. This has the following advantages:
+the key against loss or opportunistic theft. This has the following advantages:
 
 * **Availability**: Vaults or safe deposit boxes may not be available in the local area.
 * **Ease of setup**: It may be simpler to distribute keys to signatories than to travel
