@@ -9,13 +9,6 @@ Withdrawal protocols. If you are executing the Setup Protocol for the
 first time and do **not** plan on executing the Deposit or Withdrawal protocol now, you can stop here.
 
 1. Block side channels
-
-    [Side-channel attacks](https://en.wikipedia.org/wiki/Side-channel_attack)
-    are a form of electronic threat based on the physical nature of computing
-    hardware (as opposed to algorithms or their software implementations).
-    Side channel attacks are rare, but it's relatively straightforward to
-    defend against most of them.
-
     1. Visual side channel
         1. Ensure that no humans or cameras (e.g. home security cameras, which
         can be hacked) have visual line-of-sight to the Quarantined Computers.

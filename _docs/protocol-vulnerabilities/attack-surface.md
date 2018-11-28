@@ -63,10 +63,13 @@ Scenarios in which a critical failure might happen. Possibly, but not necessaril
 to a malware infection.
 
 ### Exfiltration of critically sensitive data
-A Quarantined Computer could leak critically sensitive data over a side channel, which
-is an attack based on information gained from the implementation of a computer system,
-rather than weaknesses in the implemented algorithm itself. Complementary malware on a 
-networked or attacker-controlled device in range then steals the data. Possibilities include:
+A Quarantined Computer could leak critically sensitive data via a 
+[side-channel attack](https://en.wikipedia.org/wiki/Side-channel_attack), which is a form
+of electronic threat based on the physical nature of computing hardware as
+opposed to algorithms or their software implementations. Complementary malware, on a 
+networked or attacker-controlled device in range, is then used to steal data. Side channel
+attacks are rare, but most are relatively straightforward to defend against. Possibilities
+include:
   * **Visual side channel**: Exploit of sensitive visual data. Data is displayed on the
   screen as part of the protocol, so does not require malware on the quarantined computer.
   If the protocol is followed, the attack surface here should be narrow, as users are
