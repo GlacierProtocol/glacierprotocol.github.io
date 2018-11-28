@@ -37,9 +37,8 @@ in the Create boot USB drives section if necessary.
     2. Click on the App USB on the left of the file manager.
     3. Drag the contents of the USB to the "Home" directory on the left side of
     file manager.
-5. Open a copy of this document on the Q1 computer.
-    1. In the File Manager find the glacier folder. The PDF file for this
-    document should be visible with the name "Glacier.pdf." Open it.
+5. Open the "Glacier.pdf" file on the "Q1" computer. It will be in the "glacier"
+folder, a sub-folder of "Home".
 
         You won't be able to click any external links in the document, since you
         don't have a network connection. If you need to look something up on the
