@@ -43,6 +43,10 @@ Multisignature security mitigates risk in the following scenarios:
 * **Theft**: Control of a single key does not give access to the bitcoin
 * **Loss**: Bitcoin can be recovered after the loss of a single key, if
 misplaced or if the owner is incapacitated, by using the remaining keys
+* **Betrayal**: In the event of death or incapacitation, multisignature security will
+give one or more signatories access to funds without enabling theft by any individual.
+This holds true unless a trusted individual steals additional keys, or colludes
+with another signatory.
 
 ## Choosing a multisignature withdrawal policy
 
