@@ -167,10 +167,10 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
     drive, and select “Eject” from the pop-up menu.
     2. Remove the "Q1 APP" USB drive from the USB slot.
 
-    **The "Q1 APP" USB drive is now eternally quarantined. It should never again be
-    plugged into anything besides the "Q1" computer.**
+    **The "Q1 APP" USB drive is now eternally quarantined. It should only ever be
+    plugged into the “Q1” computer.**
 
 9. Repeat all above steps using the "SETUP 2" computer, "SETUP 2 BOOT" USB drive, and "Q2
 APP" USB drive.
-10. Find a container in which to store all of your labeled hardware, along
-with the Glacier document hardcopy, when you are finished.
+
+10. Safely store all labeled hardware, along with the Glacier document hardcopy.
