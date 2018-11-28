@@ -94,7 +94,7 @@ include:
   reader software, leading to widespread awareness and isolation of the threat. This makes
   it a very unattractive attack vector.
   * **Data leak**: Critically sensitive data could be leaked, intentionally or otherwise, as part of the
-  payload of valid data. For example, the nonce used for a transaction signature could contains
+  payload of valid data. For example, the nonce used for a transaction signature could contain
   bits of the private key.
   * **Flawed data generation**: Undetected generation of flawed sensitive data IF compatible
   malware is present on BOTH quarantined environments. For example, standard software algorithms that
@@ -139,7 +139,7 @@ to create the Quarantined Boot USB drives. If the protocol document had been
 compromised between the initial validation and later re-validation, the user would
 probably not notice, even without a forged signature.
 * The protocol hardcopy could be compromised. For example, malware could alter the
-hardcopy as it is printed)
+hardcopy as it is printed.
 * A flaw in GlacierScript could cause sensitive data to be leaked or flawed
 * Human error could occur during protocol execution
 * Design failure in the protocol could miss or inadequately address a risk

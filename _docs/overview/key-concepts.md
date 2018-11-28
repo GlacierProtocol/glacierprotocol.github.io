@@ -27,7 +27,7 @@ This is analogous to storing coins in a padlocked box, with a single key and pad
 
 ## Multisignature, or multisig, security
 
-Utilises multiple private keys to provide greater security, while also protecting
+Utilizes multiple private keys to provide greater security, while also protecting
 against total loss in the event of the loss of some keys.
 
 This is analogous to storing coins in a padlocked box, with multiple keys and
@@ -42,7 +42,7 @@ combine to release funds. Losing all redeem scripts leads to the total loss of f
 
 ## Offline key storage
 
-Private keys should only ever be offline, or "in cold storage". They should
+Private keys should only ever be offline, or in "cold storage". They should
 never be stored on any internet-connected computer, or "in hot storage",
 because it provides an opportunity for hacking attempts or virus infection
 via the internet. Viruses can attack in many ways, including searching the

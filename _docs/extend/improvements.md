@@ -5,7 +5,7 @@ description: Here's a list of improvements that can be made to Glacier, the
 ---
 
 
-## Don't store electronic copy of cold storage information page
+## Don't store electronic copy of Cold Storage Information Page
 Glacier recommends stores an electronic copy of the Cold Storage
 Information Page for easy copy-pasting for subsequent deposits or
 withdrawals. However, this is slightly less secure & complicated -- and
