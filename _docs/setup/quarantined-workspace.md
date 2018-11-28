@@ -13,7 +13,7 @@ are being executed.
         1. Ensure that no humans or cameras (e.g. home security cameras, which
         can be hacked) have visual line-of-sight to the Quarantined Computers.
         2. Close doors and window shades.
-    2. [Acoustic side channel](https://en.wikipedia.org/wiki/Acoustic_cryptanalysis)
+    2. Acoustic side channel:
         1. Choose a room where sound will not travel easily outside.
         2. Shut down nearby devices with microphones (e.g. smartphones and
         other laptops).
