@@ -11,8 +11,9 @@ a transaction".
 
 ## Private key
 
-A 256-bit number, usually expressed in 64-character hexadecimal, which can unlock
-bitcoin balances stored in the Bitcoin blockchain, a global decentralized ledger.
+A 256-bit number, usually expressed as a 64-character string of numbers and letters,
+which can unlock bitcoin balances stored in the Bitcoin blockchain, a global
+decentralized ledger.
 
 Unlike a password, a private key is not meant to be memorized.
 It is important to understand that the holder of the private key is the
