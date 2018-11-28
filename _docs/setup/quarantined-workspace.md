@@ -31,7 +31,7 @@ are being executed.
 from [Create the “Q1 BOOT” USB drive](/docs/setup/create-boot-usb/#create-the-q1-boot-usb-drive)
 in the Create boot USB drives section if necessary.
 3. Plug the Q1 APP USB into the Q1 computer
-4. Copy the software from the Q1 computer's RAM disk.
+4. Copy the software to the Q1 computer's RAM disk.
     1. Click the File Manager icon from the launchpad on the left side of the
     screen.
     2. Click on the App USB on the left of the file manager. It will look like
