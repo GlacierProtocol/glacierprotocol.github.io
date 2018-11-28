@@ -34,8 +34,7 @@ in the Create boot USB drives section if necessary.
 4. Copy the software to the Q1 computer's RAM disk.
     1. Click the File Manager icon from the launchpad on the left side of the
     screen.
-    2. Click on the App USB on the left of the file manager. It will look like
-    the image on the right, but may have a different name.
+    2. Click on the App USB on the left of the file manager.
     3. Drag the contents of the USB to the "Home" directory on the left side of
     file manager.
 5. Open a copy of this document on the Q1 computer.
