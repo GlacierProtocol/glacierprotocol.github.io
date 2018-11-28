@@ -91,10 +91,10 @@ access funds.
 
 Key distribution also has the following disadvantages:
 
-* **Privacy**: All signatories can see the balance via the multisignature redeem script.
-An alternate version of this protocol could be created using a different multisig
-approach besides P2SH transactions, which would eliminate the ability of signatories to
-view balances. See [Possible improvements to Glacier](/docs/extend/improvements#consider-shamirs-secret-sharing-or-vanilla-multisig-vs-p2sh-transactions) for details.
+* **Privacy**: All signatories can see the balance either via the multisignature redeem
+script, or via the cold storage address. An alternate version of this protocol could be
+created using a different multisig approach besides P2SH transactions, which would
+eliminate the ability of signatories to view balances. See [Possible improvements to Glacier](/docs/extend/improvements#consider-shamirs-secret-sharing-or-vanilla-multisig-vs-p2sh-transactions) for details.
 * **Signatory collusion**: Two signatories may collude to gain access to funds.
 * **Signatory reliability**: A signatory may fail to store the key securely.
 * **Signatory safety**: Signatories may be exposed to the risk of targeted physical theft.
