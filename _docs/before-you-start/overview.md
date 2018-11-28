@@ -16,6 +16,9 @@ security, with the keys stored only on paper.
 
 ## Eternally quarantined hardware
 
+The central concept the Glacier protocol uses to safeguard against theft
+of private keys due to malware infection, is eternally quarantined hardware.
+
 Eternally quarantined hardware is hardware with drastically limited
 interfaces with the outside world. This prevents the transmission of
 sensitive or harmful data, for example, private keys or malware. All
