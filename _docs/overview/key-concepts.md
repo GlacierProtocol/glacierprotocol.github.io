@@ -38,8 +38,11 @@ section for more detail.
 ## Redeem script
 
 Multisignature requires each of the multiple private keys to be accompanied by a
-redeem script. This script, each of which is identical, defines how the keys
-combine to release funds. Losing all redeem scripts leads to the total loss of funds.
+redeem script. These scripts, all of which are identical, define how the keys
+combine to release funds. Losing all redeem scripts, if the recommended test
+withdrawal is not performed, leads to the total loss of funds. Performing the
+recommended test withdrawal means the redeem script can be found on the blockchain,
+assuming the cold storage address is still known.
 
 ## Offline key storage
 
