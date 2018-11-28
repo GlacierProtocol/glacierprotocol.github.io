@@ -162,7 +162,10 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
         SHA256SUMS
         SHA256SUMS.sig
         ```
-8. Eject and physically remove the "Q1 APP" USB drive from the "SETUP 1" computer.
+8. Immediately remove the "Q1 APP" USB drive from the “SETUP 1” computer:
+    1. On the desktop, right-click the USB drive icon corresponding to the “Q1 APP” USB
+    drive, and select “Eject” from the pop-up menu.
+    2. Remove the "Q1 APP" USB drive from the USB slot.
 
     **The "Q1 APP" USB drive is now eternally quarantined. It should never again be
     plugged into anything besides the "Q1" computer.**
