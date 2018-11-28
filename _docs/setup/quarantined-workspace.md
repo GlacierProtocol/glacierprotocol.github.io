@@ -18,7 +18,7 @@ are being executed.
         2. Shut down nearby devices with microphones (e.g. smartphones and
         other laptops).
         3. Plug in and turn on a table fan to generate white noise.
-    3. [Power side channel](https://sharps.org/wp-content/uploads/CLARK-ESORICS13.pdf)
+    3. Power side channel:
         1. Unplug both Quarantined Computers from the wall.
         2. Run them **only on battery power** throughout this protocol.
         3. Make sure they are fully charged first! If you run out of battery,
