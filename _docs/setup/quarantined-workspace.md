@@ -25,7 +25,7 @@ first time and do **not** plan on executing the Deposit or Withdrawal protocol n
         you'll need to start over.
     4. [Radio](https://cyber.bgu.ac.il/how-leak-sensitive-data-isolated-computer-air-gap-near-mobile-phone-airhopper/)
     and other side channels. Including
-    [seismic](https://www.cc.gatech.edu/fac/traynor/papers/traynor-ccs11.pdf),
+    seismic,
     [thermal](https://cyber.bgu.ac.il/bitwhisper-heat-air-gap/),
     and [magnetic](https://fc15.ifca.ai/preproceedings/paper_14.pdf).
         1. Turn off all other computers and smartphones in the room.
