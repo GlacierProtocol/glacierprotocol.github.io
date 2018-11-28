@@ -8,6 +8,8 @@ This section will prepare the two Quarantined App USB drives, "Q1 APP" and "Q2 A
 [Hardware required](/docs/before-you-start/hardware/#eternally-quarantined) section, with
 the software needed to execute the remainder of the protocol.
 
+## On Setup Computer “SETUP 1”
+
 1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB drive, following step 1 of
 [Create the “Q1 BOOT” USB drive](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
 in the Create boot USB drives section.
@@ -18,8 +20,10 @@ in the Create boot USB drives section.
     should never be plugged into anything other than its designated quarantined computer!</span>**.
     This setup process is the **ONE** necessary exception.
 
-3. Press "Ctrl-Alt-T" to open a terminal window.
-4. Install the Glacier document and GlacierScript on the "Q1 APP" USB drive:
+### Download Glacier and Glacierscript
+
+1. Press "Ctrl-Alt-T" to open a terminal window.
+2. Install the Glacier document and GlacierScript on the "Q1 APP" USB drive:
     1. Download the latest full release of Glacier, *not* just the protocol
     document, from the "Source code (zip)" link at
     [Glacier's Github repo](https://github.com/GlacierProtocol/GlacierProtocol/releases).
@@ -96,26 +100,32 @@ in the Create boot USB drives section.
             2. Clicking the power icon in the top right of the screen and click "logout" from the drop-down menu.
             3. Login again with user "ubuntu" and leave the password blank.
 
-5. Open the Glacier protocol document for copy-pasting terminal commands.
-6. Implement workaround for [bug #1601971](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971)
+### Prepare the system
+
+1. Open the Glacier protocol document for copy-pasting terminal commands.
+
+2. Implement workaround for [bug #1601971](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971)
 which affects Ubuntu 16.04.01's package manager when running from a bootable USB drive:
     ```
     $ sudo mv /var/cache/app-info/xapian/default /var/cache/app-info/xapian/default_old
     $ sudo mv /var/cache/app-info/xapian/default_old /var/cache/app-info/xapian/default
     ```
-7. Configure the system to enable access to the required package repositories:
+3. Configure the system to enable access to the required package repositories:
     ```
     $ sudo apt-add-repository universe
     $ sudo apt-add-repository ppa:bitcoin/bitcoin
     $ sudo apt-get update
     ```
-8. Download [bitcoind](https://bitcoincore.org/)
+
+### Download third-party apps
+
+1. Download [bitcoind](https://bitcoincore.org/)
 (cryptography & financial operations), qrencode (QR code creation for quarantined data
 export) and zbar-tools (QR code reading for quarantined data import) software:
     ```
     $ sudo apt-get install qrencode=3.4.4-1 zbar-tools=0.10+doc-10ubuntu1 bitcoind
     ```
-9. Copy the downloaded software to the "Q1 APP" USB drive:
+2. Copy the downloaded software to the "Q1 APP" USB drive:
     1. Create a folder for the application files to be moved to the
     USB drive:
         ```
@@ -130,7 +140,7 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
         2. Navigate to the "Home" folder.
         3. Click and drag the "apps" folder to the icon representing
         the USB drive on the left panel.
-7. Verify the correct files have been copied:
+3. Verify the correct files have been copied:
     1. Click on the USB drive icon to display the following contents:
         ```
         apps
@@ -162,7 +172,7 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
         SHA256SUMS
         SHA256SUMS.sig
         ```
-8. Immediately remove the "Q1 APP" USB drive from the “SETUP 1” computer:
+4. Immediately remove the "Q1 APP" USB drive from the “SETUP 1” computer:
     1. On the desktop, right-click the USB drive icon corresponding to the “Q1 APP” USB
     drive, and select “Eject” from the pop-up menu.
     2. Remove the "Q1 APP" USB drive from the USB slot.
@@ -170,7 +180,10 @@ export) and zbar-tools (QR code reading for quarantined data import) software:
     **The "Q1 APP" USB drive is now eternally quarantined. It should only ever be
     plugged into the “Q1” computer.**
 
-9. Repeat all above steps using the "SETUP 2" computer, "SETUP 2 BOOT" USB drive, and "Q2
-APP" USB drive.
+## On Setup Computer “SETUP 2”
 
-10. Safely store all labeled hardware, along with the Glacier document hardcopy.
+Create the “Q2 APP” USB drive by repeating the [On Setup Computer “SETUP 1”](/docs/setup/create-app-usb/#on-setup-computer-setup-1) section above, replacing
+occurances of “SETUP 1”, "SETUP 1 BOOT" and “Q1 APP” with “SETUP 2”, "SETUP 2 BOOT"
+and “Q2 APP”, respectively.
+
+**Safely store all labeled hardware, along with the Glacier document hardcopy.**
