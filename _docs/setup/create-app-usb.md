@@ -11,7 +11,7 @@ the software needed to execute the remainder of the protocol.
 ## On Setup Computer “SETUP 1”
 
 1. Boot the "SETUP 1" computer from the "SETUP 1 BOOT" USB drive, following step 1 of
-[Create the “Q1 BOOT” USB drive](/docs/setup/create-boot-usb/#create-the-setup-1-boot-usb-drive)
+[Create the “Q1 BOOT” USB drive](/docs/setup/create-boot-usb/#create-the-q1-boot-usb-drive)
 in the Create boot USB drives section.
 2. Insert the "Q1 APP" USB drive into the the "SETUP 1" computer.
 
