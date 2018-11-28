@@ -1,15 +1,15 @@
 ---
 title: Prepare quarantined workspaces
-description: Learn how to prepare your quarantined hardware for Glacier, the
+description: Learn how to prepare the quarantined hardware for Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
-This section is meant to be done immediately before executing the Deposit or
-Withdrawal protocols. If you are executing the Setup Protocol for the
-first time and do **not** plan on executing the Deposit or Withdrawal protocol now, you can stop here.
+This section is to be followed immediately before executing the Deposit or
+Withdrawal protocols. There is no need to continue if no deposits or withdrawals
+are being executed.
 
-1. Block side channels
-    1. Visual side channel
+1. Block side channels:
+    1. Visual side channel:
         1. Ensure that no humans or cameras (e.g. home security cameras, which
         can be hacked) have visual line-of-sight to the Quarantined Computers.
         2. Close doors and window shades.
