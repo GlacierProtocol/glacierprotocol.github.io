@@ -48,10 +48,10 @@ prepare your quarantined workspace.
         1. Type "DICE ENTROPY" into both Quarantined Scratchpads.
         2. Roll 62 six-sided dice, shaking the dice thoroughly each roll.
         62 dice rolls corresponds to 160 bits of entropy. See the
-        [design document](../design-doc/overview.md) for details.
+        [design document](/docs/design-doc/overview) for details.
         3. If you are rolling multiple dice at the same time, read the
         dice left-to-right. **This is important.** Humans are
-        [horrible at generating random data](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041531)
+        [horrible at generating random data](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041531)
         and great at noticing patterns. Without a consistent heuristic like
         "read the dice left to right", you may subconsciously read them in a
         non-random order (like tending to record lower numbers first).
@@ -77,9 +77,8 @@ prepare your quarantined workspace.
         3. **On the Q1 computer** enter the following command. You'll need to supply
         the number of keys required for your multisignature withdrawal policy
         (4 by default).
-           <pre>
-           $ ./glacierscript.py entropy --num-keys <span class="primary">number-of-keys-here</span>
-           </pre>
+           <pre><code>$ ./glacierscript.py entropy --num-keys <span class="primary">number-of-keys-here</span>
+           </code></pre>
 
            Example:
            ```
@@ -104,10 +103,9 @@ prepare your quarantined workspace.
 
            In the command below, you'll need to specify the number of keys required
            by your multisignature withdrawal policy.
-           <pre>
-           $ ./glacierscript.py create-deposit-data -m <span class="primary">required-keys</span> \
+           <pre><code>$ ./glacierscript.py create-deposit-data -m <span class="primary">required-keys</span> \
            -n <span class="primary">total-keys</span>
-           </pre>
+           </code></pre>
 
            For example, for a 2-of-4 withdrawal policy:
            ```

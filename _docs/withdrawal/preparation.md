@@ -65,13 +65,13 @@ to withdraw.
            [https://blockchain.info/tx/<span class="primary">transaction-id-here</span>?format=hex](https://blockchain.info/tx/transaction-id-here?format=hex)
 
            Example page contents:
-           <pre><span class="warning">01000000016847105309a8604c7e4f5773d0a16c45248acce057dab62e
+           <pre><code><span class="warning">01000000016847105309a8604c7e4f5773d0a16c45248acce057dab62e
            db0fedc2810d49a4010000006b48304502210093e6b4154d42c1bba27c
            548a80488673967be32c8de2f11e01a1402a5500e13302203e20874e5d
            0af516c902d3b600ee94571a7ce68a14a384dc05d4346e1009fe000121
            039fd6f25c87f183260c1d4a3a3ae33a2c06414db4c40d0c2ab76a7192
            1fef0939ffffffff01e0930400000000001976a914e770a7c13f977478
-           3e80607f40be4547780315b688ac00000000</span></pre>
+           3e80607f40be4547780315b688ac00000000</span></code></pre>
 
    2. This entire page be referred to as a
    **<span class="warning">raw unspent transaction</span>**.

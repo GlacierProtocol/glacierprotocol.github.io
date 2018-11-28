@@ -4,102 +4,97 @@ description: This page explains the overall structure of Glacier, the
   step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
-The overall Glacier protocol consists of several distinct subprotocols:
+The Glacier protocol consists of several distinct sub-protocols:
 
-* **Setup**: Prepares hardware,
-and downloads and verifies needed software & documentation.
-* **Deposit**: For securely storing bitcoins.
-* **Withdrawal**: For transferring some or all of your stored funds to another
+* **Setup**: Preparing the hardware, downloading and verifying the software and
+documentation.
+* **Deposit**: Storing the bitcoin.
+* **Withdrawal**: Transferring some or all stored bitcoin to another
 bitcoin address.
-* **Viewing**: For viewing the balance of your funds in secure storage.
-* **Maintenance**: For ensuring funds in cold storage remain accessible and
+* **Viewing**: Viewing the balance held in secure storage.
+* **Balance and maintenance**: Ensuring the bitcoin in cold storage remains accessible and
 secure.
 
-## Sensitive Data
+## Sensitive data
 
 *Critically-sensitive data* (e.g. private keys) will be highlighted in red,
 like this: <span class="danger">critically-sensitive-data-here</span>.
 
-*Critically* sensitive data can be used by thieves to to steal your bitcoins. If
-you follow the protocol precisely, your critically sensitive data will remain
-secure.
+*Critically* sensitive data can be used by thieves to to steal bitcoin. Follow
+the protocol precisely to ensure critically sensitive data remains secure.
 
-Do *not* do anything with critically sensitive data that the protocol does not
-specifically instruct you to. In particular:
+Do *not* do anything with critically sensitive data that is not *specifically*
+outlined in the protocol. In particular:
 
-* Never send it over email or instant messenger
-* Never save it to disk (hard drive, USB drive,
-etc.)
-* Never paste or type it into any non-eternally-quarantined
+* *Never* send critically sensitive data over email or instant messenger
+* *Never* save critically sensitive data to disk (hard drive, USB drive, etc.)
+* *Never* paste or type critically sensitive data into any non-eternally-quarantined
 device
-* Never take a picture of it
-* Never let any untrusted person see it
+* *Never* take a picture of critically sensitive data
+* *Never* allow critically sensitive data to be seen by any untrusted person
 
-*Moderately-sensitive data* (e.g. a cold storage address or redemption
-script) will be highlighted in yellow, like this:
-<span class="warning">moderately-sensitive-data-here</span>.
+*Moderately-sensitive data* (e.g. a cold storage address or redeem script) will
+be highlighted in yellow, like this: <span class="warning">moderately-sensitive-data-here</span>.
 
-*Moderately* sensitive data impacts
-privacy, but does not directly impact security. It cannot be used to
-steal your bitcoins, but it *can* be used to see how many bitcoins you own
-(if someone knows that the moderately sensitive data in question belongs
-to you).
-
-It does indirectly impact security, in that if someone knows you own a lot of
-difficult-to-trace money, they have some incentive to rob, extort, or attack you
-to get it.
+*Moderately* sensitive data impacts privacy, because it can be used to see the total
+amount of bitcoin in storage, but does not directly impact security since it cannot
+be used to withdraw the funds. However, it can indirectly impact security in
+that potential thieves, knowing the amount held, may have the incentive to rob or
+extort.
 
 The protocol recommends storing copies of moderately-sensitive
-data electronically, in a "conventionally secure" manner (for example, in
-a password manager such as
-[1Password](https://1password.com/)). If you're particularly
-concerned about privacy, you *can* forego electronic storage, because the protocol
-also stores copies of moderately-sensitive data in cold storage with each private
-key. However, this is not recommended.
+data electronically, in a "conventionally secure" manner, for example, in
+a password manager such as [1Password](https://1password.com/). This means that knowledge
+of the cold storage balance will be as secure as access to other credentials stored in
+the password manager. For most people, this is sufficient.
 
-This means that knowledge of your cold storage balance will be as secure as
-access to any accounts which have their credentials stored in your password
-manager. For most people, this is sufficient.
+Although not recommended, the electronic storage of moderately-sensitive data can be
+omitted to improve privacy, because the protocol also stores copies of
+moderately-sensitive data in cold storage with each private key. It should be considered,
+though, that moderately-sensitive data stored on paper will need to be typed by hand
+every time funds are to be withdrawn from cold storage. The lengthy, complex nature of
+this data makes errors likely.
 
-If you use only hardcopies, you'll need to manually type in a large amount of
-gibberish data, by hand, with no errors, every time you withdraw funds from
-cold storage.
+### Terminal usage
 
-### Terminal Usage
-
-Many protocol steps involve
-typing commands into a *terminal window*. Working in a terminal window is
-analogous to working under the hood of a car. It allows you to give the
-computer more precise commands than you can through the regular
+Many protocol steps involve typing commands into a terminal window. Analogous to
+working under the hood of a car, this allows the user to give the
+computer more precise commands than can be given through the regular
 interface.
 
 Commands to be entered into a terminal window will be
 displayed in a fixed-width font like this:
 
 ```
-$ echo "everything after the $ could be copy-pasted into a terminal window"
+$ echo "all text after the $, on both lines, should either be copy-pasted from
+this document or manually typed into a terminal window"
 ```
 
-The `$` at the beginning
-of the line represents a *terminal prompt*, indicating readiness for user
-input. The actual prompt varies depending on your operating system and its
-configuration; it may be `$` , `>` , or something else. Usually the terminal
-will show additional information (such as a computer name, user ID and/or
-folder name) preceding every prompt.
+The `$` at the beginning of the line signifies that the text which follows is to be
+executed from the terminal. The actual prompt varies depending on the operating
+system and its configuration; it may be `$`, `>` , or something else. Usually,
+the terminal will show additional information preceding every prompt, such as
+a computer name, user ID and/or folder name.
 
-In the above example, the text
-splits across two lines because of the margins of this document. Each line
-is *not* a separate command; it is all one command, meant to be entered
-all at once. This is clear because there is no terminal prompt at the
-beginning of the second line.
-Proceed Carefully
+In the above example, the text splits across two lines because of document margins. 
+Each line is *not* a separate command; it is one command to be entered in its
+entirety. This is clear because there is no `$` at the beginning of the second
+line. Proceed carefully.
 
-If you encounter
-**anything that is different** from what the protocol says you should
-expect, **the recommendation is that you stop and seek help** unless your
-expert opinion gives you high confidence that you understand all possible
-causes and implications of the discrepancy.
+Commands requiring user-specific information will be highlighted like this:
 
-**In general, follow the
-protocol carefully, keep track of what step you are on, and double-check
-your work**. Any errors or deviations can undermine your security.
+<pre><code>$ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=<span class="primary">USB-device-identifier</span> bs=1m
+</code></pre>
+
+This is because the USB device identifier will vary from installation to installation. In this example, the user is expected to replace the <span class="primary">USB-device-identifier</span> with the USB device identifier particular to the local machine:
+```
+$ sudo dd if=ubuntu-16.04.1-desktop-amd64.img.dmg of=/dev/disk2 bs=1m
+```
+
+An explanation of how to provide the required information will always be given.
+
+**In general, follow the protocol carefully, keep track of the current step and
+double-check all work**. Any errors or deviations can undermine the security of the
+process. If the terminal response is in any way different to the expected response stated
+in the protocol, **stop and seek help**. Continue only if all possible causes and
+implications of the discrepancy are understood.

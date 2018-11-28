@@ -44,7 +44,7 @@ software (including a non-Linux-derived OS and a different Bitcoin wallet),
 different smartphones (and different smartphone software, i.e. QR code
 readers). Different software stacks eliminate the risk that a software bug or
 vulnerability may generate a flawed key. See the
-[design document](../design-doc/overview.md) for details on why this risk is
+[design document](/docs/design-doc/overview) for details on why this risk is
 small enough to justify leaving it unaddressed in the formal protocol.
 * **Dedicated pair of environments for each private key**: Use extra
 environments such that each environment only touches one key both when
@@ -94,7 +94,7 @@ or
 Examples include
 [Kanguru drives](https://www.kanguru.com/secure-storage/defender-secure-flash-drives.shtml)
 and
-[IronKey drives](http://www.ironkey.com/en-US/encrypted-storage-drives/250-basic.html).
+[IronKey drives](https://www.ironkey.com/en-US/encrypted-storage-drives/250-basic.html).
 * **Purchase a factory-new printer**: Printers can have malware, which could
 conceivably interfere with printing the hardcopy of the Glacier document. Use
 a new printer for printing the Glacier document. Choose one without wireless
@@ -137,8 +137,8 @@ there should be a process for checking on them periodically to make sure they ar
 not lost or damaged.
 * **Durable storage medium**: TerraSlate paper is extremely rugged, but you
 might also consider laminating the paper for additional protection. You'll
-need a [thermal laminator](http://a.co/cZBN1YU) and
-[laminating pouches](http://a.co/ifISzje). An
+need a [thermal laminator](https://a.co/cZBN1YU) and
+[laminating pouches](https://a.co/ifISzje). An
 even more durable approach would be to engrave the private keys in
 metal.
 * **High-security vaults**: Store keys in high-security vaults that

@@ -6,76 +6,51 @@ description: Learn what hardware you need to acquire for using Glacier, the
 
 Glacier has been written and tested around these specific equipment recommendations.
 
-### Eternally quarantined hardware: Set 1
+## Factory new hardware
 
-* Factory-sealed computer with 2 USB ports and a camera:
-[2016 Dell Inspiron 11.6"](http://a.co/1E6HEQA)
-* Two factory-sealed USB drives (2GB+) from the same manufacturer:
-[SanDisk Cruzer 8GB](http://a.co/1Us66ze).
+All items *must* be brand new and factory sealed. Manufacturers A and B *must* be
+different, and manufacturers C and D *must* be different.
 
-We'll be using two USB drives at the same time. If the computer has only one USB
-port, you'd need to use a USB hub, which is a separate piece of USB hardware subject
-to malware infection of its firmware.
+### Eternally quarantined
 
-We'll use the camera for reading QR codes.
+* **Q1**: Computer from manufacturer A, with two USB ports and a camera: For example,
+[2016 Dell Inspiron 11.6"](https://a.co/1E6HEQA)
+* **Q1 BOOT**: USB drive from manufacturer C, minimum 2GB: For example, [SanDisk Cruzer 8GB](https://a.co/1Us66ze)
+* **Q1 APP**: USB drive from manufacturer C, minimum 2GB: For example, [SanDisk Cruzer 8GB](https://a.co/1Us66ze)
 
-### Eternally quarantined hardware: Set 2
+* **Q2**: Computer from manufacturer B, with two USB ports and a camera: For example,
+[Acer Aspire One Cloudbook 11"](https://a.co/1ZMSB3Y)
+* **Q2 BOOT**: USB drive from manufacturer D, minimum 2GB: For example, [Verbatim 2GB](https://a.co/jdzEf8O)
+* **Q2 APP**: USB drive from manufacturer D, minimum 2GB: For example, [Verbatim 2GB](https://a.co/jdzEf8O)
 
-* Factory-sealed computer from a different manufacturer, also with 2 USB ports
-and a camera:
-[Acer Aspire One Cloudbook 11"](http://a.co/1ZMSB3Y)
-* Two factory-sealed USB drives (2GB+) from the same manufacturer, but a different
-manufacturer than the drives for Set 1:
-[Verbatim 2GB](http://a.co/jdzEf8O)
+The computers require two USB ports for simultaneous usage of the USB drives. Cameras are
+required for reading QR codes.
 
+### Non-quarantined
 
-### Used/existing computing equipment
+* **SETUP BOOT 1**: USB drive from manufacturer C, D or other (2GB+): For example, [Verbatim 2GB](https://a.co/jieluaE)
+* **SETUP BOOT 2**: USB drive from manufacturer C, D or other (2GB+): For example, [Verbatim 2GB](https://a.co/jieluaE)
 
-* Two computers with Internet connectivity, administrator access, and about
-2GB of free disk space.  **Each computer must be running Windows 10, macOS, or
-Linux.**
+## Used/existing hardware
 
-  One of these two computers should be a computer that you do not own (unless
-  purchased brand new), or that has spent much time on your home or office network.
-* Printer
-* Smartphone with a working camera
+* **SETUP 1**: Computer, either brand new or has not spent much time connected to the internet,
+with internet connectivity, administrator access, and 2GB of free disk space. *Must*
+be running Windows 10, MacOS, or Linux. 
+* **SETUP 2**: Computer with internet connectivity, administrator access, and about
+2GB of free disk space. *Must* be running Windows 10, MacOS, or Linux.
+* **Printer**
+* **Smartphone**: Must have a working camera
 
+### Other equipment
 
-### Other Equipment
-
-* Two factory-sealed USB drives (2GB+):
-[Verbatim 2GB](http://a.co/jieluaE)
-* [Precision screwdrivers](http://a.co/bbvj16a),
-for removing WiFi cards from laptops
-* [Electrical tape](http://a.co/gZZiEdA)
-* [Casino-grade six-sided dice](http://a.co/ghbdiak).
-Regular dice are insufficient.
-* [Faraday bag](http://a.co/3wiNPLT).
-Used to prevent smartphone malware from
-[stealing sensitive data using radio frequencies](https://www.usenix.org/legacy/event/sec09/tech/full_papers/vuagnoux.pdf).
-* [Table fan](http://a.co/98PrpMs).
-White noise can prevent malware on nearby devices from
-[stealing sensitive data using sound](https://www.wired.com/2016/06/clever-attack-uses-sound-computers-fan-steal-data/).
-* [Home safe](http://a.co/6sRoaPv).
-Consider bolting it to your floor to deter theft.
-* [TerraSlate paper](http://a.co/7pk5fJN).
-Waterproof, heat resistant, and tear-resistant.
-* [Cardboard envelopes](http://a.co/7jUPLMR), for opacity
-* [Tamper-resistant seals](http://a.co/96KlsAl)
-
-### Notes
-
-Standard software algorithms that generate random numbers, such as those used
-to generate Bitcoin private keys, are
-[vulnerable to exploitation](https://bitcoin.org/en/alert/2013-08-11-android),
-either due to malware or algorithmic weakness (i.e. they often provide numbers that
-are not truly random). Dice offer something closer to true randomness.
-
-Casino dice are created specifically to remove any potential dice bias
-(square corners, filled in pips, low manufacturing tolerance, etc.) That's why
-casinos use them!
-
-TerraSlate paper is extremely rugged, but you might also consider laminating the
-paper for additional protection. You'll need a
-[thermal laminator](http://a.co/cZBN1YU) and
-[laminating pouches](http://a.co/ifISzje).
+* **Precision screwdrivers**: To dismantle hardware. For example, [Tekton 2977](https://a.co/bbvj16a)
+* **Electrical tape**: To insulate loose connection. For example, [Duck](https://a.co/gZZiEdA)
+* **Casino-grade six-sided dice**: To provide entropy. Casino dice offer number generation which is closer to true randomness than a computer can provide.
+The square corners, filled in pips and low manufacturing tolerances mean casino dice remove
+any potential dice bias present in regular dice. For example, [Trademark Poker](https://a.co/ghbdiak)
+* **Faraday bag**: To prevent smartphone data exfiltration via radio side channel. For example, [Stealth Anti Signal Forensic Faraday Bag](https://a.co/3wiNPLT)
+* **Table fan**: To provide white noise. For example, [Holmes Lil' Blizzard](https://a.co/98PrpMs)
+* **Home safe**: To secure keys, bolted to the floor. For example, [AmazonBasics Security Safe](https://a.co/6sRoaPv)
+* **TerraSlate paper**: To write private keys on. For example, [TerraSlate paper](https://a.co/7pk5fJN)
+* **Cardboard envelopes**: To opaquely store private keys. For example, [Quality Park Extra-Rigid Fiberboard](https://a.co/7jUPLMR)
+* **Tamper-resistant seals**: To highlight tampering. For example, [BoxSilver Security Holograms](https://a.co/96KlsAl)

@@ -4,11 +4,11 @@ description: Here's a list of how the Bitcoin ecosystem could be improved with
   increased security.
 ---
 
-The Glacier protocol is lengthy and complex because the tools for high-security cold storage do not exist. This appendix briefly outlines some of the tool functionality that would address this gap. For additional technical details, see the Glacier [design document](../design-doc/overview.md).
+The Glacier protocol is lengthy and complex because the tools for high-security cold storage do not exist. This appendix briefly outlines some of the tool functionality that would address this gap. For additional technical details, see the [design document](/docs/design-doc/overview).
 
 Ideally, the Bitcoin community (and other cryptocurrency communities) will create these tools as soon as possible and render Glacier obsolete. We invite inquiry and consultation by others interested in developing these tools.
 
-## Cold Storage Hardware Wallets
+## Cold storage hardware wallets
 
 * Function like conventional hardware wallets, but
 eternally quarantined (no wireless or wired connections)

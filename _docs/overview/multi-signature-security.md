@@ -1,156 +1,107 @@
 ---
 title: Multi-signature security
-description: Glacier uses multiple keys to protect your Bitcoins. This makes it
-  harder for someone to steal your Bitcoins, and allows you to still access them
-  even if you lose one keys.
+description: Glacier uses multiple private keys. This provides greater security,
+ and protects against total loss in the event of the loss of a single key.
 ---
 
-Central to our security protocols is
-a technique called "multisignature security." You'll need a quick primer on
-this topic to understand the Glacier protocol.
+Multisignature security, or multisig, is central to Glacier.
 
-## Regular Private Keys are Risky
 
-Remember that anybody with access to your private key can access your
-funds. And if you lose your private key, you cannot access your money; it is
-lost forever. There is no mechanism for reversal, and nobody to appeal
-to.
+## Single private keys are risky
 
-This makes it difficult to keep funds highly secure. For example, you
-might store a private key on paper in a safe deposit box at a bank, and feel
-fairly safe. But even this is not the most robust solution. The box could be
-destroyed in a disaster, or be robbed (perhaps via identity theft), or
-[intentionally seized](http://abcnews.go.com/GMA/story?id=4832471).
+The bearer asset nature of bitcoin makes it very difficult to secure. For example,
+a private key, on paper, in a safe deposit box at a bank may seem secure, but 
+there are various eventualities that could lead to total loss. The box could be
+destroyed in a disaster, [seized](https://abcnews.go.com/GMA/story?id=4832471),
+accessed after identity theft, or the entire bank could be robbed.
 
-You can try to mitigate these risks by storing the key yourself, perhaps in a
-fireproof home safe (as opposed to a bank). But this introduces new risks. A
-determined thief (perhaps a professional who brings safe-drilling tools on their
-burglary jobs, or who somehow got wind of the fact that you have a $100,000
-slip of paper sitting in a safe) might break into the safe and steal the wallet.
+Self storage, perhaps in a fireproof safe at home, can mitigate some of these issues,
+but it also introduces new risks. A home safe is considerably easier to access and
+enter than a bank, as well as potentially introducing personal harm to home
+occupants.
 
-Or a major natural disaster might prevent you from returning home for an
-extended period, during which time your safe is looted.
+## What is multisignature security?
 
-## What is Multisignature Security?
+Multisignature security is analogous to a bank requiring signatures from multiple
+people (for example, any two of a company's three designated officers) to access
+funds in a company account.
 
-To address these
-issues, Bitcoin provides a way to secure funds with a set of private keys,
-such that some of the keys (but not necessarily all) are required to
-withdraw funds. For example, you might secure your bitcoins with 3 keys but
-only need any 2 of those keys to withdraw funds. (This example is known as
-a "2-of-3" withdrawal policy.)
+Bitcoin provides a way to secure funds with a set of private keys, such that some
+of the keys, but not necessarily all, are required to sign a transaction. For
+example, a "2-of-3" withdrawal policy means that, of the three existing keys, two
+are required. In general, a multisignature policy is described as being "m-of-n",
+where n>=m.
 
-The keys are then stored in different
-locations, so someone who gets access to one key will not automatically
-have access to the others. Sometimes, a key is entrusted to the custody of
-another person, known as a "signatory."
+The keys can then be stored in different locations to reduce the chance of any single
+third party gaining access to the minimum required number of keys. Keys can also be
+entrusted to the custody of another person, known as a "signatory."
 
-This approach of using multiple
-keys is known as "multisignature security." The "signature" part of
-"multisignature" comes from the process of using a private key to access
-bitcoins, which is referred to as "signing a transaction." Multisignature
-security is analogous to a bank requiring signatures from multiple people
-(for example, any 2 of a company's 3 designated officers) to access funds in
-an account.
+## How does multisignature security help?
 
-## How Does Multisignature Security Help?
+Multisignature security mitigates risk in the following scenarios:
 
-Multisignature security protects against the following scenarios:
+* **Theft**: Control of a single key does not give access to the bitcoin
+* **Loss**: Bitcoin can be recovered after the loss of a single key, if
+misplaced or if the owner is incapacitated, by using the remaining keys
+* **Betrayal**: In the event of death or incapacitation, multisignature security will
+give one or more signatories access to funds without enabling theft by any individual.
+This holds true unless a trusted individual steals additional keys, or colludes
+with another signatory.
 
-* **Theft**: Even if somebody physically breaks into a safe, any one key is not
-enough to steal the money.
-* **Loss**: If a key is destroyed or simply misplaced, you can recover your money
-using the remaining keys.
-* **Betrayal**:
-You may want to entrust one or more signatories with keys to facilitate
-access to your funds when you are dead or incapacitated. With multisignature
-security, entrusting them with a key will not enable them to steal your
-funds (unless they steal additional key(s), or collude with another
-signatory).
+## Choosing a multisignature withdrawal policy
 
-## Choosing a Multisignature Withdrawal Policy
-
-Below are common options for withdrawal policies. You will need to select one
-before beginning the protocol.
+Below are common options for withdrawal policies, with option 1 being The Glacier
+Protocol recommendation.
 
 ### Option 1: Self-custody of keys
 
-Our default
-recommendation is a 2-of-4 withdrawal policy where you manage all of your
-own keys (i.e. you do not entrust any to the custody of friends or family).
-2-of-4 means there are four keys, and any two of those keys can be combined
-to access your money, ensuring access even if two keys are lost or
-stolen.
+A 2-of-4 withdrawal policy, with all private keys in the custody of the bitcoin owner,
+where any two private keys can be combined to sign a transaction. This provides access
+even in a scenario where two keys are lost or stolen.
 
-The keys will be distributed as follows:
+The keys should be distributed as follows:
 
 * One in a safe at home
-* The remaining three in safe deposit boxes or [private vaults](https://www.google.com/search?q=private+safe+deposit+box) at
-different locations
+* Three in safe deposit boxes, or private vaults, at different locations
 
-It's important to think about estate planning -- making
-arrangements for your designated agents to be able to access your funds when
-you are dead (e.g. for distribution to your heirs) or incapacitated (e.g. to
-pay medical bills). This usually requires significant legal arrangements to
-be made in advance.
+In a self-custody system, estate planning becomes critical. Arrangements must be made
+to provide third party access to funds in the event of death (e.g. for inheritance) or
+incapacitation (e.g. for medical bills). This usually requires significant legal
+arrangement to be made in advance.
 
-The most failsafe way to ensure your agents will have access to your safe
-deposit box is to check with the bank. Standard estate planning legal documents
-should allow your agent to access the box upon your incapacity, and to get into
-it upon your death. But banks can be fussy and sometimes prefer their own forms.
+The most failsafe way to ensure third party access to a safe deposit box is directly
+via the bank. Standard estate planning legal documents should allow access to each box
+upon personal incapacity or death, although banks may offer their own forms.
 
-If you have a living trust, one option may be to have your trust as the co-owner
-of your safe deposit box. That generally allows a successor trustee to access
-the box.
+Another option may be to arrange a living trust, or local equivalent, where the trust
+is the co-owner of the safe deposit box. A successor trustee could then access the box.
 
 ### Option 2: Distributed custody of keys
 
-Another option is to distribute some of your
-keys to individuals who you trust ("signatories"). This can offer some
-advantages:
+A 2-of-5 withdrawal policy is recommended, with private keys distributed to a number
+of trusted individuals, or signatories. The extra key, five rather than the recommended
+four in Option 1, mitigates the extra risk of signatories not sufficiently protecting
+the key against loss or opportunistic theft. This has the following advantages:
 
-* **Availability**: If you live in a rural area, there may not be many vaults
-or safe deposit boxes that are practical to get to.
-* **Ease of setup**: It may be simpler to distribute keys to signatories than
-to find available vaults, travel to them, and set up accounts.
-* **Ease of estate planning**: You don't need to make complicated legal
-arrangements for your signatories to access your funds. They'll have the keys
-they need to do so.
+* **Availability**: Vaults or safe deposit boxes may not be available in the local area.
+* **Ease of setup**: It may be simpler to distribute keys to signatories than to travel
+to multiple available vaults and set up accounts.
+* **Ease of estate planning**: No complicated legal arrangements for signatories to
+access funds.
 
-However, there are significant drawbacks:
+Key distribution also has the following disadvantages:
 
-* **Privacy**: Other signatories will have the ability to see your balance.
-Technical details: Every private key needs to be packaged with the multisig
-redemption script (since losing all redemption scripts is just as bad as losing
-all keys). Redemption scripts, however, allow one to view funds. An alternate
-version of this protocol could be created using a different multisig approach
-besides P2SH transactions, which would eliminate the ability of signatories to
-view balances; see Appendix C for details.
-* **Signatory collusion**: Although possessing one key won't allow a signatory
-to access your funds, two signatories might collude with each other to steal
-your money.
-* **Signatory reliability**: A signatory may fail to store the key securely, or
-they may lose it.
-* **Signatory safety**: Giving your signatories custody of a valuable key may
-expose them to the risk of targeted physical theft.
-* **Kidnapping risk**: If you anticipate traveling in
-[high-crime areas with kidnapping risk](http://www.nytimes.com/2012/05/03/business/kidnapping-becomes-a-growing-travel-risk.html),
-your funds will be at greater risk because you'll
-have the ability to access them remotely (by contacting your signatories and
-asking for their keys).
-Financially-motivated kidnapping hinges on your ability to access funds to give
-to the kidnappers. If you are literally unable to access additional funds
-(because the keys are stored in remote vaults which you must be physically
-present to access, as opposed to held by friends or family who you can call),
-kidnappers will have no incentive to hold you.
+* **Privacy**: All signatories can see the balance either via the multisignature redeem
+script, or via the cold storage address. An alternate version of this protocol could be
+created using a different multisig approach besides P2SH transactions, which would
+eliminate the ability of signatories to view balances. See [Possible improvements to Glacier](/docs/extend/improvements#consider-shamirs-secret-sharing-or-vanilla-multisig-vs-p2sh-transactions) for details.
+* **Signatory collusion**: Two signatories may collude to gain access to funds.
+* **Signatory reliability**: A signatory may fail to store the key securely.
+* **Signatory safety**: Signatories may be exposed to the risk of targeted physical theft.
 
-For distributed custody, we recommend a 2-of-5 withdrawal policy. The extra key
-(5 keys, rather than the recommended
-4 keys in Option 1) is recommended since you have less control over whether
-a signatory effectively protects their key against theft or loss
+Thorough estate planning arrangements, which allow executors to access the keys if
+necessary, will allow the policy to be reduced from 2-of-5 to 2-of-4. Two keys should
+be issued to trusted signatories rather than three.
 
-If you have estate planning arrangements which you are confident will allow your
-agents to access the keys in your custody when needed, you should be fine with
-4 keys instead of 5 (two keys going to trusted signatories rather than three).
-Make sure your executors and signatories know to get in touch with each other
+Whether 2-of-5 or 2-of-4, each signatory should be able to communicate with each other
 when needed.
