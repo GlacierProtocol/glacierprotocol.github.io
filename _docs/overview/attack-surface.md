@@ -27,7 +27,7 @@ Most attacks require the presence of malware, either in or near the quarantined 
     * zbar-tools (via Ubuntu Package archive)
     * qrencode (via Ubuntu Package archive)
   * Malware on Setup Computer infects Setup USB software AND malware on Setup USB infects Quarantined USB software AND checksum verifications produces false positives
-    * Checksum false positives could happen becuase:
+    * Checksum false positives could happen because:
       * Malware might interfere with the verification process (or the display of its results).
       * The checksum verification software could be compromised.
         * Verifying the integrity of GnuPG requires one have access to a trusted installation of GnuPG, but many Glacier users won't have that. Glacier currently recommends users simply trust the version of GnuPG they download.
