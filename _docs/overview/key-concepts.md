@@ -10,8 +10,7 @@ Your currency balance is effectively stored in the Bitcoin
 blockchain -- the global decentralized ledger. You can imagine a locked box
 with all of your bitcoins sitting inside of it. This box is unlocked with
 a piece of information known as "private key". (Some boxes require multiple
-private keys to unlock; see the section "Multisignature Security"
-below.)
+private keys to unlock; see section [Multisignature Security](#multi-signature-security))
 
 Unlike a password, a private key is not meant for you to remember.
 It's a long string of gibberish.
@@ -47,6 +46,5 @@ the private key is a relatively small piece of information, it can be stored
 on paper as easily as it can be stored on a computer. And when it comes to
 key storage, paper has various advantages compared to computers: It's always
 offline (no chance of accidentally connecting it to the Internet!), it's
-easy & cheap to make multiple copies for backups (and different keys for
-multisignature security -- see below), and it's not susceptible to
+easy & cheap to make multiple copies for backups (and different keys for [Multisignature Security](#multi-signature-security)), and it's not susceptible to
 mechanical failure.
