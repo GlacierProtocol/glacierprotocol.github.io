@@ -115,35 +115,30 @@ Because the Bitcoin blockchain is public, the way you route and store funds has
 privacy implications. For example, any person to whom you give your cold storage
 address (because, for example, they're sending you funds which you want to keep
 in cold storage) can see your total cold storage balance. This is easy to do
-with many free services (e.g.
-[Blockr](https://www.coinbase.com/) ).
+with many free services (e.g. Block Explores like
+[www.blockchain.com/explorer](https://www.blockchain.com/explorer)) ).
 
 This is true not just of individuals, but entities. That is, any online wallet
 service which you use to send funds to cold storage can see your cold storage
 balance, and may deduce that it belongs to you. They may, of course, also choose
 to share this information with others.
 
-If this is a concern for you, the easiest way to keep your
+If privacy is a concern for you, the easiest way to keep your
 cold storage balance private from a particular entity is to route the
-payment through one (or more) intermediary addresses before sending it to
-your cold storage address, with a few transactions going to each
-intermediate address. This does not provide perfect privacy, but each
-intermediate address provides increasing levels of obfuscation and
-uncertainty.
+payment through one (or more) intermediary addresses via a [Coinjoin](https://en.bitcoin.it/wiki/CoinJoin) service such as that found in the [Wasabi Wallet](https://www.wasabiwallet.io/) before sending it to
+your cold storage address. This does not provide perfect privacy, but provides high levels of obfuscation and
+uncertainty trying to locate your cold storage address.
 
-If privacy is very important to you, you might consider using
-a service like
-[Shapeshift](https://shapeshift.io/#/coins)
-to exchange your Bitcoins for an more anonymous cryptocurrency, such as
-[Monero](http://monero.org/),
-and then exchange them back to Bitcoins.
-However, this will cost you fees, and importantly, it requires you trust the
-operator of the exchange service not to steal or lose your
-funds.
+If ensuring privacy is very important to you, also consider using
+a service like [Bisq](https://bisq.network/) or other Peer-To-Peer (P2P) or Decentralized Exchange (DEX) platforms
+to directly purchase your Bitcoins, and then exchange for a more anonymous cryptocurrency, such as
+[Monero](http://monero.org/) or [ZCash](https://z.cash/),
+then convert those funds back to Bitcoins at a fresh Bitcoin receiving address and finally moving into your cold storage.
+Keep in mind that in most cases you will pay higher transactional fees, and importantly, it requires you trust the
+operator of the exchange service not to steal or lose your funds.
 
-[This guide](https://bitcoinnewsmagazine.com/how-to-use-monero-to-anonymize-bitcoin/)
-gives additional detail about how to increase Bitcoin anonymity using Monero &
-Tor.
+[This guide](https://drive.google.com/file/d/1MNh7oMCQ-w7hJ3TmApeLfphlpcCnrh5Y/view)
+gives additional detail about how to increase Bitcoin anonymity.
 
 ## Lower-security Protocol Variants
 
@@ -184,4 +179,4 @@ well-resourced criminal organization) are beyond its scope.
 
 For some
 additional security precautions beyond those provided in the standard
-protocol, see the [possible improvements to Glacier](/docs/extend/improvements/).
+protocol, see the [possible improvements to Glacier](/docs/extend/improvements/) section.
