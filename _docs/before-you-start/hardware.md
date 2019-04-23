@@ -31,7 +31,7 @@ manufacturer than the drives for Set 1:
 
 ### Used/existing computing equipment
 
-* Two computers with Internet connectivity, administrator access, and about
+* Two computers with Internet connectivity, administrator access, at least 4GB RAM, and about
 2GB of free disk space.  **Each computer must be running Windows 10, macOS, or
 Linux.**
 
