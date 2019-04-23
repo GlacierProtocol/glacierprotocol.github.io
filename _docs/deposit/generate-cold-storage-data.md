@@ -165,5 +165,5 @@ prepare your quarantined workspace.
                 It doesn't matter which scratchpad is tweaked.
                 2. If they are different by more than 3 characters, restart the
                 Deposit Protocol.
-                3. If the are identical, restart the Deposit Protocol.
+                3. If they are identical, restart the Deposit Protocol.
             2. Seek assistance if discrepancies persist.
