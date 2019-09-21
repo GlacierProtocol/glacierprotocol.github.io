@@ -122,21 +122,19 @@ to withdraw.
         too high, you unnecessarily waste money. This data will be used to
         calculate a reasonable fee for expedient transaction processing.
 
-        1. Go to https://bitcoinfees.21.co/api/v1/fees/recommended
+        1. Note that different services return fee estimates in different units.
+        We are interested in the rate of satoshis / byte (or vbyte) rather than
+        satoshis / kilobyte (or kB) or BTC / kB.
 
-            Example page content:
-            ```
-            {"fastestFee":100,"halfHourFee":100,"hourFee":70}
-            ```
+        1 satoshi = 10^-8 BTC and a typical transaction is under 1000 bytes.
 
-        2. Note the number next to "fastestFee" -- in the above example, 100.
-        This indicates that paying 100 satoshis/byte is sufficient to be among
-        the transactions processed most quickly by the Bitcoin
-        network.(1satoshi=10^-8 BTC,and a typical transaction is under 1000
-        bytes).
+            As of late 2019, between 1 and 100 satoshis / byte is typical. **If the number is
+            radically higher than 100 or less than 1, stop; something may be wrong.** Seek assistance.
 
-            As of January 2017, the number 100 is typical. **If the number is
-            radically different (*not* between 10 and 1000), stop; something may
-            be wrong.** Seek assistance.
+        2. If you are running a Bitcoin Core full node, you can run "bitcoin-cli estimatesmartfee 6"
+        This returns a fee rate in BTC/kB; multiply the result by 100,000 to get satoshis / byte.
 
-        3. Write that number down on a piece of paper labeled "Fee rate".
+        Otherwise, use a service listed at https://b10c.me/A-list-of-public-feerate-estimator-APIs/
+
+        3. Write the fee estimate corresponding to your desired confirmation time on a piece of paper
+        labeled "Fee rate." Round up to the nearest whole number in units of satoshis / byte.
