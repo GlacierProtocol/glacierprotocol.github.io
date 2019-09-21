@@ -55,15 +55,14 @@ Privacy Considerations subsection for details.)
     of your funds with no recourse.</span>**
     3. Execute the transaction.
 5. Verify the deposit on the public blockchain.
-    1. Go to Blockr, paste the address into the search bar, and press Enter.
-    You'll be taken to a page that says "Bitcoin Address" at the top, with your
+    1. Go to Blockstream.info, paste the address into the search bar, and press Enter.
+    You'll be taken to a page that says "Address" at the top, with your
     <span class="warning">cold storage address</span> listed underneath.
-    2. Within a couple of minutes (and often much faster), you should be able
-    to refresh this page and see your funds listed under "Unconfirmed".
-    3. Periodically refresh the page until you see the funds moved from
-    "Unconfirmed" to be reflected in "Balance". This generally happens within
-    15 minutes; if the Bitcoin network is unusually congested, it may
-    take longer.
+    2. Within a couple of seconds you should be able to refresh this page and see your
+    unconfirmed transaction at the top of the transaction list.
+    3. Periodically refresh the page until you see the funds reflected in "Confirmed Unspent".
+    This may take anywhere from several minutes to many hours depending upon the fee rate you
+    paid and how many other transactions are currently waiting to be confirmed on the network.
 
 Your funds are now secured in cold storage.
 
