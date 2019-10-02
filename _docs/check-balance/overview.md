@@ -13,9 +13,9 @@ currently in one cold storage address.
 for details). If you've lost access to it, you'll need to recreate a new
 electronic copy by transcribing one of the hardcopies (stored with each private
 key) by hand.
-2. Go to [Blockr](https://www.coinbase.com/), paste your
+2. Go to [Blockstream](https://blockstream.info/), paste your
 <span class="warning">cold storage address</span> into the search bar, and
 press Enter.
-3. You'll be taken to a page that says "Bitcoin Address" at the top, with your
+3. You'll be taken to a page that says "Address" at the top, with your
 <span class="warning">cold storage address</span> listed underneath.
-4. Your balance will be listed on the page.
+4. Your balance will be listed on the page on the line that says "Confirmed Unspent"

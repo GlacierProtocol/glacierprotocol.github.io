@@ -54,7 +54,7 @@ This way, compromising one environment will only compromise one key.
 * **Deposit transaction verification**: If depositing bitcoins out of
 self-managed storage, don't immediately send a transaction directly from one's
 own wallet software. Instead, first export a raw signed transaction, and use a
-service like Blockr to verify the transaction is actually sending the funds to
+service like Blockstream.info to verify the transaction is actually sending the funds to
 the correct address.
 * **Avoid software random number generators**: Use a
 [hardware random number generator](https://en.wikipedia.org/wiki/Comparison_of_hardware_random_number_generators)

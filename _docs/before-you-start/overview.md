@@ -116,7 +116,7 @@ privacy implications. For example, any person to whom you give your cold storage
 address (because, for example, they're sending you funds which you want to keep
 in cold storage) can see your total cold storage balance. This is easy to do
 with many free services (e.g.
-[Blockr](https://www.coinbase.com/) ).
+[Blockstream](https://blockstream.info/) ).
 
 This is true not just of individuals, but entities. That is, any online wallet
 service which you use to send funds to cold storage can see your cold storage
