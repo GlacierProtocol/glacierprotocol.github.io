@@ -154,7 +154,7 @@ it's possible that an undiscovered vulnerability could be exploited by
 malware to steal private keys from the device.
 
 For details on this and other security considerations, see the
-"No Hardware Wallets" section of the [design document](/docs/design-doc/overview)
+"No Hardware Wallets" section of the [design document](/docs/design-doc/overview).
 As with online multisig
 vaults, many people do use hardware wallets to store sizeable amounts of
 money. We personally recommend Glacier for large investments, but ultimately
