@@ -12,9 +12,9 @@ manner. It is intended for:
 * **Personal storage**: Glacier does not address institutional security
 needs such as internal controls, transparent auditing, and preventing access
 to funds by a single individual.
-* **Large amounts of money ($100,000+)**: Glacier thoroughly considers corner
-cases such as obscure vectors for malware infection, personal estate
-planning, human error resulting in loss of funds, and so on.
+* **Large amounts of Bitcoin (as much as you cannot afford to lose)**: Glacier
+horoughly considers corner cases such as obscure vectors for malware infection,
+personal estate planning, human error resulting in loss of funds, and so on.
 Even if your Bitcoin holdings are more modest, it's worth considering using
 Glacier. If Bitcoin proves successful as a global currency, it will appreciate
 10x (or much more) in the coming years. Security will become increasingly
@@ -73,10 +73,8 @@ For most people, most of the time, the authors recommend storing Bitcoin using a
 high-quality online storage service. The pros and cons of the various online
 services are beyond the scope of this document, but most popular ones are fairly
 secure and easy to use. Some popular options are
-[Blockchain](https://blockchain.info/),
-[Coinbase](https://www.coinbase.com/),
-[Gemini](https://gemini.com/),
-and [Kraken](https://www.kraken.com/).
+[CashApp](https://cash.app/), [Swan](https://www.swanbitcoin.com/), [Gemini](https://gemini.com/) and [Kraken](https://www.kraken.com/).
+.
 
 However, all online storage services still come with some notable risks
 which self-managed storage does not have:
