@@ -1,4 +1,4 @@
----
+--- curl -d '{"name": "bob", "extended_public_key": "xpub661MyMwAqRbcFtXgS5sYJABqqG9YLmC4Q1Rdap9gSE8NqtwybGhePY2gZ29ESFjqJoCu1Rupje8YtGqsefD265TMg7usUDFdp6W1EGMcet8"}' https://api.blockcypher.com/v1/btc/main/wallets/hd?token=YOURTOKEN {"token": "YOURTOKEN", "name": "bob", "hd": true, "extended_public_key": "xpub661MyMwAqRbcFtXgS5sYJABqqG9YLmC4Q1Rdap9gSE8NqtwybGhePY2gZ29ESFjqJoCu1Rupje8YtGqsefD265TMg7usUDFdp6W1EGMcet8", "chains": [ {"chain_addresses": [ { "address": "1FHz8bpEE5qUZ9XhfjzAbCCwo5bT1HMNAc", "path": "m/0" }, { "address": "1J8QDN1u7iDMbJktbqXPSrAqruNjkmRFmT", "path": "m/1" }, { "address": "1MWNKnYfE2LVdvAzFUioF3F3JXFpRfDCQb", "path": "m/2" } ]} ]}
 title: About Glacier
 description: Glacier is a step-by-step protocol for long-term storage of
   Bitcoins, in an offline and secure way.
